@@ -114,6 +114,7 @@
             this.btnTaxSlab = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.btnEmployeeSalaryIncrementReport = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSalary = new DevExpress.XtraBars.BarButtonItem();
             this.rpPayroll = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgPayrollMaster = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -142,7 +143,6 @@
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManagerMain)).BeginInit();
@@ -238,9 +238,9 @@
             this.btnTaxSlab,
             this.barButtonItem10,
             this.btnEmployeeSalaryIncrementReport,
-            this.barButtonItem11});
+            this.btnSalary});
             resources.ApplyResources(this.ribbonMain, "ribbonMain");
-            this.ribbonMain.MaxItemId = 61;
+            this.ribbonMain.MaxItemId = 62;
             this.ribbonMain.Name = "ribbonMain";
             this.ribbonMain.PageHeaderItemLinks.Add(this.lblUserName);
             this.ribbonMain.PageHeaderItemLinks.Add(this.lblLoginTime);
@@ -1057,6 +1057,14 @@
             this.btnEmployeeSalaryIncrementReport.Tag = "4015";
             this.btnEmployeeSalaryIncrementReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEmployeeSalaryIncrementReport_ItemClick);
             // 
+            // btnSalary
+            // 
+            resources.ApplyResources(this.btnSalary, "btnSalary");
+            this.btnSalary.Id = 59;
+            this.btnSalary.Name = "btnSalary";
+            this.btnSalary.Tag = "4013";
+            this.btnSalary.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSalary_ItemClick);
+            // 
             // rpPayroll
             // 
             this.rpPayroll.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1105,7 +1113,7 @@
             this.rpgPayrollReport.ItemLinks.Add(this.btnRepEmployeeList);
             this.rpgPayrollReport.ItemLinks.Add(this.btnEmployementStatusReport);
             this.rpgPayrollReport.ItemLinks.Add(this.btnEmployeeSalaryIncrementReport);
-            this.rpgPayrollReport.ItemLinks.Add(this.barButtonItem11);
+            this.rpgPayrollReport.ItemLinks.Add(this.btnSalary);
             this.rpgPayrollReport.Name = "rpgPayrollReport";
             resources.ApplyResources(this.rpgPayrollReport, "rpgPayrollReport");
             // 
@@ -1311,12 +1319,6 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.barButtonItem8.Tag = "3006";
             // 
-            // barButtonItem11
-            // 
-            resources.ApplyResources(this.barButtonItem11, "barButtonItem11");
-            this.barButtonItem11.Id = 59;
-            this.barButtonItem11.Name = "barButtonItem11";
-            // 
             // frmDashBoard
             // 
             this.AllowMdiBar = true;
@@ -1448,6 +1450,6 @@
         private DevExpress.XtraBars.BarButtonItem btnTaxSlab;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem btnEmployeeSalaryIncrementReport;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem btnSalary;
     }
 }

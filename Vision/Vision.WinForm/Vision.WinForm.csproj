@@ -548,6 +548,12 @@
     <Compile Include="Reports\Employee\frmRepEmployementStatusReport.Designer.cs">
       <DependentUpon>frmRepEmployementStatusReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Employee\frmRepSalaryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Employee\frmRepSalaryReport.Designer.cs">
+      <DependentUpon>frmRepSalaryReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Template\frmReportTemplate.cs">
       <SubType>Form</SubType>
     </Compile>

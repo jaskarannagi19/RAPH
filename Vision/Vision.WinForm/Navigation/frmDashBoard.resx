@@ -632,7 +632,7 @@
   <data name="btnEmployeeSalaryIncrementReport.Caption" xml:space="preserve">
     <value>Salary Increment Report</value>
   </data>
-  <data name="barButtonItem11.Caption" xml:space="preserve">
+  <data name="btnSalary.Caption" xml:space="preserve">
     <value>Salary</value>
   </data>
   <data name="ribbonMain.Location" type="System.Drawing.Point, System.Drawing">
@@ -2985,6 +2985,12 @@
   <data name="&gt;&gt;btnEmployeeSalaryIncrementReport.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="&gt;&gt;btnSalary.Name" xml:space="preserve">
+    <value>btnSalary</value>
+  </data>
+  <data name="&gt;&gt;btnSalary.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="&gt;&gt;rpPayroll.Name" xml:space="preserve">
     <value>rpPayroll</value>
   </data>
@@ -3151,12 +3157,6 @@
     <value>barButtonItem8</value>
   </data>
   <data name="&gt;&gt;barButtonItem8.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem11.Name" xml:space="preserve">
-    <value>barButtonItem11</value>
-  </data>
-  <data name="&gt;&gt;barButtonItem11.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
