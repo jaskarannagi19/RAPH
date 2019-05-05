@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alit.WinformControls", "Alit.WinformControls\Alit.WinformControls.csproj", "{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vision.Model", "Vision.Model\Vision.Model.csproj", "{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vision.DAL", "Vision.DAL\Vision.DAL.csproj", "{A9A28AA2-5334-47A8-A75A-B95A055856E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vision.WinForm", "Vision.WinForm\Vision.WinForm.csproj", "{3B092966-6B53-491A-BA94-846CEED6D321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSD150SDK", "MSD150SDK\MSD150SDK.csproj", "{FAED4520-6262-4E8B-A6E9-5657A4FC1667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vision.TADataReceiver", "Vision.TADataReceiver\Vision.TADataReceiver.csproj", "{5B57864C-F1C2-46E8-8598-FEF9A516D81E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E73A8F-B226-4C55-AA57-50EA9C53B3C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A28AA2-5334-47A8-A75A-B95A055856E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A28AA2-5334-47A8-A75A-B95A055856E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A28AA2-5334-47A8-A75A-B95A055856E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A28AA2-5334-47A8-A75A-B95A055856E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B092966-6B53-491A-BA94-846CEED6D321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B092966-6B53-491A-BA94-846CEED6D321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B092966-6B53-491A-BA94-846CEED6D321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B092966-6B53-491A-BA94-846CEED6D321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAED4520-6262-4E8B-A6E9-5657A4FC1667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAED4520-6262-4E8B-A6E9-5657A4FC1667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAED4520-6262-4E8B-A6E9-5657A4FC1667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAED4520-6262-4E8B-A6E9-5657A4FC1667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B57864C-F1C2-46E8-8598-FEF9A516D81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B57864C-F1C2-46E8-8598-FEF9A516D81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B57864C-F1C2-46E8-8598-FEF9A516D81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B57864C-F1C2-46E8-8598-FEF9A516D81E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15F73609-211E-41CE-8885-6BAC56C16AE7}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alittech.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Alit.WinformControls\\Alit.WinformControls.csproj
+		SccProjectName1 = Alit.WinformControls
+		SccLocalPath1 = Alit.WinformControls
+		SccProjectUniqueName2 = Vision.DAL\\Vision.DAL.csproj
+		SccProjectName2 = Vision.DAL
+		SccLocalPath2 = Vision.DAL
+		SccProjectUniqueName3 = Vision.Model\\Vision.Model.csproj
+		SccProjectName3 = Vision.Model
+		SccLocalPath3 = Vision.Model
+		SccProjectUniqueName4 = Vision.WinForm\\Vision.WinForm.csproj
+		SccProjectName4 = Vision.WinForm
+		SccLocalPath4 = Vision.WinForm
+		SccProjectUniqueName5 = MSD150SDK\\MSD150SDK.csproj
+		SccProjectName5 = MSD150SDK
+		SccLocalPath5 = MSD150SDK
+		SccProjectUniqueName6 = Vision.TADataReceiver\\Vision.TADataReceiver.csproj
+		SccProjectName6 = Vision.TADataReceiver
+		SccLocalPath6 = Vision.TADataReceiver
+	EndGlobalSection
+EndGlobal

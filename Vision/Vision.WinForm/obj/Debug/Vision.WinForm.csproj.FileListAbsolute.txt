@@ -1,0 +1,748 @@
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.csprojResolveAssemblyReference.cache
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Account.frmBankAccount.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.BMDevice.frmBiometricDevice.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.City.frmCity.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.City.frmCountry.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.City.frmState.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployee.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeAccountingLedger.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeDepartment.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeShift.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeNoPrefix.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeShiftAllocation.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeWIBAClass.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeDesignation.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Loan.frmLoanAdjustment.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Loan.frmLoanAdjustmentNoPrefix.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Loan.frmLoanApplicationNoPrefix.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Navigation.frmDashBoard.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmEarningDeduction.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveAdjustment.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveEncashment.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveAdjustmentNoPrefix.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveEncashmentNoPrefix.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmSafariApplicationNoPrefix.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveApplicationNoPrefix.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveType.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmMinimumWageCategory.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmMinimumWageCategoryRateChange.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmNonCashBenefit.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmSafariApplication.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmTAApproval.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmTAApprovalImportData.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.PrintRibbonControllerResources.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Properties.Resources.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployeeAttendanceDetail.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Template.frmReportTemplate.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Template.rptBlankReport.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Template.rptReportTemplateA5.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Template.rptReportTemplateA4.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepDailyAttendanceGridFormat.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepDailyAttendanceSummary.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepEmployeeAttendanceDetail.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepEmployeeAttendanceSummary.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepEmployeeLeaveSafariTransactionReport.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepTimeAttendanceReport.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.rptLateIn.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.rptDailyAttendance.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.ucEmployeeFilter.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmApplicationSettings.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmCompany.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmFinancialPeriod.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.SubMaster.frmBankName.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.SubMaster.frmBankBranch.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.SubMaster.frmCurrency.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmLocation.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.BaseTemplate.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmCRUDTemplate.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmEditList.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmNormalTemplate.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmWait.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmChangePassword.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmForgetPassword.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmSelectCompany.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmUser.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmUserGroup.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmUserLogin.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.XRDesignRibbonControllerResources.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmEditList.tr-TR.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmNormalTemplate.tr-TR.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmWait.tr-TR.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmUserLogin.tr-TR.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.csproj.GenerateResource.Cache
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Vision.WinForm.exe.config
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeWIBAClassRate.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Loan.frmLoanApplication.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Navigation.SplashScreenWelcome.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmEmployeePayslip.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmEmployeeRestDay.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmHoliday.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveApplication.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployeeMinWagesReport.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployeeList.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployementStatusReport.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepEmployeePunchingDetail.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmTaxSlab.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.exe.licenses
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Vision.WinForm.exe
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Vision.WinForm.pdb
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\tr-TR\Vision.WinForm.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Accessibility.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Alit.WinformControls.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.BonusSkins.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Charts.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.CodeParser.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Data.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.DataAccess.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.DataAccess.v18.2.UI.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Docs.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Images.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Office.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Pdf.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Pdf.v18.2.Drawing.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.PivotGrid.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Printing.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.RichEdit.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.RichEdit.v18.2.Export.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.Extensions.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Sparkline.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.SpellChecker.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Spreadsheet.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Utils.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Utils.v18.2.UI.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Xpo.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraBars.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.UI.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.Wizard.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraEditors.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraGauges.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraGrid.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraLayout.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraNavBar.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPdfViewer.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPivotGrid.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPrinting.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraReports.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraReports.v18.2.Extensions.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraRichEdit.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraRichEdit.v18.2.Extensions.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraScheduler.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraScheduler.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraSpellChecker.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraSpreadsheet.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraTreeList.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\EntityFramework.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\EntityFramework.SqlServer.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Microsoft.CSharp.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\MSD150SDK.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\PresentationCore.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.ComponentModel.DataAnnotations.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Configuration.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Data.DataSetExtensions.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Data.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Data.Linq.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Deployment.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Drawing.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Net.Http.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Runtime.Remoting.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Runtime.Serialization.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Runtime.Serialization.Formatters.Soap.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Security.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.ServiceModel.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Web.Services.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Windows.Forms.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Xml.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\System.Xml.Linq.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\UIAutomationClient.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Vision.DAL.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Vision.Model.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraDiagram.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Diagram.v18.2.Core.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraVerticalGrid.v18.2.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.Extensions.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Alit.WinformControls.pdb
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\MSD150SDK.pdb
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Vision.DAL.pdb
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\Vision.Model.pdb
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Data.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.DataAccess.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.DataAccess.v18.2.UI.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Docs.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Office.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Pdf.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Pdf.v18.2.Drawing.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.PivotGrid.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Printing.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.RichEdit.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.Extensions.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Sparkline.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.SpellChecker.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Spreadsheet.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Utils.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Utils.v18.2.UI.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Xpo.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraBars.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.UI.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.Wizard.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraEditors.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraGauges.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraGrid.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraLayout.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraNavBar.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPdfViewer.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPivotGrid.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPrinting.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraReports.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraReports.v18.2.Extensions.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraRichEdit.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraRichEdit.v18.2.Extensions.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraScheduler.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraScheduler.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraSpellChecker.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraSpreadsheet.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraTreeList.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\EntityFramework.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\EntityFramework.SqlServer.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraDiagram.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Diagram.v18.2.Core.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraVerticalGrid.v18.2.xml
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Data.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Data.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Data.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Data.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.DataAccess.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.DataAccess.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.DataAccess.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.DataAccess.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.DataAccess.v18.2.UI.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.DataAccess.v18.2.UI.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.DataAccess.v18.2.UI.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.DataAccess.v18.2.UI.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Office.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Office.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Office.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Office.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Pdf.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Pdf.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Pdf.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Pdf.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.PivotGrid.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.PivotGrid.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.PivotGrid.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.PivotGrid.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Printing.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Printing.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Printing.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Printing.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.RichEdit.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.RichEdit.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.RichEdit.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.RichEdit.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Snap.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Snap.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Snap.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Snap.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Snap.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Snap.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Snap.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Snap.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Snap.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Snap.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Snap.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Snap.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Sparkline.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Sparkline.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Sparkline.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Sparkline.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Spreadsheet.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Spreadsheet.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Spreadsheet.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Spreadsheet.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Utils.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Utils.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Utils.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Utils.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Utils.v18.2.UI.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Utils.v18.2.UI.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Utils.v18.2.UI.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Utils.v18.2.UI.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Xpo.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Xpo.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Xpo.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Xpo.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraBars.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraBars.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraBars.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraBars.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraCharts.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraCharts.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraCharts.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraCharts.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraEditors.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraEditors.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraEditors.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraEditors.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraGauges.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraGauges.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraGauges.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraGauges.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraLayout.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraLayout.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraLayout.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraLayout.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraNavBar.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraNavBar.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraNavBar.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraNavBar.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraPdfViewer.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraPdfViewer.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraPdfViewer.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraPdfViewer.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraPivotGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraPivotGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraPivotGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraPivotGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraPrinting.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraPrinting.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraPrinting.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraPrinting.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraReports.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraReports.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraReports.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraReports.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraRichEdit.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraRichEdit.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraRichEdit.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraRichEdit.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraScheduler.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraScheduler.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraScheduler.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraScheduler.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraSpellChecker.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraSpellChecker.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraSpellChecker.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraSpellChecker.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraTreeList.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraTreeList.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraTreeList.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraTreeList.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Diagram.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Diagram.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Diagram.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Diagram.v18.2.Core.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\tr-TR\Vision.WinForm.resources.dll
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.exe
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.pdb
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmEmployeeSalaryIncrement.resources
+D:\Source Code\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployeeSalaryIncrementReport.resources
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.WinForm.exe.config
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.WinForm.exe
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.WinForm.pdb
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\tr-TR\Vision.WinForm.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Accessibility.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Alit.WinformControls.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.BonusSkins.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Charts.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.CodeParser.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Data.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.DataAccess.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.DataAccess.v18.2.UI.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Docs.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Images.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Office.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Pdf.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Pdf.v18.2.Drawing.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.PivotGrid.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Printing.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.RichEdit.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.RichEdit.v18.2.Export.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.Extensions.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Sparkline.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.SpellChecker.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Spreadsheet.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Utils.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Utils.v18.2.UI.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Xpo.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraBars.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.UI.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.Wizard.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraEditors.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraGauges.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraGrid.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraLayout.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraNavBar.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPdfViewer.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPivotGrid.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPrinting.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraReports.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraReports.v18.2.Extensions.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraRichEdit.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraRichEdit.v18.2.Extensions.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraScheduler.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraScheduler.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraSpellChecker.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraSpreadsheet.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraTreeList.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\EntityFramework.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\EntityFramework.SqlServer.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Microsoft.CSharp.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\MSD150SDK.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\PresentationCore.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.ComponentModel.DataAnnotations.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Configuration.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Data.DataSetExtensions.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Data.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Data.Linq.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Deployment.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Drawing.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Net.Http.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Runtime.Remoting.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Runtime.Serialization.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Runtime.Serialization.Formatters.Soap.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Security.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.ServiceModel.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Web.Services.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Windows.Forms.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Xml.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\System.Xml.Linq.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\UIAutomationClient.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.DAL.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.Model.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraDiagram.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Diagram.v18.2.Core.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraVerticalGrid.v18.2.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.Extensions.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Alit.WinformControls.pdb
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\MSD150SDK.pdb
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.DAL.pdb
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.DAL.dll.config
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.Model.pdb
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\Vision.Model.dll.config
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Data.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.DataAccess.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.DataAccess.v18.2.UI.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Docs.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Office.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Pdf.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Pdf.v18.2.Drawing.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.PivotGrid.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Printing.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.RichEdit.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Snap.v18.2.Extensions.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Sparkline.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.SpellChecker.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Spreadsheet.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Utils.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Utils.v18.2.UI.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Xpo.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraBars.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.UI.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraCharts.v18.2.Wizard.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraEditors.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraGauges.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraGrid.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraLayout.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraNavBar.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPdfViewer.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPivotGrid.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraPrinting.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraReports.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraReports.v18.2.Extensions.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraRichEdit.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraRichEdit.v18.2.Extensions.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraScheduler.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraScheduler.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraSpellChecker.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraSpreadsheet.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraTreeList.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\EntityFramework.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\EntityFramework.SqlServer.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraDiagram.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.Diagram.v18.2.Core.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\DevExpress.XtraVerticalGrid.v18.2.xml
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Data.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Data.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Data.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Data.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.DataAccess.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.DataAccess.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.DataAccess.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.DataAccess.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.DataAccess.v18.2.UI.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.DataAccess.v18.2.UI.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.DataAccess.v18.2.UI.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.DataAccess.v18.2.UI.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Office.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Office.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Office.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Office.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Pdf.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Pdf.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Pdf.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Pdf.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.PivotGrid.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.PivotGrid.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.PivotGrid.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.PivotGrid.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Printing.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Printing.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Printing.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Printing.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.RichEdit.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.RichEdit.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.RichEdit.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.RichEdit.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Snap.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Snap.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Snap.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Snap.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Snap.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Snap.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Snap.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Snap.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Snap.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Snap.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Snap.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Snap.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Sparkline.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Sparkline.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Sparkline.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Sparkline.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Spreadsheet.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Spreadsheet.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Spreadsheet.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Spreadsheet.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Utils.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Utils.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Utils.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Utils.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Utils.v18.2.UI.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Utils.v18.2.UI.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Utils.v18.2.UI.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Utils.v18.2.UI.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Xpo.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Xpo.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Xpo.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Xpo.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraBars.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraBars.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraBars.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraBars.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraCharts.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraCharts.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraCharts.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraCharts.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraCharts.v18.2.Wizard.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraEditors.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraEditors.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraEditors.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraEditors.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraGauges.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraGauges.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraGauges.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraGauges.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraLayout.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraLayout.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraLayout.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraLayout.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraNavBar.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraNavBar.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraNavBar.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraNavBar.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraPdfViewer.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraPdfViewer.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraPdfViewer.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraPdfViewer.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraPivotGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraPivotGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraPivotGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraPivotGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraPrinting.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraPrinting.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraPrinting.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraPrinting.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraReports.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraReports.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraReports.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraReports.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraReports.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraRichEdit.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraRichEdit.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraRichEdit.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraRichEdit.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraRichEdit.v18.2.Extensions.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraScheduler.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraScheduler.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraScheduler.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraScheduler.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraScheduler.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraSpellChecker.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraSpellChecker.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraSpellChecker.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraSpellChecker.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraSpreadsheet.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraTreeList.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraTreeList.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraTreeList.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraTreeList.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.Diagram.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.Diagram.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.Diagram.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.Diagram.v18.2.Core.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\de\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\es\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ja\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\bin\Debug\ru\DevExpress.XtraVerticalGrid.v18.2.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.csprojAssemblyReference.cache
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Account.frmBankAccount.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.BMDevice.frmBiometricDevice.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.City.frmCity.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.City.frmCountry.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.City.frmState.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployee.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeAccountingLedger.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeDepartment.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeShift.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeNoPrefix.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeShiftAllocation.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeWIBAClass.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeDesignation.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Employee.frmEmployeeWIBAClassRate.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Loan.frmLoanAdjustment.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Loan.frmLoanApplication.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Loan.frmLoanAdjustmentNoPrefix.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Loan.frmLoanApplicationNoPrefix.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Navigation.frmDashBoard.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Navigation.SplashScreenWelcome.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmEarningDeduction.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmEmployeePayslip.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmEmployeeRestDay.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmEmployeeSalaryIncrement.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmHoliday.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveAdjustment.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveEncashment.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveApplication.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveAdjustmentNoPrefix.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveEncashmentNoPrefix.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmSafariApplicationNoPrefix.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveApplicationNoPrefix.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmLeaveType.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmMinimumWageCategory.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmMinimumWageCategoryRateChange.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmNonCashBenefit.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmSafariApplication.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmTAApproval.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Payroll.frmTAApprovalImportData.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.PrintRibbonControllerResources.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Properties.Resources.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployeeMinWagesReport.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployeeAttendanceDetail.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployeeList.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployeeSalaryIncrementReport.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Employee.frmRepEmployementStatusReport.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Template.frmReportTemplate.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Template.rptBlankReport.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Template.rptReportTemplateA5.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.Template.rptReportTemplateA4.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepDailyAttendanceGridFormat.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepDailyAttendanceSummary.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepEmployeeAttendanceDetail.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepEmployeeAttendanceSummary.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepEmployeeLeaveSafariTransactionReport.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepEmployeePunchingDetail.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.frmRepTimeAttendanceReport.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.rptLateIn.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.TimeAttendance.rptDailyAttendance.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Reports.ucEmployeeFilter.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmApplicationSettings.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmCompany.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmFinancialPeriod.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmTaxSlab.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.SubMaster.frmBankName.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.SubMaster.frmBankBranch.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.SubMaster.frmCurrency.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmLocation.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.BaseTemplate.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmCRUDTemplate.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmEditList.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmNormalTemplate.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmWait.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmChangePassword.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmForgetPassword.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmSelectCompany.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmUser.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmUserGroup.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmUserLogin.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.XRDesignRibbonControllerResources.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmEditList.tr-TR.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmNormalTemplate.tr-TR.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Template.frmWait.tr-TR.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Users.frmUserLogin.tr-TR.resources
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.csproj.GenerateResource.cache
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.exe.licenses
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.csproj.CoreCompileInputs.cache
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\tr-TR\Vision.WinForm.resources.dll
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.csproj.CopyComplete
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.exe
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.pdb

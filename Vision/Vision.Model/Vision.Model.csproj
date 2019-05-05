@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F4C76C1-52A4-432D-ABDF-E630AD451DF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vision.Model</RootNamespace>
+    <AssemblyName>Vision.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountViewModel.cs" />
+    <Compile Include="Account\BankAccountViewModel.cs" />
+    <Compile Include="BMDevice\BiometricDeviceViewModel.cs" />
+    <Compile Include="BMDevice\DataReceiverViewModel.cs" />
+    <Compile Include="BMDevice\LogViewModel.cs" />
+    <Compile Include="BMDevice\ReceivedMessageViewModel.cs" />
+    <Compile Include="City\CityViewModel.cs" />
+    <Compile Include="City\CountryViewModel.cs" />
+    <Compile Include="City\StateViewModel.cs" />
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="Employee\EmployeeAccountingLedgerViewModel.cs" />
+    <Compile Include="Employee\EmployeeShiftAllocationViewModel.cs" />
+    <Compile Include="Employee\EmployeeShiftViewModel.cs" />
+    <Compile Include="Employee\EmployeeNoPrefixViewModel.cs" />
+    <Compile Include="Employee\EmployeeDepartmentViewModel.cs" />
+    <Compile Include="Employee\EmployeeWIBAClassRateViewModel.cs" />
+    <Compile Include="Employee\EmployeeWIBAClassViewModel.cs" />
+    <Compile Include="Employee\EmployeeDesignationViewModel.cs" />
+    <Compile Include="Employee\EmployeeViewModel.cs" />
+    <Compile Include="Loan\LoanAdjustmentNoPrefixViewModel.cs" />
+    <Compile Include="Loan\LoanAjustmentViewModel.cs" />
+    <Compile Include="Loan\LoanApplicationViewModel.cs" />
+    <Compile Include="Loan\LoanApplicationNoPrefixViewModel.cs" />
+    <Compile Include="Payroll\EarningDeductionViewModel.cs" />
+    <Compile Include="Payroll\EmployeeAttendanceViewModel.cs" />
+    <Compile Include="Payroll\EmployeePayslipViewModel.cs" />
+    <Compile Include="Payroll\EmployeeRestDayViewModel.cs" />
+    <Compile Include="Payroll\EmployeeSalaryIncrementViewModel.cs" />
+    <Compile Include="Payroll\EmployeeTimeLogViewModel.cs" />
+    <Compile Include="Payroll\HolidayViewModel.cs" />
+    <Compile Include="Payroll\LeaveAdjustmentNoPrefixViewModel.cs" />
+    <Compile Include="Payroll\LeaveAdjustmentViewModel.cs" />
+    <Compile Include="Payroll\LeaveEncashmentViewModel.cs" />
+    <Compile Include="Payroll\LeaveEncashmentNoPrefixViewModel.cs" />
+    <Compile Include="Payroll\SafariApplicationNoPrefixViewModel.cs" />
+    <Compile Include="Payroll\LeaveApplicationNoPrefixViewModel.cs" />
+    <Compile Include="Payroll\SafariApplicationViewModel.cs" />
+    <Compile Include="Payroll\LeaveApplicationViewModel.cs" />
+    <Compile Include="Payroll\NonCashBenefitViewModel.cs" />
+    <Compile Include="Payroll\MinimumWageCategoryViewModel.cs" />
+    <Compile Include="Payroll\LeaveTypeViewModel.cs" />
+    <Compile Include="Payroll\TAApprovalNoPrefixViewModel.cs" />
+    <Compile Include="Payroll\TAApprovalViewModel.cs" />
+    <Compile Include="Reports\CompanyDetailReportModel.cs" />
+    <Compile Include="Reports\Employee\EmployeeAttendanceDetailReportModel.cs" />
+    <Compile Include="Reports\Employee\EmployeeListReportModel.cs" />
+    <Compile Include="Reports\Employee\EmployeeMinimumWagesReport .cs" />
+    <Compile Include="Reports\Employee\EmployeeSalaryIncrementReportModel.cs" />
+    <Compile Include="Reports\Employee\EmployementStatusReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\EarlyGoingReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\EmployeeAttendancePerformanceReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\EmployeeMonthlyAttendanceSummaryReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\EmployeePunchingDetailReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\LeaveEncashmentAdjustmentTransactionReportModel.cs" />
+    <Compile Include="Reports\ReportCommonFunctions.cs" />
+    <Compile Include="Reports\TimeAttendance\DailyAttendanceReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\DailyAttendanceSummaryReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\EmployeeAttendanceDetailReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\EmployeeAttendanceSummaryReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\LateInReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\LeaveBalanceReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\LeaveDetailReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\SafariTransactionReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\LeaveTransactionReportModel.cs" />
+    <Compile Include="Reports\TimeAttendance\AttendancePerformanceReportModel.cs" />
+    <Compile Include="Settings\ApplicationSettings.cs" />
+    <Compile Include="Settings\CompanyViewModel.cs" />
+    <Compile Include="CRUDModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\FinPeriodViewModel.cs" />
+    <Compile Include="Settings\MenuOptionsViewModel.cs" />
+    <Compile Include="Settings\PAYEReleifeViewModel.cs" />
+    <Compile Include="Settings\TaxSlabViewModel.cs" />
+    <Compile Include="SubMaster\BankBranchNameViewModel.cs" />
+    <Compile Include="SubMaster\BankNameViewModel.cs" />
+    <Compile Include="SubMaster\CurrencyViewModel.cs" />
+    <Compile Include="Settings\LocationViewModel.cs" />
+    <Compile Include="Users\UserGroupViewModel.cs" />
+    <Compile Include="Users\UserViewModel.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\Vision.Model.Payroll.EmployeePayslip_PAYEReliefeViewModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

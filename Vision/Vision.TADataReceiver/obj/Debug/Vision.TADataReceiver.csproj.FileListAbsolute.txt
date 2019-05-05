@@ -1,0 +1,38 @@
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.TADataReceiver.exe.config
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.TADataReceiver.exe
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.TADataReceiver.pdb
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\EntityFramework.dll
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\EntityFramework.SqlServer.dll
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.DAL.dll
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.Model.dll
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.DAL.pdb
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.Model.pdb
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\EntityFramework.xml
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\bin\Debug\EntityFramework.SqlServer.xml
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.csprojResolveAssemblyReference.cache
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.Properties.Resources.resources
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.csproj.GenerateResource.Cache
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.exe
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.pdb
+D:\Source Code\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.frmLogStatus.resources
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.TADataReceiver.exe.config
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.TADataReceiver.exe
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.TADataReceiver.pdb
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\EntityFramework.dll
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\EntityFramework.SqlServer.dll
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.DAL.dll
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.Model.dll
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.DAL.pdb
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.DAL.dll.config
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.Model.pdb
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\Vision.Model.dll.config
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\EntityFramework.xml
+F:\Vision\Vision\Vision\Vision.TADataReceiver\bin\Debug\EntityFramework.SqlServer.xml
+F:\Vision\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.csprojAssemblyReference.cache
+F:\Vision\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.frmLogStatus.resources
+F:\Vision\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.Properties.Resources.resources
+F:\Vision\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.csproj.GenerateResource.cache
+F:\Vision\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.csproj.CoreCompileInputs.cache
+F:\Vision\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.csproj.CopyComplete
+F:\Vision\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.exe
+F:\Vision\Vision\Vision\Vision.TADataReceiver\obj\Debug\Vision.TADataReceiver.pdb

@@ -1,0 +1,1356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbVisionModelStoreContainer" CdmEntityContainer="dbVisionEntities">
+    <EntitySetMapping Name="tblEmployeeSalaryIncrements">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeSalaryIncrement">
+        <MappingFragment StoreEntitySet="tblEmployeeSalaryIncrement">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rState" ColumnName="rState" />
+          <ScalarProperty Name="LastIncAmount" ColumnName="LastIncAmount" />
+          <ScalarProperty Name="LastIncDate" ColumnName="LastIncDate" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="NewBasicSalary" ColumnName="NewBasicSalary" />
+          <ScalarProperty Name="IncrementAmount" ColumnName="IncrementAmount" />
+          <ScalarProperty Name="IncrementPercentage" ColumnName="IncrementPercentage" />
+          <ScalarProperty Name="IncrementType" ColumnName="IncrementType" />
+          <ScalarProperty Name="CurrentBasicSalary" ColumnName="CurrentBasicSalary" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EffectiveYear" ColumnName="EffectiveYear" />
+          <ScalarProperty Name="EffectiveMonth" ColumnName="EffectiveMonth" />
+          <ScalarProperty Name="EmployeeSalaryIncrementDate" ColumnName="EmployeeSalaryIncrementDate" />
+          <ScalarProperty Name="EmployeeSalaryIncrementNo" ColumnName="EmployeeSalaryIncrementNo" />
+          <ScalarProperty Name="EmployeeSalaryIncrementID" ColumnName="EmployeeSalaryIncrementID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPAYEReliefs">
+      <EntityTypeMapping TypeName="dbVisionModel.tblPAYERelief">
+        <MappingFragment StoreEntitySet="tblPAYERelief">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="PAYEReliefType" ColumnName="PAYEReliefType" />
+          <ScalarProperty Name="Mandatory" ColumnName="Mandatory" />
+          <ScalarProperty Name="PAYEReliefName" ColumnName="PAYEReliefName" />
+          <ScalarProperty Name="PAYEReliefID" ColumnName="PAYEReliefID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPAYEReliefRates">
+      <EntityTypeMapping TypeName="dbVisionModel.tblPAYEReliefRate">
+        <MappingFragment StoreEntitySet="tblPAYEReliefRate">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="AnnualLimit" ColumnName="AnnualLimit" />
+          <ScalarProperty Name="MonthlyLimit" ColumnName="MonthlyLimit" />
+          <ScalarProperty Name="WEDate" ColumnName="WEDate" />
+          <ScalarProperty Name="PAYEReliefID" ColumnName="PAYEReliefID" />
+          <ScalarProperty Name="PAYEReliefRateID" ColumnName="PAYEReliefRateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPayrollEmployePAYEReliefs">
+      <EntityTypeMapping TypeName="dbVisionModel.tblPayrollEmployePAYERelief">
+        <MappingFragment StoreEntitySet="tblPayrollEmployePAYERelief">
+          <ScalarProperty Name="PAYEReliefAmt" ColumnName="PAYEReliefAmt" />
+          <ScalarProperty Name="PAYEReliefID" ColumnName="PAYEReliefID" />
+          <ScalarProperty Name="PayrollEmployeeDetailID" ColumnName="PayrollEmployeeDetailID" />
+          <ScalarProperty Name="PayrollEmployeePAYEReliefID" ColumnName="PayrollEmployeePAYEReliefID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAccounts">
+      <EntityTypeMapping TypeName="dbVisionModel.tblAccount">
+        <MappingFragment StoreEntitySet="tblAccount">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="BankNameID" ColumnName="BankNameID" />
+          <ScalarProperty Name="PIN" ColumnName="PIN" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="BankAccountNo" ColumnName="BankAccountNo" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAccountTypes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblAccountType">
+        <MappingFragment StoreEntitySet="tblAccountType">
+          <ScalarProperty Name="AccountTypeName" ColumnName="AccountTypeName" />
+          <ScalarProperty Name="AccountTypeID" ColumnName="AccountTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBankBranches">
+      <EntityTypeMapping TypeName="dbVisionModel.tblBankBranch">
+        <MappingFragment StoreEntitySet="tblBankBranch">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="BankCode" ColumnName="BankCode" />
+          <ScalarProperty Name="SwiftCode" ColumnName="SwiftCode" />
+          <ScalarProperty Name="SortCode" ColumnName="SortCode" />
+          <ScalarProperty Name="PIN" ColumnName="PIN" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="BankNameID" ColumnName="BankNameID" />
+          <ScalarProperty Name="BankBranchName" ColumnName="BankBranchName" />
+          <ScalarProperty Name="BankBranchID" ColumnName="BankBranchID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBankNames">
+      <EntityTypeMapping TypeName="dbVisionModel.tblBankName">
+        <MappingFragment StoreEntitySet="tblBankName">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankNameID" ColumnName="BankNameID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBiometricDevices">
+      <EntityTypeMapping TypeName="dbVisionModel.tblBiometricDevice">
+        <MappingFragment StoreEntitySet="tblBiometricDevice">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PortNo" ColumnName="PortNo" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="MachineNo" ColumnName="MachineNo" />
+          <ScalarProperty Name="BMDTitle" ColumnName="BMDTitle" />
+          <ScalarProperty Name="BMDID" ColumnName="BMDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCities">
+      <EntityTypeMapping TypeName="dbVisionModel.tblCity">
+        <MappingFragment StoreEntitySet="tblCity">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCompanies">
+      <EntityTypeMapping TypeName="dbVisionModel.tblCompany">
+        <MappingFragment StoreEntitySet="tblCompany">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CompanyLogoFileName" ColumnName="CompanyLogoFileName" />
+          <ScalarProperty Name="Bank3_Currency" ColumnName="Bank3_Currency" />
+          <ScalarProperty Name="Bank3_AccountNo" ColumnName="Bank3_AccountNo" />
+          <ScalarProperty Name="Bank3_BranchName" ColumnName="Bank3_BranchName" />
+          <ScalarProperty Name="Bank3_Name" ColumnName="Bank3_Name" />
+          <ScalarProperty Name="Bank2_Currency" ColumnName="Bank2_Currency" />
+          <ScalarProperty Name="Bank2_AccountNo" ColumnName="Bank2_AccountNo" />
+          <ScalarProperty Name="Bank2_BranchName" ColumnName="Bank2_BranchName" />
+          <ScalarProperty Name="Bank2_Name" ColumnName="Bank2_Name" />
+          <ScalarProperty Name="Bank1_Currency" ColumnName="Bank1_Currency" />
+          <ScalarProperty Name="Bank1_AccountNo" ColumnName="Bank1_AccountNo" />
+          <ScalarProperty Name="Bank1_BranchName" ColumnName="Bank1_BranchName" />
+          <ScalarProperty Name="Bank1_Name" ColumnName="Bank1_Name" />
+          <ScalarProperty Name="SaccoRegNo" ColumnName="SaccoRegNo" />
+          <ScalarProperty Name="PFNo" ColumnName="PFNo" />
+          <ScalarProperty Name="NHIFNo" ColumnName="NHIFNo" />
+          <ScalarProperty Name="NSSFNo" ColumnName="NSSFNo" />
+          <ScalarProperty Name="PINNo_RegNo" ColumnName="PINNo_RegNo" />
+          <ScalarProperty Name="IncorporationDate" ColumnName="IncorporationDate" />
+          <ScalarProperty Name="IncorporationNo" ColumnName="IncorporationNo" />
+          <ScalarProperty Name="BusinessStartedFrom" ColumnName="BusinessStartedFrom" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="EMailID" ColumnName="EMailID" />
+          <ScalarProperty Name="MobileNo2" ColumnName="MobileNo2" />
+          <ScalarProperty Name="MobileNo1" ColumnName="MobileNo1" />
+          <ScalarProperty Name="Phone2" ColumnName="Phone2" />
+          <ScalarProperty Name="Phone1" ColumnName="Phone1" />
+          <ScalarProperty Name="PIN" ColumnName="PIN" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCountries">
+      <EntityTypeMapping TypeName="dbVisionModel.tblCountry">
+        <MappingFragment StoreEntitySet="tblCountry">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCurrencies">
+      <EntityTypeMapping TypeName="dbVisionModel.tblCurrency">
+        <MappingFragment StoreEntitySet="tblCurrency">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CurrencySymbole" ColumnName="CurrencySymbole" />
+          <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDataReceiverErrorLogs">
+      <EntityTypeMapping TypeName="dbVisionModel.tblDataReceiverErrorLog">
+        <MappingFragment StoreEntitySet="tblDataReceiverErrorLog">
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="Error" ColumnName="Error" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="DataReceiverErrorLogID" ColumnName="DataReceiverErrorLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployees">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployee">
+        <MappingFragment StoreEntitySet="tblEmployee">
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="TAMissPunch" ColumnName="TAMissPunch" />
+          <ScalarProperty Name="TAWeekEndAttendance" ColumnName="TAWeekEndAttendance" />
+          <ScalarProperty Name="TAWeekendType" ColumnName="TAWeekendType" />
+          <ScalarProperty Name="TANegativeLeave" ColumnName="TANegativeLeave" />
+          <ScalarProperty Name="TAOvertime" ColumnName="TAOvertime" />
+          <ScalarProperty Name="TAEarlyGoing" ColumnName="TAEarlyGoing" />
+          <ScalarProperty Name="TALatenessCharges" ColumnName="TALatenessCharges" />
+          <ScalarProperty Name="TAAttendanceType" ColumnName="TAAttendanceType" />
+          <ScalarProperty Name="IncomeType" ColumnName="IncomeType" />
+          <ScalarProperty Name="BankCurrencyID" ColumnName="BankCurrencyID" />
+          <ScalarProperty Name="BankBranchID" ColumnName="BankBranchID" />
+          <ScalarProperty Name="BankNameID" ColumnName="BankNameID" />
+          <ScalarProperty Name="BankAcNo" ColumnName="BankAcNo" />
+          <ScalarProperty Name="PayCycle" ColumnName="PayCycle" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="PFNo" ColumnName="PFNo" />
+          <ScalarProperty Name="ProvidentFund" ColumnName="ProvidentFund" />
+          <ScalarProperty Name="PINNo" ColumnName="PINNo" />
+          <ScalarProperty Name="NHIFNo" ColumnName="NHIFNo" />
+          <ScalarProperty Name="NSSFNo" ColumnName="NSSFNo" />
+          <ScalarProperty Name="IDNo" ColumnName="IDNo" />
+          <ScalarProperty Name="EmployeeAccountingLedgerID" ColumnName="EmployeeAccountingLedgerID" />
+          <ScalarProperty Name="Multicurrency" ColumnName="Multicurrency" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="MpesaNo" ColumnName="MpesaNo" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="POBoxNO" ColumnName="POBoxNO" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="WorkVisaExpiryDate" ColumnName="WorkVisaExpiryDate" />
+          <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="EmployeeImageFileName" ColumnName="EmployeeImageFileName" />
+          <ScalarProperty Name="EmployeeOtherName" ColumnName="EmployeeOtherName" />
+          <ScalarProperty Name="EmployeeLastName" ColumnName="EmployeeLastName" />
+          <ScalarProperty Name="EmployeeFirstName" ColumnName="EmployeeFirstName" />
+          <ScalarProperty Name="EmployeeLastServiceDetailID" ColumnName="EmployeeLastServiceDetailID" />
+          <ScalarProperty Name="IsEmployeeInService" ColumnName="IsEmployeeInService" />
+          <ScalarProperty Name="TACode" ColumnName="TACode" />
+          <ScalarProperty Name="EmployeeNo" ColumnName="EmployeeNo" />
+          <ScalarProperty Name="EmployeeNoPrefixID" ColumnName="EmployeeNoPrefixID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeAccountingLedgers">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeAccountingLedger">
+        <MappingFragment StoreEntitySet="tblEmployeeAccountingLedger">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmployeeAccountingLedgerName" ColumnName="EmployeeAccountingLedgerName" />
+          <ScalarProperty Name="EmployeeAccountingLedgerID" ColumnName="EmployeeAccountingLedgerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeAttendances">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeAttendance">
+        <MappingFragment StoreEntitySet="tblEmployeeAttendance">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ShiftEndTime" ColumnName="ShiftEndTime" />
+          <ScalarProperty Name="ShiftStartTime" ColumnName="ShiftStartTime" />
+          <ScalarProperty Name="EmployeeShiftID" ColumnName="EmployeeShiftID" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="AttendanceDate" ColumnName="AttendanceDate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeAttendanceID" ColumnName="EmployeeAttendanceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeAttendanceDetails">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeAttendanceDetail">
+        <MappingFragment StoreEntitySet="tblEmployeeAttendanceDetail">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="VerificationMode" ColumnName="VerificationMode" />
+          <ScalarProperty Name="PunchType" ColumnName="PunchType" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="TransactionID" ColumnName="TransactionID" />
+          <ScalarProperty Name="DeviceSerialNo" ColumnName="DeviceSerialNo" />
+          <ScalarProperty Name="TerminalID" ColumnName="TerminalID" />
+          <ScalarProperty Name="TerminalType" ColumnName="TerminalType" />
+          <ScalarProperty Name="LogTimeType" ColumnName="LogTimeType" />
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="EmployeeTACode" ColumnName="EmployeeTACode" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeAttendanceID" ColumnName="EmployeeAttendanceID" />
+          <ScalarProperty Name="EmployeeAttendanceDetailID" ColumnName="EmployeeAttendanceDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeBMDUpdateLogs">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeBMDUpdateLog">
+        <MappingFragment StoreEntitySet="tblEmployeeBMDUpdateLog">
+          <ScalarProperty Name="LastUpdateDT" ColumnName="LastUpdateDT" />
+          <ScalarProperty Name="BMDeviceID" ColumnName="BMDeviceID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeBMDUpdateLogID" ColumnName="EmployeeBMDUpdateLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeDepartments">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeDepartment">
+        <MappingFragment StoreEntitySet="tblEmployeeDepartment">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmployeeDepartmentName" ColumnName="EmployeeDepartmentName" />
+          <ScalarProperty Name="EmployeeDepartmentID" ColumnName="EmployeeDepartmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeDesignations">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeDesignation">
+        <MappingFragment StoreEntitySet="tblEmployeeDesignation">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmployeeDesignationName" ColumnName="EmployeeDesignationName" />
+          <ScalarProperty Name="EmployeeDesignationID" ColumnName="EmployeeDesignationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeDocuments">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeDocument">
+        <MappingFragment StoreEntitySet="tblEmployeeDocument">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="EmployeeDocumentID" ColumnName="EmployeeDocumentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeEarningDeductions">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeEarningDeduction">
+        <MappingFragment StoreEntitySet="tblEmployeeEarningDeduction">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ValueType" ColumnName="ValueType" />
+          <ScalarProperty Name="Recurring" ColumnName="Recurring" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="EarningDeductionType" ColumnName="EarningDeductionType" />
+          <ScalarProperty Name="EmployeeEarningDeductionName" ColumnName="EmployeeEarningDeductionName" />
+          <ScalarProperty Name="EmployeeEarningDeductionNo" ColumnName="EmployeeEarningDeductionNo" />
+          <ScalarProperty Name="EmployeeEarningDeductionID" ColumnName="EmployeeEarningDeductionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeFamilies">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeFamily">
+        <MappingFragment StoreEntitySet="tblEmployeeFamily">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Beneficiary" ColumnName="Beneficiary" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="POBoxNo" ColumnName="POBoxNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Relationship" ColumnName="Relationship" />
+          <ScalarProperty Name="EmployeeFamilyID" ColumnName="EmployeeFamilyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeLeaveOpeningBalances">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeLeaveOpeningBalance">
+        <MappingFragment StoreEntitySet="tblEmployeeLeaveOpeningBalance">
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LeaveOpeningBalance" ColumnName="LeaveOpeningBalance" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="EmployeeServiceDetailID" ColumnName="EmployeeServiceDetailID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeLeaveOpeningBalanceID" ColumnName="EmployeeLeaveOpeningBalanceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeListFormats">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeListFormat">
+        <MappingFragment StoreEntitySet="tblEmployeeListFormat">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="GridFromat" ColumnName="GridFromat" />
+          <ScalarProperty Name="EmployeeListFormatName" ColumnName="EmployeeListFormatName" />
+          <ScalarProperty Name="EmployeeListFormatID" ColumnName="EmployeeListFormatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeNoPrefixes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeNoPrefix">
+        <MappingFragment StoreEntitySet="tblEmployeeNoPrefix">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmployeeNoPrefixName" ColumnName="EmployeeNoPrefixName" />
+          <ScalarProperty Name="EmployeeNoPrefixID" ColumnName="EmployeeNoPrefixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeRestDays">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeRestDay">
+        <MappingFragment StoreEntitySet="tblEmployeeRestDay">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="RestDate" ColumnName="RestDate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeRestDayID" ColumnName="EmployeeRestDayID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeServiceDetails">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeServiceDetail">
+        <MappingFragment StoreEntitySet="tblEmployeeServiceDetail">
+          <ScalarProperty Name="TerminationReason" ColumnName="TerminationReason" />
+          <ScalarProperty Name="TerminationTypeID" ColumnName="TerminationTypeID" />
+          <ScalarProperty Name="TerminationDate" ColumnName="TerminationDate" />
+          <ScalarProperty Name="ReinstatementReason" ColumnName="ReinstatementReason" />
+          <ScalarProperty Name="EmployeeShiftID" ColumnName="EmployeeShiftID" />
+          <ScalarProperty Name="EmployeeShiftType" ColumnName="EmployeeShiftType" />
+          <ScalarProperty Name="WeekendAllowance" ColumnName="WeekendAllowance" />
+          <ScalarProperty Name="HousingAllowance" ColumnName="HousingAllowance" />
+          <ScalarProperty Name="BasicSalary" ColumnName="BasicSalary" />
+          <ScalarProperty Name="DailyRate" ColumnName="DailyRate" />
+          <ScalarProperty Name="MinimumWageCategoryID" ColumnName="MinimumWageCategoryID" />
+          <ScalarProperty Name="EmployeeWIBAClassID" ColumnName="EmployeeWIBAClassID" />
+          <ScalarProperty Name="EmployeeDesignationID" ColumnName="EmployeeDesignationID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="EmployeeDepartmentID" ColumnName="EmployeeDepartmentID" />
+          <ScalarProperty Name="ContractExpiryDate" ColumnName="ContractExpiryDate" />
+          <ScalarProperty Name="EmploymentType" ColumnName="EmploymentType" />
+          <ScalarProperty Name="EmploymentEffectiveDate" ColumnName="EmploymentEffectiveDate" />
+          <ScalarProperty Name="EmployeementStatus" ColumnName="EmployeementStatus" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeServiceDetailID" ColumnName="EmployeeServiceDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeShifts">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeShift">
+        <MappingFragment StoreEntitySet="tblEmployeeShift">
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="NofWorkingHours" ColumnName="NofWorkingHours" />
+          <ScalarProperty Name="ThirdBreakEndTime" ColumnName="ThirdBreakEndTime" />
+          <ScalarProperty Name="ThirdBreakStartTime" ColumnName="ThirdBreakStartTime" />
+          <ScalarProperty Name="SecondBreakEndTime" ColumnName="SecondBreakEndTime" />
+          <ScalarProperty Name="SecondBreakStartTime" ColumnName="SecondBreakStartTime" />
+          <ScalarProperty Name="FirstBreakEndTime" ColumnName="FirstBreakEndTime" />
+          <ScalarProperty Name="FirstBreakStartTime" ColumnName="FirstBreakStartTime" />
+          <ScalarProperty Name="ShiftType" ColumnName="ShiftType" />
+          <ScalarProperty Name="ShiftEndTime" ColumnName="ShiftEndTime" />
+          <ScalarProperty Name="ShiftStartTime" ColumnName="ShiftStartTime" />
+          <ScalarProperty Name="EmployeeShiftName" ColumnName="EmployeeShiftName" />
+          <ScalarProperty Name="EmployeeShiftID" ColumnName="EmployeeShiftID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeShiftAllocations">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeShiftAllocation">
+        <MappingFragment StoreEntitySet="tblEmployeeShiftAllocation">
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="WEDateFrom" ColumnName="WEDateFrom" />
+          <ScalarProperty Name="EmployeeShiftID" ColumnName="EmployeeShiftID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeShiftAllocationID" ColumnName="EmployeeShiftAllocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeWIBAClasses">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeWIBAClass">
+        <MappingFragment StoreEntitySet="tblEmployeeWIBAClass">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmployeeWIBAClassName" ColumnName="EmployeeWIBAClassName" />
+          <ScalarProperty Name="EmployeeWIBAClassID" ColumnName="EmployeeWIBAClassID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployeeWIBAClassRates">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployeeWIBAClassRate">
+        <MappingFragment StoreEntitySet="tblEmployeeWIBAClassRate">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="EmployeeWIBAClassRate" ColumnName="EmployeeWIBAClassRate" />
+          <ScalarProperty Name="WEDate" ColumnName="WEDate" />
+          <ScalarProperty Name="EmployeeWIBAClassID" ColumnName="EmployeeWIBAClassID" />
+          <ScalarProperty Name="EmployeeWIBAClassRateID" ColumnName="EmployeeWIBAClassRateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployementTerminationCauses">
+      <EntityTypeMapping TypeName="dbVisionModel.tblEmployementTerminationCause">
+        <MappingFragment StoreEntitySet="tblEmployementTerminationCause">
+          <ScalarProperty Name="EmployementTerminationCauseName" ColumnName="EmployementTerminationCauseName" />
+          <ScalarProperty Name="EmployementTerminationCauseID" ColumnName="EmployementTerminationCauseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFinPeriods">
+      <EntityTypeMapping TypeName="dbVisionModel.tblFinPeriod">
+        <MappingFragment StoreEntitySet="tblFinPeriod">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="FinPeriodTo" ColumnName="FinPeriodTo" />
+          <ScalarProperty Name="FinPeriodFrom" ColumnName="FinPeriodFrom" />
+          <ScalarProperty Name="FinPeriodName" ColumnName="FinPeriodName" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGridLayouts">
+      <EntityTypeMapping TypeName="dbVisionModel.tblGridLayout">
+        <MappingFragment StoreEntitySet="tblGridLayouts">
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="FinPerID" ColumnName="FinPerID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="PrintOptions" ColumnName="PrintOptions" />
+          <ScalarProperty Name="Layout" ColumnName="Layout" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="GridLayoutID" ColumnName="GridLayoutID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHolidays">
+      <EntityTypeMapping TypeName="dbVisionModel.tblHoliday">
+        <MappingFragment StoreEntitySet="tblHoliday">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="TotalDays" ColumnName="TotalDays" />
+          <ScalarProperty Name="RepeatOnSameDate" ColumnName="RepeatOnSameDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="HolidayType" ColumnName="HolidayType" />
+          <ScalarProperty Name="HolidayName" ColumnName="HolidayName" />
+          <ScalarProperty Name="HolidayID" ColumnName="HolidayID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeaveAdjustments">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLeaveAdjustment">
+        <MappingFragment StoreEntitySet="tblLeaveAdjustment">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="ApplicationDocumentFileName" ColumnName="ApplicationDocumentFileName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="NofLeaves" ColumnName="NofLeaves" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LeaveAdjustmentDate" ColumnName="LeaveAdjustmentDate" />
+          <ScalarProperty Name="LeaveAdjustmentNo" ColumnName="LeaveAdjustmentNo" />
+          <ScalarProperty Name="LeaveAdjustmentNoPrefixID" ColumnName="LeaveAdjustmentNoPrefixID" />
+          <ScalarProperty Name="LeaveAdjustmentID" ColumnName="LeaveAdjustmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeaveAdjustmentNoPrefixes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLeaveAdjustmentNoPrefix">
+        <MappingFragment StoreEntitySet="tblLeaveAdjustmentNoPrefix">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LeaveAdjustmentNoPrefixName" ColumnName="LeaveAdjustmentNoPrefixName" />
+          <ScalarProperty Name="LeaveAdjustmentNoPrefixID" ColumnName="LeaveAdjustmentNoPrefixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeaveApplications">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLeaveApplication">
+        <MappingFragment StoreEntitySet="tblLeaveApplication">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="ApplicationDocumentFileName" ColumnName="ApplicationDocumentFileName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="NofLeaves" ColumnName="NofLeaves" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LeaveApplicationDate" ColumnName="LeaveApplicationDate" />
+          <ScalarProperty Name="LeaveApplicationNo" ColumnName="LeaveApplicationNo" />
+          <ScalarProperty Name="LeaveApplicationNoPrefixID" ColumnName="LeaveApplicationNoPrefixID" />
+          <ScalarProperty Name="LeaveApplicationID" ColumnName="LeaveApplicationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeaveApplicationDayDetails">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLeaveApplicationDayDetail">
+        <MappingFragment StoreEntitySet="tblLeaveApplicationDayDetail">
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="LeaveDate" ColumnName="LeaveDate" />
+          <ScalarProperty Name="LeaveApplicationID" ColumnName="LeaveApplicationID" />
+          <ScalarProperty Name="LeaveApplicationDayDetailID" ColumnName="LeaveApplicationDayDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeaveApplicationNoPrefixes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLeaveApplicationNoPrefix">
+        <MappingFragment StoreEntitySet="tblLeaveApplicationNoPrefix">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LeaveApplicationNoPrefixName" ColumnName="LeaveApplicationNoPrefixName" />
+          <ScalarProperty Name="LeaveApplicationNoPrefixID" ColumnName="LeaveApplicationNoPrefixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeaveEncashments">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLeaveEncashment">
+        <MappingFragment StoreEntitySet="tblLeaveEncashment">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="ApplicationDocumentFileName" ColumnName="ApplicationDocumentFileName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="NofLeaves" ColumnName="NofLeaves" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LeaveEncashmentDate" ColumnName="LeaveEncashmentDate" />
+          <ScalarProperty Name="LeaveEncashmentNo" ColumnName="LeaveEncashmentNo" />
+          <ScalarProperty Name="LeaveEncashmentNoPrefixID" ColumnName="LeaveEncashmentNoPrefixID" />
+          <ScalarProperty Name="LeaveEncashmentID" ColumnName="LeaveEncashmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeaveEncashmentNoPrefixes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLeaveEncashmentNoPrefix">
+        <MappingFragment StoreEntitySet="tblLeaveEncashmentNoPrefix">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LeaveEncashmentNoPrefixName" ColumnName="LeaveEncashmentNoPrefixName" />
+          <ScalarProperty Name="LeaveEncashmentNoPrefixID" ColumnName="LeaveEncashmentNoPrefixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeaveTypes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLeaveType">
+        <MappingFragment StoreEntitySet="tblLeaveType">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Distribute" ColumnName="Distribute" />
+          <ScalarProperty Name="IncludePublicHoliday" ColumnName="IncludePublicHoliday" />
+          <ScalarProperty Name="IncludeWeekend" ColumnName="IncludeWeekend" />
+          <ScalarProperty Name="CanCarryForward" ColumnName="CanCarryForward" />
+          <ScalarProperty Name="IsEncashable" ColumnName="IsEncashable" />
+          <ScalarProperty Name="ApplicableTo" ColumnName="ApplicableTo" />
+          <ScalarProperty Name="AnnualEntitledDays" ColumnName="AnnualEntitledDays" />
+          <ScalarProperty Name="LeaveTypeName" ColumnName="LeaveTypeName" />
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLoanAdjustments">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLoanAdjustment">
+        <MappingFragment StoreEntitySet="tblLoanAdjustment">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="ApplicationDocumentFileName" ColumnName="ApplicationDocumentFileName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ReasonForLoanAdjustment" ColumnName="ReasonForLoanAdjustment" />
+          <ScalarProperty Name="CompanyBankAccountID" ColumnName="CompanyBankAccountID" />
+          <ScalarProperty Name="DateOfDeposite" ColumnName="DateOfDeposite" />
+          <ScalarProperty Name="PaymentModeID" ColumnName="PaymentModeID" />
+          <ScalarProperty Name="LoanAdjustmentAmount" ColumnName="LoanAdjustmentAmount" />
+          <ScalarProperty Name="LoanApplicationID" ColumnName="LoanApplicationID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LoanAdjustmentDate" ColumnName="LoanAdjustmentDate" />
+          <ScalarProperty Name="LoanAdjustmentNo" ColumnName="LoanAdjustmentNo" />
+          <ScalarProperty Name="LoanAdjustmentNoPrefixID" ColumnName="LoanAdjustmentNoPrefixID" />
+          <ScalarProperty Name="LoanAdjustmentID" ColumnName="LoanAdjustmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLoanAdjustmentNoPrefixes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLoanAdjustmentNoPrefix">
+        <MappingFragment StoreEntitySet="tblLoanAdjustmentNoPrefix">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LoanAdjustmentNoPrefixName" ColumnName="LoanAdjustmentNoPrefixName" />
+          <ScalarProperty Name="LoanAdjustmentNoPrefixID" ColumnName="LoanAdjustmentNoPrefixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLoanApplications">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLoanApplication">
+        <MappingFragment StoreEntitySet="tblLoanApplication">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="ApplicationDocumentFileName" ColumnName="ApplicationDocumentFileName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="LoanPurpose" ColumnName="LoanPurpose" />
+          <ScalarProperty Name="InstallmentAmount" ColumnName="InstallmentAmount" />
+          <ScalarProperty Name="NofInstallment" ColumnName="NofInstallment" />
+          <ScalarProperty Name="YearTo" ColumnName="YearTo" />
+          <ScalarProperty Name="MonthTo" ColumnName="MonthTo" />
+          <ScalarProperty Name="YearFrom" ColumnName="YearFrom" />
+          <ScalarProperty Name="MonthFrom" ColumnName="MonthFrom" />
+          <ScalarProperty Name="LoanAmount" ColumnName="LoanAmount" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="LoanApplicationNo" ColumnName="LoanApplicationNo" />
+          <ScalarProperty Name="LoanApplicationNoPrefixID" ColumnName="LoanApplicationNoPrefixID" />
+          <ScalarProperty Name="LoanApplicationDate" ColumnName="LoanApplicationDate" />
+          <ScalarProperty Name="LoanApplicationID" ColumnName="LoanApplicationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLoanApplicationNoPrefixes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLoanApplicationNoPrefix">
+        <MappingFragment StoreEntitySet="tblLoanApplicationNoPrefix">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LoanApplicationNoPrefixName" ColumnName="LoanApplicationNoPrefixName" />
+          <ScalarProperty Name="LoanApplicationNoPrefixID" ColumnName="LoanApplicationNoPrefixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLocations">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLocation">
+        <MappingFragment StoreEntitySet="tblLocation">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="GracePeriod" ColumnName="GracePeriod" />
+          <ScalarProperty Name="LocationTypeID" ColumnName="LocationTypeID" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLocationWeekendSettings">
+      <EntityTypeMapping TypeName="dbVisionModel.tblLocationWeekendSetting">
+        <MappingFragment StoreEntitySet="tblLocationWeekendSetting">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="Sunday" ColumnName="Sunday" />
+          <ScalarProperty Name="Saturday" ColumnName="Saturday" />
+          <ScalarProperty Name="Friday" ColumnName="Friday" />
+          <ScalarProperty Name="Thursday" ColumnName="Thursday" />
+          <ScalarProperty Name="Wednesday" ColumnName="Wednesday" />
+          <ScalarProperty Name="Tuesday" ColumnName="Tuesday" />
+          <ScalarProperty Name="Monday" ColumnName="Monday" />
+          <ScalarProperty Name="WEDateTo" ColumnName="WEDateTo" />
+          <ScalarProperty Name="WEDateFrom" ColumnName="WEDateFrom" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="LocationWeekendSetting" ColumnName="LocationWeekendSetting" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMinimumWageCategories">
+      <EntityTypeMapping TypeName="dbVisionModel.tblMinimumWageCategory">
+        <MappingFragment StoreEntitySet="tblMinimumWageCategory">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="ApplyOn" ColumnName="ApplyOn" />
+          <ScalarProperty Name="MinimumWageCategoryName" ColumnName="MinimumWageCategoryName" />
+          <ScalarProperty Name="MinimumWageCategoryID" ColumnName="MinimumWageCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMinimumWageRates">
+      <EntityTypeMapping TypeName="dbVisionModel.tblMinimumWageRate">
+        <MappingFragment StoreEntitySet="tblMinimumWageRate">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="WEDateTo" ColumnName="WEDateTo" />
+          <ScalarProperty Name="WEDateFrom" ColumnName="WEDateFrom" />
+          <ScalarProperty Name="MinimumWageCategoryRuralRate" ColumnName="MinimumWageCategoryRuralRate" />
+          <ScalarProperty Name="MinimumWageCategoryUrbanRate" ColumnName="MinimumWageCategoryUrbanRate" />
+          <ScalarProperty Name="MinimumWageCategoryID" ColumnName="MinimumWageCategoryID" />
+          <ScalarProperty Name="MinimumWageRateID" ColumnName="MinimumWageRateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNonCashBenefits">
+      <EntityTypeMapping TypeName="dbVisionModel.tblNonCashBenefit">
+        <MappingFragment StoreEntitySet="tblNonCashBenefit">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="VehicleCostKRAPerc" ColumnName="VehicleCostKRAPerc" />
+          <ScalarProperty Name="EngineCCKRAValue" ColumnName="EngineCCKRAValue" />
+          <ScalarProperty Name="VehicleEnginePower" ColumnName="VehicleEnginePower" />
+          <ScalarProperty Name="VehicleModel" ColumnName="VehicleModel" />
+          <ScalarProperty Name="VehicleMake" ColumnName="VehicleMake" />
+          <ScalarProperty Name="VehicleRegistrationNo" ColumnName="VehicleRegistrationNo" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="CostValue" ColumnName="CostValue" />
+          <ScalarProperty Name="CostValueType" ColumnName="CostValueType" />
+          <ScalarProperty Name="KRAValue" ColumnName="KRAValue" />
+          <ScalarProperty Name="KRAValueType" ColumnName="KRAValueType" />
+          <ScalarProperty Name="NonCashBenefitType" ColumnName="NonCashBenefitType" />
+          <ScalarProperty Name="NonCashBenefitName" ColumnName="NonCashBenefitName" />
+          <ScalarProperty Name="NonCashBenefitID" ColumnName="NonCashBenefitID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPayrolls">
+      <EntityTypeMapping TypeName="dbVisionModel.tblPayroll">
+        <MappingFragment StoreEntitySet="tblPayroll">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="PayrollID" ColumnName="PayrollID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPayrollEmployeeDetails">
+      <EntityTypeMapping TypeName="dbVisionModel.tblPayrollEmployeeDetail">
+        <MappingFragment StoreEntitySet="tblPayrollEmployeeDetail">
+          <ScalarProperty Name="PFValue" ColumnName="PFValue" />
+          <ScalarProperty Name="NSSFValue" ColumnName="NSSFValue" />
+          <ScalarProperty Name="NHIFValue" ColumnName="NHIFValue" />
+          <ScalarProperty Name="PAYEValue" ColumnName="PAYEValue" />
+          <ScalarProperty Name="NetTaxableIncome" ColumnName="NetTaxableIncome" />
+          <ScalarProperty Name="TaxableIncome" ColumnName="TaxableIncome" />
+          <ScalarProperty Name="TotalTaxableEarnings" ColumnName="TotalTaxableEarnings" />
+          <ScalarProperty Name="GrossIncome" ColumnName="GrossIncome" />
+          <ScalarProperty Name="HRAAllowance" ColumnName="HRAAllowance" />
+          <ScalarProperty Name="BasicIncome" ColumnName="BasicIncome" />
+          <ScalarProperty Name="ApplyNSSF" ColumnName="ApplyNSSF" />
+          <ScalarProperty Name="ApplyNHIF" ColumnName="ApplyNHIF" />
+          <ScalarProperty Name="Vehicle_NoncashBenefitID" ColumnName="Vehicle_NoncashBenefitID" />
+          <ScalarProperty Name="LoanInstallmentAmount" ColumnName="LoanInstallmentAmount" />
+          <ScalarProperty Name="WeekendWorkedDays" ColumnName="WeekendWorkedDays" />
+          <ScalarProperty Name="LeaveEncashmentDays" ColumnName="LeaveEncashmentDays" />
+          <ScalarProperty Name="NoticePayDays" ColumnName="NoticePayDays" />
+          <ScalarProperty Name="LateDays" ColumnName="LateDays" />
+          <ScalarProperty Name="MissedPunchDays" ColumnName="MissedPunchDays" />
+          <ScalarProperty Name="AbsentDays" ColumnName="AbsentDays" />
+          <ScalarProperty Name="DoubleOvertimeHours" ColumnName="DoubleOvertimeHours" />
+          <ScalarProperty Name="NormalOvertimeHours" ColumnName="NormalOvertimeHours" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="PayrollID" ColumnName="PayrollID" />
+          <ScalarProperty Name="PayrollEmployeeDetailID" ColumnName="PayrollEmployeeDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPayrollEmployeeEarningsDeductions">
+      <EntityTypeMapping TypeName="dbVisionModel.tblPayrollEmployeeEarningsDeduction">
+        <MappingFragment StoreEntitySet="tblPayrollEmployeeEarningsDeduction">
+          <ScalarProperty Name="ValueType" ColumnName="ValueType" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="EarningsDeductionID" ColumnName="EarningsDeductionID" />
+          <ScalarProperty Name="PayrollEmployeeDetailID" ColumnName="PayrollEmployeeDetailID" />
+          <ScalarProperty Name="PayrollEmployeeEarningsDeductionID" ColumnName="PayrollEmployeeEarningsDeductionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPayrollEmployeeNonCashBenefits">
+      <EntityTypeMapping TypeName="dbVisionModel.tblPayrollEmployeeNonCashBenefit">
+        <MappingFragment StoreEntitySet="tblPayrollEmployeeNonCashBenefit">
+          <ScalarProperty Name="KRAValueCalculatedOnAmt" ColumnName="KRAValueCalculatedOnAmt" />
+          <ScalarProperty Name="KRAValue" ColumnName="KRAValue" />
+          <ScalarProperty Name="KRAPerc" ColumnName="KRAPerc" />
+          <ScalarProperty Name="CostValue" ColumnName="CostValue" />
+          <ScalarProperty Name="Recurring" ColumnName="Recurring" />
+          <ScalarProperty Name="NonCashBenefitID" ColumnName="NonCashBenefitID" />
+          <ScalarProperty Name="PayrollEmployeeDetailID" ColumnName="PayrollEmployeeDetailID" />
+          <ScalarProperty Name="PayrollEmployeeNonCashBenefitID" ColumnName="PayrollEmployeeNonCashBenefitID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRecordStates">
+      <EntityTypeMapping TypeName="dbVisionModel.tblRecordState">
+        <MappingFragment StoreEntitySet="tblRecordState">
+          <ScalarProperty Name="RecordStateName" ColumnName="RecordStateName" />
+          <ScalarProperty Name="RecordStateID" ColumnName="RecordStateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSafariApplications">
+      <EntityTypeMapping TypeName="dbVisionModel.tblSafariApplication">
+        <MappingFragment StoreEntitySet="tblSafariApplication">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="ApplicationDocumentFileName" ColumnName="ApplicationDocumentFileName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="NofSafariDays" ColumnName="NofSafariDays" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="SafariApplicationDate" ColumnName="SafariApplicationDate" />
+          <ScalarProperty Name="SafariApplicationNo" ColumnName="SafariApplicationNo" />
+          <ScalarProperty Name="SafariApplicationNoPrefixID" ColumnName="SafariApplicationNoPrefixID" />
+          <ScalarProperty Name="SafariApplicationID" ColumnName="SafariApplicationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSafariApplicationDayDetails">
+      <EntityTypeMapping TypeName="dbVisionModel.tblSafariApplicationDayDetail">
+        <MappingFragment StoreEntitySet="tblSafariApplicationDayDetail">
+          <ScalarProperty Name="SafariType" ColumnName="SafariType" />
+          <ScalarProperty Name="SafariDate" ColumnName="SafariDate" />
+          <ScalarProperty Name="SafariApplicationID" ColumnName="SafariApplicationID" />
+          <ScalarProperty Name="SafariApplicationDayDetailID" ColumnName="SafariApplicationDayDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSafariApplicationNoPrefixes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblSafariApplicationNoPrefix">
+        <MappingFragment StoreEntitySet="tblSafariApplicationNoPrefix">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="SafariApplicationNoPrefixName" ColumnName="SafariApplicationNoPrefixName" />
+          <ScalarProperty Name="SafariApplicationNoPrefixID" ColumnName="SafariApplicationNoPrefixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSettingL0">
+      <EntityTypeMapping TypeName="dbVisionModel.tblSettingL0">
+        <MappingFragment StoreEntitySet="tblSettingL0">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="SettingValueDecimal" ColumnName="SettingValueDecimal" />
+          <ScalarProperty Name="SettingValueBoolean" ColumnName="SettingValueBoolean" />
+          <ScalarProperty Name="SettingValueDateTime" ColumnName="SettingValueDateTime" />
+          <ScalarProperty Name="SettingValueInt" ColumnName="SettingValueInt" />
+          <ScalarProperty Name="SettingValueLong" ColumnName="SettingValueLong" />
+          <ScalarProperty Name="SettingValueVC" ColumnName="SettingValueVC" />
+          <ScalarProperty Name="SettingValueType" ColumnName="SettingValueType" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingL0ID" ColumnName="SettingL0ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSettingMasterL1">
+      <EntityTypeMapping TypeName="dbVisionModel.tblSettingMasterL1">
+        <MappingFragment StoreEntitySet="tblSettingMasterL1">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="SettingValueDecimal" ColumnName="SettingValueDecimal" />
+          <ScalarProperty Name="SettingValueBoolean" ColumnName="SettingValueBoolean" />
+          <ScalarProperty Name="SettingValueDateTime" ColumnName="SettingValueDateTime" />
+          <ScalarProperty Name="SettingValueInt" ColumnName="SettingValueInt" />
+          <ScalarProperty Name="SettingValueLong" ColumnName="SettingValueLong" />
+          <ScalarProperty Name="SettingValueVC" ColumnName="SettingValueVC" />
+          <ScalarProperty Name="SettingValueType" ColumnName="SettingValueType" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingL1MasterID" ColumnName="SettingL1MasterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSettingsL1">
+      <EntityTypeMapping TypeName="dbVisionModel.tblSettingsL1">
+        <MappingFragment StoreEntitySet="tblSettingsL1">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="SettingValueDecimal" ColumnName="SettingValueDecimal" />
+          <ScalarProperty Name="SettingValueBoolean" ColumnName="SettingValueBoolean" />
+          <ScalarProperty Name="SettingValueDateTime" ColumnName="SettingValueDateTime" />
+          <ScalarProperty Name="SettingValueInt" ColumnName="SettingValueInt" />
+          <ScalarProperty Name="SettingValueLong" ColumnName="SettingValueLong" />
+          <ScalarProperty Name="SettingValueVC" ColumnName="SettingValueVC" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingL1ID" ColumnName="SettingL1ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSMSLogs">
+      <EntityTypeMapping TypeName="dbVisionModel.tblSMSLog">
+        <MappingFragment StoreEntitySet="tblSMSLog">
+          <ScalarProperty Name="SMSAPIResponse" ColumnName="SMSAPIResponse" />
+          <ScalarProperty Name="SMSID" ColumnName="SMSID" />
+          <ScalarProperty Name="Error" ColumnName="Error" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SenderID" ColumnName="SenderID" />
+          <ScalarProperty Name="DeliveryStatus" ColumnName="DeliveryStatus" />
+          <ScalarProperty Name="SendDateTime" ColumnName="SendDateTime" />
+          <ScalarProperty Name="SMSText" ColumnName="SMSText" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="OptionName" ColumnName="OptionName" />
+          <ScalarProperty Name="SMSLogID" ColumnName="SMSLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStates">
+      <EntityTypeMapping TypeName="dbVisionModel.tblState">
+        <MappingFragment StoreEntitySet="tblState">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="StateShortName" ColumnName="StateShortName" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTAApprovals">
+      <EntityTypeMapping TypeName="dbVisionModel.tblTAApproval">
+        <MappingFragment StoreEntitySet="tblTAApproval">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="FinPeriodID" ColumnName="FinPeriodID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="ApplicationDocumentFileName" ColumnName="ApplicationDocumentFileName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ApprovedHours" ColumnName="ApprovedHours" />
+          <ScalarProperty Name="ApprovalTypeID" ColumnName="ApprovalTypeID" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="TAApprovalDate" ColumnName="TAApprovalDate" />
+          <ScalarProperty Name="TAApprovalNo" ColumnName="TAApprovalNo" />
+          <ScalarProperty Name="TAApprovalNoPrefixID" ColumnName="TAApprovalNoPrefixID" />
+          <ScalarProperty Name="TAApprovalID" ColumnName="TAApprovalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTAApprovalNoPrefixes">
+      <EntityTypeMapping TypeName="dbVisionModel.tblTAApprovalNoPrefix">
+        <MappingFragment StoreEntitySet="tblTAApprovalNoPrefix">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="TAApprovalNoPrefixName" ColumnName="TAApprovalNoPrefixName" />
+          <ScalarProperty Name="TAApprovalNoPrefixID" ColumnName="TAApprovalNoPrefixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTaxSlabDetails">
+      <EntityTypeMapping TypeName="dbVisionModel.tblTaxSlabDetail">
+        <MappingFragment StoreEntitySet="tblTaxSlabDetail">
+          <ScalarProperty Name="MaxTaxValueEmployer" ColumnName="MaxTaxValueEmployer" />
+          <ScalarProperty Name="TaxPercEmployer" ColumnName="TaxPercEmployer" />
+          <ScalarProperty Name="TaxValueEmployer" ColumnName="TaxValueEmployer" />
+          <ScalarProperty Name="MaxTaxValueEmployee" ColumnName="MaxTaxValueEmployee" />
+          <ScalarProperty Name="TaxPercEmployee" ColumnName="TaxPercEmployee" />
+          <ScalarProperty Name="TaxValueEmployee" ColumnName="TaxValueEmployee" />
+          <ScalarProperty Name="TaxableValueTo" ColumnName="TaxableValueTo" />
+          <ScalarProperty Name="TaxableValueFrom" ColumnName="TaxableValueFrom" />
+          <ScalarProperty Name="IncomeType" ColumnName="IncomeType" />
+          <ScalarProperty Name="TaxSlabHeaderID" ColumnName="TaxSlabHeaderID" />
+          <ScalarProperty Name="TaxSlabDetailID" ColumnName="TaxSlabDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTaxSlabHeaders">
+      <EntityTypeMapping TypeName="dbVisionModel.tblTaxSlabHeader">
+        <MappingFragment StoreEntitySet="tblTaxSlabHeader">
+          <ScalarProperty Name="reid" ColumnName="reid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="TaxTypeID" ColumnName="TaxTypeID" />
+          <ScalarProperty Name="WEDate" ColumnName="WEDate" />
+          <ScalarProperty Name="TaxSlabHeaderID" ColumnName="TaxSlabHeaderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="dbVisionModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="EMailID" ColumnName="EMailID" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="SuperAdmin" ColumnName="SuperAdmin" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserGroups">
+      <EntityTypeMapping TypeName="dbVisionModel.tblUserGroup">
+        <MappingFragment StoreEntitySet="tblUserGroup">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="SuperAdminGroup" ColumnName="SuperAdminGroup" />
+          <ScalarProperty Name="UserGroupName" ColumnName="UserGroupName" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserGroupPerimissions">
+      <EntityTypeMapping TypeName="dbVisionModel.tblUserGroupPerimission">
+        <MappingFragment StoreEntitySet="tblUserGroupPerimission">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="CanUnAuthorize" ColumnName="CanUnAuthorize" />
+          <ScalarProperty Name="CanAuthorize" ColumnName="CanAuthorize" />
+          <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+          <ScalarProperty Name="CanEdit" ColumnName="CanEdit" />
+          <ScalarProperty Name="CanAdd" ColumnName="CanAdd" />
+          <ScalarProperty Name="CanRead" ColumnName="CanRead" />
+          <ScalarProperty Name="MenuOptionID" ColumnName="MenuOptionID" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="UserGroupPermissionID" ColumnName="UserGroupPermissionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserGroupPermissionOnCompanies">
+      <EntityTypeMapping TypeName="dbVisionModel.tblUserGroupPermissionOnCompany">
+        <MappingFragment StoreEntitySet="tblUserGroupPermissionOnCompany">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="UserGroupPersmissionOnCompanyID" ColumnName="UserGroupPersmissionOnCompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserGroupPermissionOnLocations">
+      <EntityTypeMapping TypeName="dbVisionModel.tblUserGroupPermissionOnLocation">
+        <MappingFragment StoreEntitySet="tblUserGroupPermissionOnLocation">
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="UserGroupPermissionOnLocationID" ColumnName="UserGroupPermissionOnLocationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPayrollMonths">
+      <EntityTypeMapping TypeName="dbVisionModel.tblPayrollMonth">
+        <MappingFragment StoreEntitySet="tblPayrollMonth">
+          <ScalarProperty Name="reuid" ColumnName="reuid" />
+          <ScalarProperty Name="redt" ColumnName="redt" />
+          <ScalarProperty Name="rcuid" ColumnName="rcuid" />
+          <ScalarProperty Name="rcdt" ColumnName="rcdt" />
+          <ScalarProperty Name="rstate" ColumnName="rstate" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="PayrollMonthName" ColumnName="PayrollMonthName" />
+          <ScalarProperty Name="PayrollMonthEndDate" ColumnName="PayrollMonthEndDate" />
+          <ScalarProperty Name="PayrollMonthStartDate" ColumnName="PayrollMonthStartDate" />
+          <ScalarProperty Name="PayrollMonthID" ColumnName="PayrollMonthID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

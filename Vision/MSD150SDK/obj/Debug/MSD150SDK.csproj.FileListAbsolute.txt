@@ -1,0 +1,11 @@
+D:\Source Code\Vision\Vision\MSD150SDK\bin\Debug\MSD150SDK.dll
+D:\Source Code\Vision\Vision\MSD150SDK\bin\Debug\MSD150SDK.pdb
+D:\Source Code\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.dll
+D:\Source Code\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.pdb
+D:\Source Code\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.csprojResolveAssemblyReference.cache
+F:\Vision\Vision\Vision\MSD150SDK\bin\Debug\MSD150SDK.dll
+F:\Vision\Vision\Vision\MSD150SDK\bin\Debug\MSD150SDK.pdb
+F:\Vision\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.csprojAssemblyReference.cache
+F:\Vision\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.csproj.CoreCompileInputs.cache
+F:\Vision\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.dll
+F:\Vision\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.pdb

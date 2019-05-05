@@ -1,0 +1,3422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbVisionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblAccount">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccountType" Type="tinyint" Nullable="false" />
+    <Property Name="BankAccountNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address3" Type="nvarchar" MaxLength="100" />
+    <Property Name="CityID" Type="int" />
+    <Property Name="PIN" Type="nvarchar" MaxLength="10" />
+    <Property Name="BankNameID" Type="int" />
+    <Property Name="BranchID" Type="int" />
+    <Property Name="CurrencyID" Type="int" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblAccountType">
+    <Key>
+      <PropertyRef Name="AccountTypeID" />
+    </Key>
+    <Property Name="AccountTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="AccountTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblBankBranch">
+    <Key>
+      <PropertyRef Name="BankBranchID" />
+    </Key>
+    <Property Name="BankBranchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankBranchName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BankNameID" Type="int" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address3" Type="nvarchar" MaxLength="100" />
+    <Property Name="CityID" Type="int" />
+    <Property Name="PIN" Type="nvarchar" MaxLength="10" />
+    <Property Name="SortCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="SwiftCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="BankCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblBankName">
+    <Key>
+      <PropertyRef Name="BankNameID" />
+    </Key>
+    <Property Name="BankNameID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShortName" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblBiometricDevice">
+    <Key>
+      <PropertyRef Name="BMDID" />
+    </Key>
+    <Property Name="BMDID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BMDTitle" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MachineNo" Type="int" Nullable="false" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="PortNo" Type="int" Nullable="false" />
+    <Property Name="Password" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblCity">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="StateID" Type="int" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblCompany">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyCode" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address3" Type="nvarchar" MaxLength="100" />
+    <Property Name="CityID" Type="int" Nullable="false" />
+    <Property Name="PIN" Type="varchar" MaxLength="10" />
+    <Property Name="Phone1" Type="varchar" MaxLength="20" />
+    <Property Name="Phone2" Type="varchar" MaxLength="20" />
+    <Property Name="MobileNo1" Type="varchar" MaxLength="13" />
+    <Property Name="MobileNo2" Type="varchar" MaxLength="13" />
+    <Property Name="EMailID" Type="varchar" MaxLength="50" />
+    <Property Name="Website" Type="varchar" MaxLength="50" />
+    <Property Name="BusinessStartedFrom" Type="date" Nullable="false" />
+    <Property Name="IncorporationNo" Type="varchar" MaxLength="50" />
+    <Property Name="IncorporationDate" Type="date" />
+    <Property Name="PINNo_RegNo" Type="varchar" MaxLength="50" />
+    <Property Name="NSSFNo" Type="varchar" MaxLength="50" />
+    <Property Name="NHIFNo" Type="varchar" MaxLength="50" />
+    <Property Name="PFNo" Type="varchar" MaxLength="50" />
+    <Property Name="SaccoRegNo" Type="varchar" MaxLength="50" />
+    <Property Name="Bank1_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank1_BranchName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank1_AccountNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank1_Currency" Type="nvarchar" MaxLength="10" />
+    <Property Name="Bank2_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank2_BranchName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank2_AccountNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank2_Currency" Type="nvarchar" MaxLength="10" />
+    <Property Name="Bank3_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank3_BranchName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank3_AccountNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bank3_Currency" Type="nvarchar" MaxLength="10" />
+    <Property Name="CompanyLogoFileName" Type="varchar" MaxLength="300" />
+    <Property Name="CurrencyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblCountry">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblCurrency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CurrencyName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CurrencySymbole" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblDataReceiverErrorLog">
+    <Key>
+      <PropertyRef Name="DataReceiverErrorLogID" />
+    </Key>
+    <Property Name="DataReceiverErrorLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Error" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblEmployee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNoPrefixID" Type="int" Nullable="false" />
+    <Property Name="EmployeeNo" Type="int" Nullable="false" />
+    <Property Name="TACode" Type="int" Nullable="false" />
+    <Property Name="IsEmployeeInService" Type="bit" Nullable="false" />
+    <Property Name="EmployeeLastServiceDetailID" Type="int" />
+    <Property Name="EmployeeFirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmployeeLastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmployeeOtherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmployeeImageFileName" Type="nvarchar" MaxLength="150" />
+    <Property Name="Gender" Type="tinyint" Nullable="false" />
+    <Property Name="NationalityID" Type="int" Nullable="false" />
+    <Property Name="WorkVisaExpiryDate" Type="date" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address3" Type="nvarchar" MaxLength="50" />
+    <Property Name="POBoxNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="CityID" Type="int" Nullable="false" />
+    <Property Name="MpesaNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailID" Type="nvarchar" MaxLength="150" />
+    <Property Name="Multicurrency" Type="bit" Nullable="false" />
+    <Property Name="EmployeeAccountingLedgerID" Type="int" Nullable="false" />
+    <Property Name="IDNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NSSFNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NHIFNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PINNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProvidentFund" Type="tinyint" Nullable="false" />
+    <Property Name="PFNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="PaymentMode" Type="tinyint" Nullable="false" />
+    <Property Name="PayCycle" Type="tinyint" Nullable="false" />
+    <Property Name="BankAcNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="BankNameID" Type="int" />
+    <Property Name="BankBranchID" Type="int" />
+    <Property Name="BankCurrencyID" Type="int" />
+    <Property Name="IncomeType" Type="bit" Nullable="false" />
+    <Property Name="TAAttendanceType" Type="tinyint" Nullable="false" />
+    <Property Name="TALatenessCharges" Type="tinyint" Nullable="false" />
+    <Property Name="TAEarlyGoing" Type="tinyint" Nullable="false" />
+    <Property Name="TAOvertime" Type="tinyint" Nullable="false" />
+    <Property Name="TANegativeLeave" Type="tinyint" Nullable="false" />
+    <Property Name="TAWeekendType" Type="tinyint" Nullable="false" />
+    <Property Name="TAWeekEndAttendance" Type="tinyint" Nullable="false" />
+    <Property Name="TAMissPunch" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblEmployeeAccountingLedger">
+    <Key>
+      <PropertyRef Name="EmployeeAccountingLedgerID" />
+    </Key>
+    <Property Name="EmployeeAccountingLedgerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeAccountingLedgerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeAttendance">
+    <Key>
+      <PropertyRef Name="EmployeeAttendanceID" />
+    </Key>
+    <Property Name="EmployeeAttendanceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="AttendanceDate" Type="date" Nullable="false" />
+    <Property Name="InTime" Type="time" Precision="7" />
+    <Property Name="OutTime" Type="time" Precision="7" />
+    <Property Name="EmployeeShiftID" Type="int" />
+    <Property Name="ShiftStartTime" Type="time" Precision="7" />
+    <Property Name="ShiftEndTime" Type="time" Precision="7" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeAttendanceDetail">
+    <Key>
+      <PropertyRef Name="EmployeeAttendanceDetailID" />
+    </Key>
+    <Property Name="EmployeeAttendanceDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeAttendanceID" Type="int" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="EmployeeTACode" Type="int" Nullable="false" />
+    <Property Name="LogTime" Type="datetime" Nullable="false" />
+    <Property Name="LogTimeType" Type="tinyint" Nullable="false" />
+    <Property Name="TerminalType" Type="varchar" MaxLength="20" />
+    <Property Name="TerminalID" Type="int" />
+    <Property Name="DeviceSerialNo" Type="varchar" MaxLength="20" />
+    <Property Name="TransactionID" Type="int" />
+    <Property Name="EventType" Type="varchar" MaxLength="20" />
+    <Property Name="PunchType" Type="varchar" MaxLength="20" />
+    <Property Name="VerificationMode" Type="varchar" MaxLength="20" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeBMDUpdateLog">
+    <Key>
+      <PropertyRef Name="EmployeeBMDUpdateLogID" />
+    </Key>
+    <Property Name="EmployeeBMDUpdateLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="BMDeviceID" Type="int" Nullable="false" />
+    <Property Name="LastUpdateDT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEmployeeDepartment">
+    <Key>
+      <PropertyRef Name="EmployeeDepartmentID" />
+    </Key>
+    <Property Name="EmployeeDepartmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeDepartmentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeDesignation">
+    <Key>
+      <PropertyRef Name="EmployeeDesignationID" />
+    </Key>
+    <Property Name="EmployeeDesignationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeDesignationName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeDocument">
+    <Key>
+      <PropertyRef Name="EmployeeDocumentID" />
+    </Key>
+    <Property Name="EmployeeDocumentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DocumentName" Type="nvarchar" MaxLength="250" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="250" />
+    <Property Name="EmployeeID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeEarningDeduction">
+    <Key>
+      <PropertyRef Name="EmployeeEarningDeductionID" />
+    </Key>
+    <Property Name="EmployeeEarningDeductionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeEarningDeductionNo" Type="int" Nullable="false" />
+    <Property Name="EmployeeEarningDeductionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EarningDeductionType" Type="tinyint" Nullable="false" />
+    <Property Name="Taxable" Type="bit" Nullable="false" />
+    <Property Name="Recurring" Type="bit" Nullable="false" />
+    <Property Name="ValueType" Type="tinyint" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeFamily">
+    <Key>
+      <PropertyRef Name="EmployeeFamilyID" />
+    </Key>
+    <Property Name="EmployeeFamilyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Relationship" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="150" />
+    <Property Name="POBoxNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="Beneficiary" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="EmployeeID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeLeaveOpeningBalance">
+    <Key>
+      <PropertyRef Name="EmployeeLeaveOpeningBalanceID" />
+    </Key>
+    <Property Name="EmployeeLeaveOpeningBalanceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="EmployeeServiceDetailID" Type="int" Nullable="false" />
+    <Property Name="LeaveTypeID" Type="int" Nullable="false" />
+    <Property Name="LeaveOpeningBalance" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEmployeeListFormat">
+    <Key>
+      <PropertyRef Name="EmployeeListFormatID" />
+    </Key>
+    <Property Name="EmployeeListFormatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeListFormatName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="GridFromat" Type="xml" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeNoPrefix">
+    <Key>
+      <PropertyRef Name="EmployeeNoPrefixID" />
+    </Key>
+    <Property Name="EmployeeNoPrefixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeNoPrefixName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeRestDay">
+    <Key>
+      <PropertyRef Name="EmployeeRestDayID" />
+    </Key>
+    <Property Name="EmployeeRestDayID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="RestDate" Type="date" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeSalaryIncrement">
+    <Key>
+      <PropertyRef Name="EmployeeSalaryIncrementID" />
+    </Key>
+    <Property Name="EmployeeSalaryIncrementID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeSalaryIncrementNo" Type="int" Nullable="false" />
+    <Property Name="EmployeeSalaryIncrementDate" Type="datetime" Nullable="false" />
+    <Property Name="EffectiveMonth" Type="int" Nullable="false" />
+    <Property Name="EffectiveYear" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="CurrentBasicSalary" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="IncrementType" Type="int" Nullable="false" />
+    <Property Name="IncrementPercentage" Type="decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="IncrementAmount" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="NewBasicSalary" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LastIncDate" Type="datetime" />
+    <Property Name="LastIncAmount" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="rState" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeServiceDetail">
+    <Key>
+      <PropertyRef Name="EmployeeServiceDetailID" />
+    </Key>
+    <Property Name="EmployeeServiceDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="EmployeementStatus" Type="tinyint" Nullable="false" />
+    <Property Name="EmploymentEffectiveDate" Type="date" Nullable="false" />
+    <Property Name="EmploymentType" Type="tinyint" Nullable="false" />
+    <Property Name="ContractExpiryDate" Type="date" />
+    <Property Name="EmployeeDepartmentID" Type="int" Nullable="false" />
+    <Property Name="LocationID" Type="int" Nullable="false" />
+    <Property Name="EmployeeDesignationID" Type="int" Nullable="false" />
+    <Property Name="EmployeeWIBAClassID" Type="int" Nullable="false" />
+    <Property Name="MinimumWageCategoryID" Type="int" Nullable="false" />
+    <Property Name="DailyRate" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BasicSalary" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="HousingAllowance" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="WeekendAllowance" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="EmployeeShiftType" Type="tinyint" Nullable="false" />
+    <Property Name="EmployeeShiftID" Type="int" />
+    <Property Name="ReinstatementReason" Type="varchar" MaxLength="50" />
+    <Property Name="TerminationDate" Type="date" />
+    <Property Name="TerminationTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="TerminationReason" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblEmployeeShift">
+    <Key>
+      <PropertyRef Name="EmployeeShiftID" />
+    </Key>
+    <Property Name="EmployeeShiftID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeShiftName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShiftStartTime" Type="time" Precision="0" Nullable="false" />
+    <Property Name="ShiftEndTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="ShiftType" Type="tinyint" Nullable="false" />
+    <Property Name="FirstBreakStartTime" Type="time" Precision="0" />
+    <Property Name="FirstBreakEndTime" Type="time" Precision="0" />
+    <Property Name="SecondBreakStartTime" Type="time" Precision="0" />
+    <Property Name="SecondBreakEndTime" Type="time" Precision="0" />
+    <Property Name="ThirdBreakStartTime" Type="time" Precision="7" />
+    <Property Name="ThirdBreakEndTime" Type="time" Precision="7" />
+    <Property Name="NofWorkingHours" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblEmployeeShiftAllocation">
+    <Key>
+      <PropertyRef Name="EmployeeShiftAllocationID" />
+    </Key>
+    <Property Name="EmployeeShiftAllocationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="EmployeeShiftID" Type="int" Nullable="false" />
+    <Property Name="WEDateFrom" Type="date" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblEmployeeWIBAClass">
+    <Key>
+      <PropertyRef Name="EmployeeWIBAClassID" />
+    </Key>
+    <Property Name="EmployeeWIBAClassID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeWIBAClassName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployeeWIBAClassRate">
+    <Key>
+      <PropertyRef Name="EmployeeWIBAClassRateID" />
+    </Key>
+    <Property Name="EmployeeWIBAClassRateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeWIBAClassID" Type="int" Nullable="false" />
+    <Property Name="WEDate" Type="date" />
+    <Property Name="EmployeeWIBAClassRate" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblEmployementTerminationCause">
+    <Key>
+      <PropertyRef Name="EmployementTerminationCauseID" />
+    </Key>
+    <Property Name="EmployementTerminationCauseID" Type="tinyint" Nullable="false" />
+    <Property Name="EmployementTerminationCauseName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFinPeriod">
+    <Key>
+      <PropertyRef Name="FinPeriodID" />
+    </Key>
+    <Property Name="FinPeriodID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FinPeriodName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FinPeriodFrom" Type="date" Nullable="false" />
+    <Property Name="FinPeriodTo" Type="date" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" Nullable="false" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblGridLayouts">
+    <Key>
+      <PropertyRef Name="GridLayoutID" />
+    </Key>
+    <Property Name="GridLayoutID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GridID" Type="int" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="50" />
+    <Property Name="Layout" Type="nvarchar(max)" />
+    <Property Name="PrintOptions" Type="nvarchar(max)" />
+    <Property Name="PageSettings" Type="nvarchar(max)" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="FinPerID" Type="int" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblHoliday">
+    <Key>
+      <PropertyRef Name="HolidayID" />
+    </Key>
+    <Property Name="HolidayID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HolidayName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HolidayType" Type="tinyint" Nullable="false" />
+    <Property Name="FromDate" Type="date" Nullable="false" />
+    <Property Name="ToDate" Type="date" Nullable="false" />
+    <Property Name="RepeatOnSameDate" Type="bit" Nullable="false" />
+    <Property Name="TotalDays" Type="int" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLeaveAdjustment">
+    <Key>
+      <PropertyRef Name="LeaveAdjustmentID" />
+    </Key>
+    <Property Name="LeaveAdjustmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveAdjustmentNoPrefixID" Type="int" Nullable="false" />
+    <Property Name="LeaveAdjustmentNo" Type="int" Nullable="false" />
+    <Property Name="LeaveAdjustmentDate" Type="date" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="LeaveTypeID" Type="int" Nullable="false" />
+    <Property Name="NofLeaves" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ApplicationDocumentFileName" Type="varchar" MaxLength="500" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLeaveAdjustmentNoPrefix">
+    <Key>
+      <PropertyRef Name="LeaveAdjustmentNoPrefixID" />
+    </Key>
+    <Property Name="LeaveAdjustmentNoPrefixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveAdjustmentNoPrefixName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLeaveApplication">
+    <Key>
+      <PropertyRef Name="LeaveApplicationID" />
+    </Key>
+    <Property Name="LeaveApplicationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveApplicationNoPrefixID" Type="int" Nullable="false" />
+    <Property Name="LeaveApplicationNo" Type="int" Nullable="false" />
+    <Property Name="LeaveApplicationDate" Type="date" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="LeaveTypeID" Type="int" Nullable="false" />
+    <Property Name="FromDate" Type="datetime" Nullable="false" />
+    <Property Name="ToDate" Type="datetime" Nullable="false" />
+    <Property Name="NofLeaves" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ApplicationDocumentFileName" Type="varchar" MaxLength="500" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLeaveApplicationDayDetail">
+    <Key>
+      <PropertyRef Name="LeaveApplicationDayDetailID" />
+    </Key>
+    <Property Name="LeaveApplicationDayDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveApplicationID" Type="int" Nullable="false" />
+    <Property Name="LeaveDate" Type="date" Nullable="false" />
+    <Property Name="LeaveType" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblLeaveApplicationNoPrefix">
+    <Key>
+      <PropertyRef Name="LeaveApplicationNoPrefixID" />
+    </Key>
+    <Property Name="LeaveApplicationNoPrefixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveApplicationNoPrefixName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLeaveEncashment">
+    <Key>
+      <PropertyRef Name="LeaveEncashmentID" />
+    </Key>
+    <Property Name="LeaveEncashmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveEncashmentNoPrefixID" Type="int" Nullable="false" />
+    <Property Name="LeaveEncashmentNo" Type="int" Nullable="false" />
+    <Property Name="LeaveEncashmentDate" Type="date" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="LeaveTypeID" Type="int" Nullable="false" />
+    <Property Name="NofLeaves" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ApplicationDocumentFileName" Type="varchar" MaxLength="500" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLeaveEncashmentNoPrefix">
+    <Key>
+      <PropertyRef Name="LeaveEncashmentNoPrefixID" />
+    </Key>
+    <Property Name="LeaveEncashmentNoPrefixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveEncashmentNoPrefixName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLeaveType">
+    <Key>
+      <PropertyRef Name="LeaveTypeID" />
+    </Key>
+    <Property Name="LeaveTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeaveTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AnnualEntitledDays" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ApplicableTo" Type="tinyint" Nullable="false" />
+    <Property Name="IsEncashable" Type="bit" Nullable="false" />
+    <Property Name="CanCarryForward" Type="bit" Nullable="false" />
+    <Property Name="IncludeWeekend" Type="bit" Nullable="false" />
+    <Property Name="IncludePublicHoliday" Type="bit" Nullable="false" />
+    <Property Name="Distribute" Type="tinyint" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="100" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLoanAdjustment">
+    <Key>
+      <PropertyRef Name="LoanAdjustmentID" />
+    </Key>
+    <Property Name="LoanAdjustmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoanAdjustmentNoPrefixID" Type="int" Nullable="false" />
+    <Property Name="LoanAdjustmentNo" Type="int" Nullable="false" />
+    <Property Name="LoanAdjustmentDate" Type="date" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="LoanApplicationID" Type="int" Nullable="false" />
+    <Property Name="LoanAdjustmentAmount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PaymentModeID" Type="tinyint" Nullable="false" />
+    <Property Name="DateOfDeposite" Type="date" Nullable="false" />
+    <Property Name="CompanyBankAccountID" Type="int" />
+    <Property Name="ReasonForLoanAdjustment" Type="nvarchar" MaxLength="100" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" />
+    <Property Name="ApplicationDocumentFileName" Type="varchar" MaxLength="500" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLoanAdjustmentNoPrefix">
+    <Key>
+      <PropertyRef Name="LoanAdjustmentNoPrefixID" />
+    </Key>
+    <Property Name="LoanAdjustmentNoPrefixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoanAdjustmentNoPrefixName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLoanApplication">
+    <Key>
+      <PropertyRef Name="LoanApplicationID" />
+    </Key>
+    <Property Name="LoanApplicationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoanApplicationDate" Type="date" Nullable="false" />
+    <Property Name="LoanApplicationNoPrefixID" Type="int" Nullable="false" />
+    <Property Name="LoanApplicationNo" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="LoanAmount" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="MonthFrom" Type="int" Nullable="false" />
+    <Property Name="YearFrom" Type="int" Nullable="false" />
+    <Property Name="MonthTo" Type="int" Nullable="false" />
+    <Property Name="YearTo" Type="int" Nullable="false" />
+    <Property Name="NofInstallment" Type="int" Nullable="false" />
+    <Property Name="InstallmentAmount" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="LoanPurpose" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="ApplicationDocumentFileName" Type="varchar" MaxLength="500" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLoanApplicationNoPrefix">
+    <Key>
+      <PropertyRef Name="LoanApplicationNoPrefixID" />
+    </Key>
+    <Property Name="LoanApplicationNoPrefixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoanApplicationNoPrefixName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLocation">
+    <Key>
+      <PropertyRef Name="LocationID" />
+    </Key>
+    <Property Name="LocationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LocationName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LocationTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="GracePeriod" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLocationWeekendSetting">
+    <Key>
+      <PropertyRef Name="LocationWeekendSetting" />
+    </Key>
+    <Property Name="LocationWeekendSetting" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LocationID" Type="int" Nullable="false" />
+    <Property Name="WEDateFrom" Type="date" />
+    <Property Name="WEDateTo" Type="date" />
+    <Property Name="Monday" Type="tinyint" Nullable="false" />
+    <Property Name="Tuesday" Type="tinyint" Nullable="false" />
+    <Property Name="Wednesday" Type="tinyint" Nullable="false" />
+    <Property Name="Thursday" Type="tinyint" Nullable="false" />
+    <Property Name="Friday" Type="tinyint" Nullable="false" />
+    <Property Name="Saturday" Type="tinyint" Nullable="false" />
+    <Property Name="Sunday" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblMinimumWageCategory">
+    <Key>
+      <PropertyRef Name="MinimumWageCategoryID" />
+    </Key>
+    <Property Name="MinimumWageCategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MinimumWageCategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ApplyOn" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblMinimumWageRate">
+    <Key>
+      <PropertyRef Name="MinimumWageRateID" />
+    </Key>
+    <Property Name="MinimumWageRateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MinimumWageCategoryID" Type="int" Nullable="false" />
+    <Property Name="MinimumWageCategoryUrbanRate" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="MinimumWageCategoryRuralRate" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="WEDateFrom" Type="date" />
+    <Property Name="WEDateTo" Type="date" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblNonCashBenefit">
+    <Key>
+      <PropertyRef Name="NonCashBenefitID" />
+    </Key>
+    <Property Name="NonCashBenefitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NonCashBenefitName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NonCashBenefitType" Type="tinyint" Nullable="false" />
+    <Property Name="KRAValueType" Type="tinyint" Nullable="false" />
+    <Property Name="KRAValue" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="CostValueType" Type="tinyint" Nullable="false" />
+    <Property Name="CostValue" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="20" />
+    <Property Name="VehicleRegistrationNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="VehicleMake" Type="nvarchar" MaxLength="20" />
+    <Property Name="VehicleModel" Type="nvarchar" MaxLength="20" />
+    <Property Name="VehicleEnginePower" Type="nvarchar" MaxLength="10" />
+    <Property Name="EngineCCKRAValue" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="VehicleCostKRAPerc" Type="decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblPAYERelief">
+    <Key>
+      <PropertyRef Name="PAYEReliefID" />
+    </Key>
+    <Property Name="PAYEReliefID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PAYEReliefName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Mandatory" Type="bit" Nullable="false" />
+    <Property Name="PAYEReliefType" Type="tinyint" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblPAYEReliefRate">
+    <Key>
+      <PropertyRef Name="PAYEReliefRateID" />
+    </Key>
+    <Property Name="PAYEReliefRateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PAYEReliefID" Type="int" Nullable="false" />
+    <Property Name="WEDate" Type="date" />
+    <Property Name="MonthlyLimit" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="AnnualLimit" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblPayroll">
+    <Key>
+      <PropertyRef Name="PayrollID" />
+    </Key>
+    <Property Name="PayrollID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Month" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="FinPeriodID" Type="int" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblPayrollEmployeeDetail">
+    <Key>
+      <PropertyRef Name="PayrollEmployeeDetailID" />
+    </Key>
+    <Property Name="PayrollEmployeeDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PayrollID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="NormalOvertimeHours" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="DoubleOvertimeHours" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="AbsentDays" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="MissedPunchDays" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="LateDays" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="NoticePayDays" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="LeaveEncashmentDays" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="WeekendWorkedDays" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="LoanInstallmentAmount" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Vehicle_NoncashBenefitID" Type="int" />
+    <Property Name="ApplyNHIF" Type="bit" Nullable="false" />
+    <Property Name="ApplyNSSF" Type="bit" Nullable="false" />
+    <Property Name="BasicIncome" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="HRAAllowance" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="GrossIncome" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="TotalTaxableEarnings" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="TaxableIncome" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="NetTaxableIncome" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PAYEValue" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="NHIFValue" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="NSSFValue" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PFValue" Type="numeric" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPayrollEmployeeEarningsDeduction">
+    <Key>
+      <PropertyRef Name="PayrollEmployeeEarningsDeductionID" />
+    </Key>
+    <Property Name="PayrollEmployeeEarningsDeductionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PayrollEmployeeDetailID" Type="int" Nullable="false" />
+    <Property Name="EarningsDeductionID" Type="int" Nullable="false" />
+    <Property Name="Value" Type="numeric" Precision="18" Scale="9" Nullable="false" />
+    <Property Name="Taxable" Type="bit" Nullable="false" />
+    <Property Name="ValueType" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPayrollEmployeeNonCashBenefit">
+    <Key>
+      <PropertyRef Name="PayrollEmployeeNonCashBenefitID" />
+    </Key>
+    <Property Name="PayrollEmployeeNonCashBenefitID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PayrollEmployeeDetailID" Type="int" Nullable="false" />
+    <Property Name="NonCashBenefitID" Type="int" Nullable="false" />
+    <Property Name="Recurring" Type="bit" Nullable="false" />
+    <Property Name="CostValue" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="KRAPerc" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="KRAValue" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="KRAValueCalculatedOnAmt" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPayrollEmployePAYERelief">
+    <Key>
+      <PropertyRef Name="PayrollEmployeePAYEReliefID" />
+    </Key>
+    <Property Name="PayrollEmployeePAYEReliefID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PayrollEmployeeDetailID" Type="int" Nullable="false" />
+    <Property Name="PAYEReliefID" Type="int" Nullable="false" />
+    <Property Name="PAYEReliefAmt" Type="numeric" Precision="12" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPayrollMonth">
+    <Key>
+      <PropertyRef Name="PayrollMonthID" />
+    </Key>
+    <Property Name="PayrollMonthID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PayrollMonthStartDate" Type="datetime" Nullable="false" />
+    <Property Name="PayrollMonthEndDate" Type="datetime" Nullable="false" />
+    <Property Name="PayrollMonthName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblRecordState">
+    <Key>
+      <PropertyRef Name="RecordStateID" />
+    </Key>
+    <Property Name="RecordStateID" Type="tinyint" Nullable="false" />
+    <Property Name="RecordStateName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSafariApplication">
+    <Key>
+      <PropertyRef Name="SafariApplicationID" />
+    </Key>
+    <Property Name="SafariApplicationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SafariApplicationNoPrefixID" Type="int" Nullable="false" />
+    <Property Name="SafariApplicationNo" Type="int" Nullable="false" />
+    <Property Name="SafariApplicationDate" Type="date" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="FromDate" Type="datetime" Nullable="false" />
+    <Property Name="ToDate" Type="datetime" Nullable="false" />
+    <Property Name="NofSafariDays" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ApplicationDocumentFileName" Type="varchar" MaxLength="500" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblSafariApplicationDayDetail">
+    <Key>
+      <PropertyRef Name="SafariApplicationDayDetailID" />
+    </Key>
+    <Property Name="SafariApplicationDayDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SafariApplicationID" Type="int" Nullable="false" />
+    <Property Name="SafariDate" Type="date" Nullable="false" />
+    <Property Name="SafariType" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSafariApplicationNoPrefix">
+    <Key>
+      <PropertyRef Name="SafariApplicationNoPrefixID" />
+    </Key>
+    <Property Name="SafariApplicationNoPrefixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SafariApplicationNoPrefixName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblSettingL0">
+    <Key>
+      <PropertyRef Name="SettingL0ID" />
+    </Key>
+    <Property Name="SettingL0ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SettingName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SettingValueType" Type="int" Nullable="false" />
+    <Property Name="SettingValueVC" Type="nvarchar" MaxLength="1000" />
+    <Property Name="SettingValueLong" Type="bigint" />
+    <Property Name="SettingValueInt" Type="int" />
+    <Property Name="SettingValueDateTime" Type="datetime" />
+    <Property Name="SettingValueBoolean" Type="bit" />
+    <Property Name="SettingValueDecimal" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblSettingMasterL1">
+    <Key>
+      <PropertyRef Name="SettingL1MasterID" />
+    </Key>
+    <Property Name="SettingL1MasterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SettingName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SettingValueType" Type="int" Nullable="false" />
+    <Property Name="SettingValueVC" Type="nvarchar" MaxLength="1000" />
+    <Property Name="SettingValueLong" Type="bigint" />
+    <Property Name="SettingValueInt" Type="int" />
+    <Property Name="SettingValueDateTime" Type="datetime" />
+    <Property Name="SettingValueBoolean" Type="bit" />
+    <Property Name="SettingValueDecimal" Type="numeric" Precision="19" Scale="6" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblSettingsL1">
+    <Key>
+      <PropertyRef Name="SettingL1ID" />
+    </Key>
+    <Property Name="SettingL1ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SettingName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SettingValueVC" Type="nvarchar" MaxLength="1000" />
+    <Property Name="SettingValueLong" Type="bigint" />
+    <Property Name="SettingValueInt" Type="int" />
+    <Property Name="SettingValueDateTime" Type="datetime" />
+    <Property Name="SettingValueBoolean" Type="bit" />
+    <Property Name="SettingValueDecimal" Type="numeric" Precision="19" Scale="6" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblSMSLog">
+    <Key>
+      <PropertyRef Name="SMSLogID" />
+    </Key>
+    <Property Name="SMSLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OptionName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="SMSText" Type="nvarchar" MaxLength="1000" />
+    <Property Name="SendDateTime" Type="datetime" />
+    <Property Name="DeliveryStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="SenderID" Type="nvarchar" MaxLength="6" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="Error" Type="nvarchar" MaxLength="1000" />
+    <Property Name="SMSID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SMSAPIResponse" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="tblState">
+    <Key>
+      <PropertyRef Name="StateID" />
+    </Key>
+    <Property Name="StateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="StateShortName" Type="nvarchar" MaxLength="10" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblTAApproval">
+    <Key>
+      <PropertyRef Name="TAApprovalID" />
+    </Key>
+    <Property Name="TAApprovalID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TAApprovalNoPrefixID" Type="int" Nullable="false" />
+    <Property Name="TAApprovalNo" Type="int" Nullable="false" />
+    <Property Name="TAApprovalDate" Type="date" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="ApprovedDate" Type="date" Nullable="false" />
+    <Property Name="ApprovalTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="ApprovedHours" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" />
+    <Property Name="ApplicationDocumentFileName" Type="varchar" MaxLength="500" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="FinPeriodID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblTAApprovalNoPrefix">
+    <Key>
+      <PropertyRef Name="TAApprovalNoPrefixID" />
+    </Key>
+    <Property Name="TAApprovalNoPrefixID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TAApprovalNoPrefixName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblTaxSlabDetail">
+    <Key>
+      <PropertyRef Name="TaxSlabDetailID" />
+    </Key>
+    <Property Name="TaxSlabDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaxSlabHeaderID" Type="int" Nullable="false" />
+    <Property Name="IncomeType" Type="tinyint" Nullable="false" />
+    <Property Name="TaxableValueFrom" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="TaxableValueTo" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="TaxValueEmployee" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="TaxPercEmployee" Type="numeric" Precision="12" Scale="6" />
+    <Property Name="MaxTaxValueEmployee" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="TaxValueEmployer" Type="numeric" Precision="12" Scale="2" />
+    <Property Name="TaxPercEmployer" Type="numeric" Precision="12" Scale="6" />
+    <Property Name="MaxTaxValueEmployer" Type="numeric" Precision="12" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblTaxSlabHeader">
+    <Key>
+      <PropertyRef Name="TaxSlabHeaderID" />
+    </Key>
+    <Property Name="TaxSlabHeaderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WEDate" Type="date" />
+    <Property Name="TaxTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SuperAdmin" Type="bit" Nullable="false" />
+    <Property Name="UserGroupID" Type="int" Nullable="false" />
+    <Property Name="EMailID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" Nullable="false" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupID" />
+    </Key>
+    <Property Name="UserGroupID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserGroupName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SuperAdminGroup" Type="bit" Nullable="false" />
+    <Property Name="rstate" Type="tinyint" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUserGroupPerimission">
+    <Key>
+      <PropertyRef Name="UserGroupPermissionID" />
+    </Key>
+    <Property Name="UserGroupPermissionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserGroupID" Type="int" Nullable="false" />
+    <Property Name="MenuOptionID" Type="int" Nullable="false" />
+    <Property Name="CanRead" Type="bit" Nullable="false" />
+    <Property Name="CanAdd" Type="bit" Nullable="false" />
+    <Property Name="CanEdit" Type="bit" Nullable="false" />
+    <Property Name="CanDelete" Type="bit" Nullable="false" />
+    <Property Name="CanAuthorize" Type="bit" Nullable="false" />
+    <Property Name="CanUnAuthorize" Type="bit" Nullable="false" />
+    <Property Name="rcdt" Type="datetime" />
+    <Property Name="redt" Type="datetime" />
+    <Property Name="rcuid" Type="int" />
+    <Property Name="reuid" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUserGroupPermissionOnCompany">
+    <Key>
+      <PropertyRef Name="UserGroupPersmissionOnCompanyID" />
+    </Key>
+    <Property Name="UserGroupPersmissionOnCompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserGroupID" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUserGroupPermissionOnLocation">
+    <Key>
+      <PropertyRef Name="UserGroupPermissionOnLocationID" />
+    </Key>
+    <Property Name="UserGroupPermissionOnLocationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LocationID" Type="int" Nullable="false" />
+    <Property Name="UserGroupID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__tblPayrol__Compa__4C214075">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="0..1" />
+    <End Role="tblPayrollMonth" Type="Self.tblPayrollMonth" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblPayrollMonth">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblAccount_tblBankBranch">
+    <End Role="tblBankBranch" Type="Self.tblBankBranch" Multiplicity="0..1" />
+    <End Role="tblAccount" Type="Self.tblAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBankBranch">
+        <PropertyRef Name="BankBranchID" />
+      </Principal>
+      <Dependent Role="tblAccount">
+        <PropertyRef Name="BranchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblAccount_tblBankName">
+    <End Role="tblBankName" Type="Self.tblBankName" Multiplicity="0..1" />
+    <End Role="tblAccount" Type="Self.tblAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBankName">
+        <PropertyRef Name="BankNameID" />
+      </Principal>
+      <Dependent Role="tblAccount">
+        <PropertyRef Name="BankNameID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblAccount_tblCity">
+    <End Role="tblCity" Type="Self.tblCity" Multiplicity="0..1" />
+    <End Role="tblAccount" Type="Self.tblAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCity">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="tblAccount">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblAccount_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblAccount" Type="Self.tblAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblAccount">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblAccount_tblCurrency">
+    <End Role="tblCurrency" Type="Self.tblCurrency" Multiplicity="0..1" />
+    <End Role="tblAccount" Type="Self.tblAccount" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCurrency">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="tblAccount">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblBankBranch_tblBankName">
+    <End Role="tblBankName" Type="Self.tblBankName" Multiplicity="1" />
+    <End Role="tblBankBranch" Type="Self.tblBankBranch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBankName">
+        <PropertyRef Name="BankNameID" />
+      </Principal>
+      <Dependent Role="tblBankBranch">
+        <PropertyRef Name="BankNameID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblBankBranch_tblCity">
+    <End Role="tblCity" Type="Self.tblCity" Multiplicity="0..1" />
+    <End Role="tblBankBranch" Type="Self.tblBankBranch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCity">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="tblBankBranch">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblBiometricDevice_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblBiometricDevice" Type="Self.tblBiometricDevice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblBiometricDevice">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCity_tblCountry">
+    <End Role="tblCountry" Type="Self.tblCountry" Multiplicity="1" />
+    <End Role="tblCity" Type="Self.tblCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCountry">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="tblCity">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCity_tblState">
+    <End Role="tblState" Type="Self.tblState" Multiplicity="0..1" />
+    <End Role="tblCity" Type="Self.tblCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblState">
+        <PropertyRef Name="StateID" />
+      </Principal>
+      <Dependent Role="tblCity">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCompany_tblCity">
+    <End Role="tblCity" Type="Self.tblCity" Multiplicity="1" />
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCity">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="tblCompany">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCompany_tblCurrency">
+    <End Role="tblCurrency" Type="Self.tblCurrency" Multiplicity="1" />
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCurrency">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="tblCompany">
+        <PropertyRef Name="CurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblBankBranch">
+    <End Role="tblBankBranch" Type="Self.tblBankBranch" Multiplicity="0..1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBankBranch">
+        <PropertyRef Name="BankBranchID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="BankBranchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblBankName">
+    <End Role="tblBankName" Type="Self.tblBankName" Multiplicity="0..1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBankName">
+        <PropertyRef Name="BankNameID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="BankNameID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblCity">
+    <End Role="tblCity" Type="Self.tblCity" Multiplicity="1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCity">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblCountry">
+    <End Role="tblCountry" Type="Self.tblCountry" Multiplicity="1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCountry">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="NationalityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblCurrency">
+    <End Role="tblCurrency" Type="Self.tblCurrency" Multiplicity="0..1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCurrency">
+        <PropertyRef Name="CurrencyID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="BankCurrencyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblEmployeeAccountingLedger">
+    <End Role="tblEmployeeAccountingLedger" Type="Self.tblEmployeeAccountingLedger" Multiplicity="1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeAccountingLedger">
+        <PropertyRef Name="EmployeeAccountingLedgerID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="EmployeeAccountingLedgerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblEmployeeNoPrefix">
+    <End Role="tblEmployeeNoPrefix" Type="Self.tblEmployeeNoPrefix" Multiplicity="1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeNoPrefix">
+        <PropertyRef Name="EmployeeNoPrefixID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="EmployeeNoPrefixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployee_tblEmployeeServiceDetail">
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="0..1" />
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="EmployeeServiceDetailID" />
+      </Principal>
+      <Dependent Role="tblEmployee">
+        <PropertyRef Name="EmployeeLastServiceDetailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeAccountingLedger_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeAccountingLedger" Type="Self.tblEmployeeAccountingLedger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeAccountingLedger">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeAttendance_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="0..1" />
+    <End Role="tblEmployeeAttendance" Type="Self.tblEmployeeAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeAttendance">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeAttendance_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="0..1" />
+    <End Role="tblEmployeeAttendance" Type="Self.tblEmployeeAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeAttendance">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeAttendanceDetail_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="0..1" />
+    <End Role="tblEmployeeAttendanceDetail" Type="Self.tblEmployeeAttendanceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeAttendanceDetail">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeAttendanceDetail_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="0..1" />
+    <End Role="tblEmployeeAttendanceDetail" Type="Self.tblEmployeeAttendanceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeAttendanceDetail">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeAttendanceDetail_tblEmployeeAttendance">
+    <End Role="tblEmployeeAttendance" Type="Self.tblEmployeeAttendance" Multiplicity="0..1" />
+    <End Role="tblEmployeeAttendanceDetail" Type="Self.tblEmployeeAttendanceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeAttendance">
+        <PropertyRef Name="EmployeeAttendanceID" />
+      </Principal>
+      <Dependent Role="tblEmployeeAttendanceDetail">
+        <PropertyRef Name="EmployeeAttendanceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeDepartment_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeDepartment" Type="Self.tblEmployeeDepartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeDepartment">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeDesignation_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeDesignation" Type="Self.tblEmployeeDesignation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeDesignation">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeDocument_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="0..1" />
+    <End Role="tblEmployeeDocument" Type="Self.tblEmployeeDocument" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeDocument">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeFamily_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="0..1" />
+    <End Role="tblEmployeeFamily" Type="Self.tblEmployeeFamily" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeFamily">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeLeaveOpeningBalance_tblCompany">
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="1" />
+    <End Role="tblEmployeeLeaveOpeningBalance" Type="Self.tblEmployeeLeaveOpeningBalance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="EmployeeServiceDetailID" />
+      </Principal>
+      <Dependent Role="tblEmployeeLeaveOpeningBalance">
+        <PropertyRef Name="EmployeeServiceDetailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeLeaveOpeningBalance_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblEmployeeLeaveOpeningBalance" Type="Self.tblEmployeeLeaveOpeningBalance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeLeaveOpeningBalance">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeLeaveOpeningBalance_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblEmployeeLeaveOpeningBalance" Type="Self.tblEmployeeLeaveOpeningBalance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblEmployeeLeaveOpeningBalance">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeLeaveOpeningBalance_tblLeaveType">
+    <End Role="tblLeaveType" Type="Self.tblLeaveType" Multiplicity="1" />
+    <End Role="tblEmployeeLeaveOpeningBalance" Type="Self.tblEmployeeLeaveOpeningBalance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeaveType">
+        <PropertyRef Name="LeaveTypeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeLeaveOpeningBalance">
+        <PropertyRef Name="LeaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeNoPrefix_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeNoPrefix" Type="Self.tblEmployeeNoPrefix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeNoPrefix">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeePayroll_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblPayrollEmployeeDetail" Type="Self.tblPayrollEmployeeDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblPayrollEmployeeDetail">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeRestDay_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeRestDay" Type="Self.tblEmployeeRestDay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeRestDay">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeRestDay_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblEmployeeRestDay" Type="Self.tblEmployeeRestDay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeRestDay">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeRestDay_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblEmployeeRestDay" Type="Self.tblEmployeeRestDay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblEmployeeRestDay">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeSalaryIncrement_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeSalaryIncrement" Type="Self.tblEmployeeSalaryIncrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeSalaryIncrement">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeSalaryIncrement_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblEmployeeSalaryIncrement" Type="Self.tblEmployeeSalaryIncrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeSalaryIncrement">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeSalaryIncrement_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblEmployeeSalaryIncrement" Type="Self.tblEmployeeSalaryIncrement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblEmployeeSalaryIncrement">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeServiceDetail_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeServiceDetail_tblEmployeeDepartment">
+    <End Role="tblEmployeeDepartment" Type="Self.tblEmployeeDepartment" Multiplicity="1" />
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeDepartment">
+        <PropertyRef Name="EmployeeDepartmentID" />
+      </Principal>
+      <Dependent Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="EmployeeDepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeServiceDetail_tblEmployeeDesignation">
+    <End Role="tblEmployeeDesignation" Type="Self.tblEmployeeDesignation" Multiplicity="1" />
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeDesignation">
+        <PropertyRef Name="EmployeeDesignationID" />
+      </Principal>
+      <Dependent Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="EmployeeDesignationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeServiceDetail_tblEmployeeShift">
+    <End Role="tblEmployeeShift" Type="Self.tblEmployeeShift" Multiplicity="0..1" />
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeShift">
+        <PropertyRef Name="EmployeeShiftID" />
+      </Principal>
+      <Dependent Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="EmployeeShiftID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeServiceDetail_tblEmployeeWIBAClass">
+    <End Role="tblEmployeeWIBAClass" Type="Self.tblEmployeeWIBAClass" Multiplicity="1" />
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeWIBAClass">
+        <PropertyRef Name="EmployeeWIBAClassID" />
+      </Principal>
+      <Dependent Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="EmployeeWIBAClassID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeServiceDetail_tblEmployementTerminationCause">
+    <End Role="tblEmployementTerminationCause" Type="Self.tblEmployementTerminationCause" Multiplicity="1" />
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployementTerminationCause">
+        <PropertyRef Name="EmployementTerminationCauseID" />
+      </Principal>
+      <Dependent Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="TerminationTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeServiceDetail_tblLocation">
+    <End Role="tblLocation" Type="Self.tblLocation" Multiplicity="1" />
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLocation">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeServiceDetail_tblMinimumWageCategory">
+    <End Role="tblMinimumWageCategory" Type="Self.tblMinimumWageCategory" Multiplicity="1" />
+    <End Role="tblEmployeeServiceDetail" Type="Self.tblEmployeeServiceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMinimumWageCategory">
+        <PropertyRef Name="MinimumWageCategoryID" />
+      </Principal>
+      <Dependent Role="tblEmployeeServiceDetail">
+        <PropertyRef Name="MinimumWageCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeShift_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeShift" Type="Self.tblEmployeeShift" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeShift">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeShiftAllocation_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeShiftAllocation" Type="Self.tblEmployeeShiftAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeShiftAllocation">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeShiftAllocation_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblEmployeeShiftAllocation" Type="Self.tblEmployeeShiftAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblEmployeeShiftAllocation">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeShiftAllocation_tblEmployeeShift">
+    <End Role="tblEmployeeShift" Type="Self.tblEmployeeShift" Multiplicity="1" />
+    <End Role="tblEmployeeShiftAllocation" Type="Self.tblEmployeeShiftAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeShift">
+        <PropertyRef Name="EmployeeShiftID" />
+      </Principal>
+      <Dependent Role="tblEmployeeShiftAllocation">
+        <PropertyRef Name="EmployeeShiftID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeShiftAllocation_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblEmployeeShiftAllocation" Type="Self.tblEmployeeShiftAllocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblEmployeeShiftAllocation">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeWIBAClass_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeWIBAClass" Type="Self.tblEmployeeWIBAClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeWIBAClass">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeWIBAClassRate_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblEmployeeWIBAClassRate" Type="Self.tblEmployeeWIBAClassRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblEmployeeWIBAClassRate">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEmployeeWIBAClassRate_tblEmployeeWIBAClass">
+    <End Role="tblEmployeeWIBAClass" Type="Self.tblEmployeeWIBAClass" Multiplicity="1" />
+    <End Role="tblEmployeeWIBAClassRate" Type="Self.tblEmployeeWIBAClassRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeWIBAClass">
+        <PropertyRef Name="EmployeeWIBAClassID" />
+      </Principal>
+      <Dependent Role="tblEmployeeWIBAClassRate">
+        <PropertyRef Name="EmployeeWIBAClassID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFinPeriod_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblFinPeriod">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGridLayouts_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="0..1" />
+    <End Role="tblGridLayouts" Type="Self.tblGridLayouts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblGridLayouts">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGridLayouts_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="0..1" />
+    <End Role="tblGridLayouts" Type="Self.tblGridLayouts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblGridLayouts">
+        <PropertyRef Name="FinPerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHoliday_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblHoliday" Type="Self.tblHoliday" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblHoliday">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveAdjustment_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLeaveAdjustment" Type="Self.tblLeaveAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLeaveAdjustment">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveAdjustment_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblLeaveAdjustment" Type="Self.tblLeaveAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblLeaveAdjustment">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveAdjustment_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblLeaveAdjustment" Type="Self.tblLeaveAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblLeaveAdjustment">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveAdjustment_tblLeaveAdjustmentNoPrefix">
+    <End Role="tblLeaveAdjustmentNoPrefix" Type="Self.tblLeaveAdjustmentNoPrefix" Multiplicity="1" />
+    <End Role="tblLeaveAdjustment" Type="Self.tblLeaveAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeaveAdjustmentNoPrefix">
+        <PropertyRef Name="LeaveAdjustmentNoPrefixID" />
+      </Principal>
+      <Dependent Role="tblLeaveAdjustment">
+        <PropertyRef Name="LeaveAdjustmentNoPrefixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveAdjustment_tblLeaveType">
+    <End Role="tblLeaveType" Type="Self.tblLeaveType" Multiplicity="1" />
+    <End Role="tblLeaveAdjustment" Type="Self.tblLeaveAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeaveType">
+        <PropertyRef Name="LeaveTypeID" />
+      </Principal>
+      <Dependent Role="tblLeaveAdjustment">
+        <PropertyRef Name="LeaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveAdjustmentNoPrefix_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLeaveAdjustmentNoPrefix" Type="Self.tblLeaveAdjustmentNoPrefix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLeaveAdjustmentNoPrefix">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveApplication_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLeaveApplication" Type="Self.tblLeaveApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLeaveApplication">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveApplication_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblLeaveApplication" Type="Self.tblLeaveApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblLeaveApplication">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveApplication_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblLeaveApplication" Type="Self.tblLeaveApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblLeaveApplication">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveApplication_tblLeaveApplicationNoPrefix">
+    <End Role="tblLeaveApplicationNoPrefix" Type="Self.tblLeaveApplicationNoPrefix" Multiplicity="1" />
+    <End Role="tblLeaveApplication" Type="Self.tblLeaveApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeaveApplicationNoPrefix">
+        <PropertyRef Name="LeaveApplicationNoPrefixID" />
+      </Principal>
+      <Dependent Role="tblLeaveApplication">
+        <PropertyRef Name="LeaveApplicationNoPrefixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveApplication_tblLeaveType">
+    <End Role="tblLeaveType" Type="Self.tblLeaveType" Multiplicity="1" />
+    <End Role="tblLeaveApplication" Type="Self.tblLeaveApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeaveType">
+        <PropertyRef Name="LeaveTypeID" />
+      </Principal>
+      <Dependent Role="tblLeaveApplication">
+        <PropertyRef Name="LeaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveApplicationDayDetail_tblLeaveApplication">
+    <End Role="tblLeaveApplication" Type="Self.tblLeaveApplication" Multiplicity="1" />
+    <End Role="tblLeaveApplicationDayDetail" Type="Self.tblLeaveApplicationDayDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeaveApplication">
+        <PropertyRef Name="LeaveApplicationID" />
+      </Principal>
+      <Dependent Role="tblLeaveApplicationDayDetail">
+        <PropertyRef Name="LeaveApplicationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveApplicationNoPrefix_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLeaveApplicationNoPrefix" Type="Self.tblLeaveApplicationNoPrefix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLeaveApplicationNoPrefix">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveEncashment_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLeaveEncashment" Type="Self.tblLeaveEncashment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLeaveEncashment">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveEncashment_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblLeaveEncashment" Type="Self.tblLeaveEncashment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblLeaveEncashment">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveEncashment_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblLeaveEncashment" Type="Self.tblLeaveEncashment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblLeaveEncashment">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveEncashment_tblLeaveEncashmentNoPrefix">
+    <End Role="tblLeaveEncashmentNoPrefix" Type="Self.tblLeaveEncashmentNoPrefix" Multiplicity="1" />
+    <End Role="tblLeaveEncashment" Type="Self.tblLeaveEncashment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeaveEncashmentNoPrefix">
+        <PropertyRef Name="LeaveEncashmentNoPrefixID" />
+      </Principal>
+      <Dependent Role="tblLeaveEncashment">
+        <PropertyRef Name="LeaveEncashmentNoPrefixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveEncashment_tblLeaveType">
+    <End Role="tblLeaveType" Type="Self.tblLeaveType" Multiplicity="1" />
+    <End Role="tblLeaveEncashment" Type="Self.tblLeaveEncashment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLeaveType">
+        <PropertyRef Name="LeaveTypeID" />
+      </Principal>
+      <Dependent Role="tblLeaveEncashment">
+        <PropertyRef Name="LeaveTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveEncashmentNoPrefix_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLeaveEncashmentNoPrefix" Type="Self.tblLeaveEncashmentNoPrefix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLeaveEncashmentNoPrefix">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeaveType_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLeaveType" Type="Self.tblLeaveType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLeaveType">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanAdjustment_tblAccount">
+    <End Role="tblAccount" Type="Self.tblAccount" Multiplicity="0..1" />
+    <End Role="tblLoanAdjustment" Type="Self.tblLoanAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblAccount">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="tblLoanAdjustment">
+        <PropertyRef Name="CompanyBankAccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanAdjustment_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLoanAdjustment" Type="Self.tblLoanAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLoanAdjustment">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanAdjustment_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblLoanAdjustment" Type="Self.tblLoanAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblLoanAdjustment">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanAdjustment_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblLoanAdjustment" Type="Self.tblLoanAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblLoanAdjustment">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanAdjustment_tblLoanAdjustmentNoPrefix">
+    <End Role="tblLoanAdjustmentNoPrefix" Type="Self.tblLoanAdjustmentNoPrefix" Multiplicity="1" />
+    <End Role="tblLoanAdjustment" Type="Self.tblLoanAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLoanAdjustmentNoPrefix">
+        <PropertyRef Name="LoanAdjustmentNoPrefixID" />
+      </Principal>
+      <Dependent Role="tblLoanAdjustment">
+        <PropertyRef Name="LoanAdjustmentNoPrefixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanAdjustment_tblLoanApplication">
+    <End Role="tblLoanApplication" Type="Self.tblLoanApplication" Multiplicity="1" />
+    <End Role="tblLoanAdjustment" Type="Self.tblLoanAdjustment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLoanApplication">
+        <PropertyRef Name="LoanApplicationID" />
+      </Principal>
+      <Dependent Role="tblLoanAdjustment">
+        <PropertyRef Name="LoanApplicationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanAdjustmentNoPrefix_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLoanAdjustmentNoPrefix" Type="Self.tblLoanAdjustmentNoPrefix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLoanAdjustmentNoPrefix">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanApplication_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLoanApplication" Type="Self.tblLoanApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLoanApplication">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanApplication_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblLoanApplication" Type="Self.tblLoanApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblLoanApplication">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanApplication_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblLoanApplication" Type="Self.tblLoanApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblLoanApplication">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanApplication_tblLoanApplicationNoPrefix">
+    <End Role="tblLoanApplicationNoPrefix" Type="Self.tblLoanApplicationNoPrefix" Multiplicity="1" />
+    <End Role="tblLoanApplication" Type="Self.tblLoanApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLoanApplicationNoPrefix">
+        <PropertyRef Name="LoanApplicationNoPrefixID" />
+      </Principal>
+      <Dependent Role="tblLoanApplication">
+        <PropertyRef Name="LoanApplicationNoPrefixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLoanApplicationNoPrefix_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblLoanApplicationNoPrefix" Type="Self.tblLoanApplicationNoPrefix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblLoanApplicationNoPrefix">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLocationWeekendSetting_tblLocation">
+    <End Role="tblLocation" Type="Self.tblLocation" Multiplicity="1" />
+    <End Role="tblLocationWeekendSetting" Type="Self.tblLocationWeekendSetting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLocation">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="tblLocationWeekendSetting">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMinimumWageCategory_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblMinimumWageCategory" Type="Self.tblMinimumWageCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblMinimumWageCategory">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMinimumWageRate_tblMinimumWageCategory">
+    <End Role="tblMinimumWageCategory" Type="Self.tblMinimumWageCategory" Multiplicity="1" />
+    <End Role="tblMinimumWageRate" Type="Self.tblMinimumWageRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMinimumWageCategory">
+        <PropertyRef Name="MinimumWageCategoryID" />
+      </Principal>
+      <Dependent Role="tblMinimumWageRate">
+        <PropertyRef Name="MinimumWageCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblNonCashBenefit_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblNonCashBenefit" Type="Self.tblNonCashBenefit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblNonCashBenefit">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPAYERelief_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblPAYERelief" Type="Self.tblPAYERelief" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblPAYERelief">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPayroll_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="0..1" />
+    <End Role="tblPayroll" Type="Self.tblPayroll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblPayroll">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPayroll_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="0..1" />
+    <End Role="tblPayroll" Type="Self.tblPayroll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblPayroll">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPayrollEmployeeDetail_tblNonCashBenefit">
+    <End Role="tblNonCashBenefit" Type="Self.tblNonCashBenefit" Multiplicity="0..1" />
+    <End Role="tblPayrollEmployeeDetail" Type="Self.tblPayrollEmployeeDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNonCashBenefit">
+        <PropertyRef Name="NonCashBenefitID" />
+      </Principal>
+      <Dependent Role="tblPayrollEmployeeDetail">
+        <PropertyRef Name="Vehicle_NoncashBenefitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPayrollEmployeeDetail_tblPayroll">
+    <End Role="tblPayroll" Type="Self.tblPayroll" Multiplicity="1" />
+    <End Role="tblPayrollEmployeeDetail" Type="Self.tblPayrollEmployeeDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPayroll">
+        <PropertyRef Name="PayrollID" />
+      </Principal>
+      <Dependent Role="tblPayrollEmployeeDetail">
+        <PropertyRef Name="PayrollID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPayrollEmployeeEarningsDeduction_tblEmployeeEarningDeduction">
+    <End Role="tblEmployeeEarningDeduction" Type="Self.tblEmployeeEarningDeduction" Multiplicity="1" />
+    <End Role="tblPayrollEmployeeEarningsDeduction" Type="Self.tblPayrollEmployeeEarningsDeduction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployeeEarningDeduction">
+        <PropertyRef Name="EmployeeEarningDeductionID" />
+      </Principal>
+      <Dependent Role="tblPayrollEmployeeEarningsDeduction">
+        <PropertyRef Name="EarningsDeductionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPayrollEmployeeEarningsDeduction_tblPayrollEmployeeDetail">
+    <End Role="tblPayrollEmployeeDetail" Type="Self.tblPayrollEmployeeDetail" Multiplicity="1" />
+    <End Role="tblPayrollEmployeeEarningsDeduction" Type="Self.tblPayrollEmployeeEarningsDeduction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPayrollEmployeeDetail">
+        <PropertyRef Name="PayrollEmployeeDetailID" />
+      </Principal>
+      <Dependent Role="tblPayrollEmployeeEarningsDeduction">
+        <PropertyRef Name="PayrollEmployeeDetailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPayrollEmployeeNonCashBenefit_tblPayrollEmployeeDetail">
+    <End Role="tblPayrollEmployeeDetail" Type="Self.tblPayrollEmployeeDetail" Multiplicity="1" />
+    <End Role="tblPayrollEmployeeNonCashBenefit" Type="Self.tblPayrollEmployeeNonCashBenefit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPayrollEmployeeDetail">
+        <PropertyRef Name="PayrollEmployeeDetailID" />
+      </Principal>
+      <Dependent Role="tblPayrollEmployeeNonCashBenefit">
+        <PropertyRef Name="PayrollEmployeeDetailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPayrollEmployePAYERelief_tblPayrollEmployeeDetail">
+    <End Role="tblPayrollEmployeeDetail" Type="Self.tblPayrollEmployeeDetail" Multiplicity="1" />
+    <End Role="tblPayrollEmployePAYERelief" Type="Self.tblPayrollEmployePAYERelief" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPayrollEmployeeDetail">
+        <PropertyRef Name="PayrollEmployeeDetailID" />
+      </Principal>
+      <Dependent Role="tblPayrollEmployePAYERelief">
+        <PropertyRef Name="PayrollEmployeeDetailID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSafariApplication_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblSafariApplication" Type="Self.tblSafariApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblSafariApplication">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSafariApplication_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblSafariApplication" Type="Self.tblSafariApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblSafariApplication">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSafariApplication_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblSafariApplication" Type="Self.tblSafariApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblSafariApplication">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSafariApplication_tblSafariApplicationNoPrefix">
+    <End Role="tblSafariApplicationNoPrefix" Type="Self.tblSafariApplicationNoPrefix" Multiplicity="1" />
+    <End Role="tblSafariApplication" Type="Self.tblSafariApplication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSafariApplicationNoPrefix">
+        <PropertyRef Name="SafariApplicationNoPrefixID" />
+      </Principal>
+      <Dependent Role="tblSafariApplication">
+        <PropertyRef Name="SafariApplicationNoPrefixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSafariApplicationDayDetail_tblSafariApplication">
+    <End Role="tblSafariApplication" Type="Self.tblSafariApplication" Multiplicity="1" />
+    <End Role="tblSafariApplicationDayDetail" Type="Self.tblSafariApplicationDayDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSafariApplication">
+        <PropertyRef Name="SafariApplicationID" />
+      </Principal>
+      <Dependent Role="tblSafariApplicationDayDetail">
+        <PropertyRef Name="SafariApplicationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSafariApplicationNoPrefix_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblSafariApplicationNoPrefix" Type="Self.tblSafariApplicationNoPrefix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblSafariApplicationNoPrefix">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblState_tblCountry">
+    <End Role="tblCountry" Type="Self.tblCountry" Multiplicity="1" />
+    <End Role="tblState" Type="Self.tblState" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCountry">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="tblState">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTAApproval_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblTAApproval" Type="Self.tblTAApproval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblTAApproval">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTAApproval_tblEmployee">
+    <End Role="tblEmployee" Type="Self.tblEmployee" Multiplicity="1" />
+    <End Role="tblTAApproval" Type="Self.tblTAApproval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="tblTAApproval">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTAApproval_tblFinPeriod">
+    <End Role="tblFinPeriod" Type="Self.tblFinPeriod" Multiplicity="1" />
+    <End Role="tblTAApproval" Type="Self.tblTAApproval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFinPeriod">
+        <PropertyRef Name="FinPeriodID" />
+      </Principal>
+      <Dependent Role="tblTAApproval">
+        <PropertyRef Name="FinPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTAApproval_tblTAApprovalNoPrefix">
+    <End Role="tblTAApprovalNoPrefix" Type="Self.tblTAApprovalNoPrefix" Multiplicity="1" />
+    <End Role="tblTAApproval" Type="Self.tblTAApproval" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTAApprovalNoPrefix">
+        <PropertyRef Name="TAApprovalNoPrefixID" />
+      </Principal>
+      <Dependent Role="tblTAApproval">
+        <PropertyRef Name="TAApprovalNoPrefixID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTAApprovalNoPrefix_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblTAApprovalNoPrefix" Type="Self.tblTAApprovalNoPrefix" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblTAApprovalNoPrefix">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTaxSlabDetail_tblTaxSlabHeader">
+    <End Role="tblTaxSlabHeader" Type="Self.tblTaxSlabHeader" Multiplicity="1" />
+    <End Role="tblTaxSlabDetail" Type="Self.tblTaxSlabDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTaxSlabHeader">
+        <PropertyRef Name="TaxSlabHeaderID" />
+      </Principal>
+      <Dependent Role="tblTaxSlabDetail">
+        <PropertyRef Name="TaxSlabHeaderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTaxSlabHeader_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblTaxSlabHeader" Type="Self.tblTaxSlabHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblTaxSlabHeader">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUser_tblUserGroup">
+    <End Role="tblUserGroup" Type="Self.tblUserGroup" Multiplicity="1" />
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUserGroup">
+        <PropertyRef Name="UserGroupID" />
+      </Principal>
+      <Dependent Role="tblUser">
+        <PropertyRef Name="UserGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserGroupPerimission_tblUserGroup">
+    <End Role="tblUserGroup" Type="Self.tblUserGroup" Multiplicity="1" />
+    <End Role="tblUserGroupPerimission" Type="Self.tblUserGroupPerimission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUserGroup">
+        <PropertyRef Name="UserGroupID" />
+      </Principal>
+      <Dependent Role="tblUserGroupPerimission">
+        <PropertyRef Name="UserGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserGroupPermissionOnCompany_tblCompany">
+    <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="1" />
+    <End Role="tblUserGroupPermissionOnCompany" Type="Self.tblUserGroupPermissionOnCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCompany">
+        <PropertyRef Name="CompanyID" />
+      </Principal>
+      <Dependent Role="tblUserGroupPermissionOnCompany">
+        <PropertyRef Name="CompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserGroupPermissionOnCompany_tblUserGroup">
+    <End Role="tblUserGroup" Type="Self.tblUserGroup" Multiplicity="1" />
+    <End Role="tblUserGroupPermissionOnCompany" Type="Self.tblUserGroupPermissionOnCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUserGroup">
+        <PropertyRef Name="UserGroupID" />
+      </Principal>
+      <Dependent Role="tblUserGroupPermissionOnCompany">
+        <PropertyRef Name="UserGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserGroupPermissionOnLocation_tblLocation">
+    <End Role="tblLocation" Type="Self.tblLocation" Multiplicity="1" />
+    <End Role="tblUserGroupPermissionOnLocation" Type="Self.tblUserGroupPermissionOnLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLocation">
+        <PropertyRef Name="LocationID" />
+      </Principal>
+      <Dependent Role="tblUserGroupPermissionOnLocation">
+        <PropertyRef Name="LocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblUserGroupPermissionOnLocation_tblUserGroup">
+    <End Role="tblUserGroup" Type="Self.tblUserGroup" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblUserGroupPermissionOnLocation" Type="Self.tblUserGroupPermissionOnLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUserGroup">
+        <PropertyRef Name="UserGroupID" />
+      </Principal>
+      <Dependent Role="tblUserGroupPermissionOnLocation">
+        <PropertyRef Name="UserGroupID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbVisionModelStoreContainer">
+    <EntitySet Name="tblAccount" EntityType="Self.tblAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblAccountType" EntityType="Self.tblAccountType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBankBranch" EntityType="Self.tblBankBranch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBankName" EntityType="Self.tblBankName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBiometricDevice" EntityType="Self.tblBiometricDevice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCity" EntityType="Self.tblCity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCompany" EntityType="Self.tblCompany" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCountry" EntityType="Self.tblCountry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCurrency" EntityType="Self.tblCurrency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDataReceiverErrorLog" EntityType="Self.tblDataReceiverErrorLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployee" EntityType="Self.tblEmployee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeAccountingLedger" EntityType="Self.tblEmployeeAccountingLedger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeAttendance" EntityType="Self.tblEmployeeAttendance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeAttendanceDetail" EntityType="Self.tblEmployeeAttendanceDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeBMDUpdateLog" EntityType="Self.tblEmployeeBMDUpdateLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeDepartment" EntityType="Self.tblEmployeeDepartment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeDesignation" EntityType="Self.tblEmployeeDesignation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeDocument" EntityType="Self.tblEmployeeDocument" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeEarningDeduction" EntityType="Self.tblEmployeeEarningDeduction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeFamily" EntityType="Self.tblEmployeeFamily" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeLeaveOpeningBalance" EntityType="Self.tblEmployeeLeaveOpeningBalance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeListFormat" EntityType="Self.tblEmployeeListFormat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeNoPrefix" EntityType="Self.tblEmployeeNoPrefix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeRestDay" EntityType="Self.tblEmployeeRestDay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeSalaryIncrement" EntityType="Self.tblEmployeeSalaryIncrement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeServiceDetail" EntityType="Self.tblEmployeeServiceDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeShift" EntityType="Self.tblEmployeeShift" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeShiftAllocation" EntityType="Self.tblEmployeeShiftAllocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeWIBAClass" EntityType="Self.tblEmployeeWIBAClass" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployeeWIBAClassRate" EntityType="Self.tblEmployeeWIBAClassRate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblEmployementTerminationCause" EntityType="Self.tblEmployementTerminationCause" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFinPeriod" EntityType="Self.tblFinPeriod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGridLayouts" EntityType="Self.tblGridLayouts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblHoliday" EntityType="Self.tblHoliday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLeaveAdjustment" EntityType="Self.tblLeaveAdjustment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLeaveAdjustmentNoPrefix" EntityType="Self.tblLeaveAdjustmentNoPrefix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLeaveApplication" EntityType="Self.tblLeaveApplication" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLeaveApplicationDayDetail" EntityType="Self.tblLeaveApplicationDayDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLeaveApplicationNoPrefix" EntityType="Self.tblLeaveApplicationNoPrefix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLeaveEncashment" EntityType="Self.tblLeaveEncashment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLeaveEncashmentNoPrefix" EntityType="Self.tblLeaveEncashmentNoPrefix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLeaveType" EntityType="Self.tblLeaveType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLoanAdjustment" EntityType="Self.tblLoanAdjustment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLoanAdjustmentNoPrefix" EntityType="Self.tblLoanAdjustmentNoPrefix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLoanApplication" EntityType="Self.tblLoanApplication" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLoanApplicationNoPrefix" EntityType="Self.tblLoanApplicationNoPrefix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLocation" EntityType="Self.tblLocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLocationWeekendSetting" EntityType="Self.tblLocationWeekendSetting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMinimumWageCategory" EntityType="Self.tblMinimumWageCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMinimumWageRate" EntityType="Self.tblMinimumWageRate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblNonCashBenefit" EntityType="Self.tblNonCashBenefit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPAYERelief" EntityType="Self.tblPAYERelief" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPAYEReliefRate" EntityType="Self.tblPAYEReliefRate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPayroll" EntityType="Self.tblPayroll" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPayrollEmployeeDetail" EntityType="Self.tblPayrollEmployeeDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPayrollEmployeeEarningsDeduction" EntityType="Self.tblPayrollEmployeeEarningsDeduction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPayrollEmployeeNonCashBenefit" EntityType="Self.tblPayrollEmployeeNonCashBenefit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPayrollEmployePAYERelief" EntityType="Self.tblPayrollEmployePAYERelief" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPayrollMonth" EntityType="Self.tblPayrollMonth" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRecordState" EntityType="Self.tblRecordState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSafariApplication" EntityType="Self.tblSafariApplication" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSafariApplicationDayDetail" EntityType="Self.tblSafariApplicationDayDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSafariApplicationNoPrefix" EntityType="Self.tblSafariApplicationNoPrefix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSettingL0" EntityType="Self.tblSettingL0" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSettingMasterL1" EntityType="Self.tblSettingMasterL1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSettingsL1" EntityType="Self.tblSettingsL1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSMSLog" EntityType="Self.tblSMSLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblState" EntityType="Self.tblState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTAApproval" EntityType="Self.tblTAApproval" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTAApprovalNoPrefix" EntityType="Self.tblTAApprovalNoPrefix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTaxSlabDetail" EntityType="Self.tblTaxSlabDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTaxSlabHeader" EntityType="Self.tblTaxSlabHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserGroup" EntityType="Self.tblUserGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserGroupPerimission" EntityType="Self.tblUserGroupPerimission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserGroupPermissionOnCompany" EntityType="Self.tblUserGroupPermissionOnCompany" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserGroupPermissionOnLocation" EntityType="Self.tblUserGroupPermissionOnLocation" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__tblPayrol__Compa__4C214075" Association="Self.FK__tblPayrol__Compa__4C214075">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblPayrollMonth" EntitySet="tblPayrollMonth" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblAccount_tblBankBranch" Association="Self.FK_tblAccount_tblBankBranch">
+      <End Role="tblBankBranch" EntitySet="tblBankBranch" />
+      <End Role="tblAccount" EntitySet="tblAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblAccount_tblBankName" Association="Self.FK_tblAccount_tblBankName">
+      <End Role="tblBankName" EntitySet="tblBankName" />
+      <End Role="tblAccount" EntitySet="tblAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblAccount_tblCity" Association="Self.FK_tblAccount_tblCity">
+      <End Role="tblCity" EntitySet="tblCity" />
+      <End Role="tblAccount" EntitySet="tblAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblAccount_tblCompany" Association="Self.FK_tblAccount_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblAccount" EntitySet="tblAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblAccount_tblCurrency" Association="Self.FK_tblAccount_tblCurrency">
+      <End Role="tblCurrency" EntitySet="tblCurrency" />
+      <End Role="tblAccount" EntitySet="tblAccount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblBankBranch_tblBankName" Association="Self.FK_tblBankBranch_tblBankName">
+      <End Role="tblBankName" EntitySet="tblBankName" />
+      <End Role="tblBankBranch" EntitySet="tblBankBranch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblBankBranch_tblCity" Association="Self.FK_tblBankBranch_tblCity">
+      <End Role="tblCity" EntitySet="tblCity" />
+      <End Role="tblBankBranch" EntitySet="tblBankBranch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblBiometricDevice_tblCompany" Association="Self.FK_tblBiometricDevice_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblBiometricDevice" EntitySet="tblBiometricDevice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCity_tblCountry" Association="Self.FK_tblCity_tblCountry">
+      <End Role="tblCountry" EntitySet="tblCountry" />
+      <End Role="tblCity" EntitySet="tblCity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCity_tblState" Association="Self.FK_tblCity_tblState">
+      <End Role="tblState" EntitySet="tblState" />
+      <End Role="tblCity" EntitySet="tblCity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCompany_tblCity" Association="Self.FK_tblCompany_tblCity">
+      <End Role="tblCity" EntitySet="tblCity" />
+      <End Role="tblCompany" EntitySet="tblCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCompany_tblCurrency" Association="Self.FK_tblCompany_tblCurrency">
+      <End Role="tblCurrency" EntitySet="tblCurrency" />
+      <End Role="tblCompany" EntitySet="tblCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblBankBranch" Association="Self.FK_tblEmployee_tblBankBranch">
+      <End Role="tblBankBranch" EntitySet="tblBankBranch" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblBankName" Association="Self.FK_tblEmployee_tblBankName">
+      <End Role="tblBankName" EntitySet="tblBankName" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblCity" Association="Self.FK_tblEmployee_tblCity">
+      <End Role="tblCity" EntitySet="tblCity" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblCompany" Association="Self.FK_tblEmployee_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblCountry" Association="Self.FK_tblEmployee_tblCountry">
+      <End Role="tblCountry" EntitySet="tblCountry" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblCurrency" Association="Self.FK_tblEmployee_tblCurrency">
+      <End Role="tblCurrency" EntitySet="tblCurrency" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblEmployeeAccountingLedger" Association="Self.FK_tblEmployee_tblEmployeeAccountingLedger">
+      <End Role="tblEmployeeAccountingLedger" EntitySet="tblEmployeeAccountingLedger" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblEmployeeNoPrefix" Association="Self.FK_tblEmployee_tblEmployeeNoPrefix">
+      <End Role="tblEmployeeNoPrefix" EntitySet="tblEmployeeNoPrefix" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployee_tblEmployeeServiceDetail" Association="Self.FK_tblEmployee_tblEmployeeServiceDetail">
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeAccountingLedger_tblCompany" Association="Self.FK_tblEmployeeAccountingLedger_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeAccountingLedger" EntitySet="tblEmployeeAccountingLedger" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeAttendance_tblCompany" Association="Self.FK_tblEmployeeAttendance_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeAttendance" EntitySet="tblEmployeeAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeAttendance_tblEmployee" Association="Self.FK_tblEmployeeAttendance_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeAttendance" EntitySet="tblEmployeeAttendance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeAttendanceDetail_tblCompany" Association="Self.FK_tblEmployeeAttendanceDetail_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeAttendanceDetail" EntitySet="tblEmployeeAttendanceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeAttendanceDetail_tblEmployee" Association="Self.FK_tblEmployeeAttendanceDetail_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeAttendanceDetail" EntitySet="tblEmployeeAttendanceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeAttendanceDetail_tblEmployeeAttendance" Association="Self.FK_tblEmployeeAttendanceDetail_tblEmployeeAttendance">
+      <End Role="tblEmployeeAttendance" EntitySet="tblEmployeeAttendance" />
+      <End Role="tblEmployeeAttendanceDetail" EntitySet="tblEmployeeAttendanceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeDepartment_tblCompany" Association="Self.FK_tblEmployeeDepartment_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeDepartment" EntitySet="tblEmployeeDepartment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeDesignation_tblCompany" Association="Self.FK_tblEmployeeDesignation_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeDesignation" EntitySet="tblEmployeeDesignation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeDocument_tblEmployee" Association="Self.FK_tblEmployeeDocument_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeDocument" EntitySet="tblEmployeeDocument" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeFamily_tblEmployee" Association="Self.FK_tblEmployeeFamily_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeFamily" EntitySet="tblEmployeeFamily" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeLeaveOpeningBalance_tblCompany" Association="Self.FK_tblEmployeeLeaveOpeningBalance_tblCompany">
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+      <End Role="tblEmployeeLeaveOpeningBalance" EntitySet="tblEmployeeLeaveOpeningBalance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeLeaveOpeningBalance_tblEmployee" Association="Self.FK_tblEmployeeLeaveOpeningBalance_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeLeaveOpeningBalance" EntitySet="tblEmployeeLeaveOpeningBalance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeLeaveOpeningBalance_tblFinPeriod" Association="Self.FK_tblEmployeeLeaveOpeningBalance_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblEmployeeLeaveOpeningBalance" EntitySet="tblEmployeeLeaveOpeningBalance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeLeaveOpeningBalance_tblLeaveType" Association="Self.FK_tblEmployeeLeaveOpeningBalance_tblLeaveType">
+      <End Role="tblLeaveType" EntitySet="tblLeaveType" />
+      <End Role="tblEmployeeLeaveOpeningBalance" EntitySet="tblEmployeeLeaveOpeningBalance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeNoPrefix_tblCompany" Association="Self.FK_tblEmployeeNoPrefix_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeNoPrefix" EntitySet="tblEmployeeNoPrefix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeePayroll_tblEmployee" Association="Self.FK_tblEmployeePayroll_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblPayrollEmployeeDetail" EntitySet="tblPayrollEmployeeDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeRestDay_tblCompany" Association="Self.FK_tblEmployeeRestDay_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeRestDay" EntitySet="tblEmployeeRestDay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeRestDay_tblEmployee" Association="Self.FK_tblEmployeeRestDay_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeRestDay" EntitySet="tblEmployeeRestDay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeRestDay_tblFinPeriod" Association="Self.FK_tblEmployeeRestDay_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblEmployeeRestDay" EntitySet="tblEmployeeRestDay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeSalaryIncrement_tblCompany" Association="Self.FK_tblEmployeeSalaryIncrement_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeSalaryIncrement" EntitySet="tblEmployeeSalaryIncrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeSalaryIncrement_tblEmployee" Association="Self.FK_tblEmployeeSalaryIncrement_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeSalaryIncrement" EntitySet="tblEmployeeSalaryIncrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeSalaryIncrement_tblFinPeriod" Association="Self.FK_tblEmployeeSalaryIncrement_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblEmployeeSalaryIncrement" EntitySet="tblEmployeeSalaryIncrement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeServiceDetail_tblEmployee" Association="Self.FK_tblEmployeeServiceDetail_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeServiceDetail_tblEmployeeDepartment" Association="Self.FK_tblEmployeeServiceDetail_tblEmployeeDepartment">
+      <End Role="tblEmployeeDepartment" EntitySet="tblEmployeeDepartment" />
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeServiceDetail_tblEmployeeDesignation" Association="Self.FK_tblEmployeeServiceDetail_tblEmployeeDesignation">
+      <End Role="tblEmployeeDesignation" EntitySet="tblEmployeeDesignation" />
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeServiceDetail_tblEmployeeShift" Association="Self.FK_tblEmployeeServiceDetail_tblEmployeeShift">
+      <End Role="tblEmployeeShift" EntitySet="tblEmployeeShift" />
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeServiceDetail_tblEmployeeWIBAClass" Association="Self.FK_tblEmployeeServiceDetail_tblEmployeeWIBAClass">
+      <End Role="tblEmployeeWIBAClass" EntitySet="tblEmployeeWIBAClass" />
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeServiceDetail_tblEmployementTerminationCause" Association="Self.FK_tblEmployeeServiceDetail_tblEmployementTerminationCause">
+      <End Role="tblEmployementTerminationCause" EntitySet="tblEmployementTerminationCause" />
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeServiceDetail_tblLocation" Association="Self.FK_tblEmployeeServiceDetail_tblLocation">
+      <End Role="tblLocation" EntitySet="tblLocation" />
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeServiceDetail_tblMinimumWageCategory" Association="Self.FK_tblEmployeeServiceDetail_tblMinimumWageCategory">
+      <End Role="tblMinimumWageCategory" EntitySet="tblMinimumWageCategory" />
+      <End Role="tblEmployeeServiceDetail" EntitySet="tblEmployeeServiceDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeShift_tblCompany" Association="Self.FK_tblEmployeeShift_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeShift" EntitySet="tblEmployeeShift" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeShiftAllocation_tblCompany" Association="Self.FK_tblEmployeeShiftAllocation_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeShiftAllocation" EntitySet="tblEmployeeShiftAllocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeShiftAllocation_tblEmployee" Association="Self.FK_tblEmployeeShiftAllocation_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEmployeeShiftAllocation" EntitySet="tblEmployeeShiftAllocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeShiftAllocation_tblEmployeeShift" Association="Self.FK_tblEmployeeShiftAllocation_tblEmployeeShift">
+      <End Role="tblEmployeeShift" EntitySet="tblEmployeeShift" />
+      <End Role="tblEmployeeShiftAllocation" EntitySet="tblEmployeeShiftAllocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeShiftAllocation_tblFinPeriod" Association="Self.FK_tblEmployeeShiftAllocation_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblEmployeeShiftAllocation" EntitySet="tblEmployeeShiftAllocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeWIBAClass_tblCompany" Association="Self.FK_tblEmployeeWIBAClass_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeWIBAClass" EntitySet="tblEmployeeWIBAClass" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeWIBAClassRate_tblCompany" Association="Self.FK_tblEmployeeWIBAClassRate_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblEmployeeWIBAClassRate" EntitySet="tblEmployeeWIBAClassRate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEmployeeWIBAClassRate_tblEmployeeWIBAClass" Association="Self.FK_tblEmployeeWIBAClassRate_tblEmployeeWIBAClass">
+      <End Role="tblEmployeeWIBAClass" EntitySet="tblEmployeeWIBAClass" />
+      <End Role="tblEmployeeWIBAClassRate" EntitySet="tblEmployeeWIBAClassRate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFinPeriod_tblCompany" Association="Self.FK_tblFinPeriod_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGridLayouts_tblCompany" Association="Self.FK_tblGridLayouts_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblGridLayouts" EntitySet="tblGridLayouts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGridLayouts_tblFinPeriod" Association="Self.FK_tblGridLayouts_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblGridLayouts" EntitySet="tblGridLayouts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHoliday_tblCompany" Association="Self.FK_tblHoliday_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblHoliday" EntitySet="tblHoliday" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveAdjustment_tblCompany" Association="Self.FK_tblLeaveAdjustment_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLeaveAdjustment" EntitySet="tblLeaveAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveAdjustment_tblEmployee" Association="Self.FK_tblLeaveAdjustment_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblLeaveAdjustment" EntitySet="tblLeaveAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveAdjustment_tblFinPeriod" Association="Self.FK_tblLeaveAdjustment_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblLeaveAdjustment" EntitySet="tblLeaveAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveAdjustment_tblLeaveAdjustmentNoPrefix" Association="Self.FK_tblLeaveAdjustment_tblLeaveAdjustmentNoPrefix">
+      <End Role="tblLeaveAdjustmentNoPrefix" EntitySet="tblLeaveAdjustmentNoPrefix" />
+      <End Role="tblLeaveAdjustment" EntitySet="tblLeaveAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveAdjustment_tblLeaveType" Association="Self.FK_tblLeaveAdjustment_tblLeaveType">
+      <End Role="tblLeaveType" EntitySet="tblLeaveType" />
+      <End Role="tblLeaveAdjustment" EntitySet="tblLeaveAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveAdjustmentNoPrefix_tblCompany" Association="Self.FK_tblLeaveAdjustmentNoPrefix_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLeaveAdjustmentNoPrefix" EntitySet="tblLeaveAdjustmentNoPrefix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveApplication_tblCompany" Association="Self.FK_tblLeaveApplication_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLeaveApplication" EntitySet="tblLeaveApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveApplication_tblEmployee" Association="Self.FK_tblLeaveApplication_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblLeaveApplication" EntitySet="tblLeaveApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveApplication_tblFinPeriod" Association="Self.FK_tblLeaveApplication_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblLeaveApplication" EntitySet="tblLeaveApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveApplication_tblLeaveApplicationNoPrefix" Association="Self.FK_tblLeaveApplication_tblLeaveApplicationNoPrefix">
+      <End Role="tblLeaveApplicationNoPrefix" EntitySet="tblLeaveApplicationNoPrefix" />
+      <End Role="tblLeaveApplication" EntitySet="tblLeaveApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveApplication_tblLeaveType" Association="Self.FK_tblLeaveApplication_tblLeaveType">
+      <End Role="tblLeaveType" EntitySet="tblLeaveType" />
+      <End Role="tblLeaveApplication" EntitySet="tblLeaveApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveApplicationDayDetail_tblLeaveApplication" Association="Self.FK_tblLeaveApplicationDayDetail_tblLeaveApplication">
+      <End Role="tblLeaveApplication" EntitySet="tblLeaveApplication" />
+      <End Role="tblLeaveApplicationDayDetail" EntitySet="tblLeaveApplicationDayDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveApplicationNoPrefix_tblCompany" Association="Self.FK_tblLeaveApplicationNoPrefix_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLeaveApplicationNoPrefix" EntitySet="tblLeaveApplicationNoPrefix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveEncashment_tblCompany" Association="Self.FK_tblLeaveEncashment_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLeaveEncashment" EntitySet="tblLeaveEncashment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveEncashment_tblEmployee" Association="Self.FK_tblLeaveEncashment_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblLeaveEncashment" EntitySet="tblLeaveEncashment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveEncashment_tblFinPeriod" Association="Self.FK_tblLeaveEncashment_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblLeaveEncashment" EntitySet="tblLeaveEncashment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveEncashment_tblLeaveEncashmentNoPrefix" Association="Self.FK_tblLeaveEncashment_tblLeaveEncashmentNoPrefix">
+      <End Role="tblLeaveEncashmentNoPrefix" EntitySet="tblLeaveEncashmentNoPrefix" />
+      <End Role="tblLeaveEncashment" EntitySet="tblLeaveEncashment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveEncashment_tblLeaveType" Association="Self.FK_tblLeaveEncashment_tblLeaveType">
+      <End Role="tblLeaveType" EntitySet="tblLeaveType" />
+      <End Role="tblLeaveEncashment" EntitySet="tblLeaveEncashment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveEncashmentNoPrefix_tblCompany" Association="Self.FK_tblLeaveEncashmentNoPrefix_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLeaveEncashmentNoPrefix" EntitySet="tblLeaveEncashmentNoPrefix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeaveType_tblCompany" Association="Self.FK_tblLeaveType_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLeaveType" EntitySet="tblLeaveType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanAdjustment_tblAccount" Association="Self.FK_tblLoanAdjustment_tblAccount">
+      <End Role="tblAccount" EntitySet="tblAccount" />
+      <End Role="tblLoanAdjustment" EntitySet="tblLoanAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanAdjustment_tblCompany" Association="Self.FK_tblLoanAdjustment_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLoanAdjustment" EntitySet="tblLoanAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanAdjustment_tblEmployee" Association="Self.FK_tblLoanAdjustment_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblLoanAdjustment" EntitySet="tblLoanAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanAdjustment_tblFinPeriod" Association="Self.FK_tblLoanAdjustment_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblLoanAdjustment" EntitySet="tblLoanAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanAdjustment_tblLoanAdjustmentNoPrefix" Association="Self.FK_tblLoanAdjustment_tblLoanAdjustmentNoPrefix">
+      <End Role="tblLoanAdjustmentNoPrefix" EntitySet="tblLoanAdjustmentNoPrefix" />
+      <End Role="tblLoanAdjustment" EntitySet="tblLoanAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanAdjustment_tblLoanApplication" Association="Self.FK_tblLoanAdjustment_tblLoanApplication">
+      <End Role="tblLoanApplication" EntitySet="tblLoanApplication" />
+      <End Role="tblLoanAdjustment" EntitySet="tblLoanAdjustment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanAdjustmentNoPrefix_tblCompany" Association="Self.FK_tblLoanAdjustmentNoPrefix_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLoanAdjustmentNoPrefix" EntitySet="tblLoanAdjustmentNoPrefix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanApplication_tblCompany" Association="Self.FK_tblLoanApplication_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLoanApplication" EntitySet="tblLoanApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanApplication_tblEmployee" Association="Self.FK_tblLoanApplication_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblLoanApplication" EntitySet="tblLoanApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanApplication_tblFinPeriod" Association="Self.FK_tblLoanApplication_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblLoanApplication" EntitySet="tblLoanApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanApplication_tblLoanApplicationNoPrefix" Association="Self.FK_tblLoanApplication_tblLoanApplicationNoPrefix">
+      <End Role="tblLoanApplicationNoPrefix" EntitySet="tblLoanApplicationNoPrefix" />
+      <End Role="tblLoanApplication" EntitySet="tblLoanApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLoanApplicationNoPrefix_tblCompany" Association="Self.FK_tblLoanApplicationNoPrefix_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblLoanApplicationNoPrefix" EntitySet="tblLoanApplicationNoPrefix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLocationWeekendSetting_tblLocation" Association="Self.FK_tblLocationWeekendSetting_tblLocation">
+      <End Role="tblLocation" EntitySet="tblLocation" />
+      <End Role="tblLocationWeekendSetting" EntitySet="tblLocationWeekendSetting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMinimumWageCategory_tblCompany" Association="Self.FK_tblMinimumWageCategory_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblMinimumWageCategory" EntitySet="tblMinimumWageCategory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMinimumWageRate_tblMinimumWageCategory" Association="Self.FK_tblMinimumWageRate_tblMinimumWageCategory">
+      <End Role="tblMinimumWageCategory" EntitySet="tblMinimumWageCategory" />
+      <End Role="tblMinimumWageRate" EntitySet="tblMinimumWageRate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblNonCashBenefit_tblCompany" Association="Self.FK_tblNonCashBenefit_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblNonCashBenefit" EntitySet="tblNonCashBenefit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPAYERelief_tblCompany" Association="Self.FK_tblPAYERelief_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblPAYERelief" EntitySet="tblPAYERelief" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPayroll_tblCompany" Association="Self.FK_tblPayroll_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblPayroll" EntitySet="tblPayroll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPayroll_tblFinPeriod" Association="Self.FK_tblPayroll_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblPayroll" EntitySet="tblPayroll" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPayrollEmployeeDetail_tblNonCashBenefit" Association="Self.FK_tblPayrollEmployeeDetail_tblNonCashBenefit">
+      <End Role="tblNonCashBenefit" EntitySet="tblNonCashBenefit" />
+      <End Role="tblPayrollEmployeeDetail" EntitySet="tblPayrollEmployeeDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPayrollEmployeeDetail_tblPayroll" Association="Self.FK_tblPayrollEmployeeDetail_tblPayroll">
+      <End Role="tblPayroll" EntitySet="tblPayroll" />
+      <End Role="tblPayrollEmployeeDetail" EntitySet="tblPayrollEmployeeDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPayrollEmployeeEarningsDeduction_tblEmployeeEarningDeduction" Association="Self.FK_tblPayrollEmployeeEarningsDeduction_tblEmployeeEarningDeduction">
+      <End Role="tblEmployeeEarningDeduction" EntitySet="tblEmployeeEarningDeduction" />
+      <End Role="tblPayrollEmployeeEarningsDeduction" EntitySet="tblPayrollEmployeeEarningsDeduction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPayrollEmployeeEarningsDeduction_tblPayrollEmployeeDetail" Association="Self.FK_tblPayrollEmployeeEarningsDeduction_tblPayrollEmployeeDetail">
+      <End Role="tblPayrollEmployeeDetail" EntitySet="tblPayrollEmployeeDetail" />
+      <End Role="tblPayrollEmployeeEarningsDeduction" EntitySet="tblPayrollEmployeeEarningsDeduction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPayrollEmployeeNonCashBenefit_tblPayrollEmployeeDetail" Association="Self.FK_tblPayrollEmployeeNonCashBenefit_tblPayrollEmployeeDetail">
+      <End Role="tblPayrollEmployeeDetail" EntitySet="tblPayrollEmployeeDetail" />
+      <End Role="tblPayrollEmployeeNonCashBenefit" EntitySet="tblPayrollEmployeeNonCashBenefit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPayrollEmployePAYERelief_tblPayrollEmployeeDetail" Association="Self.FK_tblPayrollEmployePAYERelief_tblPayrollEmployeeDetail">
+      <End Role="tblPayrollEmployeeDetail" EntitySet="tblPayrollEmployeeDetail" />
+      <End Role="tblPayrollEmployePAYERelief" EntitySet="tblPayrollEmployePAYERelief" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSafariApplication_tblCompany" Association="Self.FK_tblSafariApplication_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblSafariApplication" EntitySet="tblSafariApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSafariApplication_tblEmployee" Association="Self.FK_tblSafariApplication_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblSafariApplication" EntitySet="tblSafariApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSafariApplication_tblFinPeriod" Association="Self.FK_tblSafariApplication_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblSafariApplication" EntitySet="tblSafariApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSafariApplication_tblSafariApplicationNoPrefix" Association="Self.FK_tblSafariApplication_tblSafariApplicationNoPrefix">
+      <End Role="tblSafariApplicationNoPrefix" EntitySet="tblSafariApplicationNoPrefix" />
+      <End Role="tblSafariApplication" EntitySet="tblSafariApplication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSafariApplicationDayDetail_tblSafariApplication" Association="Self.FK_tblSafariApplicationDayDetail_tblSafariApplication">
+      <End Role="tblSafariApplication" EntitySet="tblSafariApplication" />
+      <End Role="tblSafariApplicationDayDetail" EntitySet="tblSafariApplicationDayDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSafariApplicationNoPrefix_tblCompany" Association="Self.FK_tblSafariApplicationNoPrefix_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblSafariApplicationNoPrefix" EntitySet="tblSafariApplicationNoPrefix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblState_tblCountry" Association="Self.FK_tblState_tblCountry">
+      <End Role="tblCountry" EntitySet="tblCountry" />
+      <End Role="tblState" EntitySet="tblState" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTAApproval_tblCompany" Association="Self.FK_tblTAApproval_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblTAApproval" EntitySet="tblTAApproval" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTAApproval_tblEmployee" Association="Self.FK_tblTAApproval_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblTAApproval" EntitySet="tblTAApproval" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTAApproval_tblFinPeriod" Association="Self.FK_tblTAApproval_tblFinPeriod">
+      <End Role="tblFinPeriod" EntitySet="tblFinPeriod" />
+      <End Role="tblTAApproval" EntitySet="tblTAApproval" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTAApproval_tblTAApprovalNoPrefix" Association="Self.FK_tblTAApproval_tblTAApprovalNoPrefix">
+      <End Role="tblTAApprovalNoPrefix" EntitySet="tblTAApprovalNoPrefix" />
+      <End Role="tblTAApproval" EntitySet="tblTAApproval" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTAApprovalNoPrefix_tblCompany" Association="Self.FK_tblTAApprovalNoPrefix_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblTAApprovalNoPrefix" EntitySet="tblTAApprovalNoPrefix" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTaxSlabDetail_tblTaxSlabHeader" Association="Self.FK_tblTaxSlabDetail_tblTaxSlabHeader">
+      <End Role="tblTaxSlabHeader" EntitySet="tblTaxSlabHeader" />
+      <End Role="tblTaxSlabDetail" EntitySet="tblTaxSlabDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTaxSlabHeader_tblCompany" Association="Self.FK_tblTaxSlabHeader_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblTaxSlabHeader" EntitySet="tblTaxSlabHeader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUser_tblUserGroup" Association="Self.FK_tblUser_tblUserGroup">
+      <End Role="tblUserGroup" EntitySet="tblUserGroup" />
+      <End Role="tblUser" EntitySet="tblUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserGroupPerimission_tblUserGroup" Association="Self.FK_tblUserGroupPerimission_tblUserGroup">
+      <End Role="tblUserGroup" EntitySet="tblUserGroup" />
+      <End Role="tblUserGroupPerimission" EntitySet="tblUserGroupPerimission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserGroupPermissionOnCompany_tblCompany" Association="Self.FK_tblUserGroupPermissionOnCompany_tblCompany">
+      <End Role="tblCompany" EntitySet="tblCompany" />
+      <End Role="tblUserGroupPermissionOnCompany" EntitySet="tblUserGroupPermissionOnCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserGroupPermissionOnCompany_tblUserGroup" Association="Self.FK_tblUserGroupPermissionOnCompany_tblUserGroup">
+      <End Role="tblUserGroup" EntitySet="tblUserGroup" />
+      <End Role="tblUserGroupPermissionOnCompany" EntitySet="tblUserGroupPermissionOnCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserGroupPermissionOnLocation_tblLocation" Association="Self.FK_tblUserGroupPermissionOnLocation_tblLocation">
+      <End Role="tblLocation" EntitySet="tblLocation" />
+      <End Role="tblUserGroupPermissionOnLocation" EntitySet="tblUserGroupPermissionOnLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblUserGroupPermissionOnLocation_tblUserGroup" Association="Self.FK_tblUserGroupPermissionOnLocation_tblUserGroup">
+      <End Role="tblUserGroup" EntitySet="tblUserGroup" />
+      <End Role="tblUserGroupPermissionOnLocation" EntitySet="tblUserGroupPermissionOnLocation" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

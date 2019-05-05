@@ -1,0 +1,17 @@
+D:\Source Code\Vision\Vision\Vision.Model\bin\Debug\Vision.Model.dll.config
+D:\Source Code\Vision\Vision\Vision.Model\bin\Debug\Vision.Model.dll
+D:\Source Code\Vision\Vision\Vision.Model\bin\Debug\Vision.Model.pdb
+D:\Source Code\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.Properties.Resources.resources
+D:\Source Code\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.csproj.GenerateResource.Cache
+D:\Source Code\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.dll
+D:\Source Code\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.pdb
+D:\Source Code\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.csprojResolveAssemblyReference.cache
+F:\Vision\Vision\Vision\Vision.Model\bin\Debug\Vision.Model.dll.config
+F:\Vision\Vision\Vision\Vision.Model\bin\Debug\Vision.Model.dll
+F:\Vision\Vision\Vision\Vision.Model\bin\Debug\Vision.Model.pdb
+F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.csprojAssemblyReference.cache
+F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.Properties.Resources.resources
+F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.csproj.GenerateResource.cache
+F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.csproj.CoreCompileInputs.cache
+F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.dll
+F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.pdb

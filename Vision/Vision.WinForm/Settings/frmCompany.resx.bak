@@ -1,0 +1,2238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1085, 28</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 611</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1085, 28</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 583</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1085, 28</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 583</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>panelControl3</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnSave.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAMBJREFUOE/d
+        kd0NwiAUhRnBERyBWHx3BEdwBDfpk4W3jtARHMNYSDoCI9R7bmiECKTVN29yAuGe8/EnUErbU9M9z2sk
+        9WPPoaUQVsbOUGNcnwsd9HjBSJ6W5I+3UYa4EKHBAMDCclLKuIHgE3YP3jfkSwBD+Do/AGZcLQFgHjJJ
+        4bgwY6wCIOxUEvV97M0CtigDcAMWayLfvQwoPGJc8Tv8GcDTN/VrAeylzOcJOnsFpCaEFj+yTMUEjS1C
+        RrbT7gUSoaYiU+18nAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSave.ItemAppearance.Normal.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <data name="btnDelete.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAOVJREFUOE/F
+        k8EVgjAMhhnBETwq5cCx5cQIjuAIjsAGjuAIjBCcgBEYgRE0f5sWKdJXT/7v5ZHQ9AskbUH6dBxM1Q9G
+        zWyvtVU9tfWhSEk2j6Sr9tOeRt0FNCYhnDCTOV8kDKJG1QJIQ5CAihIGRQALkaW1dgFckdcmttAb0mUn
+        y4v2ALGGRj3QLwkX5QJQ/d8AdcVoJVyUC9jVb01050FGPNmpZAN4M3LlifHCp/weuHPhIRZkTyc709fm
+        RPKfvQHgHsgLnDhUWJmHs+83+zXrBzrGREbdNsbvkSO30zXR/Q6RLrs3UILVnszaYPkAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btnDelete.ItemAppearance.Normal.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <data name="btnRefresh.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAMNJREFUOE9j
+        oDswnnYzAIShXNKAwfTrCiYzbu8H4v8kG2Iy7XaB8Yw7902m33YAGnDeaPqtBKgUUBIqCDIZDb83nXrL
+        AKQZxIaJGfTfF4BqhQCgyfOBEmBTkTHYyaia/6PYDAMQA+6sh3LhgCjNIIDNAGyaQS6CSqMCdANwaQYF
+        IlQJKkA3AMJHdTYo2kB8sAJ0gG4ASBOIj+xnkgzABmhrAFCiH2jIfZBBuDBQDSgJv4dqQQXQNN4PcgU+
+        jBwmVAIMDAA52+/sJNg9kgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnRefresh.ItemAppearance.Normal.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <data name="btnExit.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAANNJREFUOE+9
+        UsERgjAQpARL8CnGB0/iixIowRIowQ4s6bQCSqCElIC3yV3IBCWjM7ozOwy37B7JXaWg1lzu1ozMucCJ
+        rBnEFkBds2PBQaD21G3TN3LwiB3dD3uk4ymlt5BmM51NI6U/BIhpVBO1x+tnAaIzHe5BygvyALJ1j44Z
+        4yRwkd6oWAeYITW8Io7hzcA3AQ9rbnGUqwA+J79PCR10od8Xb1TkATlUD+a6l/KCYkAYYzSHjU2+LQWk
+        +NEmahG/xsImw47wQmXNVEBQgckUquoJrG0NTcRUFhgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnExit.ItemAppearance.Normal.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <data name="btnSearch.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAQ5JREFUOE+V
+        UskNgzAQTAkpISWg4PxTAiWkhJSQDngF+5cSKIESeEZgJEpICcSzjMVl5xjJgl17j5nd3RxK27PSzU0Z
+        WynTlanpHkfdXngdR5L3exeUu4AeX1XYa1o0GZLRVyf6eeDzLVi1Pt3bhK4F0AkS0VwCQVLFtU9XECiA
+        QjQnsHpOMwqhZOyL5gSIBaHQSYwCQJ0GfOkagdaQAAfi0R0EOtiIifZBA9WDDwjeDzQnSGVyAx38h2Y/
+        atWVNJdwQbI48u9oMFHu+XoBoxrhoV8YP0742LZfsAH7EBylBy79Y1TkqZjIdSl+nK9jF9HmI+O++AS/
+        JVlDKMyTfKITwypJTfd/cIEibFo02RuAe+46OmODnwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnSearch.ItemAppearance.Normal.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <metadata name="ErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>142, 17</value>
+  </metadata>
+  <data name="lblCreatedBy.ItemAppearance.Normal.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <data name="lblEditedBy.ItemAppearance.Normal.FontStyleDelta" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Bold</value>
+  </data>
+  <data name="lookupCurrency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 145</value>
+  </data>
+  <data name="lookupCurrency.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lookupCurrency.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="lookupCurrency.Properties.NullText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="lookupCurrency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lookupCurrency.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;lookupCurrency.Name" xml:space="preserve">
+    <value>lookupCurrency</value>
+  </data>
+  <data name="&gt;&gt;lookupCurrency.Type" xml:space="preserve">
+    <value>Alit.WinformControls.LookUpEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lookupCurrency.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lookupCurrency.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtBank3_Currency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 423</value>
+  </data>
+  <data name="txtBank3_Currency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 20</value>
+  </data>
+  <data name="txtBank3_Currency.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_Currency.Name" xml:space="preserve">
+    <value>txtBank3_Currency</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_Currency.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_Currency.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_Currency.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtBank3_AcNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 399</value>
+  </data>
+  <data name="txtBank3_AcNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 20</value>
+  </data>
+  <data name="txtBank3_AcNo.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_AcNo.Name" xml:space="preserve">
+    <value>txtBank3_AcNo</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_AcNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_AcNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_AcNo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtBank3_BranchName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 375</value>
+  </data>
+  <data name="txtBank3_BranchName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 20</value>
+  </data>
+  <data name="txtBank3_BranchName.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_BranchName.Name" xml:space="preserve">
+    <value>txtBank3_BranchName</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_BranchName.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_BranchName.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_BranchName.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtBank3_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 351</value>
+  </data>
+  <data name="txtBank3_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 20</value>
+  </data>
+  <data name="txtBank3_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_Name.Name" xml:space="preserve">
+    <value>txtBank3_Name</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_Name.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_Name.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank3_Name.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtBank2_Currency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 284</value>
+  </data>
+  <data name="txtBank2_Currency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 20</value>
+  </data>
+  <data name="txtBank2_Currency.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_Currency.Name" xml:space="preserve">
+    <value>txtBank2_Currency</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_Currency.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_Currency.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_Currency.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtBank2_AcNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 260</value>
+  </data>
+  <data name="txtBank2_AcNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 20</value>
+  </data>
+  <data name="txtBank2_AcNo.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_AcNo.Name" xml:space="preserve">
+    <value>txtBank2_AcNo</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_AcNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_AcNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_AcNo.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtBank2_BranchName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 236</value>
+  </data>
+  <data name="txtBank2_BranchName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 20</value>
+  </data>
+  <data name="txtBank2_BranchName.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_BranchName.Name" xml:space="preserve">
+    <value>txtBank2_BranchName</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_BranchName.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_BranchName.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_BranchName.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtBank2_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 212</value>
+  </data>
+  <data name="txtBank2_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 20</value>
+  </data>
+  <data name="txtBank2_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_Name.Name" xml:space="preserve">
+    <value>txtBank2_Name</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_Name.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_Name.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank2_Name.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtPhoneNo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 357</value>
+  </data>
+  <data name="txtPhoneNo2.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtPhoneNo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 20</value>
+  </data>
+  <data name="txtPhoneNo2.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;txtPhoneNo2.Name" xml:space="preserve">
+    <value>txtPhoneNo2</value>
+  </data>
+  <data name="&gt;&gt;txtPhoneNo2.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPhoneNo2.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtPhoneNo2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtBank1_Currency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 284</value>
+  </data>
+  <data name="txtBank1_Currency.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtBank1_Currency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 20</value>
+  </data>
+  <data name="txtBank1_Currency.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_Currency.Name" xml:space="preserve">
+    <value>txtBank1_Currency</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_Currency.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_Currency.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_Currency.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txtBank1_AcNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 260</value>
+  </data>
+  <data name="txtBank1_AcNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtBank1_AcNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 20</value>
+  </data>
+  <data name="txtBank1_AcNo.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_AcNo.Name" xml:space="preserve">
+    <value>txtBank1_AcNo</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_AcNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_AcNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_AcNo.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txtBank1_BranchName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 236</value>
+  </data>
+  <data name="txtBank1_BranchName.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtBank1_BranchName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 20</value>
+  </data>
+  <data name="txtBank1_BranchName.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_BranchName.Name" xml:space="preserve">
+    <value>txtBank1_BranchName</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_BranchName.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_BranchName.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_BranchName.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="txtBank1_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 212</value>
+  </data>
+  <data name="txtBank1_Name.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtBank1_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 20</value>
+  </data>
+  <data name="txtBank1_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_Name.Name" xml:space="preserve">
+    <value>txtBank1_Name</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_Name.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_Name.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtBank1_Name.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txtSACCORegNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 145</value>
+  </data>
+  <data name="txtSACCORegNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtSACCORegNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 20</value>
+  </data>
+  <data name="txtSACCORegNo.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;txtSACCORegNo.Name" xml:space="preserve">
+    <value>txtSACCORegNo</value>
+  </data>
+  <data name="&gt;&gt;txtSACCORegNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtSACCORegNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtSACCORegNo.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txtPFNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 145</value>
+  </data>
+  <data name="txtPFNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtPFNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtPFNo.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;txtPFNo.Name" xml:space="preserve">
+    <value>txtPFNo</value>
+  </data>
+  <data name="&gt;&gt;txtPFNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPFNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtPFNo.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txtNHIFNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 121</value>
+  </data>
+  <data name="txtNHIFNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtNHIFNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 20</value>
+  </data>
+  <data name="txtNHIFNo.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;txtNHIFNo.Name" xml:space="preserve">
+    <value>txtNHIFNo</value>
+  </data>
+  <data name="&gt;&gt;txtNHIFNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNHIFNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtNHIFNo.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txtNSSFNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 121</value>
+  </data>
+  <data name="txtNSSFNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtNSSFNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtNSSFNo.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;txtNSSFNo.Name" xml:space="preserve">
+    <value>txtNSSFNo</value>
+  </data>
+  <data name="&gt;&gt;txtNSSFNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNSSFNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtNSSFNo.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="txtPINNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 97</value>
+  </data>
+  <data name="txtPINNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtPINNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtPINNo.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;txtPINNo.Name" xml:space="preserve">
+    <value>txtPINNo</value>
+  </data>
+  <data name="&gt;&gt;txtPINNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPINNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtPINNo.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="deIncorporationDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="deIncorporationDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 73</value>
+  </data>
+  <data name="deIncorporationDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="deIncorporationDate.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="deIncorporationDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="deIncorporationDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="deIncorporationDate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>DateTimeAdvancingCaret</value>
+  </data>
+  <data name="deIncorporationDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 20</value>
+  </data>
+  <data name="deIncorporationDate.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;deIncorporationDate.Name" xml:space="preserve">
+    <value>deIncorporationDate</value>
+  </data>
+  <data name="&gt;&gt;deIncorporationDate.Type" xml:space="preserve">
+    <value>Alit.WinformControls.DateEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deIncorporationDate.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;deIncorporationDate.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="txtIncorporationNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 73</value>
+  </data>
+  <data name="txtIncorporationNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtIncorporationNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtIncorporationNo.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;txtIncorporationNo.Name" xml:space="preserve">
+    <value>txtIncorporationNo</value>
+  </data>
+  <data name="&gt;&gt;txtIncorporationNo.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtIncorporationNo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtIncorporationNo.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="btnClearLogoImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 173</value>
+  </data>
+  <data name="btnClearLogoImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="btnClearLogoImage.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="btnClearLogoImage.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;btnClearLogoImage.Name" xml:space="preserve">
+    <value>btnClearLogoImage</value>
+  </data>
+  <data name="&gt;&gt;btnClearLogoImage.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnClearLogoImage.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnClearLogoImage.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="btnBrowseLogoImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>558, 173</value>
+  </data>
+  <data name="btnBrowseLogoImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="btnBrowseLogoImage.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="btnBrowseLogoImage.Text" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="&gt;&gt;btnBrowseLogoImage.Name" xml:space="preserve">
+    <value>btnBrowseLogoImage</value>
+  </data>
+  <data name="&gt;&gt;btnBrowseLogoImage.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnBrowseLogoImage.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnBrowseLogoImage.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="peLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>558, 73</value>
+  </data>
+  <data name="peLogo.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>250, 100</value>
+  </data>
+  <data name="peLogo.Properties.NullText" xml:space="preserve">
+    <value>Select an Image</value>
+  </data>
+  <data name="peLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 96</value>
+  </data>
+  <data name="peLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;peLogo.Name" xml:space="preserve">
+    <value>peLogo</value>
+  </data>
+  <data name="&gt;&gt;peLogo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;peLogo.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;peLogo.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="txtMobileNo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 381</value>
+  </data>
+  <data name="txtMobileNo2.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtMobileNo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 20</value>
+  </data>
+  <data name="txtMobileNo2.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;txtMobileNo2.Name" xml:space="preserve">
+    <value>txtMobileNo2</value>
+  </data>
+  <data name="&gt;&gt;txtMobileNo2.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtMobileNo2.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtMobileNo2.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="txtAddressLine3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 290</value>
+  </data>
+  <data name="txtAddressLine3.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtAddressLine3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtAddressLine3.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine3.Name" xml:space="preserve">
+    <value>txtAddressLine3</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine3.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine3.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine3.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="txtAddressLine2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 266</value>
+  </data>
+  <data name="txtAddressLine2.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtAddressLine2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtAddressLine2.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine2.Name" xml:space="preserve">
+    <value>txtAddressLine2</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine2.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine2.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine2.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="txtAddressLine1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 242</value>
+  </data>
+  <data name="txtAddressLine1.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtAddressLine1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtAddressLine1.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine1.Name" xml:space="preserve">
+    <value>txtAddressLine1</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine1.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtAddressLine1.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="txtCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 73</value>
+  </data>
+  <data name="txtCode.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="txtCode.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="txtCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="txtCode.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;txtCode.Name" xml:space="preserve">
+    <value>txtCode</value>
+  </data>
+  <data name="&gt;&gt;txtCode.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtCode.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtCode.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="labelControl1.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="labelControl1.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>DarkRed</value>
+  </data>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 121</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 14</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>*Business started date can not be edited later.</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="deBusinessStartedFrom.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="deBusinessStartedFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 121</value>
+  </data>
+  <data name="deBusinessStartedFrom.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="deBusinessStartedFrom.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="deBusinessStartedFrom.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="deBusinessStartedFrom.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="deBusinessStartedFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="deBusinessStartedFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;deBusinessStartedFrom.Name" xml:space="preserve">
+    <value>deBusinessStartedFrom</value>
+  </data>
+  <data name="&gt;&gt;deBusinessStartedFrom.Type" xml:space="preserve">
+    <value>Alit.WinformControls.DateEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deBusinessStartedFrom.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;deBusinessStartedFrom.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="lookupCity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 266</value>
+  </data>
+  <data name="lookupCity.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="lookupCity.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="lookupCity.Properties.NullText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="lookupCity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 20</value>
+  </data>
+  <data name="lookupCity.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;lookupCity.Name" xml:space="preserve">
+    <value>lookupCity</value>
+  </data>
+  <data name="&gt;&gt;lookupCity.Type" xml:space="preserve">
+    <value>Alit.WinformControls.LookUpEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lookupCity.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lookupCity.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="txtWebsite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 405</value>
+  </data>
+  <data name="txtWebsite.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtWebsite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 20</value>
+  </data>
+  <data name="txtWebsite.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;txtWebsite.Name" xml:space="preserve">
+    <value>txtWebsite</value>
+  </data>
+  <data name="&gt;&gt;txtWebsite.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtWebsite.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtWebsite.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="txtEMailID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 405</value>
+  </data>
+  <data name="txtEMailID.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtEMailID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtEMailID.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtEMailID.Name" xml:space="preserve">
+    <value>txtEMailID</value>
+  </data>
+  <data name="&gt;&gt;txtEMailID.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtEMailID.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtEMailID.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="txtMobileNo1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 381</value>
+  </data>
+  <data name="txtMobileNo1.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtMobileNo1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtMobileNo1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;txtMobileNo1.Name" xml:space="preserve">
+    <value>txtMobileNo1</value>
+  </data>
+  <data name="&gt;&gt;txtMobileNo1.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtMobileNo1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtMobileNo1.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="txtPhone1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 357</value>
+  </data>
+  <data name="txtPhone1.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtPhone1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 20</value>
+  </data>
+  <data name="txtPhone1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txtPhone1.Name" xml:space="preserve">
+    <value>txtPhone1</value>
+  </data>
+  <data name="&gt;&gt;txtPhone1.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPhone1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtPhone1.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="txtPin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 290</value>
+  </data>
+  <data name="txtPin.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtPin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 20</value>
+  </data>
+  <data name="txtPin.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtPin.Name" xml:space="preserve">
+    <value>txtPin</value>
+  </data>
+  <data name="&gt;&gt;txtPin.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPin.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtPin.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="txtCompanyName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 97</value>
+  </data>
+  <data name="txtCompanyName.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtCompanyName.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>300, 0</value>
+  </data>
+  <data name="txtCompanyName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 20</value>
+  </data>
+  <data name="txtCompanyName.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtCompanyName.Name" xml:space="preserve">
+    <value>txtCompanyName</value>
+  </data>
+  <data name="&gt;&gt;txtCompanyName.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtCompanyName.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtCompanyName.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="layoutControlItem2.Text" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="layoutControlItem3.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="layoutControlItem9.Text" xml:space="preserve">
+    <value>Business Started From</value>
+  </data>
+  <data name="layoutControlItem1.Text" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="layoutControlGroup3.Text" xml:space="preserve">
+    <value>General Detail</value>
+  </data>
+  <data name="layoutControlItem12.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="layoutControlItem5.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="layoutControlItem15.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="layoutControlItem7.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="layoutControlItem6.Text" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="layoutControlGroup4.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="layoutControlItem8.Text" xml:space="preserve">
+    <value>Phone No. 1</value>
+  </data>
+  <data name="layoutControlItem13.Text" xml:space="preserve">
+    <value>E-Mail ID</value>
+  </data>
+  <data name="layoutControlItem11.Text" xml:space="preserve">
+    <value>Mobile No. 1</value>
+  </data>
+  <data name="layoutControlItem14.Text" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="layoutControlItem16.Text" xml:space="preserve">
+    <value>Phone No. 2</value>
+  </data>
+  <data name="layoutControlItem17.Text" xml:space="preserve">
+    <value>Mobile No. 2</value>
+  </data>
+  <data name="layoutControlGroup5.Text" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="lcgCompany.Text" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="layoutControlItem21.Text" xml:space="preserve">
+    <value>Incorporation No.</value>
+  </data>
+  <data name="layoutControlItem25.Text" xml:space="preserve">
+    <value>NSSF No.</value>
+  </data>
+  <data name="layoutControlItem27.Text" xml:space="preserve">
+    <value>PF No.</value>
+  </data>
+  <data name="layoutControlItem22.Text" xml:space="preserve">
+    <value>Incorporation Date</value>
+  </data>
+  <data name="layoutControlItem26.Text" xml:space="preserve">
+    <value>NHIF No.</value>
+  </data>
+  <data name="layoutControlItem28.Text" xml:space="preserve">
+    <value>Sacco Registration No</value>
+  </data>
+  <data name="layoutControlItem24.Text" xml:space="preserve">
+    <value>PIN No.</value>
+  </data>
+  <data name="layoutControlGroup2.Text" xml:space="preserve">
+    <value>Statutory No(s)</value>
+  </data>
+  <data name="layoutControlItem32.Text" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="layoutControlItem31.Text" xml:space="preserve">
+    <value>Account No.</value>
+  </data>
+  <data name="layoutControlItem30.Text" xml:space="preserve">
+    <value>Branch Name</value>
+  </data>
+  <data name="layoutControlItem29.Text" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="layoutControlGroup6.Text" xml:space="preserve">
+    <value>Bank Account 1</value>
+  </data>
+  <data name="layoutControlItem36.Text" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="layoutControlItem35.Text" xml:space="preserve">
+    <value>Account No.</value>
+  </data>
+  <data name="layoutControlItem34.Text" xml:space="preserve">
+    <value>Branch Name</value>
+  </data>
+  <data name="layoutControlItem33.Text" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="layoutControlGroup7.Text" xml:space="preserve">
+    <value>Bank Account 2</value>
+  </data>
+  <data name="layoutControlItem40.Text" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="layoutControlItem39.Text" xml:space="preserve">
+    <value>Account No.</value>
+  </data>
+  <data name="layoutControlItem38.Text" xml:space="preserve">
+    <value>Branch Name</value>
+  </data>
+  <data name="layoutControlItem37.Text" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="layoutControlGroup8.Text" xml:space="preserve">
+    <value>Bank Account 3</value>
+  </data>
+  <data name="lcgStatutoryRegistrationNos.Text" xml:space="preserve">
+    <value>Statutory Registration No(s)</value>
+  </data>
+  <data name="tabbedControlGroup1.Text" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1059, 557</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>Alit.WinformControls.myLayoutControl, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>panelContent</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelContent.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 600</value>
+  </data>
+  <data name="panelContent.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>600, 300</value>
+  </data>
+  <data name="panelContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1059, 557</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Name" xml:space="preserve">
+    <value>panelContent</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Parent" xml:space="preserve">
+    <value>panelContentParemeter</value>
+  </data>
+  <data name="&gt;&gt;panelContent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="layoutControlItem23.Text" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <metadata name="popupMenuFormShortCuts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>265, 17</value>
+  </metadata>
+  <metadata name="behaviorManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>466, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>37</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 19</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1085, 639</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAUAEBAAAAEAIABoBAAAVgAAABgYAAABACAAiAkAAL4EAAAgIAAAAQAgAKgQAABGDgAAMDAAAAEA
+        IACoJQAA7h4AACAgAAABACAAqBAAAJZEAAAoAAAAEAAAACAAAAABACAAAAAAAAAEAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAFU6KkFVOSleVTkpX1U5KUFVOSlfVTkpX1U5KV9VOSlfVTkpX1U5KV9VOSlfVTkpX1U5
+        KT5VOSlfVTkpX1U5KUVVOSmfVTkpS1U5KXtVOSmpVTkpglQ5KURUOSlGVDkpRlQ5KUZUOSlGVDkpRFU5
+        KXxVOSmkVTkpe1Q5KUlVOSmYVTkpklc5KQdVOSkIVTkpFFU5KQlVOSkAAAAAAAAAAAAAAAAAAAAAAFU5
+        KQBVOSkJVTkpFFU6KgdTNycFVTkpi1U5KZNWOSkKVTkpE1U5KRVVOSkVVTkpF1U5KRBVOCgBVTkpD1U5
+        KRlVOSkZVTkpGFU5KRhVOSkWVDgpClU5KYxVOSmSVTkpE1U5KYpVOSnNVTkp0VU5KchVOSlgVzgoA1U4
+        KE5VOSmCVTkpgFU5KYBVOSmBVTkpdlU5KR9VOSmLVTkpk1Y5KQhVOSkdVTkpk1U5KetVOSlkVTkpD1Y8
+        LwFVOSk5VTkpXVU5KVxVOSlcVTkpXFY5KVRWOCgXVTkpi1U5KZNWOSkHVzcnAFU5KXNVOSnlVTkpMlU5
+        KQBWOy0CVTkpO1U5KWFVOSlfVTkpX1U5KWBVOSlXVTkpFlU5KYtVOSmTVzkpB1Q5KQZVOSmkVTkp/1U5
+        KWVVOSkAWDkpA1U5KU5VOSl7VTkpelU5KXpVOSl6VTkpblU5KRlVOSmLVTkpk1c5KQdVOCgDVTkpjVU5
+        KehVOSlTVTkpAFc5KQFVOSkSVTkpHFU5KRtVOSkbVTkpHFU5KRhVOCgKVTkpjFU5KZNWOSkHVDoqAFU5
+        KRtVOSkzVTkpCFU5KQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUOCgAUzcnBVU5KYtVOSmTVjkpB1Y5
+        KQAAAAAAAAAAAAAAAABVOioAVToqFFU5KTtWOSk+VjkpPlY5KT5WOSk+VjkpPVU5KUNVOSmdVTkpmFU5
+        KSBVOSkYVTkpGVU5KRlVOSkZVTkpFlU5KWRVOSmQVTkpZlU5KWhVOSloVTkpaFU5KWhVOSlnVTkpS1U5
+        KWxVOSmDVTkpg1U5KYNVOSmDVTkpg1U5KYRVOSl7VjkpIVU5KQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABTOCgEVDgoDVQ4KA5UOCgOVDgoDlQ4KA5UOCgOVDgoB1Q4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP//AAAAAAAAAAAAAAfgAAAAAAAAAAAAAAAAAAAiAAAAAgAAAAIAAAAj/AAAPgAAAAAA
+        AAAAfwAAAP8AAP//AAAoAAAAGAAAADAAAAABACAAAAAAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVjkpAFY5KQBWOSkAVjkpAFU5KQBWOSkAVjkpAFY5
+        KQBWOSkAVjkpAFY5KQBWOSkAVjkpAFY5KQBWOSkAVjkpAFY5KQBWOSkAVjkpAFU5KQBWOSkAVjkpAFY4
+        KABVNiYAVToqQ1U5KYVVOSmSVTkpllU5KXRVOChFVTkpkVU5KZJVOSmSVTkpklU5KZJVOSmSVTkpklU5
+        KZJVOSmSVTkpklU5KZJVOSmRVTkpRFU5KWpVOSmXVTkpklU5KY5VOSpJVTkpvVU5KYBUOSlaVTkpgFU5
+        KctVOSm8VTkpxVQ5KV5UOSleVDkpXlQ5KV5UOSleVDkpXlQ5KV5UOSleVDkpXlQ5KV5VOSm6VTkps1U5
+        Kc1VOSmCVDkpWlU5KXVVOSm2VTkpzlY5KSlWOSkAVTkpF1U5KVxVOSliVTkpRlU5KQAAAAAAAAAAAAAA
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////AP///wAAAAAAAAAAACH/hAA///wAP//8AAAQAAAAAAAAICAAADjg
+        AAAwcAAAMGAAADBgAAAwf/wAOH/8AD///AA/4AAAP+AAAAAEAwAAB/8AgA//AP///wD///8AKAAAACAA
+        AABAAAAAAQAgAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFU6
+        KzBVOiqfVTkpz1U5Kc9VOSnPVTkpz1U4KGBUOChAVTkpz1U5Kc9VOSnPVTkpz1U5Kc9VOSnPVTkpz1U5
+        Kc9VOSnPVTkpz1U5Kc9VOSnPVTkpz1U5Kc9VOSnPVTkpz1Y5KVBUOChAVTkpz1U5Kc9VOSnPVTkpz1U5
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////
+        //8AAAAAAAAAADh//hw////8P////D////w////8MAMABDAHAAQ4D//8Pj8ABD4fAAQ8H//8PB8ABDwf
+        AAQ8H//8PB///D4///w////8P////D/+AAA//gAAP/5//wAAf/8AAP///////////////////////ygA
+        AAAwAAAAYAAAAAEAIAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVOiwTVTorL1U6KlRVOSlmVTkpbFU5KWtVOSlrVTkpa1U5
+        KV1VOCg3VDgoIFQ4KChVOSlZVTkpa1U5KWtVOSlrVTkpa1U5KWtVOSlrVTkpa1U5KWtVOSlrVTkpa1U5
+        KWtVOSlrVTkpa1U5KWtVOSlrVTkpa1U5KWtVOSlrVTkpa1U5KWtVOSlrVTkpa1U5KVxWOSkwVTgoHFQ4
+        KChVOSlaVTkpa1U5KWtVOSlrVTkpa1U5KWpVOSljVTkpOFU6LBJVOipHVToqdVU6KqtVOSm9VTkpwlU5
+        KcFVOSnBVTkpzlU5KcNVOCiBVTgoWlU5KWlVOSnCVTkp0lU5KcFVOSnBVTkpwVU5KcFVOSnBVTkpwVU5
+        KcFVOSnBVTkpwVU5KcFVOSnBVTkpwVU5KcFVOSnBVTkpwVU5KcFVOSnBVTkpwVU5KcFVOSnBVTkp0FU5
+        KcJVOSlyVTkpUVU5KWtVOSnBVTkp0FU5KcFVOSnBVTkpwVU5KcFVOSm9VTkpgFU6KkdVOSmnVTkps1U5
+        KbJUOSmMVDkpgFQ5KYJUOSmCVTkpslU5KddVOSm4VTkpoVU5Ka1VOSnqVTkpwVQ5KYFUOSmBVDkpglQ5
+        KYJUOSmCVDkpglQ5KYJUOSmCVDkpglQ5KYJUOSmCVDkpglQ5KYJUOSmCVDkpglQ5KYJUOSmCVDkpglQ5
+        KYFUOSmCVTkpulU5Kd1VOiqiVTkpmVU5KbZVOSniVTkpuVQ5KYJUOSmBVDkpgVQ5KYhVOiqgVTkpqFU5
+        KadVOSnlVTkpu1U5KXpUOSlCVDkpMlQ5KTRUOSk0VTkpgVU5Kc5VOSnLVTkpxFU5KclVOSniVTkpj1Q5
+        KTRUOSkzVDkpNVQ5KTVUOSk1VDkpNVQ5KTVUOSk1VDkpNVQ5KTVUOSk1VDkpNVQ5KTVUOSk1VDkpNVQ5
+        KTVUOSk1VDkpNVQ5KTNUOSk0VTkphlU5KdJVOSm+VTkpwFU5KcxVOSnOVTkpgVQ5KTRUOSk0VDkpM1Q5
+        KT1VOSlkVTkprVU5KeVVOSn/VTkprVY5KUFWOSkMVjkpAFU5KQBVOSkAVTkpSFU5KZVVOSmeVTkpoFU5
+        KaBVOSmgVTkpT1U5KQBVOSkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFU5KQBVOSkAVTkpSFU5KZVVOSmeVTkpoFU5KZtVOiqJVToqQVU6
+        KgBVOioAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAFU5KQBVOSkAVTkpDlU5
+        KR5VOSkgVTkpIFU5KSBVOSkgVTkpEFU5KQBVOSkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFU5KQBVOSkAVTkpDlU5KR5VOSkgVTkpIFU5
+        KR9VOiobVToqDVU6KgBVOioAVDgoAFQ4KAlUOCgzVTkppFU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAFU5KQVVOSkbVTkpI1U5
+        KSJVOSkiVTkpIlU5KSJVOSkiVTkpIlU5KSJVOSkiVTkpIlU5KSNVOSkjVTkpGVY5KQxWOSkCVTkpAFQ4
+        KAJUOCgJVTkpGFU5KSNVOSkjVTkpI1U5KSNVOSkjVTkpI1U5KSNVOSkjVTkpI1U5KSNVOSkjVTkpI1U5
+        KSNVOSkjVTkpJFU5KR9VOioNV0A1AVQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVTkpAFU5
+        KRtVOSmFVTkpq1U5KaxVOSmsVTkprFU5KaxVOSmsVTkprFU5KaxVOSmsVTkprFU5Ka1VOSmtVTkpelY5
+        KTdWOSkKVTkpAFQ4KAhUOCgsVTkpc1U5Ka5VOSmuVTkprVU5Ka1VOSmtVTkprVU5Ka1VOSmtVTkprVU5
+        Ka1VOSmtVTkprVU5Ka1VOSmtVTkpsVU5KZdVOio/VTssDVQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMVTkpAFU5KRtVOSmGVTkpzVU5Ke5VOSnyVTkp8FU5Ke5VOSnuVTkp7lU5Ke5VOSnwVTkp81U5
+        KfFVOSniVTkphVY5KSJWOSkGVjgoAFU4KAhVOCgqVTgodVU5KbRVOSm0VTkps1U5KbNVOSmzVTkps1U5
+        KbNVOSmzVTkps1U5KbNVOSmzVTkps1U5KbNVOSmzVTkpuFU5KZ1VOSlCVzorDlQ4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMVTkpAFQ5KQ9UOSlMVTkpmFU5KdVVOSnpVTkp91U5Kf9VOSn/VTkp/1U5
+        Kf5VOSn6VTkp8VU5Kd1VOSm3VTkpVFU5KQBVOSkAWDgoAFk4KARYOCgVVTgoQlQ4KGlUOChqVDgoaVQ4
+        KGlUOChpVDgoaVQ4KGlUOChpVDgoaVQ4KGlUOChpVDgoaVQ4KGlUOChpVDgobFQ4KFxWOCgoWzgoCFQ4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAFQ5KQNUOSkPVTkqL1U5Kl5WOSmVVTkp1FU5
+        Kf9VOSn/VTkp/1U5KflVOSngVTkprFU4KGxVOSkxVTkpDlU5KQBVOSkAWTgoAFo4KAFZOCgEVTgoDVQ4
+        KBRUOCgUVDgoFFQ4KBRUOCgUVDgoFFQ4KBRUOCgUVDgoFFQ4KBRUOCgUVDgoFFQ4KBRUOCgUVDgoFFQ4
+        KBFWOCgIIDkqAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAFU6LABVOiwAVTstB1Y6
+        KxlWOSk6VjkphVU5KdFVOSn3VTkp/1U5Kd9VOSl+VTkpRFU4KCNVOCgHVTgoAAAAAAAAAAAAVTorAFU6
+        KwRVOisTVjkqLVY5KUJWOSlCVjkpQlY5KUJWOSlCVjkpQlY5KUJWOSlCVjkpQlY5KUJWOSlCVjkpQlY5
+        KUJWOSlCVjkpRFY5KTlXOSkYXDcnA1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAA
+        AAAAAAAAAAAAAFY5KQBWOSkAVjkpRFY5KaRVOSnuVTkp/1U5KcdVOSkpVjgoAEJURABCVEQAAAAAAAAA
+        AAAAAAAAVTorAFU6KwdVOisoVjkqZVY5KZdWOSmXVjkpl1Y5KZdWOSmXVjkpl1Y5KZdWOSmXVjkpl1Y5
+        KZdWOSmXVjkpl1Y5KZdWOSmXVjkpm1Y5KYNXOCg0WjcnClQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMVjkpAAAAAAAAAAAAAAAAAFU6KgBVOioAVToqSlU6Kq1VOSnvVTkp/1U5KclUOysxZSMTAE9B
+        MQBPQTEAAAAAAAAAAAAAAAAAVTorAFU6KwdVOisoVTkpcFU5Ka1VOSmtVTkprFU5KaxVOSmsVTkprFU5
+        KaxVOSmsVTkprFU5KaxVOSmsVTkprFU5KaxVOSmsVTkpsVU5KZVXOSk4WzcnCVQ4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAATUY2AF4sHABITDwDVToqaVU5KdlVOSn5VTkp/1U5
+        KddVOSlWVDkpFFQ5KQBUOSkAAAAAAAAAAAAAAAAAVTorAFU6LANVOisTVTkqN1U5KVZVOSlWVTkpVVU5
+        KVVVOSlVVTkpVVU5KVVVOSlVVTkpVVU5KVVVOSlVVTkpVVU5KVVVOSlVVTkpWFU5KUpXOCgbXzYmA1Q4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAUjwsAFE9LQRSPCwaVTkpkVU5
+        Kf9VOSn/VTkp/1U5KedVOCiHVTgoMlU4KABVOCgAAAAAAAAAAAAAAAAAWDgoAFk4KAFZOCgEVjgoClU4
+        KA5VOCgOVTgoDlU4KA5VOCgOVTgoDlU4KA5VOCgOVTgoDlU4KA5VOCgOVTgoDlU4KA5VOCgOVTgoDlU4
+        KAxSPCwEWTAgAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAVDkpAFQ5
+        KQ9UOSlPVTkps1U5Kf9VOSn/VTkp/1U5KfFVOSmzVTkpTlU5KQBVOSkAAAAAAAAAAAAAAAAAWDgoAFk4
+        KARYOCgVVjgoNVU4KE5VOChOVTgoTlU4KE5VOChOVTgoTlU4KE5VOChOVTgoTlU4KE5VOChOVTgoTlU4
+        KE5VOChOVTgoUFU4KENTPCwYRFVFAlQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAA
+        AAAAAAAAVTkpAFU5KQ9VOSlRVTkptFU5Kf9VOSn/VTkp/1U5KfZVOSnNVTkpX1U5KQBVOSkAAAAAAAAA
+        AAAAAAAAVzkpAFc5KQlXOSkxVTkpdVU5KatVOSmrVTkpq1U5KatVOSmrVTkpq1U5KatVOSmrVTkpq1U5
+        KatVOSmrVTkpq1U5KatVOSmrVTkpsFU5KZJVOioyVj4uBlQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMVjkpAAAAAAAAAAAAVjkpAFY5KQ1WOSlGVTkprVU5Kf9VOSn/VTkp/1U5KflVOSnZVTkpZlU5
+        KQBVOSkAAAAAAAAAAAAAAAAAVjkpAFY5KQpWOSk3VTkpgVU5KbtVOSm7VTkpulU5KbpVOSm6VTkpulU5
+        KbpVOSm6VTkpulU5KbpVOSm6VTkpulU5KbpVOSm6VTkpwFU5KaBWOSk2XTcnBlQ4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAVDkpAFQ5KRFUOSlYVTkpuVU5Kf9VOSn/VTkp/1U5
+        KflVOSnZVTkpZlU5KQBVOSkAAAAAAAAAAAAAAAAAVjkpAFY5KQJWOSkLVTkpG1U5KSdVOSknVTkpJlU5
+        KSZVOSkmVTkpJlU5KSZVOSkmVTkpJlU5KSZVOSkmVTkpJlU5KSZVOSkmVTkpJ1U5KSFWOSkLQjsrAFQ4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAVTkpAFU5KQtVOSk9VTkpplU5
+        Kf9VOSn/VTkp/1U5KfFVOSm0VTkpT1U5KQBVOSkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAWDgoAFo3
+        JwNYOCgVVTkpdVU5KdVVOSnlVTkp5lU5KcVUOSlyVDkpKlQ5KQBUOSkAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAA
+        AAAAAAAAWTgoAGI0IgBZOCgDVTkqKVU5KltUOSmAVTkpa1Y5KT1VOSkaUzkpB1Q5KQBUOSkAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMVjkpAAAAAAAAAAAAAAAAAFU6LABVOiwAVTstCFU6KxdUOSkuVTkpH1w3JwdeNiYBWzcnAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4
+        KAlUOCgzVTkppFU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFU6KwBVOisAVTosClU6
+        KxdWOSkgVjkpI1Y5KSJWOSkiVjkpIlY5KSJWOSkiVjkpIlY5KSJWOSkiVjkpIlY5KSJWOSkiVjkpIlY5
+        KSJWOSkiVjkpIlY5KSJWOSkiVjkpIFY5KS5VOSlhVTkptlU5KfZVOSn/VTkprVY5KUFWOSkMVjkpAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFU6
+        KwBVOisAVTorIFU6KktWOSloVjkpb1Y5KW1WOSltVjkpbVY5KW1WOSltVjkpbVY5KW1WOSltVjkpbVY5
+        KW1WOSltVjkpbVY5KW1WOSltVjkpbVY5KW1WOSltVjkpa1U5KXZVOiqdVTkpuFU5KcVVOSn/VTkprVY5
+        KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAFU6KgBVOioAVToqQ1U6KpxVOSnWVTkp4FU5KdZVOSnWVTkp1lU5KdZVOSnWVTkp1lU5
+        KdZVOSnWVTkp1lU5KdZVOSnWVTkp1lU5KdZVOSnWVTkp1lU5KdZVOSnWVTkp11U5KdNVOSnBVTkpiVQ4
+        KFpVOSn8VTkpqFY5KT1WOSkLVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFU5KQBVOSkAVTopUlU5KbJVOSnSVTkprFU5KXxVOSl8VTkpfVU5
+        KX1VOSl9VTkpfVU5KX1VOSl9VTkpfVU5KX1VOSl9VTkpfVU5KX1VOSl9VTkpfVU5KX1VOSl9VTkpflU5
+        KXlVOSlmVTkpO1Q4KBpVOSneVTkpqVY5KV9VOSkvVTkpIVU5KSNVOSkjVTkpI1U5KSNVOSkjVTkpI1U5
+        KSNVOSkjVTkpI1U5KSNVOSkjVTkpI1U5KSNVOSkjVTkpI1U5KSJVOSkiVTkpclU5KblVOiqbVToqR1U6
+        KgBVOioAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUOCiTVTkptVU5Kc9VOSm0VTkpq1U5Ka1VOSmtVTkprVU5
+        Ka1VOSmtVTkprVU5Ka1VOSmtVTkprVU5Ka1VOSmtVTkprVU5Ka1VOSmtVTkprVU5KaxVOSmsVTkp1VU5
+        KdtVOSl3VjkpKVY5KQBWOSkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTOSlEVDkpcFU5KaNVOSmwVTkptFU5
+        KbNVOSmzVTkps1U5KbNVOSmzVTkps1U5KbNVOSmzVTkps1U5KbNVOSmzVTkps1U5KbNVOSmzVTkps1U5
+        KbNVOSmzVTkpp1U5KYFWOSk4VjkpD1Y5KQBWOSkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQQTEMUzoqHlQ4
+        KD1UOChhVDgobFQ4KGpUOChqVDgoalQ4KGpUOChqVDgoalQ4KGpUOChqVDgoalQ4KGpUOChqVDgoalQ4
+        KGpUOChqVDgoalQ4KGtUOChrVTgoQlg4KBRZOCgEWDgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABORTUCUzoqBVQ4KAtUOCgTVDgoFVQ4KBVUOCgVVDgoFVQ4KBVUOCgVVDgoFVQ4KBVUOCgVVDgoFVQ4
+        KBVUOCgVVDgoFVQ4KBVUOCgVVDgoFVQ4KBVUOCgVVTgoDFo3JwNbNycAWjcnAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD///////8AAP///////wAA////////AAD///////8AAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAADgP//8BwAAAOA///wHAAAA//////8AAAD//////wAAAP//////AAAA//
+        ////8AAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAAOAAAAAAAIAA4AABAAAA4AHgAAAAAAD8D+AAAA
+        AAAPwP4AAAAAAA+AfgAAAAAADwB+AAAQAAAPAH4AAAAAAA8AfgAAAAAADwB+AAAAAAAPAH4AABAAAA8A
+        f///8AAADwB////wAAAPgH////AAAA/A////8AAAD//////wAAAP//////AAAA///AAAAAAAD//8AAAA
+        AAAP//wAAAAAAA///AAAAAAAAAAAP///AAAAAAA///8AAAAAAD///wAAAAAAf///AAAAAAD///8AAP//
+        /////wAA////////AAD///////8AAP///////wAA////////AAAoAAAAIAAAAEAAAAABACAAAAAAAAAQ
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVTorMFU6Kp9VOSnPVTkpz1U5
+        Kc9VOSnPVTgoYFQ4KEBVOSnPVTkpz1U5Kc9VOSnPVTkpz1U5Kc9VOSnPVTkpz1U5Kc9VOSnPVTkpz1U5
+        Kc9VOSnPVTkpz1U5Kc9VOSnPVjkpUFQ4KEBVOSnPVTkpz1U5Kc9VOSnPVTkpv1U6KzBVOSm/VTkpv1Q5
+        KXBUOSlwVDkpcFU5Kd9VOSm/VTkpr1U5Kf9UOSlwVDkpcFQ5KXBUOSlwVDkpcFQ5KXBUOSlwVDkpcFQ5
+        KXBUOSlwVDkpcFQ5KXBUOSlwVDkpcFU5Ke9VOiqfVTkpv1U5Ke9UOSlwVDkpcFQ5KXBVOiqfVTkpv1U5
+        Kf9WOSlQAAAAAAAAAAAAAAAAVTkpr1U5Kb9VOSm/VTkpvwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVTkpr1U5Kb9VOSm/VToqnwAAAAAAAAAAAAAAAFQ4
+        KEBVOSn/VTkp/1Y5KVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUEAwEFQ4
+        KEBUOCiAVDgogFQ4KIBUOCiAVDgogFQ4KIBUOCiAVDgogFQ4KIBUOCiAVDgogFQ4KIBUOCiAWDgoIAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////////wAAAAAAAAAAOH/+HD//
+        //w////8P////D////wwAwAEMAcABDgP//w+PwAEPh8ABDwf//w8HwAEPB8ABDwf//w8H//8Pj///D//
+        //w////8P/4AAD/+AAA//n//AAB//wAA////////////////////////
+</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>600, 300</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
+    <value>barManager1</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barFormHeader.Name" xml:space="preserve">
+    <value>barFormHeader</value>
+  </data>
+  <data name="&gt;&gt;barFormHeader.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barFormFooter.Name" xml:space="preserve">
+    <value>barFormFooter</value>
+  </data>
+  <data name="&gt;&gt;barFormFooter.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
+    <value>btnExit</value>
+  </data>
+  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
+    <value>btnSearch</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ErrorProvider.Name" xml:space="preserve">
+    <value>ErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;ErrorProvider.Type" xml:space="preserve">
+    <value>Alit.WinformControls.ErrorProvider, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblCreatedBy.Name" xml:space="preserve">
+    <value>lblCreatedBy</value>
+  </data>
+  <data name="&gt;&gt;lblCreatedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblEditedBy.Name" xml:space="preserve">
+    <value>lblEditedBy</value>
+  </data>
+  <data name="&gt;&gt;lblEditedBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Name" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgCompany.Name" xml:space="preserve">
+    <value>lcgCompany</value>
+  </data>
+  <data name="&gt;&gt;lcgCompany.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem9.Name" xml:space="preserve">
+    <value>layoutControlItem9</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem18.Name" xml:space="preserve">
+    <value>layoutControlItem18</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem19.Name" xml:space="preserve">
+    <value>layoutControlItem19</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem10.Name" xml:space="preserve">
+    <value>layoutControlItem10</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem20.Name" xml:space="preserve">
+    <value>layoutControlItem20</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem20.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem7.Name" xml:space="preserve">
+    <value>emptySpaceItem7</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup4.Name" xml:space="preserve">
+    <value>layoutControlGroup4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup9.Name" xml:space="preserve">
+    <value>layoutControlGroup9</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem12.Name" xml:space="preserve">
+    <value>layoutControlItem12</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Name" xml:space="preserve">
+    <value>layoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem15.Name" xml:space="preserve">
+    <value>layoutControlItem15</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup10.Name" xml:space="preserve">
+    <value>layoutControlGroup10</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem10.Name" xml:space="preserve">
+    <value>emptySpaceItem10</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Name" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem6.Name" xml:space="preserve">
+    <value>layoutControlItem6</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup5.Name" xml:space="preserve">
+    <value>layoutControlGroup5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Name" xml:space="preserve">
+    <value>layoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem13.Name" xml:space="preserve">
+    <value>layoutControlItem13</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem11.Name" xml:space="preserve">
+    <value>layoutControlItem11</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem14.Name" xml:space="preserve">
+    <value>layoutControlItem14</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem16.Name" xml:space="preserve">
+    <value>layoutControlItem16</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem17.Name" xml:space="preserve">
+    <value>layoutControlItem17</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Name" xml:space="preserve">
+    <value>emptySpaceItem5</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgStatutoryRegistrationNos.Name" xml:space="preserve">
+    <value>lcgStatutoryRegistrationNos</value>
+  </data>
+  <data name="&gt;&gt;lcgStatutoryRegistrationNos.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Name" xml:space="preserve">
+    <value>layoutControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem21.Name" xml:space="preserve">
+    <value>layoutControlItem21</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem21.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem25.Name" xml:space="preserve">
+    <value>layoutControlItem25</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem25.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem27.Name" xml:space="preserve">
+    <value>layoutControlItem27</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem27.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem22.Name" xml:space="preserve">
+    <value>layoutControlItem22</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem22.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem26.Name" xml:space="preserve">
+    <value>layoutControlItem26</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem26.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem28.Name" xml:space="preserve">
+    <value>layoutControlItem28</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem28.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem24.Name" xml:space="preserve">
+    <value>layoutControlItem24</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem24.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem8.Name" xml:space="preserve">
+    <value>emptySpaceItem8</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup6.Name" xml:space="preserve">
+    <value>layoutControlGroup6</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem32.Name" xml:space="preserve">
+    <value>layoutControlItem32</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem32.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem31.Name" xml:space="preserve">
+    <value>layoutControlItem31</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem31.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem30.Name" xml:space="preserve">
+    <value>layoutControlItem30</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem30.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem29.Name" xml:space="preserve">
+    <value>layoutControlItem29</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem29.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup7.Name" xml:space="preserve">
+    <value>layoutControlGroup7</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem36.Name" xml:space="preserve">
+    <value>layoutControlItem36</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem36.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem35.Name" xml:space="preserve">
+    <value>layoutControlItem35</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem35.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem34.Name" xml:space="preserve">
+    <value>layoutControlItem34</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem34.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem33.Name" xml:space="preserve">
+    <value>layoutControlItem33</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem33.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup8.Name" xml:space="preserve">
+    <value>layoutControlGroup8</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem40.Name" xml:space="preserve">
+    <value>layoutControlItem40</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem40.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem39.Name" xml:space="preserve">
+    <value>layoutControlItem39</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem39.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem38.Name" xml:space="preserve">
+    <value>layoutControlItem38</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem38.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem37.Name" xml:space="preserve">
+    <value>layoutControlItem37</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem37.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem9.Name" xml:space="preserve">
+    <value>emptySpaceItem9</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem6.Name" xml:space="preserve">
+    <value>emptySpaceItem6</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem23.Name" xml:space="preserve">
+    <value>layoutControlItem23</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem23.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;popupMenuFormShortCuts.Name" xml:space="preserve">
+    <value>popupMenuFormShortCuts</value>
+  </data>
+  <data name="&gt;&gt;popupMenuFormShortCuts.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;behaviorManager1.Name" xml:space="preserve">
+    <value>behaviorManager1</value>
+  </data>
+  <data name="&gt;&gt;behaviorManager1.Type" xml:space="preserve">
+    <value>DevExpress.Utils.Behaviors.BehaviorManager, DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmCompany</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Vision.WinForm.Template.frmCRUDTemplate, Vision.WinForm, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

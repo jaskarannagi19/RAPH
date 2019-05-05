@@ -1,0 +1,2373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="ErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtWorkingHoursPerDay.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtWorkingHoursPerDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 100</value>
+  </data>
+  <data name="txtWorkingHoursPerDay.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="txtWorkingHoursPerDay.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="txtWorkingHoursPerDay.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v18.2" name="DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="txtWorkingHoursPerDay.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtWorkingHoursPerDay.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtWorkingHoursPerDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="txtWorkingHoursPerDay.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerDay.Name" xml:space="preserve">
+    <value>txtWorkingHoursPerDay</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerDay.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerDay.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerDay.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtPFContributionEmployee.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtPFContributionEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 212</value>
+  </data>
+  <data name="txtPFContributionEmployee.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="txtPFContributionEmployee.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="txtPFContributionEmployee.Properties.Mask.EditMask" xml:space="preserve">
+    <value>p2</value>
+  </data>
+  <data name="txtPFContributionEmployee.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtPFContributionEmployee.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtPFContributionEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="txtPFContributionEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;txtPFContributionEmployee.Name" xml:space="preserve">
+    <value>txtPFContributionEmployee</value>
+  </data>
+  <data name="&gt;&gt;txtPFContributionEmployee.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPFContributionEmployee.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtPFContributionEmployee.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtPFContributionEmployer.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtPFContributionEmployer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 212</value>
+  </data>
+  <data name="txtPFContributionEmployer.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="txtPFContributionEmployer.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="txtPFContributionEmployer.Properties.Mask.EditMask" xml:space="preserve">
+    <value>p2</value>
+  </data>
+  <data name="txtPFContributionEmployer.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtPFContributionEmployer.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtPFContributionEmployer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="txtPFContributionEmployer.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;txtPFContributionEmployer.Name" xml:space="preserve">
+    <value>txtPFContributionEmployer</value>
+  </data>
+  <data name="&gt;&gt;txtPFContributionEmployer.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPFContributionEmployer.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtPFContributionEmployer.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 126</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="txtWorkingHoursPerMonth.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerMonth.Name" xml:space="preserve">
+    <value>txtWorkingHoursPerMonth</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerMonth.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerMonth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerMonth.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtLatenessPenaltyAmount.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtLatenessPenaltyAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 152</value>
+  </data>
+  <data name="txtLatenessPenaltyAmount.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txtLatenessPenaltyAmount.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtLatenessPenaltyAmount.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtLatenessPenaltyAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="txtLatenessPenaltyAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;txtLatenessPenaltyAmount.Name" xml:space="preserve">
+    <value>txtLatenessPenaltyAmount</value>
+  </data>
+  <data name="&gt;&gt;txtLatenessPenaltyAmount.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtLatenessPenaltyAmount.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtLatenessPenaltyAmount.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 126</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="txtWorkingDaysPerMonth.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingDaysPerMonth.Name" xml:space="preserve">
+    <value>txtWorkingDaysPerMonth</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingDaysPerMonth.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingDaysPerMonth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingDaysPerMonth.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 100</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="txtWorkingHoursPerWeek.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerWeek.Name" xml:space="preserve">
+    <value>txtWorkingHoursPerWeek</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerWeek.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerWeek.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtWorkingHoursPerWeek.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 74</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="txtDoubleOvertimeRate.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;txtDoubleOvertimeRate.Name" xml:space="preserve">
+    <value>txtDoubleOvertimeRate</value>
+  </data>
+  <data name="&gt;&gt;txtDoubleOvertimeRate.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtDoubleOvertimeRate.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDoubleOvertimeRate.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtOvertimeRate.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtOvertimeRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 74</value>
+  </data>
+  <data name="txtOvertimeRate.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>125, 0</value>
+  </data>
+  <data name="txtOvertimeRate.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="txtOvertimeRate.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n2</value>
+  </data>
+  <data name="txtOvertimeRate.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtOvertimeRate.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtOvertimeRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="txtOvertimeRate.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;txtOvertimeRate.Name" xml:space="preserve">
+    <value>txtOvertimeRate</value>
+  </data>
+  <data name="&gt;&gt;txtOvertimeRate.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtOvertimeRate.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtOvertimeRate.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="cmbEmployee_CurrentMonthLeaveAccumulateOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 48</value>
+  </data>
+  <data name="cmbEmployee_CurrentMonthLeaveAccumulateOn.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>300, 0</value>
+  </data>
+  <data name="cmbEmployee_CurrentMonthLeaveAccumulateOn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="cmbEmployee_CurrentMonthLeaveAccumulateOn.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="cmbEmployee_CurrentMonthLeaveAccumulateOn.Properties.Items" xml:space="preserve">
+    <value>Month Beginning</value>
+  </data>
+  <data name="cmbEmployee_CurrentMonthLeaveAccumulateOn.Properties.Items1" xml:space="preserve">
+    <value>Month Ending</value>
+  </data>
+  <data name="cmbEmployee_CurrentMonthLeaveAccumulateOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 22</value>
+  </data>
+  <data name="cmbEmployee_CurrentMonthLeaveAccumulateOn.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;cmbEmployee_CurrentMonthLeaveAccumulateOn.Name" xml:space="preserve">
+    <value>cmbEmployee_CurrentMonthLeaveAccumulateOn</value>
+  </data>
+  <data name="&gt;&gt;cmbEmployee_CurrentMonthLeaveAccumulateOn.Type" xml:space="preserve">
+    <value>Alit.WinformControls.ComboBoxEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmbEmployee_CurrentMonthLeaveAccumulateOn.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;cmbEmployee_CurrentMonthLeaveAccumulateOn.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 178</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveAdjustmentDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveAdjustmentDocument.Name" xml:space="preserve">
+    <value>txtDocumentLocation_LeaveAdjustmentDocument</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveAdjustmentDocument.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveAdjustmentDocument.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveAdjustmentDocument.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 152</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveEncashmentDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveEncashmentDocument.Name" xml:space="preserve">
+    <value>txtDocumentLocation_LeaveEncashmentDocument</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveEncashmentDocument.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveEncashmentDocument.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveEncashmentDocument.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 126</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_SafariApplicationDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_SafariApplicationDocument.Name" xml:space="preserve">
+    <value>txtDocumentLocation_SafariApplicationDocument</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_SafariApplicationDocument.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_SafariApplicationDocument.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_SafariApplicationDocument.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="licenseNofEmployeeViewModelBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>265, 17</value>
+  </metadata>
+  <data name="gcLicenseNofEmployee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 74</value>
+  </data>
+  <data name="colCompanyName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCompanyName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="colNofEmployee.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colNofEmployee.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="colValidUpto.Caption" xml:space="preserve">
+    <value>Valid Up to</value>
+  </data>
+  <data name="colValidUpto.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colValidUpto.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gcLicenseNofEmployee.Size" type="System.Drawing.Size, System.Drawing">
+    <value>577, 285</value>
+  </data>
+  <data name="gcLicenseNofEmployee.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;gcLicenseNofEmployee.Name" xml:space="preserve">
+    <value>gcLicenseNofEmployee</value>
+  </data>
+  <data name="&gt;&gt;gcLicenseNofEmployee.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gcLicenseNofEmployee.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;gcLicenseNofEmployee.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txtLicense_NofCompany.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 48</value>
+  </data>
+  <data name="txtLicense_NofCompany.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="txtLicense_NofCompany.Properties.Mask.EditMask" xml:space="preserve">
+    <value>n0</value>
+  </data>
+  <data name="txtLicense_NofCompany.Properties.Mask.MaskType" type="DevExpress.XtraEditors.Mask.MaskType, DevExpress.XtraEditors.v18.2">
+    <value>Numeric</value>
+  </data>
+  <data name="txtLicense_NofCompany.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtLicense_NofCompany.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="txtLicense_NofCompany.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtLicense_NofCompany.Name" xml:space="preserve">
+    <value>txtLicense_NofCompany</value>
+  </data>
+  <data name="&gt;&gt;txtLicense_NofCompany.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtLicense_NofCompany.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtLicense_NofCompany.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="tswitchNoReply_SSL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>731, 100</value>
+  </data>
+  <data name="tswitchNoReply_SSL.Properties.OffText" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="tswitchNoReply_SSL.Properties.OnText" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="tswitchNoReply_SSL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 26</value>
+  </data>
+  <data name="tswitchNoReply_SSL.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tswitchNoReply_SSL.Name" xml:space="preserve">
+    <value>tswitchNoReply_SSL</value>
+  </data>
+  <data name="&gt;&gt;tswitchNoReply_SSL.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tswitchNoReply_SSL.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;tswitchNoReply_SSL.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txtNoReply_SMTPPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 100</value>
+  </data>
+  <data name="txtNoReply_SMTPPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 22</value>
+  </data>
+  <data name="txtNoReply_SMTPPort.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_SMTPPort.Name" xml:space="preserve">
+    <value>txtNoReply_SMTPPort</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_SMTPPort.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_SMTPPort.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_SMTPPort.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txtNoReply_SMTPHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 100</value>
+  </data>
+  <data name="txtNoReply_SMTPHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 22</value>
+  </data>
+  <data name="txtNoReply_SMTPHost.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_SMTPHost.Name" xml:space="preserve">
+    <value>txtNoReply_SMTPHost</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_SMTPHost.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_SMTPHost.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_SMTPHost.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="txtNoReply_Password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 74</value>
+  </data>
+  <data name="txtNoReply_Password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtNoReply_Password.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_Password.Name" xml:space="preserve">
+    <value>txtNoReply_Password</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_Password.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_Password.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_Password.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="txtNoReply_EmailID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 48</value>
+  </data>
+  <data name="txtNoReply_EmailID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtNoReply_EmailID.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_EmailID.Name" xml:space="preserve">
+    <value>txtNoReply_EmailID</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_EmailID.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_EmailID.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtNoReply_EmailID.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 48</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeImages.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_EmployeeImages.Name" xml:space="preserve">
+    <value>txtDocumentLocation_EmployeeImages</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_EmployeeImages.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_EmployeeImages.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_EmployeeImages.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 74</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_EmployeeDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_EmployeeDocument.Name" xml:space="preserve">
+    <value>txtDocumentLocation_EmployeeDocument</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_EmployeeDocument.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_EmployeeDocument.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_EmployeeDocument.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 100</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_LeaveApplicationDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveApplicationDocument.Name" xml:space="preserve">
+    <value>txtDocumentLocation_LeaveApplicationDocument</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveApplicationDocument.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveApplicationDocument.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LeaveApplicationDocument.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 204</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_LoanApplicationDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LoanApplicationDocument.Name" xml:space="preserve">
+    <value>txtDocumentLocation_LoanApplicationDocument</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LoanApplicationDocument.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LoanApplicationDocument.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LoanApplicationDocument.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 230</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_LoanAdjustmentDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LoanAdjustmentDocument.Name" xml:space="preserve">
+    <value>txtDocumentLocation_LoanAdjustmentDocument</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LoanAdjustmentDocument.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LoanAdjustmentDocument.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_LoanAdjustmentDocument.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 256</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Ellipsis</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Properties.Buttons9" type="DevExpress.Utils.ToolTipAnchor, DevExpress.Utils.v18.2">
+    <value>Default</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 22</value>
+  </data>
+  <data name="txtDocumentLocation_TAApprovalDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_TAApprovalDocument.Name" xml:space="preserve">
+    <value>txtDocumentLocation_TAApprovalDocument</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_TAApprovalDocument.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_TAApprovalDocument.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtDocumentLocation_TAApprovalDocument.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="layoutControlItem15.Text" xml:space="preserve">
+    <value>Current Month Leave Accumulate</value>
+  </data>
+  <data name="layoutControlItem18.Text" xml:space="preserve">
+    <value>Overtime Rate</value>
+  </data>
+  <data name="layoutControlItem20.Text" xml:space="preserve">
+    <value>Working Hours / Week</value>
+  </data>
+  <data name="layoutControlItem21.Text" xml:space="preserve">
+    <value>Working Days / Month</value>
+  </data>
+  <data name="layoutControlItem22.Text" xml:space="preserve">
+    <value>Lateness Penalty Amount</value>
+  </data>
+  <data name="layoutControlItem19.Text" xml:space="preserve">
+    <value>Double Overtime Rate</value>
+  </data>
+  <data name="layoutControlItem25.Text" xml:space="preserve">
+    <value>Employee %</value>
+  </data>
+  <data name="layoutControlItem24.Text" xml:space="preserve">
+    <value>Employer %</value>
+  </data>
+  <data name="layoutControlGroup3.Text" xml:space="preserve">
+    <value>P.F. Contribution </value>
+  </data>
+  <data name="layoutControlItem23.Text" xml:space="preserve">
+    <value>Working Hours / Month</value>
+  </data>
+  <data name="layoutControlItem26.Text" xml:space="preserve">
+    <value>Working Hours / Day</value>
+  </data>
+  <data name="layoutControlGroup2.Text" xml:space="preserve">
+    <value>Employee &amp;&amp; Payroll</value>
+  </data>
+  <data name="layoutControlItem1.Text" xml:space="preserve">
+    <value>Employee Images</value>
+  </data>
+  <data name="layoutControlItem8.Text" xml:space="preserve">
+    <value>Employee Document</value>
+  </data>
+  <data name="layoutControlItem10.Text" xml:space="preserve">
+    <value>Leave Application Document</value>
+  </data>
+  <data name="layoutControlItem11.Text" xml:space="preserve">
+    <value>Safari Application Document</value>
+  </data>
+  <data name="layoutControlItem12.Text" xml:space="preserve">
+    <value>Leave Encashment Document </value>
+  </data>
+  <data name="layoutControlItem13.Text" xml:space="preserve">
+    <value>Leave Adjustment Document</value>
+  </data>
+  <data name="layoutControlItem14.CustomizationFormText" xml:space="preserve">
+    <value>Leave Adjustment Document</value>
+  </data>
+  <data name="layoutControlItem14.Text" xml:space="preserve">
+    <value>Loan Application Document</value>
+  </data>
+  <data name="layoutControlItem16.CustomizationFormText" xml:space="preserve">
+    <value>Leave Adjustment Document</value>
+  </data>
+  <data name="layoutControlItem16.Text" xml:space="preserve">
+    <value>Loan Adjustment Document</value>
+  </data>
+  <data name="layoutControlItem17.CustomizationFormText" xml:space="preserve">
+    <value>Leave Adjustment Document</value>
+  </data>
+  <data name="layoutControlItem17.Text" xml:space="preserve">
+    <value>T &amp;&amp; A Approval Document</value>
+  </data>
+  <data name="lcgDocumentLocation.Text" xml:space="preserve">
+    <value>Document Location</value>
+  </data>
+  <data name="layoutControlItem2.Text" xml:space="preserve">
+    <value>Email ID</value>
+  </data>
+  <data name="layoutControlItem4.Text" xml:space="preserve">
+    <value>SMTP Host</value>
+  </data>
+  <data name="layoutControlItem3.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="layoutControlItem5.Text" xml:space="preserve">
+    <value>SMTP Port</value>
+  </data>
+  <data name="layoutControlItem6.Text" xml:space="preserve">
+    <value>SSL </value>
+  </data>
+  <data name="lcgEmailSetup.Text" xml:space="preserve">
+    <value>Email Setup</value>
+  </data>
+  <data name="layoutControlItem7.Text" xml:space="preserve">
+    <value>No. of Companies</value>
+  </data>
+  <data name="lcgLicense.Text" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="tabbedControlGroup1.Text" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>852, 383</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>Alit.WinformControls.myLayoutControl, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>panelContent</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>858, 389</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Name" xml:space="preserve">
+    <value>panelContent</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelContent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toggleSwitch20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 71</value>
+  </data>
+  <data name="toggleSwitch20.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch20.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch20.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 24</value>
+  </data>
+  <data name="toggleSwitch20.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch20.Name" xml:space="preserve">
+    <value>toggleSwitch20</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch20.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch21.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toggleSwitch21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 626</value>
+  </data>
+  <data name="toggleSwitch21.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch21.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch21.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch21.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch21.Name" xml:space="preserve">
+    <value>toggleSwitch21</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch21.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 570</value>
+  </data>
+  <data name="toggleSwitch22.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch22.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch22.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch22.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch22.Name" xml:space="preserve">
+    <value>toggleSwitch22</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch22.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 130</value>
+  </data>
+  <data name="toggleSwitch23.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch23.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch23.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch23.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch23.Name" xml:space="preserve">
+    <value>toggleSwitch23</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch23.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 474</value>
+  </data>
+  <data name="toggleSwitch24.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch24.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch24.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch24.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch24.Name" xml:space="preserve">
+    <value>toggleSwitch24</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch24.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 266</value>
+  </data>
+  <data name="textEdit4.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="textEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="textEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Name" xml:space="preserve">
+    <value>textEdit4</value>
+  </data>
+  <data name="&gt;&gt;textEdit4.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toggleSwitch25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 542</value>
+  </data>
+  <data name="toggleSwitch25.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch25.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch25.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch25.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch25.Name" xml:space="preserve">
+    <value>toggleSwitch25</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch25.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 158</value>
+  </data>
+  <data name="toggleSwitch26.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch26.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch26.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch26.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch26.Name" xml:space="preserve">
+    <value>toggleSwitch26</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch26.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 598</value>
+  </data>
+  <data name="toggleSwitch27.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch27.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch27.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch27.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch27.Name" xml:space="preserve">
+    <value>toggleSwitch27</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch27.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 474</value>
+  </data>
+  <data name="toggleSwitch28.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch28.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch28.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch28.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch28.Name" xml:space="preserve">
+    <value>toggleSwitch28</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch28.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lookUpEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 71</value>
+  </data>
+  <data name="lookUpEdit3.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 0</value>
+  </data>
+  <data name="lookUpEdit3.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="lookUpEdit3.Properties.NullText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="lookUpEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 22</value>
+  </data>
+  <data name="lookUpEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit3.Name" xml:space="preserve">
+    <value>lookUpEdit3</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit3.Type" xml:space="preserve">
+    <value>Alit.WinformControls.LookUpEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toggleSwitch29.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toggleSwitch29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 654</value>
+  </data>
+  <data name="toggleSwitch29.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch29.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch29.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch29.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch29.Name" xml:space="preserve">
+    <value>toggleSwitch29</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch29.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 474</value>
+  </data>
+  <data name="toggleSwitch30.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch30.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch30.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch30.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch30.Name" xml:space="preserve">
+    <value>toggleSwitch30</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch30.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 654</value>
+  </data>
+  <data name="toggleSwitch31.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch31.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch31.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch31.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch31.Name" xml:space="preserve">
+    <value>toggleSwitch31</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch31.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 542</value>
+  </data>
+  <data name="textEdit5.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="textEdit5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textEdit5.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Name" xml:space="preserve">
+    <value>textEdit5</value>
+  </data>
+  <data name="&gt;&gt;textEdit5.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="comboBoxEdit3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>687, 47</value>
+  </data>
+  <data name="comboBoxEdit3.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="comboBoxEdit3.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="comboBoxEdit3.Properties.Items" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="comboBoxEdit3.Properties.Items1" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="comboBoxEdit3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="comboBoxEdit3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEdit3.Name" xml:space="preserve">
+    <value>comboBoxEdit3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEdit3.Type" xml:space="preserve">
+    <value>Alit.WinformControls.ComboBoxEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toggleSwitch32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 626</value>
+  </data>
+  <data name="toggleSwitch32.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch32.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch32.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch32.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch32.Name" xml:space="preserve">
+    <value>toggleSwitch32</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch32.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="lookUpEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>582, 186</value>
+  </data>
+  <data name="lookUpEdit4.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lookUpEdit4.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="lookUpEdit4.Properties.NullText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="lookUpEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 22</value>
+  </data>
+  <data name="lookUpEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit4.Name" xml:space="preserve">
+    <value>lookUpEdit4</value>
+  </data>
+  <data name="&gt;&gt;lookUpEdit4.Type" xml:space="preserve">
+    <value>Alit.WinformControls.LookUpEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tokenEdit2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 214</value>
+  </data>
+  <data name="tokenEdit2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>661, 20</value>
+  </data>
+  <data name="tokenEdit2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tokenEdit2.Name" xml:space="preserve">
+    <value>tokenEdit2</value>
+  </data>
+  <data name="&gt;&gt;tokenEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TokenEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="textEdit6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 266</value>
+  </data>
+  <data name="textEdit6.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="textEdit6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="textEdit6.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Name" xml:space="preserve">
+    <value>textEdit6</value>
+  </data>
+  <data name="&gt;&gt;textEdit6.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toggleSwitch33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 186</value>
+  </data>
+  <data name="toggleSwitch33.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch33.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch33.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch33.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch33.Name" xml:space="preserve">
+    <value>toggleSwitch33</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch33.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="checkedListBoxControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 332</value>
+  </data>
+  <data name="checkedListBoxControl2.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>300, 150</value>
+  </data>
+  <data name="checkedListBoxControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 20</value>
+  </data>
+  <data name="checkedListBoxControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;checkedListBoxControl2.Name" xml:space="preserve">
+    <value>checkedListBoxControl2</value>
+  </data>
+  <data name="&gt;&gt;checkedListBoxControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedListBoxControl, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch34.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toggleSwitch34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 598</value>
+  </data>
+  <data name="toggleSwitch34.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch34.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch34.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch34.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch34.Name" xml:space="preserve">
+    <value>toggleSwitch34</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch34.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 570</value>
+  </data>
+  <data name="toggleSwitch35.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch35.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch35.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch35.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch35.Name" xml:space="preserve">
+    <value>toggleSwitch35</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch35.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="comboBoxEdit4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 47</value>
+  </data>
+  <data name="comboBoxEdit4.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="comboBoxEdit4.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="comboBoxEdit4.Properties.Items" xml:space="preserve">
+    <value>Cash Only</value>
+  </data>
+  <data name="comboBoxEdit4.Properties.Items1" xml:space="preserve">
+    <value>Credit Only</value>
+  </data>
+  <data name="comboBoxEdit4.Properties.Items2" xml:space="preserve">
+    <value>Cash and Credit both</value>
+  </data>
+  <data name="comboBoxEdit4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="comboBoxEdit4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEdit4.Name" xml:space="preserve">
+    <value>comboBoxEdit4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEdit4.Type" xml:space="preserve">
+    <value>Alit.WinformControls.ComboBoxEdit, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toggleSwitch36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 514</value>
+  </data>
+  <data name="toggleSwitch36.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch36.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch36.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch36.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch36.Name" xml:space="preserve">
+    <value>toggleSwitch36</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch36.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 356</value>
+  </data>
+  <data name="toggleSwitch37.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch37.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch37.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch37.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch37.Name" xml:space="preserve">
+    <value>toggleSwitch37</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch37.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="toggleSwitch38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 238</value>
+  </data>
+  <data name="toggleSwitch38.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="toggleSwitch38.Properties.OffText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="toggleSwitch38.Properties.OnText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="toggleSwitch38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="toggleSwitch38.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch38.Name" xml:space="preserve">
+    <value>toggleSwitch38</value>
+  </data>
+  <data name="&gt;&gt;toggleSwitch38.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ToggleSwitch, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="tabbedControlGroup2.Text" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="layoutControlGroup17.CustomizationFormText" xml:space="preserve">
+    <value>Product Selection</value>
+  </data>
+  <data name="layoutControlGroup17.Text" xml:space="preserve">
+    <value>Product Selection</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>858, 415</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        4OfgA8BH8HGMD/jxjx//+Z////gf///4H/8=
+</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Application Settings</value>
+  </data>
+  <data name="&gt;&gt;ErrorProvider.Name" xml:space="preserve">
+    <value>ErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;ErrorProvider.Type" xml:space="preserve">
+    <value>Alit.WinformControls.ErrorProvider, Alit.WinformControls, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;licenseNofEmployeeViewModelBindingSource.Name" xml:space="preserve">
+    <value>licenseNofEmployeeViewModelBindingSource</value>
+  </data>
+  <data name="&gt;&gt;licenseNofEmployeeViewModelBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gvLicenseNofEmployee.Name" xml:space="preserve">
+    <value>gvLicenseNofEmployee</value>
+  </data>
+  <data name="&gt;&gt;gvLicenseNofEmployee.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colCompanyName.Name" xml:space="preserve">
+    <value>colCompanyName</value>
+  </data>
+  <data name="&gt;&gt;colCompanyName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colNofEmployee.Name" xml:space="preserve">
+    <value>colNofEmployee</value>
+  </data>
+  <data name="&gt;&gt;colNofEmployee.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colValidUpto.Name" xml:space="preserve">
+    <value>colValidUpto</value>
+  </data>
+  <data name="&gt;&gt;colValidUpto.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Name" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Name" xml:space="preserve">
+    <value>layoutControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem15.Name" xml:space="preserve">
+    <value>layoutControlItem15</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem18.Name" xml:space="preserve">
+    <value>layoutControlItem18</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem20.Name" xml:space="preserve">
+    <value>layoutControlItem20</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem20.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem21.Name" xml:space="preserve">
+    <value>layoutControlItem21</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem21.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem22.Name" xml:space="preserve">
+    <value>layoutControlItem22</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem22.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem8.Name" xml:space="preserve">
+    <value>emptySpaceItem8</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem9.Name" xml:space="preserve">
+    <value>emptySpaceItem9</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem19.Name" xml:space="preserve">
+    <value>layoutControlItem19</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem25.Name" xml:space="preserve">
+    <value>layoutControlItem25</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem25.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem24.Name" xml:space="preserve">
+    <value>layoutControlItem24</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem24.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem23.Name" xml:space="preserve">
+    <value>layoutControlItem23</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem23.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem26.Name" xml:space="preserve">
+    <value>layoutControlItem26</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem26.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgDocumentLocation.Name" xml:space="preserve">
+    <value>lcgDocumentLocation</value>
+  </data>
+  <data name="&gt;&gt;lcgDocumentLocation.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Name" xml:space="preserve">
+    <value>layoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem10.Name" xml:space="preserve">
+    <value>layoutControlItem10</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem11.Name" xml:space="preserve">
+    <value>layoutControlItem11</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem12.Name" xml:space="preserve">
+    <value>layoutControlItem12</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem13.Name" xml:space="preserve">
+    <value>layoutControlItem13</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem14.Name" xml:space="preserve">
+    <value>layoutControlItem14</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem16.Name" xml:space="preserve">
+    <value>layoutControlItem16</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem17.Name" xml:space="preserve">
+    <value>layoutControlItem17</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgEmailSetup.Name" xml:space="preserve">
+    <value>lcgEmailSetup</value>
+  </data>
+  <data name="&gt;&gt;lcgEmailSetup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Name" xml:space="preserve">
+    <value>layoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem6.Name" xml:space="preserve">
+    <value>layoutControlItem6</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Name" xml:space="preserve">
+    <value>emptySpaceItem5</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgLicense.Name" xml:space="preserve">
+    <value>lcgLicense</value>
+  </data>
+  <data name="&gt;&gt;lcgLicense.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Name" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem9.Name" xml:space="preserve">
+    <value>layoutControlItem9</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem6.Name" xml:space="preserve">
+    <value>emptySpaceItem6</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup2.Name" xml:space="preserve">
+    <value>tabbedControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup3.Name" xml:space="preserve">
+    <value>tabbedControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup4.Name" xml:space="preserve">
+    <value>tabbedControlGroup4</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup17.Name" xml:space="preserve">
+    <value>layoutControlGroup17</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup17.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmApplicationSettings</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Vision.WinForm.Template.frmNormalTemplate, Vision.WinForm, Version=1.27.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

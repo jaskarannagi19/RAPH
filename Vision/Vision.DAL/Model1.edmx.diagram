@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fe47968d96f645e5b588bde9396886b5" Name="Diagram1" ZoomLevel="34">
+        <EntityTypeShape EntityType="dbVisionModel.tblAccount" Width="1.5" PointX="9.75" PointY="95.875" />
+        <EntityTypeShape EntityType="dbVisionModel.tblAccountType" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblBankBranch" Width="1.5" PointX="7.5" PointY="96.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblBankName" Width="1.5" PointX="5.25" PointY="92.125" />
+        <EntityTypeShape EntityType="dbVisionModel.tblBiometricDevice" Width="1.5" PointX="14.75" PointY="83.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblCity" Width="1.5" PointX="5.25" PointY="96.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblCompany" Width="1.5" PointX="12.5" PointY="90.375" />
+        <EntityTypeShape EntityType="dbVisionModel.tblCountry" Width="1.5" PointX="0.75" PointY="97.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblCurrency" Width="1.5" PointX="10.25" PointY="91.125" />
+        <EntityTypeShape EntityType="dbVisionModel.tblDataReceiverErrorLog" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployee" Width="1.5" PointX="20" PointY="100.875" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeAccountingLedger" Width="1.5" PointX="14.75" PointY="129.875" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeAttendance" Width="1.5" PointX="22.25" PointY="98.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeAttendanceDetail" Width="1.5" PointX="30.5" PointY="100.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeBMDUpdateLog" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeDepartment" Width="1.5" PointX="14.75" PointY="73.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeDesignation" Width="1.5" PointX="14.75" PointY="56.375" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeDocument" Width="1.5" PointX="22.25" PointY="175.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeEarningDeduction" Width="1.5" PointX="25.25" PointY="74.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeFamily" Width="1.5" PointX="22.25" PointY="178" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeLeaveOpeningBalance" Width="1.5" PointX="27.5" PointY="95.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeListFormat" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeNoPrefix" Width="1.5" PointX="14.75" PointY="109.125" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeRestDay" Width="1.5" PointX="25.25" PointY="101.625" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeServiceDetail" Width="1.5" PointX="25.25" PointY="84.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeShift" Width="1.5" PointX="14.75" PointY="124" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeShiftAllocation" Width="1.5" PointX="25.25" PointY="112.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeWIBAClass" Width="1.5" PointX="14.75" PointY="112.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployeeWIBAClassRate" Width="1.5" PointX="23" PointY="103.5" />
+        <EntityTypeShape EntityType="dbVisionModel.tblEmployementTerminationCause" Width="1.5" PointX="23" PointY="84" />
+        <EntityTypeShape EntityType="dbVisionModel.tblFinPeriod" Width="1.5" PointX="14.75" PointY="102.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblGridLayout" Width="1.5" PointX="20" PointY="95.375" />
+        <EntityTypeShape EntityType="dbVisionModel.tblHoliday" Width="1.5" PointX="14.75" PointY="87.5" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLeaveAdjustment" Width="1.5" PointX="28.25" PointY="99.875" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLeaveAdjustmentNoPrefix" Width="1.5" PointX="14.75" PointY="120.375" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLeaveApplication" Width="1.5" PointX="28.25" PointY="105.875" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLeaveApplicationDayDetail" Width="1.5" PointX="30.5" PointY="107.625" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLeaveApplicationNoPrefix" Width="1.5" PointX="14.75" PointY="140.875" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLeaveEncashment" Width="1.5" PointX="22.25" PointY="108.5" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLeaveEncashmentNoPrefix" Width="1.5" PointX="14.75" PointY="133.5" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLeaveType" Width="1.5" PointX="14.75" PointY="77.5" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLoanAdjustment" Width="1.5" PointX="17" PointY="103" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLoanAdjustmentNoPrefix" Width="1.5" PointX="14.75" PointY="116.625" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLoanApplication" Width="1.5" PointX="22.25" PointY="115.125" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLoanApplicationNoPrefix" Width="1.5" PointX="14.75" PointY="137.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLocation" Width="1.5" PointX="23" PointY="74.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblLocationWeekendSetting" Width="1.5" PointX="25.25" PointY="68.5" />
+        <EntityTypeShape EntityType="dbVisionModel.tblMinimumWageCategory" Width="1.5" PointX="14.75" PointY="60" />
+        <EntityTypeShape EntityType="dbVisionModel.tblMinimumWageRate" Width="1.5" PointX="17" PointY="60.125" />
+        <EntityTypeShape EntityType="dbVisionModel.tblNonCashBenefit" Width="1.5" PointX="14.75" PointY="64.125" />
+        <EntityTypeShape EntityType="dbVisionModel.tblPayroll" Width="1.5" PointX="17" PointY="91.625" />
+        <EntityTypeShape EntityType="dbVisionModel.tblPayrollEmployeeDetail" Width="1.5" PointX="22.25" PointY="86.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblPayrollEmployeeEarningsDeduction" Width="1.5" PointX="27.5" PointY="88.875" />
+        <EntityTypeShape EntityType="dbVisionModel.tblPayrollEmployeeNonCashBenefit" Width="1.5" PointX="24.5" PointY="79.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblRecordState" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblSafariApplication" Width="1.5" PointX="25.25" PointY="106.625" />
+        <EntityTypeShape EntityType="dbVisionModel.tblSafariApplicationDayDetail" Width="1.5" PointX="27.5" PointY="112.375" />
+        <EntityTypeShape EntityType="dbVisionModel.tblSafariApplicationNoPrefix" Width="1.5" PointX="14.75" PointY="92.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblSettingL0" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblSettingMasterL1" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblSettingsL1" Width="1.5" PointX="6.75" PointY="5.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblSMSLog" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblState" Width="1.5" PointX="3" PointY="97.125" />
+        <EntityTypeShape EntityType="dbVisionModel.tblTAApproval" Width="1.5" PointX="25.25" PointY="92.625" />
+        <EntityTypeShape EntityType="dbVisionModel.tblTAApprovalNoPrefix" Width="1.5" PointX="14.75" PointY="70.125" />
+        <EntityTypeShape EntityType="dbVisionModel.tblTaxSlabDetail" Width="1.5" PointX="17" PointY="98.625" />
+        <EntityTypeShape EntityType="dbVisionModel.tblTaxSlabHeader" Width="1.5" PointX="14.75" PointY="98.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblUser" Width="1.5" PointX="17.75" PointY="54.25" />
+        <EntityTypeShape EntityType="dbVisionModel.tblUserGroup" Width="1.5" PointX="15.5" PointY="52" />
+        <EntityTypeShape EntityType="dbVisionModel.tblUserGroupPerimission" Width="1.5" PointX="17.75" PointY="49.875" />
+        <EntityTypeShape EntityType="dbVisionModel.tblUserGroupPermissionOnCompany" Width="1.5" PointX="17.75" PointY="95.75" />
+        <EntityTypeShape EntityType="dbVisionModel.tblUserGroupPermissionOnLocation" Width="1.5" PointX="25.25" PointY="64.125" />
+        <AssociationConnector Association="dbVisionModel.FK_tblAccount_tblBankBranch" />
+        <AssociationConnector Association="dbVisionModel.FK_tblAccount_tblBankName" />
+        <AssociationConnector Association="dbVisionModel.FK_tblAccount_tblCity" />
+        <AssociationConnector Association="dbVisionModel.FK_tblAccount_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblAccount_tblCurrency" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanAdjustment_tblAccount" />
+        <AssociationConnector Association="dbVisionModel.FK_tblBankBranch_tblBankName" />
+        <AssociationConnector Association="dbVisionModel.FK_tblBankBranch_tblCity" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblBankBranch" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblBankName" />
+        <AssociationConnector Association="dbVisionModel.FK_tblBiometricDevice_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblCity_tblCountry" />
+        <AssociationConnector Association="dbVisionModel.FK_tblCity_tblState" />
+        <AssociationConnector Association="dbVisionModel.FK_tblCompany_tblCity" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblCity" />
+        <AssociationConnector Association="dbVisionModel.FK_tblCompany_tblCurrency" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeAccountingLedger_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeAttendance_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeAttendanceDetail_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeDepartment_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeDesignation_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeNoPrefix_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeRestDay_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeShift_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeShiftAllocation_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeWIBAClass_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeWIBAClassRate_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblFinPeriod_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblGridLayouts_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblHoliday_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveAdjustment_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveAdjustmentNoPrefix_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveApplication_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveApplicationNoPrefix_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveEncashment_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveEncashmentNoPrefix_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveType_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanAdjustment_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanAdjustmentNoPrefix_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanApplication_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanApplicationNoPrefix_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblMinimumWageCategory_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblNonCashBenefit_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblPayroll_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblSafariApplication_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblSafariApplicationNoPrefix_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblTAApproval_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblTAApprovalNoPrefix_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblTaxSlabHeader_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblUserGroupPermissionOnCompany_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblCountry" />
+        <AssociationConnector Association="dbVisionModel.FK_tblState_tblCountry" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblCurrency" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblEmployeeAccountingLedger" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblEmployeeNoPrefix" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployee_tblEmployeeServiceDetail" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeAttendance_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeAttendanceDetail_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeDocument_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeFamily_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeLeaveOpeningBalance_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeePayroll_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeRestDay_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeServiceDetail_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeShiftAllocation_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveAdjustment_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveApplication_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveEncashment_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanAdjustment_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanApplication_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblSafariApplication_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblTAApproval_tblEmployee" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeAttendanceDetail_tblEmployeeAttendance" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeServiceDetail_tblEmployeeDepartment" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeServiceDetail_tblEmployeeDesignation" />
+        <AssociationConnector Association="dbVisionModel.FK_tblPayrollEmployeeEarningsDeduction_tblEmployeeEarningDeduction" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeLeaveOpeningBalance_tblCompany" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeLeaveOpeningBalance_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeLeaveOpeningBalance_tblLeaveType" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeRestDay_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeServiceDetail_tblEmployeeShift" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeServiceDetail_tblEmployeeWIBAClass" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeServiceDetail_tblEmployementTerminationCause" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeServiceDetail_tblLocation" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeServiceDetail_tblMinimumWageCategory" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeShiftAllocation_tblEmployeeShift" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeShiftAllocation_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblEmployeeWIBAClassRate_tblEmployeeWIBAClass" />
+        <AssociationConnector Association="dbVisionModel.FK_tblGridLayouts_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveAdjustment_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveApplication_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveEncashment_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanAdjustment_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanApplication_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblPayroll_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblSafariApplication_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblTAApproval_tblFinPeriod" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveAdjustment_tblLeaveAdjustmentNoPrefix" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveAdjustment_tblLeaveType" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveApplication_tblLeaveApplicationNoPrefix" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveApplication_tblLeaveType" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveApplicationDayDetail_tblLeaveApplication" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveEncashment_tblLeaveEncashmentNoPrefix" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLeaveEncashment_tblLeaveType" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanAdjustment_tblLoanAdjustmentNoPrefix" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanAdjustment_tblLoanApplication" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLoanApplication_tblLoanApplicationNoPrefix" />
+        <AssociationConnector Association="dbVisionModel.FK_tblLocationWeekendSetting_tblLocation" />
+        <AssociationConnector Association="dbVisionModel.FK_tblUserGroupPermissionOnLocation_tblLocation" />
+        <AssociationConnector Association="dbVisionModel.FK_tblMinimumWageRate_tblMinimumWageCategory" />
+        <AssociationConnector Association="dbVisionModel.FK_tblPayrollEmployeeDetail_tblNonCashBenefit" />
+        <AssociationConnector Association="dbVisionModel.FK_tblPayrollEmployeeDetail_tblPayroll" />
+        <AssociationConnector Association="dbVisionModel.FK_tblPayrollEmployeeEarningsDeduction_tblPayrollEmployeeDetail" />
+        <AssociationConnector Association="dbVisionModel.FK_tblPayrollEmployeeNonCashBenefit_tblPayrollEmployeeDetail" />
+        <AssociationConnector Association="dbVisionModel.FK_tblSafariApplication_tblSafariApplicationNoPrefix" />
+        <AssociationConnector Association="dbVisionModel.FK_tblSafariApplicationDayDetail_tblSafariApplication" />
+        <AssociationConnector Association="dbVisionModel.FK_tblTAApproval_tblTAApprovalNoPrefix" />
+        <AssociationConnector Association="dbVisionModel.FK_tblTaxSlabDetail_tblTaxSlabHeader" />
+        <AssociationConnector Association="dbVisionModel.FK_tblUser_tblUserGroup" />
+        <AssociationConnector Association="dbVisionModel.FK_tblUserGroupPerimission_tblUserGroup" />
+        <AssociationConnector Association="dbVisionModel.FK_tblUserGroupPermissionOnCompany_tblUserGroup" />
+        <AssociationConnector Association="dbVisionModel.FK_tblUserGroupPermissionOnLocation_tblUserGroup" />
+        <EntityTypeShape EntityType="dbVisionModel.tblPayrollMonth" Width="1.5" PointX="14.75" PointY="145.25" />
+        <AssociationConnector Association="dbVisionModel.FK__tblPayrol__Compa__4C214075" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

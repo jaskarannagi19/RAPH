@@ -1,0 +1,906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="ErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>142, 17</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkTransferProductStock.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkTransferProductStock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 131</value>
+  </data>
+  <data name="chkTransferProductStock.Properties.Caption" xml:space="preserve">
+    <value>Transfer Product Opening Stock to Next Year ?</value>
+  </data>
+  <data name="chkTransferProductStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 19</value>
+  </data>
+  <data name="chkTransferProductStock.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;chkTransferProductStock.Name" xml:space="preserve">
+    <value>chkTransferProductStock</value>
+  </data>
+  <data name="&gt;&gt;chkTransferProductStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chkTransferProductStock.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;chkTransferProductStock.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkTransferAccountOpeningBalance.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkTransferAccountOpeningBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 131</value>
+  </data>
+  <data name="chkTransferAccountOpeningBalance.Properties.Caption" xml:space="preserve">
+    <value>Transfer Account Opening Balance to Next Year ?</value>
+  </data>
+  <data name="chkTransferAccountOpeningBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 19</value>
+  </data>
+  <data name="chkTransferAccountOpeningBalance.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;chkTransferAccountOpeningBalance.Name" xml:space="preserve">
+    <value>chkTransferAccountOpeningBalance</value>
+  </data>
+  <data name="&gt;&gt;chkTransferAccountOpeningBalance.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chkTransferAccountOpeningBalance.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;chkTransferAccountOpeningBalance.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gridcontrolProductStock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>733, 157</value>
+  </data>
+  <data name="gridcontrolProductStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 229</value>
+  </data>
+  <data name="gridcontrolProductStock.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;gridcontrolProductStock.Name" xml:space="preserve">
+    <value>gridcontrolProductStock</value>
+  </data>
+  <data name="&gt;&gt;gridcontrolProductStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridcontrolProductStock.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;gridcontrolProductStock.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gridControlAccountBalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 157</value>
+  </data>
+  <data name="gridControlAccountBalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>667, 229</value>
+  </data>
+  <data name="gridControlAccountBalance.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;gridControlAccountBalance.Name" xml:space="preserve">
+    <value>gridControlAccountBalance</value>
+  </data>
+  <data name="&gt;&gt;gridControlAccountBalance.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridControlAccountBalance.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;gridControlAccountBalance.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblPrevFinPeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 12</value>
+  </data>
+  <data name="lblPrevFinPeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 13</value>
+  </data>
+  <data name="lblPrevFinPeriod.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblPrevFinPeriod.Text" xml:space="preserve">
+    <value>Previous Financial Year</value>
+  </data>
+  <data name="&gt;&gt;lblPrevFinPeriod.Name" xml:space="preserve">
+    <value>lblPrevFinPeriod</value>
+  </data>
+  <data name="&gt;&gt;lblPrevFinPeriod.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblPrevFinPeriod.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblPrevFinPeriod.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="deEndDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="deEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 53</value>
+  </data>
+  <data name="deEndDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="deEndDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="deEndDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="deEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 20</value>
+  </data>
+  <data name="deEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;deEndDate.Name" xml:space="preserve">
+    <value>deEndDate</value>
+  </data>
+  <data name="&gt;&gt;deEndDate.Type" xml:space="preserve">
+    <value>Alit.WinformControls.DateEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deEndDate.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;deEndDate.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="deStartDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="deStartDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 29</value>
+  </data>
+  <data name="deStartDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="deStartDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="deStartDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
+    <value>Combo</value>
+  </data>
+  <data name="deStartDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 20</value>
+  </data>
+  <data name="deStartDate.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;deStartDate.Name" xml:space="preserve">
+    <value>deStartDate</value>
+  </data>
+  <data name="&gt;&gt;deStartDate.Type" xml:space="preserve">
+    <value>Alit.WinformControls.DateEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deStartDate.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;deStartDate.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtFinPerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 77</value>
+  </data>
+  <data name="txtFinPerName.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="txtFinPerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 20</value>
+  </data>
+  <data name="txtFinPerName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtFinPerName.Name" xml:space="preserve">
+    <value>txtFinPerName</value>
+  </data>
+  <data name="&gt;&gt;txtFinPerName.Type" xml:space="preserve">
+    <value>Alit.WinformControls.TextEdit, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtFinPerName.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;txtFinPerName.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="layoutControlItem2.Text" xml:space="preserve">
+    <value>Date From</value>
+  </data>
+  <data name="layoutControlItem3.Text" xml:space="preserve">
+    <value>Date To</value>
+  </data>
+  <data name="layoutControlItem1.Text" xml:space="preserve">
+    <value>Financial Period Name</value>
+  </data>
+  <data name="layoutControlItem4.Text" xml:space="preserve">
+    <value>Previous Financial Year</value>
+  </data>
+  <data name="lcgAccountBalance.Text" xml:space="preserve">
+    <value>Account Opening Balance for New Year</value>
+  </data>
+  <data name="lcgProductStock.Text" xml:space="preserve">
+    <value>Product Opening Stock for New Year</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1153, 413</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>Alit.WinformControls.myLayoutControl, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>panelContent</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1157, 417</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Name" xml:space="preserve">
+    <value>panelContent</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;panelContent.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;panelContent.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="popupMenuFormShortCuts.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>265, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 19</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1183, 501</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAUAEBAAAAEAIABoBAAAVgAAABgYAAABACAAiAkAAL4EAAAgIAAAAQAgAKgQAABGDgAAMDAAAAEA
+        IACoJQAA7h4AACAgAAABACAAqBAAAJZEAAAoAAAAEAAAACAAAAABACAAAAAAAAAEAAAAAAAAAAAAAAAA
+        AAAAAAAAVTkpt1U5KZBVOSmJVTkpiVU5KYlVOSmJVTkpiVU5KYlVOSmJVTkpiVU5KYlVOSmJVTkpiVU5
+        KYlVOSmOVTkpuVU5KZVUOSkQVDkqK1U5KjhVOSo3VTkqNlU5KjhVOSo2VTkqNlU5KjhVOSo2VTkqN1U5
+        KjhVOSowVDgoEFU5KY5VOSmRVTkpKlU5KZxVOSl1VTkpk1U5KaRVOSlyVTkpmlU5KZ1VOSlyVTkpolU5
+        KZVVOSl0VTkpnVU5KS5VOSmJVTkpkFY5KTNVOSl9VjkpFFU5KVNVOSlyVjkpD1U6KmRVOSlnVjkpD1U5
+        KXNVOSlYVjkpFFU5KX9VOSo4VTkpiVU5KZBWOSkyVTkpqlU5KXtVOSmeVTkprlU5KXhVOSmoVTkpqVU5
+        KXhVOSmxVTkpoVU5KXxVOSmvVTkqNlU5KYlVOSmQVjkpM1U5KX1WOSkUVTkpUVU5KXBWOCgPVTkpY1U5
+        KWdWOCgPVTkpc1U5KVdWOCgUVTkpgFU5KjdVOSmJVTkpkFY5KTFVOSmrVTkpfVU5KaBVOSmwVTkpelU5
+        KapVOSmrVTkpelU5KbJVOSmiVTkpflU5Ka9VOSo2VTkpiVU5KZBWOSkzVTkphFQ6KiJVOSlbVTkpe1Q7
+        Kx1VOipsVTkpcVQ7Kx1VOSl7VDkpYlQ6KiBVOSmEVTkqN1U5KYlVOSmRVjkpL1U5KZZVOSlaVTkphFU5
+        KZZVOSlXVTkpkFU5KZJVOSlXVTkpmlU5KYhVOSlbVTkpm1U5KTNVOSmJVTkpklU5KQ9VOSlEVjkpTlY5
+        KU9WOSlPVjkpTlY5KU9WOSlPVjkpTlY5KVBWOSlPVjkpTlU5KUVUOCgOVTkpilU5KalVOSk+VTkpNlU5
+        KTdVOSk2VTkpNlU5KTdVOSk2VTkpNlU5KTdVOSk2VTkpNlU5KTdVOSk2VDgoPlU5KalVOSnAVTkpcFU5
+        KWtVOSlpVTkpalU5KWxVOSlsVTkpbFU5KWxVOSlsVTkpbFU5KWpVOSlpVTkpa1U5KW9VOSm+VTkpklc5
+        KQZVOioEVTkpM1Q5KSZOPi4BUjsrAAAAAAAAAAAAVTcnAFU8LABVOSkhVTkpM1U6KgRTNycEVTkpilU5
+        KZ5VOSkgVTkqPVU5KaNVOSmRVTkpJ1U5KRpVOSkbVTkpG1U5KRtVOSklVTkpiVU5KaJVOSlBVTkpHlU5
+        KZlVOSl/VTkpglU5KZxVOSmQVTkppVU5KY1VOSmBVTkpglU5KYJVOSmCVTkpjFU5KZ9VOSmLVTkpoFU5
+        KYJVOSmJVDkpB1Q5KQtVOSkuVTkptFU5KZpVOSkZVDkpDFQ5KQ1UOSkNVDkpDFU5KRdVOSmNVTkpsVU5
+        KTNUOSkLVDkpBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPg
+        AAAAAAAAAAAAAAAAAAAoAAAAGAAAADAAAAABACAAAAAAAAAJAAAAAAAAAAAAAAAAAAAAAAAAVTkptlU5
+        KdJVOSnIVTkpyVU5KclVOSnJVTkpyVU5KclVOSnJVTkpyVU5KclVOSnJVTkpyVU5KclVOSnJVTkpyVU5
+        KclVOSnJVTkpyVU5KclVOSnJVTkpyFU5KdBVOSnEVTkp1VU4KEVUOCgfVDgoIFQ4KCBUOCggVDgoIFQ4
+        KCBUOCggVDgoIFQ4KCBUOCggVDgoIFQ4KCBUOCggVDgoIFQ4KCBUOCggVDgoIFQ4KCBUOCggVDgoH1Q4
+        KD5VOSnQVTkpzlY5KSj/AAAAVDsrIlU6KjdVOio3VToqN1U6KjVVOio2VToqN1U6KjdVOio1VToqNVU6
+        KjdVOio3VToqNlU6KjVVOio3VToqN1U6KjdVOiowWDorA1Q4KCBVOSnIVTkpzlY5KShUOiofVTkpzVU5
+        KbhVOSmzVTkpuFU5KdlVOSnDVTkpslU5KbNVOSnNVTkp0lU5KbNVOSmyVTkpwlU5KdlVOSm5VTkps1U5
+        KbZVOSnPVjkpKVQ4KCBVOSnJVTkpzlY5KShWOSksVTkptlY4KCFZOCgOVjgoJVU5KahVOSlNWTgoDFg4
+        KBBVOip+VTkpi1g4KBBZOCgMVjkpS1U5KaxVOCgqWTgoDlc5KR1VOSm1VToqN1Q4KCBVOSnJVTkpzlY5
+        KShWOSksVTkptVY4KB5UOSkMVTgoJFU5KaVVOSlKVDkpClU5KQ9VOiqCVTkpiVU5KQ9UOSkKVTkpSlU5
+        Ka1UOSkoVDkpDFY4KB9VOSm3VToqN1Q4KCBVOSnJVTkpzlY5KShWOCgqVTkp1FU5KZ9VOSmaVTkpp1U5
+        KdxVOSmzVTkpmlU5KZtVOSnPVTkpzVU5KZtVOSmaVTkptlU5Kd5VOSmlVTkpmlU5KaVVOSnZVToqNVQ4
+        KCBVOSnJVTkpzlY5KShWOCgrVTkpw1Y5KVVWOSlGVjkpV1U5KbdVOSl1VjkpRVY5KUhVOSmdVTkpplY5
+        KUhWOSlFVTkpdVU5Kb9VOSlbVjkpRlY5KVVVOSnEVToqNlQ4KCBVOSnJVTkpzlY5KShWOSktVTkpsVg4
+        KBBWOCgAVTgoFlU5KZ9VOSk/VTkpAFVENABVOip5VTkpgVU2JgBVOSkAVTkpP1U5KadUOSkbVTkpAFg4
+        KBBVOSmzVToqN1Q4KCBVOSnJVTkpzlY5KShWOSkrVTkpy1U5KXtVOSlzVTkpglU5KctVOSmVVTkpclU5
+        KXRVOSm5VTkpulU5KXRVOSlyVTkpmFU5KdBVOSmCVTkpclU5KYBVOSnQVToqNVQ4KCBVOSnJVTkpzlY5
+        KShWOCgqVTkp0VU5KZBVOSmGVTkpkFU5KdNVOSmnVTkphVU5KYhVOSm/VTkpyFU5KYhVOSmGVTkppVU5
+        KddVOSmVVTkphlU5KYxVOSnRVToqNVQ4KCBVOSnJVTkpzlY5KShWOSktVTkpsFc5KQ9WOCgAVTgoFFU5
+        KZ5VOSlAVTkpAFVQQABVOip3VTkpglU2JgBVOSkAVTkpPlU5KaZUOSkbVTgoAFk4KAxVOSmxVToqOFQ4
+        KCBVOSnJVTkpzlY5KShWOSksVTkpvVY5KUFVOSkyVTkpR1U5KbVVOSlmVTkpMVU5KTRVOSmYVTkpnlU5
+        KTRVOSkxVTkpaFU5Kb1VOSlKVTkpMlU5KUNVOSnAVToqN1Q4KCBVOSnJVTkpzlY5KShWOCgZVTkpqlU5
+        KadVOSmmVTkpq1U5KbtVOSmtVTkpplU5KadVOSm5VTkpuVU5KadVOSmmVTkpsFU5Kb9VOSmrVTkpplU5
+        KatVOSmtVTkqHlQ4KCBVOSnJVTkpzlY5KSg+LBwAVTgoHVY5KSRWOSkkVjkpJFY5KSNWOSkkVjkpJFY5
+        KSRWOSkjVjkpI1Y5KSRWOSkkVjkpI1Y5KSNWOSkkVjkpJFY5KSRVOCgdUTYmAVQ4KCBVOSnIVTkpz1U5
+        KTFTNycKUzcnClM3JwlTNycJUzcnCVM3JwlTNycJUzcnCVM3JwlTNycJUzcnCVM3JwlTNycJUzcnCVM3
+        JwlTNycJUzcnCVM3JwlTNycKUzcnClQ4KC5VOSnNVTkp61U5KaxVOSmfVTkpn1U5KZ9VOSmfVTkpn1U5
+        KZ9VOSmfVTkpn1U5KZ9VOSmfVTkpn1U5KZ9VOSmfVTkpn1U5KZ9VOSmfVTkpn1U5KZ9VOSmfVTkpnlU5
+        KbBVOSntVTkp3FU5KWdVOSlIVTkpSlU5KUlVOSlIVTkpSFU5KUlVOSlKVTkpSlU5KUpVOSlKVTkpSlU5
+        KUpVOSlKVTkpSlU5KUpVOSlIVTkpSFU5KUlVOSlKVTkpSFU5KWFVOSnYVTkpzVY5KSdWOSkAVT81AFU/
+        NQFUOSkRVTgoDUNLOwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE05KQBWOSkKVDkqEFU/
+        NQFVPzUAVDgoAFQ4KB9VOSnIVTkpzlY5KSlWOSkAWzAhAFU6Kk9VOSmpVTkpkFQ5KSRUOSkAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAVTgoAFU4KBhVOSmJVTkpqVU5KVNuLx4BVTgoAFQ4KCFVOSnJVTkp0lY5
+        KTpVOSkSVToqGlU5KZxVOSmLVTkpsFU5KVxVOSkRVTkpFVU5KRVVOSkVVTkpFVU5KRVVOSkVVTkpElY5
+        KVJVOSmtVTkphFU5KaJVOCgeVTkpE1Q4KDRVOSnOVTkpp1U5KbVVOSmxVTkptVU5KeFUOipaVTkpqlU5
+        KcpVOSmwVTkpsVU5KbFVOSmxVTkpsVU5KbFVOSmxVTkpsFU5KcdVOSmnVTkpVFU5KeBVOSm1VTkpsFU5
+        KblVOSm8UzsrFlQ5KThUOSk4VDkpPVU5KatVOSl+VTkpsVU5KXhUOSk1VDkpOVQ5KTlUOSk5VDkpOVQ5
+        KTlUOSk5VDkpNlU5KXBVOSmrVTkpc1U5KbdUOSlEVDkpOFQ5KThWOSkcAAAAAAAAAABVOywAVDYkAFU5
+        KW9VOSncVTkpxVY6KjNWOioAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVTgoAFU4KCtVOSmxVTkp11U5
+        KXFcQjIAVDcnAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEZiAAAAAAAAAA
+        AAAEZiAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAMf+MADD/BAAAAAAAAAAAAAAAAADw/w8AKAAAACAA
+        AABAAAAAAQAgAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAFQ4KIBVOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOiqfVTkp/1Q4KIBUOChAVDgoQFQ4
+        KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4
+        KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDkpcFU5Kf9VOSn/VjkpUAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUOChAVTkp/1U5
+        Kf9WOSlQAAAAAAAAAABQQDAQVTorMFU6KzBVOiswVTorMFU6KzBVOiswVTorMFU6KzBVOiswVTorMFU6
+        KzBVOiswVTorMFU6KzBVOiswVTorMFU6KzBVOiswVTorMFU6KzBVOiswVTorMFU6KzAAAAAAAAAAAFQ4
+        KEBVOSn/VTkp/1Y5KVAAAAAAUEAwEFU5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1g4
+        KCAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAAAABYOCggVTkp/1Q4KEBYOCggWDgoIFg4KCBUOSlwVTkp71g4
+        KCBYOCggWDgoIFg4KCBVOiqfVTkpv1g4KCBYOCggWDgoIFg4KCBVOSnfVDgogFg4KCBYOCggWDgoIFU6
+        KzBVOSn/VTorMAAAAABUOChAVTkp/1U5Kf9WOSlQAAAAAFg4KCBVOSn/WDgoIAAAAAAAAAAAAAAAAFU4
+        KGBVOSnfAAAAAAAAAAAAAAAAAAAAAFU6Kp9VOSmvAAAAAAAAAAAAAAAAAAAAAFU5Kd9UOSlwAAAAAAAA
+        AAAAAAAAWDgoIFU5Kf9VOiswAAAAAFQ4KEBVOSn/VTkp/1Y5KVAAAAAAWDgoIFU5Kf9YOCggAAAAAAAA
+        AAAAAAAAVTgoYFU5Kd8AAAAAAAAAAAAAAAAAAAAAVToqn1U5Ka8AAAAAAAAAAAAAAAAAAAAAVTkp31Q5
+        KXAAAAAAAAAAAAAAAABYOCggVTkp/1U6KzAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAAAABYOCggVTkp/1U5
+        Ka9VOSmvVTkpr1U5Ka9VOSnfVTkp71U5Ka9VOSmvVTkpr1U5Ka9VOSnvVTkp31U5Ka9VOSmvVTkpr1U5
+        Ka9VOSn/VTkpz1U5Ka9VOSmvVTkpr1U5Kb9VOSn/VTorMAAAAABUOChAVTkp/1U5Kf9WOSlQAAAAAFg4
+        KCBVOSn/VToqn1Y5KY9WOSmPVjkpj1U5Ka9VOSnvVjkpj1Y5KY9WOSmPVjkpj1U5Kc9VOSnfVjkpj1Y5
+        KY9WOSmPVjkpj1U5Ke9VOSm/Vjkpj1Y5KY9WOSmPVToqn1U5Kf9VOiswAAAAAFQ4KEBVOSn/VTkp/1Y5
+        KVAAAAAAWDgoIFU5Kf9YOCggAAAAAAAAAAAAAAAAVTgoYFU5Kd8AAAAAAAAAAAAAAAAAAAAAVToqn1U5
+        Ka8AAAAAAAAAAAAAAAAAAAAAVTkp31Q5KXAAAAAAAAAAAAAAAABYOCggVTkp/1U6KzAAAAAAVDgoQFU5
+        Kf9VOSn/VjkpUAAAAABYOCggVTkp/1g4KCAAAAAAAAAAAAAAAABVOChgVTkp3wAAAAAAAAAAAAAAAAAA
+        AABVOiqfVTkprwAAAAAAAAAAAAAAAAAAAABVOSnfVDkpcAAAAAAAAAAAAAAAAFg4KCBVOSn/VTorMAAA
+        AABUOChAVTkp/1U5Kf9WOSlQAAAAAFg4KCBVOSn/VjkpUFQ4KEBUOChAVDgoQFY5KY9VOSnfVDgoQFQ4
+        KEBUOChAVDgoQFU5Kb9VOSm/VDgoQFQ4KEBUOChAVDgoQFU5Ke9WOSmPVDgoQFQ4KEBUOChAVTgoYFU5
+        Kf9VOiswAAAAAFQ4KEBVOSn/VTkp/1Y5KVAAAAAAWDgoIFU5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U6KzAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAAAABYOCggVTkp/1U6KzBQQDAQUEAwEFBA
+        MBBVOChgVTkp71BAMBBQQDAQUEAwEFBAMBBVOiqfVTkpv1BAMBBQQDAQUEAwEFBAMBBVOSnfVDgogFBA
+        MBBQQDAQUEAwEFg4KCBVOSn/VTorMAAAAABUOChAVTkp/1U5Kf9WOSlQAAAAAFg4KCBVOSn/WDgoIAAA
+        AAAAAAAAAAAAAFU4KGBVOSnfAAAAAAAAAAAAAAAAAAAAAFU6Kp9VOSmvAAAAAAAAAAAAAAAAAAAAAFU5
+        Kd9UOSlwAAAAAAAAAAAAAAAAWDgoIFU5Kf9VOiswAAAAAFQ4KEBVOSn/VTkp/1Y5KVAAAAAAWDgoIFU5
+        Kf9YOCggAAAAAAAAAAAAAAAAVTgoYFU5Kd8AAAAAAAAAAAAAAAAAAAAAVToqn1U5Ka8AAAAAAAAAAAAA
+        AAAAAAAAVTkp31Q5KXAAAAAAAAAAAAAAAABYOCggVTkp/1U6KzAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAA
+        AABYOCggVTkp/1U5Kb9VOSm/VTkpv1U5Kb9VOSnfVTkp71U5Kb9VOSm/VTkpv1U5Kb9VOSnvVTkp71U5
+        Kb9VOSm/VTkpv1U5Kb9VOSn/VTkp31U5Kb9VOSm/VTkpv1U5Kc9VOSn/VTorMAAAAABUOChAVTkp/1U5
+        Kf9WOSlQAAAAAAAAAABUOCiAVjkpj1Y5KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5
+        KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Q4KIAAAAAAAAAAAFQ4
+        KEBVOSn/VTkp/1Y5KVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABUOChAVTkp/1U5Kf9UOSlwVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4
+        KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4
+        KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KIBVOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VjkpUAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUOChAVTkp/1U5Kf9WOSlQAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ4KEBVOSn/VTkp/1Y5
+        KVAAAAAAAAAAAAAAAAAAAAAAVTorMFQ5KXBVOChgUEAwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWOSlQVDkpcFU6KzAAAAAAAAAAAAAAAAAAAAAAVDgoQFU5
+        Kf9VOSn/VjkpUAAAAAAAAAAAAAAAAFBAMBBVOSn/VTkp31U5Ke9UOCiAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVTgoYFU5Kf9VOSnfVTkp/1g4KCAAAAAAAAAAAAAA
+        AABUOChAVTkp/1U5Kf9WOSlQAAAAAAAAAAAAAAAAVTorMFU5Kf9QQDAQVTkpr1U6Kp8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWOSmPVTkprwAAAABVOSn/VDgoQAAA
+        AAAAAAAAAAAAAFQ4KEBVOSn/VTkpz1U5Kd9VOSnfVTkp31U5Kd9VOSnvVTkp/1BAMBBVOSmvVTkp71U5
+        Kd9VOSnfVTkp31U5Kd9VOSnfVTkp31U5Kd9VOSnfVTkp31U5Kd9VOSnfVTkp31U5Ke9VOSmvAAAAAFU5
+        Kf9VOSnfVTkp31U5Kd9VOSnfVTkp71U5Ke9QQDAQVDkpcFQ5KXBUOSlwVDkpcFQ4KIBVOSn/UEAwEFU5
+        Ka9VOSnPVDkpcFQ5KXBUOSlwVDkpcFQ5KXBUOSlwVDkpcFQ5KXBUOSlwVDkpcFQ5KXBUOSlwVTkpv1U5
+        Ka8AAAAAVTkp/1U6Kp9UOSlwVDkpcFQ5KXBUOSlwWDgoIAAAAAAAAAAAAAAAAAAAAAAAAAAAVTorMFU5
+        Kf9VOChgVTkpz1U6Kp8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABWOSmPVTkpz1Y5KVBVOSn/VDgoQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAVTkpv1U5Kf9VOSnvVjkpUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAFQ4KEBVOSnPVTkp/1U5Kb8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//
+        //wwAAAMIAAABCAAAAQjnnnEI555xCAAAAQgAAAEI555xCOeecQgAAAEIAAABCAAAAQjnnnEI555xCAA
+        AAQwAAAMP////D////wAAAAAAAAAAD////w////8PD/+PDg//Bw4P/ycAAAAgAAAAID4P/wf/D/8PygA
+        AAAwAAAAYAAAAAEAIAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAABUOCh+VTkpvVU5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkpzVU6Kp5VOSm9VTkpwVU5
+        Kb5VOSmqVTkppFU5KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5
+        KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5
+        KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5KaVVOSmlVTkppVU5KaVVOSmlVTkppFU5KalVOSm4VTkpxlU5
+        Kc5VOSn/VTkpwFQ4KGtUOCg+VDgoMlQ4KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4
+        KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4
+        KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4KDRUOCg0VDgoNFQ4KDRUOCg0VDgoMlQ4
+        KDtUOSleVTkpt1U5Kf9VOSn/VTkpsFU5KUlVOCgVUzcnB1Q4KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4
+        KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4
+        KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4KAlUOCgJVDgoCVQ4
+        KAlUOCgJVDgoB1Q4KBJUOCg7VTkpqFU5Kf9VOSn/VTkprFY5KUBWOSkMVjkpAFU7LQBVOy0AVTstB1U7
+        LQ9VOy0PVTstD1U7LQ9VOy0PVTstD1U7LQ9VOy0PVTstD1U7LQ9VOy0PVTstD1U7LQ9VOy0PVTstD1U7
+        LQ9VOy0PVTstD1U7LQ9VOy0PVTstD1U7LQ9VOy0PVTstD1U7LQ9VOy0PVTstD1U7LQ9VOy0PVTstD1U7
+        LQ9VOy0PVTstD1U7LQxVOy0CVDkpAFQ4KAlUOCgzVTkppFU5Kf9VOSn/VTkprVY5KUFWOSkMVzcnAFM8
+        LAtUOysvVToqSFU5KlVVOSpVVTkqVVU5KlVVOSpVVTkqVFU5KlRVOSpTVTkqVFU5KlVVOSpVVTkqVVU5
+        KlVVOSpVVTkqVFU5KlRVOSpUVTkqVFU5KlVVOSpVVTkqVVU5KlVVOSpVVTkqVFU5KlNVOSpUVTkqVFU5
+        KlVVOSpVVTkqVVU5KlVVOSpVVTkqVlU5KkZWOSkSUDorAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMYSkZAFQ7Ky9VOSm1VTkp4VU5Kd5VOSneVTkp3lU5Kd5VOSneVTkp3lU5Kd1VOSndVTkp3VU5
+        Kd5VOSneVTkp3lU5Kd5VOSneVTkp3lU5Kd1VOSndVTkp3lU5Kd5VOSneVTkp3lU5Kd5VOSneVTkp3VU5
+        Kd1VOSndVTkp3lU5Kd5VOSneVTkp3lU5Kd5VOSneVTkp5FU5KbxWOSk7YDYmBFQ4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMVUk5AVU6KkBVOSnZVTkp3FU5KaVVOSmaVTkpl1U5KZhVOSmYVTkpqVU5
+        KctVOSn1VTkpzVU5KZdVOSmXVTkpmFU5KZdVOSmXVTkptlU5KdpVOSnlVTkpwFU5KZdVOSmXVTkpmFU5
+        KZdVOSmXVTkpyVU5Ke9VOSnQVTkprlU5KZdVOSmXVTkpmFU5KZhVOSmdVTkp11U5KdxWOSlOWDorC1Q4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBlY5KUdVOSnbVTkppVU4KDNXOCgdWTgoGFg4
+        KBlYOCgZVTkpPlQ5KYRVOSnZVTkph1g4KBhYOCgYWDgoGVg4KBhYOCgYVToqW1U6KqVVOSm5VTkpbFg4
+        KBhYOCgYWDgoGVg4KBhYOCgYVTkpf1U5KdBUOCiPVTgoR1g4KBlYOCgYWDgoGVg4KRtWOionVTkpnVU5
+        Kd5VOSpVVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBlY5KUdVOSnbVTkpmlc4
+        KB1YNycHWzcnA1s3JwNbNycDVTgoLlU4KHlVOSnOVTkpd1w3JwJdNiYCWjcnBFw2JgNbNycDVToqUFU6
+        KqRVOSmwVTkpW1w3JwNcNycCWjcnBF02JgJcNycCVTkpdVU5Kc9UOSmGVDkpN1s3JwNbNycDWjcnA1k4
+        KAdYOCkbVTkpmFU5Kd5VOSpVVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5
+        KUdVOSnbVTkplVk4KBRcNycDWTgoAFU4KABVOCgAVTgoKVU4KHNVOSnKVTkpc1U5KQBVOSkAAAAAAFU6
+        KgBVOioAVToqTlU6KqFVOSmsVTkpV1U5KQBVOSkAAAAAAFU5KQBVOSkAVTkpc1U5Kc1UOSmCVDkpMlQ5
+        KQBUOSkAWTgoAFw3JwNZOCcUVTkplVU5Kd5VOSpVVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMXjYmBVY5KUdVOSnbVTkppFY5KTJVOSkhVTkpHVU5KR1VOSkdVTgoRlU5KYpVOSnRVTkpg1U5
+        KRxVOSkcVTkpHlU5KR1VOSkdVToqZVU6KrBVOSm3VTkpa1U5KR1VOSkcVTkpHlU5KRxVOSkcVTkphVU5
+        KdZUOSmTVDkpS1U5KR1VOSkdVTkpHVU5KSFWOSk1VTkppVU5Kd5VOSpUVTstD1Q4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUZVOSnbVTkp01U5KZZVOSmSVTkpklU5KZFVOSmRVTkprVU5
+        KdFVOSnoVTkpwFU5KZFVOSmRVTkpklU5KZFVOSmRVTkpulU5KeFVOSnaVTkptFU5KZFVOSmRVTkpklU5
+        KZFVOSmRVTkpyFU5KfFVOSnKVTkpplU5KZJVOSmSVTkpkVU5KZRVOSmhVTkp2lU5Kd1VOSpUVTstD1Q4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUZVOSnaVTkp4FU5Ka9VOSmrVTkpqlU5
+        KapVOSmqVTkpu1U5KdVVOSnrVTkpzlU5KapVOSmqVTkpqlU5KapVOSmqVTkpx1U5KeRVOSnjVTkpxlU5
+        KapVOSmqVTkpqlU5KalVOSmqVTkp01U5KfJVOSnVVTkpulU5KapVOSmqVTkpqlU5KaxVOSm2VTkp5FU5
+        Kd1VOSpUVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUZVOSnbVTkpzVU6
+        KoZWOSl5VjkpdlY5KXZWOSl3VTkpilU5Ka9VOSnhVTkptFY5KXZWOSl2Vjkpd1Y5KXZWOSl2VTkpnlU5
+        KctVOSnVVTkpp1Y5KXZWOSl2Vjkpd1Y5KXZWOSl2VTkptFU5KeRVOSm9VTkpklY5KXZWOSl2VjkpdlY5
+        KXlVOiqGVTkpzFU5Kd1VOSpUVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5
+        KUdVOSnbVTkpo1c5KS9WOSkbVjkpF1Y5KRdWOSkXVTgoPlU4KINVOSnQVTkpgVY5KRZWOSkWVjkpGFY5
+        KRdWOSkXVToqX1U6KqxVOSm2VTkpaFY5KRdWOSkXVjkpGFY5KRZWOSkWVTkpgFU5KdNUOSmQVDkpR1Y5
+        KRdWOSkXVjkpF1Y5KRtXOSkvVTkpolU5Kd5VOSpVVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMXjYmBVY5KUdVOSnbVTkplVk3JxRcNiYDWTcnAFU4KABVOCgAVTgoKVU4KHRVOSnLVTkpdFU5
+        KQBVOSkAAAAAAFU6KgBVOioAVToqTlU6KqFVOSmsVTkpV1U5KQBVOSkAAAAAAFU5KQBVOSkAVTkpc1U5
+        Kc1UOSmCVDkpMlQ5KQBUOSkAWTgoAFw2JgNZNycUVTkplFU5Kd5VOSpVVTstD1Q4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUdVOSnbVTkpnFc4KCBWOCgNUzgoCFQ4KAlUOCgJVTgoNFU4
+        KH1VOSnNVTkpeFQ4KAhUOCgIVDgoCVQ3JwhUOCgIVToqVlU6KqhVOSmxVTkpXlQ4KAhUOCgIVDgoCVQ4
+        KAhUOCgIVTkpeVU5KdFVOSmJVDkpO1Q4KAlUOCgJUzgoCFU4KA1XOCgjVTkpnVU5Kd5VOSpVVTstD1Q4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUdVOSnbVTkpq1Y5KUJUOCg2VDgoM1Q4
+        KDNUOCg0VTkpWlY5KZdVOSnSVTkpjFQ4KDNUOCgzVDgoNFQ4KDNUOCgzVTkpd1U5KbxVOSm9VTkpeFQ4
+        KDNUOCgzVDgoNFQ4KDNUOCgzVTkplFU5Kd1WOSmcVTkpW1Q4KDNUOCgzVDgoM1Q4KDhVOChOVTkpslU5
+        Kd5VOSpUVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUZVOSnaVTkp4FU5
+        Ka9VOSmqVTkpqlU5KapVOSmqVTkpu1U5KdVVOSnrVTkpzlU5KapVOSmqVTkpqlU5KapVOSmqVTkpx1U5
+        KeRVOSnjVTkpxlU5KapVOSmqVTkpqlU5KalVOSmqVTkp01U5KfJVOSnVVTkpulU5KapVOSmqVTkpqVU5
+        KaxVOSm2VTkp5FU5Kd1VOSpUVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5
+        KUZVOSnaVTkp9lU5KdxVOSnZVTkp2FU5KdhVOSnYVTkp3lU5KelVOSn5VTkp61U5KdhVOSnYVTkp2FU5
+        KdhVOSnYVTkp5FU5KfFVOSn0VTkp51U5KdhVOSnYVTkp2FU5KdhVOSnYVTkp6lU5KfhVOSntVTkp4VU5
+        KdhVOSnYVTkp2FU5KdhVOSnaVTkp9FU5Kd1VOSpTVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMXjYmBVY5KUdVOSnbVTkpslU6Kk9UOis9VDsrOVQ7KzlUOys5VTkpVlU5KZFVOSngVTkpmlQ7
+        KzhUOys4VDsrOlQ7KzlUOys5VToqdFU6KrZVOSnIVTkpg1Q7KzlUOys5VDsrOlQ7KzhUOys5VTkpklU5
+        KdlUOCilVDkpZVQ7KzlUOys5VDsrOVQ6KjpWOSlDVTkpqlU5Kd5VOSpUVTstD1Q4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUdVOSnbVTkpmVc5KhpXOSsEVjkqAFU4KABVOCgAVTgoKFU4
+        KHRVOSnRVTkpeFU5KQBVOSkAAAAAAFU6KgBVOioAVToqTVU6KqJVOSmzVTkpW1U5KQBVOSkAAAAAAFU5
+        KQBVOSkAVTkpc1U5Kc5UOSmIVDgoNlQ4KABUOCgAWTgoAFw3JwJZOCgTVTkplFU5Kd5VOSpVVTstD1Q4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUdVOSnbVTkpmFg4KBhaNycDWDgoAFU4
+        KABVOCgAVTgoK1U4KHdVOSnMVTkpdFU5KQBVOSkAAAAAAFU6KgBVOioAVToqT1U6KqNVOSmuVTkpWFU5
+        KQBVOSkAAAAAAFU5KQBVOSkAVTkpc1U5Kc5UOSmEVDkpNFQ5KQBUOSkAWDgoAFo3JwNYOCgYVTkpl1U5
+        Kd5VOSpVVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXjYmBVY5KUdVOSnbVTkpmFg4
+        KBhaNycEWDgoAFU4KABVOCgAVTgoK1U4KHdVOSnMVTkpdFU5KQBVOSkAAAAAAFU6KgBVOioAVToqT1U6
+        KqNVOSmuVTkpWFU5KQBVOSkAAAAAAFU5KQBVOSkAVTkpc1U5Kc5UOSmEVDkpNFQ5KQBUOSkAWDgoAFo3
+        JwRYOCgYVTkpl1U5Kd5VOSpVVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMXTYmBlY5
+        KUhVOSnbVTkpwFU5KW5VOSljVTkpYVU5KWFVOSlhVTkpf1U5KbBVOSngVTkpqFU5KWBVOSlgVTkpYVU5
+        KWBVOSlgVTkplVU5Kc1VOSnTVTkpmlU5KWBVOSlgVTkpYVU5KWBVOSlgVTkprVU5KehVOSm4VTkpg1U5
+        KWFVOSlhVTkpYFU5KWRVOSl1VTkpxFU5Kd5VOSpVVTstD1Q4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5
+        KUFWOSkMYTUlA1Y5KT5VOSnIVTkp2VU5KblVOSm5VTkpuVU5KblVOSm5VTkpxlU5KdZVOSneVTkpzVU5
+        KblVOSm5VTkpuVU5KblVOSm5VTkpzVU5KeFVOSnhVTkpzVU5KblVOSm5VTkpuVU5KblVOSm5VTkp1FU5
+        KepVOSnYVTkpxVU5KblVOSm5VTkpuVU5KbtVOSnEVTkp4FU5KctVOSpJVTstC1Q4KAlUOCg0VTkppVU5
+        Kf9VOSn/VTkprVY5KUFWOSkMUzkpAFU4KB5UOCh+VTkpnVY5KZlWOSmZVjkpmVY5KZlWOSmZVjkpnFY5
+        KZ9WOSmgVjkpnVY5KZlWOSmZVjkpmVY5KZlWOSmZVjkpnVY5KaFWOSmhVjkpnVY5KZlWOSmZVjkpmVY5
+        KZlWOSmZVjkpnlY5KaJWOSmfVjkpnFY5KZlWOSmZVjkpmVY5KZpWOSmcVTkpnlQ4KH5UOSkgUzYkAFQ4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVTkpAFQ4KApUOCgyVTgoQ1Y5KUZWOSlGVjkpRlY5
+        KUZWOSlGVjkpRVY5KUVWOSlEVjkpRVY5KUZWOSlGVjkpRlY5KUZWOSlGVjkpRVY5KURWOSlEVjkpRVY5
+        KUZWOSlGVjkpRlY5KUZWOSlGVjkpRVY5KURWOSlFVjkpRVY5KUZWOSlGVjkpRlY5KUZWOSlFVTgoQlQ4
+        KDJUOCgKVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkpslU5
+        KU9UOCgjUzcnF1Q4KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4
+        KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4
+        KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4KBlUOCgZVDgoGVQ4KBlUOCgZVDgoF1Q4KCNUOChPVTkpslU5
+        Kf9VOSn/VTkpyFQ5KYJUOSloVDgoYVQ4KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4
+        KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4
+        KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4KGJUOChiVDgoYlQ4KGJUOChiVDgoYVQ4
+        KGpUOCiOVTkpz1U5Kf9VOSn/VTkp9FU5KedVOSniVTkp4VU5KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5
+        KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5
+        KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5KeFVOSnhVTkp4VU5
+        KeFVOSnhVTkp4VU5KeNVOSnqVTkp9lU5Kf9VOSn/VTkp2FU5KaZVOSmMVTkphVU5KYZVOSmGVTkphlU5
+        KYZVOSmGVTkphlU5KYZVOSmGVTkphlU5KYZVOSmGVTkphlU5KYZVOSmGVTkphlU5KYZVOSmGVTkphlU5
+        KYZVOSmGVTkphlU5KYZVOSmGVTkphlU5KYZVOSmGVTkphlU5KYZVOSmGVTkphlU5KYZVOSmGVTkphlU5
+        KYZVOSmGVTkphlU5KYZVOSmGVTkphVU5KYpVOSmeVTkp1FU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCgzVTkppFU5Kf9VOSn/VTkprFY5
+        KUBWOSkMVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoAFQ4KAlUOCgzVTkppFU5
+        Kf9VOSn/VTkprVY5KUFWOSkMVjkpAAAAAAAAAAAAVTssAFU7LQNVOywOVDkqI1Q5KTNVOCgtVDkpF0tK
+        OgNEVkYATEk5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAFY5KQBWOSkAVzkpEFY5KSVUOSkyVDkqJFU7LA5VOy0DVTssAAAAAAAAAAAAVDgoAFQ4
+        KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAE9BMQBPQTEAWjMkAFQ6KxBVOipFVTkpb1Q5
+        KYRVOCh8VDkpT1I7KxxSPCwFUjsrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAVTgoAFU3JwJVOCgMVjkpP1U5KXNUOSmCVTkpb1U5KkZWOSoSE1ZQAFg4
+        KABYOCgAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkprVY5KUFWOSkMVjkpAFBAMABQQDAAjAAAAFQ7
+        KzBVOSm6VTkp3FU5KdFVOSnXVTkpp1Q4KFpUOCgSVDgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVTgoAFU4KAxVOChBVTkpnVU5KeBVOSnTVTkp3FU5
+        KbxWOSk7XDcnBlg4KABYOCgAVDgoAFQ4KAlUOCg0VTkppVU5Kf9VOSn/VTkpq1Y5KT1WOSkLVjkpAFM8
+        LQBTPC0AUEI1BVQ6KkFVOSnaVTkpwlU5KYpVOSnFVTkpulU5KXhVOSkYVTkpAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVjkpAFY5KRNWOSljVTkpslU5
+        KctVOSmFVTkpvVU5Kd1VOChQVjcnDlU4KABVOCgAVDgoAFQ4KAhUOCgvVTkpolU5Kf9VOSn5VTkptVY5
+        KV1VOSkwVTkpJFU5KSZVOSkmVTkqNlU5KnBVOSnkVTkph1M7KyhVOSmSVTkpuFU6KpZVOSk9VTkpIlU5
+        KSZVOSkmVTkpJlU5KSZVOSkmVTkpJlU5KSZVOSkmVTkpJlU5KSZVOSkmVTkpJlU5KSZVOSkmVTkpIlU5
+        KTpWOSmLVTkpsVU5KY9VOSkcVTkpf1U5KeZVOSl5VTkpO1U5KSZVOSkmVTkpJFU5KS5UOChUVTkps1U5
+        Kf9VOSnYVTkp0VU5KcVVOSm8VTkpulU5KbpVOSm6VTkpw1U5KdpVOSn5VTkpg1M7KydVOSmSVTkpz1U5
+        KdxVOSnBVTkpuVU5KbpVOSm6VTkpulU5KbpVOSm6VTkpulU5KbpVOSm6VTkpulU5KbpVOSm6VTkpulU5
+        KbpVOSm6VTkpuVU5KcFVOSnaVTkpzlU5KY9VOSkbVTkpe1U5KfdVOSnRVTkpvlU5KbpVOSm6VTkpuVU5
+        Kb5VOSnOVTkp5FU5KfNVOipuVTkpjlU5KbFVOSmzVTkps1U5KbNVOSmzVTkpuFU5Kc1VOSn2VToqg1M8
+        LCZVOSmRVTkp0FU5KdxVOSm8VTkpsVU5KbNVOSmzVTkps1U5KbNVOSmzVTkps1U5KbNVOSmzVTkps1U5
+        KbNVOSmzVTkps1U5KbNVOSmzVTkpslU5KbpVOSnVVTkpzFU5KY9VOSkbVTkpe1U5KfhVOSnTVTkpvFU5
+        KbNVOSmzVTkps1U5KbVVOSm5VTkpoFU5KYhPQTELUzoqM1Q5KV1UOSldVDkpXVQ5KVxUOSlcVDgpYlQ4
+        KIxVOSnpVTkpjVQ6KjRVOSmZVTkpx1U5KbZUOSlvVDkpWVQ5KV1UOSldVDkpXVQ5KV1UOSldVDkpXVQ5
+        KV1UOSldVDkpXVQ5KV1UOSldVDkpXVQ5KV1UOSldVDkpWVQ5KWxVOSmoVTkpv1U5KZZVOSknVTkphFU5
+        Ke5VOiqkVToqclQ5KVxUOSlcVDkpXVQ5KV1UOSldVTkpOlg4KBlJSzsBUzoqCVQ5KRJUOSkSVDkpElQ5
+        KRJUOSkSVDkqIVU5Kl9VOSngVTkpq1U4KGVVOSm0VTkpwlU6Ko5VOiorUzkpDVQ5KRJUOSkSVDkpElQ5
+        KRJUOSkSVDkpElQ5KRJUOSkSVDkpElQ5KRJUOSkSVDkpElQ5KRJUOSkSUzkpDVU5KShWOSmBVTkpulU5
+        KbJWOSlXVTkpolU5KeNVOSlvVDkpK1Q5KRJUOSkRVDkpElQ5KRJUOSkSVTkpC1o3JwQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAFU6LABVOiwAVj4yA1U5KjdVOSm9VTkpz1U5Kb1VOSnaVTkpsFU6KmBVOioTVToqAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVTkpAFU5
+        KRBVOSlTVTkpn1U5KctVOSmzVTkpy1U5Kb5VOCg9UzYmB1Q4KABUOCgAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVTkpAFU5KR9VOSmeVTkp5lU5Kf5VOSnzVTkpolY5
+        KUFWOSkMVjkpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAVDgoAFQ4KApUOCg0VTkpiFU5KdhVOSn4VTkp51U5KZ5VOSkfVTkpAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAEAAACAAAAAAQ
+        AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4fD4cAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4fD4cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAA4fD4cAAAAADh8PhwAAAAAOHw+HAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAABAAAAgA
+        AAAAEAAAD//////wAAAP//////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////w
+        AAAP//////AAAA8B///A8AAADwD//wDwAAAPAP//AHAAAA4A//8AcAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4A//8AfwAA/wD//wD/AAAoAAAAIAAAAEAAAAABACAAAAAAAAAQ
+        AAAAAAAAAAAAAAAAAAAAAAAAVDgogFU5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U6Kp9VOSn/VDgogFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4
+        KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4
+        KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOSlwVTkp/1U5Kf9WOSlQAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ4KEBVOSn/VTkp/1Y5KVAAAAAAAAAAAFBA
+        MBBVOiswVTorMFU6KzBVOiswVTorMFU6KzBVOiswVTorMFU6KzBVOiswVTorMFU6KzBVOiswVTorMFU6
+        KzBVOiswVTorMFU6KzBVOiswVTorMFU6KzBVOiswVTorMAAAAAAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAA
+        AABQQDAQVTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/WDgoIAAAAABUOChAVTkp/1U5
+        Kf9WOSlQAAAAAFg4KCBVOSn/VDgoQFg4KCBYOCggWDgoIFQ5KXBVOSnvWDgoIFg4KCBYOCggWDgoIFU6
+        Kp9VOSm/WDgoIFg4KCBYOCggWDgoIFU5Kd9UOCiAWDgoIFg4KCBYOCggVTorMFU5Kf9VOiswAAAAAFQ4
+        KEBVOSn/VTkp/1Y5KVAAAAAAWDgoIFU5Kf9YOCggAAAAAAAAAAAAAAAAVTgoYFU5Kd8AAAAAAAAAAAAA
+        AAAAAAAAVToqn1U5Ka8AAAAAAAAAAAAAAAAAAAAAVTkp31Q5KXAAAAAAAAAAAAAAAABYOCggVTkp/1U6
+        KzAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAAAABYOCggVTkp/1g4KCAAAAAAAAAAAAAAAABVOChgVTkp3wAA
+        AAAAAAAAAAAAAAAAAABVOiqfVTkprwAAAAAAAAAAAAAAAAAAAABVOSnfVDkpcAAAAAAAAAAAAAAAAFg4
+        KCBVOSn/VTorMAAAAABUOChAVTkp/1U5Kf9WOSlQAAAAAFg4KCBVOSn/VTkpr1U5Ka9VOSmvVTkpr1U5
+        Kd9VOSnvVTkpr1U5Ka9VOSmvVTkpr1U5Ke9VOSnfVTkpr1U5Ka9VOSmvVTkpr1U5Kf9VOSnPVTkpr1U5
+        Ka9VOSmvVTkpv1U5Kf9VOiswAAAAAFQ4KEBVOSn/VTkp/1Y5KVAAAAAAWDgoIFU5Kf9VOiqfVjkpj1Y5
+        KY9WOSmPVTkpr1U5Ke9WOSmPVjkpj1Y5KY9WOSmPVTkpz1U5Kd9WOSmPVjkpj1Y5KY9WOSmPVTkp71U5
+        Kb9WOSmPVjkpj1Y5KY9VOiqfVTkp/1U6KzAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAAAABYOCggVTkp/1g4
+        KCAAAAAAAAAAAAAAAABVOChgVTkp3wAAAAAAAAAAAAAAAAAAAABVOiqfVTkprwAAAAAAAAAAAAAAAAAA
+        AABVOSnfVDkpcAAAAAAAAAAAAAAAAFg4KCBVOSn/VTorMAAAAABUOChAVTkp/1U5Kf9WOSlQAAAAAFg4
+        KCBVOSn/WDgoIAAAAAAAAAAAAAAAAFU4KGBVOSnfAAAAAAAAAAAAAAAAAAAAAFU6Kp9VOSmvAAAAAAAA
+        AAAAAAAAAAAAAFU5Kd9UOSlwAAAAAAAAAAAAAAAAWDgoIFU5Kf9VOiswAAAAAFQ4KEBVOSn/VTkp/1Y5
+        KVAAAAAAWDgoIFU5Kf9WOSlQVDgoQFQ4KEBUOChAVjkpj1U5Kd9UOChAVDgoQFQ4KEBUOChAVTkpv1U5
+        Kb9UOChAVDgoQFQ4KEBUOChAVTkp71Y5KY9UOChAVDgoQFQ4KEBVOChgVTkp/1U6KzAAAAAAVDgoQFU5
+        Kf9VOSn/VjkpUAAAAABYOCggVTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTorMAAA
+        AABUOChAVTkp/1U5Kf9WOSlQAAAAAFg4KCBVOSn/VTorMFBAMBBQQDAQUEAwEFU4KGBVOSnvUEAwEFBA
+        MBBQQDAQUEAwEFU6Kp9VOSm/UEAwEFBAMBBQQDAQUEAwEFU5Kd9UOCiAUEAwEFBAMBBQQDAQWDgoIFU5
+        Kf9VOiswAAAAAFQ4KEBVOSn/VTkp/1Y5KVAAAAAAWDgoIFU5Kf9YOCggAAAAAAAAAAAAAAAAVTgoYFU5
+        Kd8AAAAAAAAAAAAAAAAAAAAAVToqn1U5Ka8AAAAAAAAAAAAAAAAAAAAAVTkp31Q5KXAAAAAAAAAAAAAA
+        AABYOCggVTkp/1U6KzAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAAAABYOCggVTkp/1g4KCAAAAAAAAAAAAAA
+        AABVOChgVTkp3wAAAAAAAAAAAAAAAAAAAABVOiqfVTkprwAAAAAAAAAAAAAAAAAAAABVOSnfVDkpcAAA
+        AAAAAAAAAAAAAFg4KCBVOSn/VTorMAAAAABUOChAVTkp/1U5Kf9WOSlQAAAAAFg4KCBVOSn/VTkpv1U5
+        Kb9VOSm/VTkpv1U5Kd9VOSnvVTkpv1U5Kb9VOSm/VTkpv1U5Ke9VOSnvVTkpv1U5Kb9VOSm/VTkpv1U5
+        Kf9VOSnfVTkpv1U5Kb9VOSm/VTkpz1U5Kf9VOiswAAAAAFQ4KEBVOSn/VTkp/1Y5KVAAAAAAAAAAAFQ4
+        KIBWOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5
+        KY9WOSmPVjkpj1Y5KY9WOSmPVjkpj1Y5KY9WOSmPVDgogAAAAAAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUOChAVTkp/1U5
+        Kf9WOSlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ4
+        KEBVOSn/VTkp/1Q5KXBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4
+        KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4KEBUOChAVDgoQFQ4
+        KEBUOChAVDgogFU5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5
+        Kf9VOSn/VTkp/1U5Kf9VOSn/VTkp/1U5Kf9WOSlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ4KEBVOSn/VTkp/1Y5KVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoQFU5Kf9VOSn/VjkpUAAAAAAAAAAAAAAAAAAA
+        AABVOiswVDkpcFU4KGBQQDAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAFY5KVBUOSlwVTorMAAAAAAAAAAAAAAAAAAAAABUOChAVTkp/1U5Kf9WOSlQAAAAAAAA
+        AAAAAAAAUEAwEFU5Kf9VOSnfVTkp71Q4KIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAABVOChgVTkp/1U5Kd9VOSn/WDgoIAAAAAAAAAAAAAAAAFQ4KEBVOSn/VTkp/1Y5
+        KVAAAAAAAAAAAAAAAABVOiswVTkp/1BAMBBVOSmvVToqnwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAFY5KY9VOSmvAAAAAFU5Kf9UOChAAAAAAAAAAAAAAAAAVDgoQFU5
+        Kf9VOSnPVTkp31U5Kd9VOSnfVTkp31U5Ke9VOSn/UEAwEFU5Ka9VOSnvVTkp31U5Kd9VOSnfVTkp31U5
+        Kd9VOSnfVTkp31U5Kd9VOSnfVTkp31U5Kd9VOSnfVTkp71U5Ka8AAAAAVTkp/1U5Kd9VOSnfVTkp31U5
+        Kd9VOSnvVTkp71BAMBBUOSlwVDkpcFQ5KXBUOSlwVDgogFU5Kf9QQDAQVTkpr1U5Kc9UOSlwVDkpcFQ5
+        KXBUOSlwVDkpcFQ5KXBUOSlwVDkpcFQ5KXBUOSlwVDkpcFQ5KXBVOSm/VTkprwAAAABVOSn/VToqn1Q5
+        KXBUOSlwVDkpcFQ5KXBYOCggAAAAAAAAAAAAAAAAAAAAAAAAAABVOiswVTkp/1U4KGBVOSnPVToqnwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFY5KY9VOSnPVjkpUFU5
+        Kf9UOChAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVOSm/VTkp/1U5
+        Ke9WOSlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVDgoQFU5
+        Kc9VOSn/VTkpvwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////DAAAAwgAAAEIAAABCOe
+        ecQjnnnEIAAABCAAAAQjnnnEI555xCAAAAQgAAAEIAAABCOeecQjnnnEIAAABDAAAAw////8P////AAA
+        AAAAAAAAP////D////w8P/48OD/8HDg//JwAAACAAAAAgPg//B/8P/w/
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Financial Period</value>
+  </data>
+  <data name="&gt;&gt;ErrorProvider.Name" xml:space="preserve">
+    <value>ErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;ErrorProvider.Type" xml:space="preserve">
+    <value>Alit.WinformControls.ErrorProvider, Alit.WinformControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gridviewProductStock.Name" xml:space="preserve">
+    <value>gridviewProductStock</value>
+  </data>
+  <data name="&gt;&gt;gridviewProductStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridviewAccountBalance.Name" xml:space="preserve">
+    <value>gridviewAccountBalance</value>
+  </data>
+  <data name="&gt;&gt;gridviewAccountBalance.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgAccountBalance.Name" xml:space="preserve">
+    <value>lcgAccountBalance</value>
+  </data>
+  <data name="&gt;&gt;lcgAccountBalance.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Name" xml:space="preserve">
+    <value>layoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Name" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Name" xml:space="preserve">
+    <value>emptySpaceItem5</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgProductStock.Name" xml:space="preserve">
+    <value>lcgProductStock</value>
+  </data>
+  <data name="&gt;&gt;lcgProductStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem6.Name" xml:space="preserve">
+    <value>layoutControlItem6</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Name" xml:space="preserve">
+    <value>layoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;splitterItem2.Name" xml:space="preserve">
+    <value>splitterItem2</value>
+  </data>
+  <data name="&gt;&gt;splitterItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.SplitterItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;popupMenuFormShortCuts.Name" xml:space="preserve">
+    <value>popupMenuFormShortCuts</value>
+  </data>
+  <data name="&gt;&gt;popupMenuFormShortCuts.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmFinancialPeriod</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Vision.WinForm.Template.frmCRUDTemplate, Vision.WinForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

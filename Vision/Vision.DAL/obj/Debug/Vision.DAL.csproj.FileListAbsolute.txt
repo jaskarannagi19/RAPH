@@ -1,0 +1,27 @@
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\Vision.DAL.dll.config
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\Vision.DAL.dll
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\Vision.DAL.pdb
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\EntityFramework.dll
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\Vision.Model.dll
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\Vision.Model.pdb
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\EntityFramework.xml
+D:\Source Code\Vision\Vision\Vision.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Source Code\Vision\Vision\Vision.DAL\obj\Debug\Vision.DAL.csprojResolveAssemblyReference.cache
+D:\Source Code\Vision\Vision\Vision.DAL\obj\Debug\Vision.DAL.dll
+D:\Source Code\Vision\Vision\Vision.DAL\obj\Debug\Vision.DAL.pdb
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\Vision.DAL.dll.config
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\Vision.DAL.dll
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\Vision.DAL.pdb
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\EntityFramework.dll
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\Vision.Model.dll
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\Vision.Model.pdb
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\Vision.Model.dll.config
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\EntityFramework.xml
+F:\Vision\Vision\Vision\Vision.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\Vision\Vision\Vision\Vision.DAL\obj\Debug\Vision.DAL.csprojAssemblyReference.cache
+F:\Vision\Vision\Vision\Vision.DAL\obj\Debug\Vision.DAL.csproj.CoreCompileInputs.cache
+F:\Vision\Vision\Vision\Vision.DAL\obj\Debug\Vision.DAL.csproj.CopyComplete
+F:\Vision\Vision\Vision\Vision.DAL\obj\Debug\Vision.DAL.dll
+F:\Vision\Vision\Vision\Vision.DAL\obj\Debug\Vision.DAL.pdb
