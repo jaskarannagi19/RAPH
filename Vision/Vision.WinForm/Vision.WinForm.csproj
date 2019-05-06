@@ -657,6 +657,12 @@
     <Compile Include="Settings\frmFinancialPeriod.Designer.cs">
       <DependentUpon>frmFinancialPeriod.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings\frmPayrollMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\frmPayrollMonth.Designer.cs">
+      <DependentUpon>frmPayrollMonth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings\frmTaxSlab.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -950,6 +956,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings\frmFinancialPeriod.resx">
       <DependentUpon>frmFinancialPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\frmPayrollMonth.resx">
+      <DependentUpon>frmPayrollMonth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings\frmTaxSlab.resx">
       <DependentUpon>frmTaxSlab.cs</DependentUpon>

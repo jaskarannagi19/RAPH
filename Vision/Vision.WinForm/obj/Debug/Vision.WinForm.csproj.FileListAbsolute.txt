@@ -746,3 +746,4 @@ F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\tr-TR\Vision.WinForm.resources.
 F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.csproj.CopyComplete
 F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.exe
 F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.pdb
+F:\Vision\Vision\Vision\Vision.WinForm\obj\Debug\Vision.WinForm.Settings.frmPayrollMonth.resources

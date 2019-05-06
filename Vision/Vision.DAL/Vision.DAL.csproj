@@ -149,6 +149,7 @@
     <Compile Include="Settings\GridLayoutDAL.cs" />
     <Compile Include="Settings\MenuOptionsDAL.cs" />
     <Compile Include="Settings\PAYEReliefDAL.cs" />
+    <Compile Include="Settings\PayrollMonthDAL.cs" />
     <Compile Include="Settings\SettingDAL.cs" />
     <Compile Include="Settings\TaxSlabDAL.cs" />
     <Compile Include="SubMaster\BanNameDAL.cs" />

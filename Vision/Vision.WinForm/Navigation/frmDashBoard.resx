@@ -635,6 +635,9 @@
   <data name="btnSalary.Caption" xml:space="preserve">
     <value>Salary</value>
   </data>
+  <data name="btnSettingsInstitue_Payroll.Caption" xml:space="preserve">
+    <value>Payroll</value>
+  </data>
   <data name="ribbonMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -2989,6 +2992,12 @@
     <value>btnSalary</value>
   </data>
   <data name="&gt;&gt;btnSalary.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnSettingsInstitue_Payroll.Name" xml:space="preserve">
+    <value>btnSettingsInstitue_Payroll</value>
+  </data>
+  <data name="&gt;&gt;btnSettingsInstitue_Payroll.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;rpPayroll.Name" xml:space="preserve">

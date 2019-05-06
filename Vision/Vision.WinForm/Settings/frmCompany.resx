@@ -132,7 +132,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="payrollMonthDateEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 267</value>
+    <value>715, 257</value>
   </data>
   <assembly alias="DevExpress.Utils.v18.2" name="DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="payrollMonthDateEdit.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
@@ -149,7 +149,7 @@
     <value>True</value>
   </data>
   <data name="payrollMonthDateEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 26</value>
+    <value>195, 26</value>
   </data>
   <data name="payrollMonthDateEdit.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -173,7 +173,7 @@
     <value />
   </data>
   <data name="payRollEndDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 237</value>
+    <value>398, 257</value>
   </data>
   <data name="payRollEndDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
     <value>Combo</value>
@@ -182,7 +182,7 @@
     <value>Combo</value>
   </data>
   <data name="payRollEndDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 26</value>
+    <value>217, 26</value>
   </data>
   <data name="payRollEndDate.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -206,7 +206,7 @@
     <value />
   </data>
   <data name="payRollStartDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 207</value>
+    <value>109, 257</value>
   </data>
   <data name="payRollStartDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v18.2">
     <value>Combo</value>
@@ -215,7 +215,7 @@
     <value>Combo</value>
   </data>
   <data name="payRollStartDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 26</value>
+    <value>212, 26</value>
   </data>
   <data name="payRollStartDate.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -236,7 +236,7 @@
     <value>True</value>
   </metadata>
   <data name="lookupCurrency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 177</value>
+    <value>200, 177</value>
   </data>
   <data name="lookupCurrency.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
@@ -269,10 +269,10 @@
     <value>True</value>
   </metadata>
   <data name="txtBank3_Currency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 521</value>
+    <value>200, 517</value>
   </data>
   <data name="txtBank3_Currency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 26</value>
+    <value>381, 26</value>
   </data>
   <data name="txtBank3_Currency.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -293,10 +293,10 @@
     <value>True</value>
   </metadata>
   <data name="txtBank3_AcNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 491</value>
+    <value>200, 487</value>
   </data>
   <data name="txtBank3_AcNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 26</value>
+    <value>381, 26</value>
   </data>
   <data name="txtBank3_AcNo.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -317,10 +317,10 @@
     <value>True</value>
   </metadata>
   <data name="txtBank3_BranchName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 461</value>
+    <value>200, 457</value>
   </data>
   <data name="txtBank3_BranchName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 26</value>
+    <value>381, 26</value>
   </data>
   <data name="txtBank3_BranchName.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -341,10 +341,10 @@
     <value>True</value>
   </metadata>
   <data name="txtBank3_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 431</value>
+    <value>200, 427</value>
   </data>
   <data name="txtBank3_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 26</value>
+    <value>381, 26</value>
   </data>
   <data name="txtBank3_Name.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -365,10 +365,10 @@
     <value>True</value>
   </metadata>
   <data name="txtBank2_Currency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>770, 349</value>
+    <value>778, 347</value>
   </data>
   <data name="txtBank2_Currency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 26</value>
+    <value>386, 26</value>
   </data>
   <data name="txtBank2_Currency.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -389,10 +389,10 @@
     <value>True</value>
   </metadata>
   <data name="txtBank2_AcNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>770, 319</value>
+    <value>778, 317</value>
   </data>
   <data name="txtBank2_AcNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 26</value>
+    <value>386, 26</value>
   </data>
   <data name="txtBank2_AcNo.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -413,10 +413,10 @@
     <value>True</value>
   </metadata>
   <data name="txtBank2_BranchName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>770, 289</value>
+    <value>778, 287</value>
   </data>
   <data name="txtBank2_BranchName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 26</value>
+    <value>386, 26</value>
   </data>
   <data name="txtBank2_BranchName.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -437,10 +437,10 @@
     <value>True</value>
   </metadata>
   <data name="txtBank2_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>770, 259</value>
+    <value>778, 257</value>
   </data>
   <data name="txtBank2_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>371, 26</value>
+    <value>386, 26</value>
   </data>
   <data name="txtBank2_Name.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -461,13 +461,13 @@
     <value>True</value>
   </metadata>
   <data name="txtPhoneNo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 491</value>
+    <value>766, 477</value>
   </data>
   <data name="txtPhoneNo2.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtPhoneNo2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 26</value>
+    <value>398, 26</value>
   </data>
   <data name="txtPhoneNo2.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -488,13 +488,13 @@
     <value>True</value>
   </metadata>
   <data name="txtBank1_Currency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 349</value>
+    <value>200, 347</value>
   </data>
   <data name="txtBank1_Currency.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtBank1_Currency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 26</value>
+    <value>381, 26</value>
   </data>
   <data name="txtBank1_Currency.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -515,13 +515,13 @@
     <value>True</value>
   </metadata>
   <data name="txtBank1_AcNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 319</value>
+    <value>200, 317</value>
   </data>
   <data name="txtBank1_AcNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtBank1_AcNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 26</value>
+    <value>381, 26</value>
   </data>
   <data name="txtBank1_AcNo.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -542,13 +542,13 @@
     <value>True</value>
   </metadata>
   <data name="txtBank1_BranchName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 289</value>
+    <value>200, 287</value>
   </data>
   <data name="txtBank1_BranchName.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtBank1_BranchName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 26</value>
+    <value>381, 26</value>
   </data>
   <data name="txtBank1_BranchName.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -569,13 +569,13 @@
     <value>True</value>
   </metadata>
   <data name="txtBank1_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 259</value>
+    <value>200, 257</value>
   </data>
   <data name="txtBank1_Name.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtBank1_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 26</value>
+    <value>381, 26</value>
   </data>
   <data name="txtBank1_Name.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -596,13 +596,13 @@
     <value>True</value>
   </metadata>
   <data name="txtSACCORegNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 177</value>
+    <value>766, 177</value>
   </data>
   <data name="txtSACCORegNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtSACCORegNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 26</value>
+    <value>398, 26</value>
   </data>
   <data name="txtSACCORegNo.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -623,13 +623,13 @@
     <value>True</value>
   </metadata>
   <data name="txtPFNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 177</value>
+    <value>200, 177</value>
   </data>
   <data name="txtPFNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtPFNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtPFNo.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -650,13 +650,13 @@
     <value>True</value>
   </metadata>
   <data name="txtNHIFNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 147</value>
+    <value>766, 147</value>
   </data>
   <data name="txtNHIFNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtNHIFNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 26</value>
+    <value>398, 26</value>
   </data>
   <data name="txtNHIFNo.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -677,13 +677,13 @@
     <value>True</value>
   </metadata>
   <data name="txtNSSFNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 147</value>
+    <value>200, 147</value>
   </data>
   <data name="txtNSSFNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtNSSFNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtNSSFNo.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -704,13 +704,13 @@
     <value>True</value>
   </metadata>
   <data name="txtPINNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 117</value>
+    <value>200, 117</value>
   </data>
   <data name="txtPINNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtPINNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtPINNo.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -734,7 +734,7 @@
     <value />
   </data>
   <data name="deIncorporationDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 87</value>
+    <value>766, 87</value>
   </data>
   <data name="deIncorporationDate.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>200, 0</value>
@@ -753,7 +753,7 @@
     <value>DateTimeAdvancingCaret</value>
   </data>
   <data name="deIncorporationDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 26</value>
+    <value>155, 26</value>
   </data>
   <data name="deIncorporationDate.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -774,13 +774,13 @@
     <value>True</value>
   </metadata>
   <data name="txtIncorporationNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 87</value>
+    <value>200, 87</value>
   </data>
   <data name="txtIncorporationNo.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtIncorporationNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtIncorporationNo.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -801,10 +801,10 @@
     <value>True</value>
   </metadata>
   <data name="btnClearLogoImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>797, 187</value>
+    <value>804, 176</value>
   </data>
   <data name="btnClearLogoImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 27</value>
+    <value>106, 27</value>
   </data>
   <data name="btnClearLogoImage.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -828,10 +828,10 @@
     <value>True</value>
   </metadata>
   <data name="btnBrowseLogoImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>665, 187</value>
+    <value>664, 176</value>
   </data>
   <data name="btnBrowseLogoImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 27</value>
+    <value>136, 27</value>
   </data>
   <data name="btnBrowseLogoImage.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -855,7 +855,7 @@
     <value>True</value>
   </metadata>
   <data name="peLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>665, 87</value>
+    <value>664, 87</value>
   </data>
   <data name="peLogo.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>250, 100</value>
@@ -864,7 +864,7 @@
     <value>Select an Image</value>
   </data>
   <data name="peLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 96</value>
+    <value>246, 85</value>
   </data>
   <data name="peLogo.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -885,13 +885,13 @@
     <value>True</value>
   </metadata>
   <data name="txtMobileNo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 521</value>
+    <value>766, 507</value>
   </data>
   <data name="txtMobileNo2.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtMobileNo2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 26</value>
+    <value>398, 26</value>
   </data>
   <data name="txtMobileNo2.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -912,13 +912,13 @@
     <value>True</value>
   </metadata>
   <data name="txtAddressLine3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 409</value>
+    <value>200, 397</value>
   </data>
   <data name="txtAddressLine3.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtAddressLine3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtAddressLine3.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -939,13 +939,13 @@
     <value>True</value>
   </metadata>
   <data name="txtAddressLine2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 379</value>
+    <value>200, 367</value>
   </data>
   <data name="txtAddressLine2.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtAddressLine2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtAddressLine2.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -966,13 +966,13 @@
     <value>True</value>
   </metadata>
   <data name="txtAddressLine1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 349</value>
+    <value>200, 337</value>
   </data>
   <data name="txtAddressLine1.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtAddressLine1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtAddressLine1.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -993,7 +993,7 @@
     <value>True</value>
   </metadata>
   <data name="txtCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 87</value>
+    <value>200, 87</value>
   </data>
   <data name="txtCode.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>150, 0</value>
@@ -1026,7 +1026,7 @@
     <value>Tahoma, 9pt</value>
   </data>
   <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 147</value>
+    <value>354, 147</value>
   </data>
   <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>306, 18</value>
@@ -1056,7 +1056,7 @@
     <value />
   </data>
   <data name="deBusinessStartedFrom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 147</value>
+    <value>200, 147</value>
   </data>
   <data name="deBusinessStartedFrom.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>150, 0</value>
@@ -1092,7 +1092,7 @@
     <value>True</value>
   </metadata>
   <data name="lookupCity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 379</value>
+    <value>766, 367</value>
   </data>
   <data name="lookupCity.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
@@ -1104,7 +1104,7 @@
     <value>Select</value>
   </data>
   <data name="lookupCity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 26</value>
+    <value>398, 26</value>
   </data>
   <data name="lookupCity.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -1125,13 +1125,13 @@
     <value>True</value>
   </metadata>
   <data name="txtWebsite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 551</value>
+    <value>766, 537</value>
   </data>
   <data name="txtWebsite.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtWebsite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 26</value>
+    <value>398, 26</value>
   </data>
   <data name="txtWebsite.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1152,13 +1152,13 @@
     <value>True</value>
   </metadata>
   <data name="txtEMailID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 551</value>
+    <value>200, 537</value>
   </data>
   <data name="txtEMailID.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtEMailID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtEMailID.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1179,13 +1179,13 @@
     <value>True</value>
   </metadata>
   <data name="txtMobileNo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 521</value>
+    <value>200, 507</value>
   </data>
   <data name="txtMobileNo1.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtMobileNo1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtMobileNo1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1206,13 +1206,13 @@
     <value>True</value>
   </metadata>
   <data name="txtPhone1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 491</value>
+    <value>200, 477</value>
   </data>
   <data name="txtPhone1.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtPhone1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 26</value>
+    <value>393, 26</value>
   </data>
   <data name="txtPhone1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1233,13 +1233,13 @@
     <value>True</value>
   </metadata>
   <data name="txtPin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 409</value>
+    <value>766, 397</value>
   </data>
   <data name="txtPin.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
   </data>
   <data name="txtPin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 26</value>
+    <value>398, 26</value>
   </data>
   <data name="txtPin.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1260,7 +1260,7 @@
     <value>True</value>
   </metadata>
   <data name="txtCompanyName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 117</value>
+    <value>200, 117</value>
   </data>
   <data name="txtCompanyName.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 0</value>
@@ -1290,7 +1290,7 @@
     <value>Fill</value>
   </data>
   <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>2, 2</value>
   </data>
   <data name="layoutControlItem2.Text" xml:space="preserve">
     <value>Company Name</value>
@@ -1303,15 +1303,6 @@
   </data>
   <data name="layoutControlItem1.Text" xml:space="preserve">
     <value>Currency</value>
-  </data>
-  <data name="layoutControlItem46.Text" xml:space="preserve">
-    <value>Payroll Start Date</value>
-  </data>
-  <data name="layoutControlItem4.Text" xml:space="preserve">
-    <value>Payroll End Date</value>
-  </data>
-  <data name="layoutControlItem42.Text" xml:space="preserve">
-    <value>Payroll Month</value>
   </data>
   <data name="layoutControlGroup3.Text" xml:space="preserve">
     <value>General Detail</value>
@@ -1354,6 +1345,18 @@
   </data>
   <data name="layoutControlGroup5.Text" xml:space="preserve">
     <value>Contact Information</value>
+  </data>
+  <data name="layoutControlItem4.Text" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="layoutControlItem46.Text" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="layoutControlItem42.Text" xml:space="preserve">
+    <value>Month Name</value>
+  </data>
+  <data name="layoutControlGroup11.Text" xml:space="preserve">
+    <value>Payroll Month</value>
   </data>
   <data name="lcgCompany.Text" xml:space="preserve">
     <value>Company</value>
@@ -1434,7 +1437,7 @@
     <value>Company</value>
   </data>
   <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1194, 594</value>
+    <value>1196, 596</value>
   </data>
   <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2265,6 +2268,12 @@
   </data>
   <data name="&gt;&gt;behaviorManager1.Type" xml:space="preserve">
     <value>DevExpress.Utils.Behaviors.BehaviorManager, DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup11.Name" xml:space="preserve">
+    <value>layoutControlGroup11</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup11.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmCompany</value>

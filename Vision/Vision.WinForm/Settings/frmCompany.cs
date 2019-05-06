@@ -197,8 +197,10 @@ namespace Vision.WinForm.Settings
             
             PayRollMonth.PayrollMonthStartDate = payRollStartDate.DateTime;
             PayRollMonth.PayrollMonthEndDate = payRollEndDate.DateTime;
-            PayRollMonth.PayrollMonthName = payrollMonthDateEdit.DateTime.ToString("MMMM-yyyy"); //TODO FIX ME ASK WHICH FORMAT TO SAVE
-            
+
+            PayRollMonth.PayrollMonthName = payrollMonthDateEdit.DateTime.ToString("MMMM-yyyy"); //this is not user selectable
+
+
             long? CopySettingsFromCompanyID = null;
             //if(lcgSettings.Visibility != DevExpress.XtraLayout.Utils.LayoutVisibility.Never)
             //{

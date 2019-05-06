@@ -22,6 +22,7 @@ namespace Vision.DAL.Settings
             res.Add(new MenuOptionsViewModel() { MenuOptionID = 1006, MenuOptionName = "Biometric Devices", MenuOptionGroupName = "Settings", MenuType = eMenuOptionType.CRUD });
             res.Add(new MenuOptionsViewModel() { MenuOptionID = 1007, MenuOptionName = "Location", MenuOptionGroupName = "Settings", MenuType = eMenuOptionType.CRUD });
             res.Add(new MenuOptionsViewModel() { MenuOptionID = 1008, MenuOptionName = "Tax Slab", MenuOptionGroupName = "Settings", MenuType = eMenuOptionType.CRUD });
+            res.Add(new MenuOptionsViewModel() { MenuOptionID = 1009, MenuOptionName = "Payroll", MenuOptionGroupName = "Settings", MenuType = eMenuOptionType.Normal });
 
             // Others
             res.Add(new MenuOptionsViewModel() { MenuOptionID = 2001, MenuOptionName = "City / Town", MenuOptionGroupName = "Others", MenuType = eMenuOptionType.CRUD });

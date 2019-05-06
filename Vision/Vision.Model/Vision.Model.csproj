@@ -126,6 +126,7 @@
     <Compile Include="Settings\FinPeriodViewModel.cs" />
     <Compile Include="Settings\MenuOptionsViewModel.cs" />
     <Compile Include="Settings\PAYEReleifeViewModel.cs" />
+    <Compile Include="Settings\PayrollMonthViewModel.cs" />
     <Compile Include="Settings\TaxSlabViewModel.cs" />
     <Compile Include="SubMaster\BankBranchNameViewModel.cs" />
     <Compile Include="SubMaster\BankNameViewModel.cs" />

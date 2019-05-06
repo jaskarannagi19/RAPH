@@ -606,5 +606,10 @@ namespace Vision.WinForm.Navigation
             ShowForm<Reports.Employee.frmRepSalaryReport>(Model.CommonFunctions.ParseInt(e.Item.Tag.ToString()));//ADD NEW FORM
 
         }
+
+        private void btnSettingsInstitue_Payroll_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ShowForm<Reports.Employee.frmRepSalaryReport>(Model.CommonFunctions.ParseInt(e.Item.Tag.ToString()));
+        }
     }
 }
