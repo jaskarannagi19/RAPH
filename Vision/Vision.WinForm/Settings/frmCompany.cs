@@ -21,6 +21,7 @@ namespace Vision.WinForm.Settings
     public partial class frmCompany : Template.frmCRUDTemplate
     {
         CompanyDAL DALObject;
+        PayrollMonthDAL PayrollMonthDAL;
         CityDAL CityDAL;
         //CitySelection CitySelection;
         DAL.SubMaster.CurrencyDAL CurrencyDALObj;
@@ -36,6 +37,8 @@ namespace Vision.WinForm.Settings
 
             DALObject = new CompanyDAL();
             CityDAL = new DAL.City.CityDAL();
+
+            PayrollMonthDAL = new PayrollMonthDAL();
             //CitySelection = new CitySelection(lookupCountry, lookupState, lookupCity, this.ErrorProvider);
             CurrencyDALObj = new DAL.SubMaster.CurrencyDAL();
         }
@@ -105,10 +108,6 @@ namespace Vision.WinForm.Settings
         {
             deBusinessStartedFrom.Enabled = (FormCurrentUI != eFormCurrentUI.Edit);
 
-            payrollMonthDateEdit.Enabled = (FormCurrentUI != eFormCurrentUI.Edit);
-            payRollStartDate.Enabled = (FormCurrentUI != eFormCurrentUI.Edit);
-            payRollEndDate.Enabled = (FormCurrentUI != eFormCurrentUI.Edit);
-
             base.ClearValues();
         }
 
@@ -138,7 +137,8 @@ namespace Vision.WinForm.Settings
             else
             {
                 SaveModel = DALObject.FindSaveModelByPrimeKey(((CompanyEditListModel)EditRecordDataSource).CompanyID);
-                
+
+                PayRollMonth = PayrollMonthDAL.GetLatestPayrollMonthByCompanyID(((CompanyEditListModel)EditRecordDataSource).CompanyID);
                 //DO SOMETHING HERE FOR PAYROLLMONTH
                 if (SaveModel == null)
                 {
@@ -298,6 +298,9 @@ namespace Vision.WinForm.Settings
         public override void FillSelectedRecordInContent(object RecordToFill)
         {
             tblCompany EditingRecord = DALObject.FindSaveModelByPrimeKey(((CompanyEditListModel)RecordToFill).CompanyID);
+            tblPayrollMonth EditingPayrollMonth = PayrollMonthDAL.GetLatestPayrollMonthByCompanyID(((CompanyEditListModel)RecordToFill).CompanyID);
+
+            bool editable = PayrollMonthDAL.IsPayrollMonthEditable(((CompanyEditListModel)RecordToFill).CompanyID);
 
             txtCode.Text = EditingRecord.CompanyCode.ToString();
             txtCompanyName.Text = EditingRecord.CompanyName;
@@ -365,6 +368,23 @@ namespace Vision.WinForm.Settings
             txtBank3_Name.Text = EditingRecord.Bank3_Name;
             txtBank3_BranchName.Text = EditingRecord.Bank3_BranchName;
             txtBank3_Currency.Text = EditingRecord.Bank3_Currency;
+
+            if(EditingPayrollMonth != null) { 
+            payRollStartDate.Text = EditingPayrollMonth.PayrollMonthStartDate.ToShortDateString();
+            payRollEndDate.Text = EditingPayrollMonth.PayrollMonthEndDate.ToShortDateString();
+                payrollMonthDateEdit.DateTime = EditingPayrollMonth.PayrollMonthEndDate.Date;
+            }
+
+            if (editable == false)
+            {
+                lcgPayrollMonth.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
+            }
+            else
+            {
+                lcgPayrollMonth.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
+                
+            }
+            
         }
 
         public override BeforeDeleteValidationResult ValidateBeforeDelete()

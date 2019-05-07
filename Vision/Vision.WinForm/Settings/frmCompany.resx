@@ -1355,7 +1355,7 @@
   <data name="layoutControlItem42.Text" xml:space="preserve">
     <value>Month Name</value>
   </data>
-  <data name="layoutControlGroup11.Text" xml:space="preserve">
+  <data name="lcgPayrollMonth.Text" xml:space="preserve">
     <value>Payroll Month</value>
   </data>
   <data name="lcgCompany.Text" xml:space="preserve">
@@ -1963,24 +1963,6 @@
   <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;layoutControlItem46.Name" xml:space="preserve">
-    <value>layoutControlItem46</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem46.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
-    <value>layoutControlItem4</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem42.Name" xml:space="preserve">
-    <value>layoutControlItem42</value>
-  </data>
-  <data name="&gt;&gt;layoutControlItem42.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;emptySpaceItem7.Name" xml:space="preserve">
     <value>emptySpaceItem7</value>
   </data>
@@ -2081,6 +2063,30 @@
     <value>layoutControlItem17</value>
   </data>
   <data name="&gt;&gt;layoutControlItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lcgPayrollMonth.Name" xml:space="preserve">
+    <value>lcgPayrollMonth</value>
+  </data>
+  <data name="&gt;&gt;lcgPayrollMonth.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem46.Name" xml:space="preserve">
+    <value>layoutControlItem46</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem46.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem42.Name" xml:space="preserve">
+    <value>layoutControlItem42</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem42.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;lcgStatutoryRegistrationNos.Name" xml:space="preserve">
@@ -2268,12 +2274,6 @@
   </data>
   <data name="&gt;&gt;behaviorManager1.Type" xml:space="preserve">
     <value>DevExpress.Utils.Behaviors.BehaviorManager, DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup11.Name" xml:space="preserve">
-    <value>layoutControlGroup11</value>
-  </data>
-  <data name="&gt;&gt;layoutControlGroup11.Type" xml:space="preserve">
-    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmCompany</value>

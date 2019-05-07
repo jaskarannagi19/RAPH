@@ -85,9 +85,6 @@
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem46 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem42 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem7 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -105,6 +102,10 @@
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lcgPayrollMonth = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem46 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem42 = new DevExpress.XtraLayout.LayoutControlItem();
             this.lcgStatutoryRegistrationNos = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -136,7 +137,6 @@
             this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
             this.popupMenuFormShortCuts = new DevExpress.XtraBars.PopupMenu(this.components);
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.layoutControlGroup11 = new DevExpress.XtraLayout.LayoutControlGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelContent)).BeginInit();
             this.panelContent.SuspendLayout();
@@ -198,9 +198,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
@@ -218,6 +215,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgPayrollMonth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgStatutoryRegistrationNos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
@@ -249,7 +250,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuFormShortCuts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContent
@@ -726,7 +726,7 @@
             this.emptySpaceItem7,
             this.layoutControlGroup4,
             this.layoutControlGroup5,
-            this.layoutControlGroup11});
+            this.lcgPayrollMonth});
             this.lcgCompany.Location = new System.Drawing.Point(0, 0);
             this.lcgCompany.Name = "lcgCompany";
             this.lcgCompany.Size = new System.Drawing.Size(1161, 531);
@@ -831,39 +831,6 @@
             this.layoutControlItem1.Size = new System.Drawing.Size(633, 30);
             resources.ApplyResources(this.layoutControlItem1, "layoutControlItem1");
             this.layoutControlItem1.TextSize = new System.Drawing.Size(166, 19);
-            // 
-            // layoutControlItem46
-            // 
-            this.layoutControlItem46.Control = this.payRollStartDate;
-            this.layoutControlItem46.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem46.Name = "layoutControlItem46";
-            this.layoutControlItem46.Size = new System.Drawing.Size(294, 30);
-            resources.ApplyResources(this.layoutControlItem46, "layoutControlItem46");
-            this.layoutControlItem46.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem46.TextSize = new System.Drawing.Size(73, 19);
-            this.layoutControlItem46.TextToControlDistance = 5;
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.payRollEndDate;
-            this.layoutControlItem4.Location = new System.Drawing.Point(294, 0);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(294, 30);
-            resources.ApplyResources(this.layoutControlItem4, "layoutControlItem4");
-            this.layoutControlItem4.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(68, 19);
-            this.layoutControlItem4.TextToControlDistance = 5;
-            // 
-            // layoutControlItem42
-            // 
-            this.layoutControlItem42.Control = this.payrollMonthDateEdit;
-            this.layoutControlItem42.Location = new System.Drawing.Point(588, 0);
-            this.layoutControlItem42.Name = "layoutControlItem42";
-            this.layoutControlItem42.Size = new System.Drawing.Size(295, 30);
-            resources.ApplyResources(this.layoutControlItem42, "layoutControlItem42");
-            this.layoutControlItem42.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem42.TextSize = new System.Drawing.Size(91, 19);
-            this.layoutControlItem42.TextToControlDistance = 5;
             // 
             // emptySpaceItem7
             // 
@@ -1025,6 +992,50 @@
             this.layoutControlItem17.Size = new System.Drawing.Size(571, 30);
             resources.ApplyResources(this.layoutControlItem17, "layoutControlItem17");
             this.layoutControlItem17.TextSize = new System.Drawing.Size(166, 19);
+            // 
+            // lcgPayrollMonth
+            // 
+            this.lcgPayrollMonth.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem4,
+            this.layoutControlItem46,
+            this.layoutControlItem42});
+            this.lcgPayrollMonth.Location = new System.Drawing.Point(0, 170);
+            this.lcgPayrollMonth.Name = "lcgPayrollMonth";
+            this.lcgPayrollMonth.Size = new System.Drawing.Size(907, 80);
+            resources.ApplyResources(this.lcgPayrollMonth, "lcgPayrollMonth");
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.payRollEndDate;
+            this.layoutControlItem4.Location = new System.Drawing.Point(294, 0);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(294, 30);
+            resources.ApplyResources(this.layoutControlItem4, "layoutControlItem4");
+            this.layoutControlItem4.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(68, 19);
+            this.layoutControlItem4.TextToControlDistance = 5;
+            // 
+            // layoutControlItem46
+            // 
+            this.layoutControlItem46.Control = this.payRollStartDate;
+            this.layoutControlItem46.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem46.Name = "layoutControlItem46";
+            this.layoutControlItem46.Size = new System.Drawing.Size(294, 30);
+            resources.ApplyResources(this.layoutControlItem46, "layoutControlItem46");
+            this.layoutControlItem46.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem46.TextSize = new System.Drawing.Size(73, 19);
+            this.layoutControlItem46.TextToControlDistance = 5;
+            // 
+            // layoutControlItem42
+            // 
+            this.layoutControlItem42.Control = this.payrollMonthDateEdit;
+            this.layoutControlItem42.Location = new System.Drawing.Point(588, 0);
+            this.layoutControlItem42.Name = "layoutControlItem42";
+            this.layoutControlItem42.Size = new System.Drawing.Size(295, 30);
+            resources.ApplyResources(this.layoutControlItem42, "layoutControlItem42");
+            this.layoutControlItem42.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem42.TextSize = new System.Drawing.Size(91, 19);
+            this.layoutControlItem42.TextToControlDistance = 5;
             // 
             // lcgStatutoryRegistrationNos
             // 
@@ -1310,17 +1321,6 @@
             this.popupMenuFormShortCuts.Manager = this.barManager1;
             this.popupMenuFormShortCuts.Name = "popupMenuFormShortCuts";
             // 
-            // layoutControlGroup11
-            // 
-            this.layoutControlGroup11.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem4,
-            this.layoutControlItem46,
-            this.layoutControlItem42});
-            this.layoutControlGroup11.Location = new System.Drawing.Point(0, 170);
-            this.layoutControlGroup11.Name = "layoutControlGroup11";
-            this.layoutControlGroup11.Size = new System.Drawing.Size(907, 80);
-            resources.ApplyResources(this.layoutControlGroup11, "layoutControlGroup11");
-            // 
             // frmCompany
             // 
             this.Appearance.Options.UseFont = true;
@@ -1392,9 +1392,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
@@ -1412,6 +1409,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgPayrollMonth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgStatutoryRegistrationNos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
@@ -1443,7 +1444,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuFormShortCuts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1556,6 +1556,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private Alit.WinformControls.DateEdit payrollMonthDateEdit;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem42;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup11;
+        private DevExpress.XtraLayout.LayoutControlGroup lcgPayrollMonth;
     }
 }

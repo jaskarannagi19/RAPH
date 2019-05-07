@@ -609,7 +609,7 @@ namespace Vision.WinForm.Navigation
 
         private void btnSettingsInstitue_Payroll_ItemClick(object sender, ItemClickEventArgs e)
         {
-            ShowForm<Reports.Employee.frmRepSalaryReport>(Model.CommonFunctions.ParseInt(e.Item.Tag.ToString()));
+            ShowForm<Settings.frmPayrollMonth>(Model.CommonFunctions.ParseInt(e.Item.Tag.ToString()));
         }
     }
 }

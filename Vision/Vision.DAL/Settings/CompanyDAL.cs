@@ -121,8 +121,11 @@ namespace Vision.DAL.Settings
 				{
 					SaveModel.reuid = Model.CommonProperties.LoginInfo.LoggedinUser.UserID;
 					SaveModel.redt = DateTime.Now;
+                    PayRollMonth.redt = DateTime.Now;
+                    db.tblPayrollMonths.Attach(PayRollMonth);
 					db.tblCompanies.Attach(SaveModel);
 					db.Entry(SaveModel).State = System.Data.Entity.EntityState.Modified;
+                    db.Entry(PayRollMonth).State = System.Data.Entity.EntityState.Modified;
 				}
 
 				//--
