@@ -232,6 +232,28 @@ namespace Vision.DAL.Payroll
                         }).ToList();
             }
         }
+        public List<EarningDeductionImportLookupListModel> GetImportLookupList()
+        {
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
+                byte RecordState_Deleted = (byte)eRecordState.Deleted;
+                return (from r in db.tblEmployeeEarningDeductions
+
+                        where r.rstate != RecordState_Deleted
+                            && r.CompanyID == CommonProperties.LoginInfo.LoggedInCompany.CompanyID
+                        orderby r.EmployeeEarningDeductionName
+
+                        select new EarningDeductionImportLookupListModel()
+                        {
+                            EmployeeEarningDeductionID = r.EmployeeEarningDeductionID,
+                            EmployeeEarningDeductionNo=r.EmployeeEarningDeductionNo,
+                            EmployeeEarningDeductionName = r.EmployeeEarningDeductionName,
+                            EmployeeEarningDeductionTypeId=(eEarningDeductionType)r.EarningDeductionType
+                        }).ToList();
+
+            }
+        }
+
 
         public bool IsDuplicateRecord(string EmployeeEarningDeductionName, long ID)
         {

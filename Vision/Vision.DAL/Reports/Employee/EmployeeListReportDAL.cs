@@ -99,7 +99,7 @@ namespace Vision.DAL.Reports.Employee
                                ls == null || ((DepartmentID == null || ls.EmployeeDepartmentID == DepartmentID.Value) &&
                                (DesignationID == null || ls.EmployeeDesignationID == DesignationID.Value) &&
                                (LocationID == null || ls.LocationID == LocationID.Value)))
-
+                               
                            select new EmployeeListReportModel()
                            {
                                EmployeeID = e.EmployeeID,

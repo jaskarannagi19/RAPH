@@ -30,6 +30,25 @@
         {
             this.components = new System.ComponentModel.Container();
             this.myLayoutControl1 = new Alit.WinformControls.myLayoutControl();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.txtNetSalary = new Alit.WinformControls.TextEdit();
+            this.txtTotalDeduction = new Alit.WinformControls.TextEdit();
+            this.txtGrossSalary = new Alit.WinformControls.TextEdit();
+            this.gridControlPayslipDeduction = new DevExpress.XtraGrid.GridControl();
+            this.PayslipTabDeductionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridViewPayeSlipDeduction = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colItemName2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQty1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUnitName1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAmount1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControlPayslipTabEarning = new DevExpress.XtraGrid.GridControl();
+            this.PayslipTabEarningBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridViewPayeSlipTabEarning = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colItemName1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colQty = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUnitName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAmount = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtPersonalRelief = new Alit.WinformControls.TextEdit();
             this.txtGrossPAYE = new Alit.WinformControls.TextEdit();
             this.txtTotalBasicHRA = new Alit.WinformControls.TextEdit();
@@ -58,7 +77,7 @@
             this.colCostValue = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKRAValuePercentage = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKRAValue = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.txtGrossSalary = new Alit.WinformControls.TextEdit();
+            this.txtTaxableGrossIncome = new Alit.WinformControls.TextEdit();
             this.gcTaxableEarnings = new DevExpress.XtraGrid.GridControl();
             this.PAYETaxableEarningBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gvTaxableEarnings = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -89,7 +108,6 @@
             this.colKRAValue1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lookUpVehicle_NonCashBenefit = new Alit.WinformControls.LookUpEdit();
             this.txtMissedPunchDays = new Alit.WinformControls.TextEdit();
-            this.dateEdit1 = new Alit.WinformControls.DateEdit();
             this.txtDateTitle = new Alit.WinformControls.TextEdit();
             this.gcDeductions = new DevExpress.XtraGrid.GridControl();
             this.employeePayslipDeductionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -112,9 +130,9 @@
             this.txtDoubleOvertimeHours = new Alit.WinformControls.TextEdit();
             this.txtNormalOvertimeHours = new Alit.WinformControls.TextEdit();
             this.lookupEmployee = new Alit.WinformControls.LookUpEdit();
+            this.layoutControlItem37 = new DevExpress.XtraLayout.LayoutControlItem();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.lcgEarnings = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -141,9 +159,7 @@
             this.layoutControlItem33 = new DevExpress.XtraLayout.LayoutControlItem();
             this.lcgPAYE = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem11 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem14 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem31 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -153,20 +169,28 @@
             this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem27 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem12 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem34 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem35 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem13 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lcgPayslip = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem36 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem39 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem38 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem40 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem41 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem22 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.popupMenuFormShortCuts = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
@@ -174,6 +198,17 @@
             this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.myLayoutControl1)).BeginInit();
             this.myLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNetSalary.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotalDeduction.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGrossSalary.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlPayslipDeduction)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PayslipTabDeductionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewPayeSlipDeduction)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlPayslipTabEarning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PayslipTabEarningBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewPayeSlipTabEarning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPersonalRelief.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrossPAYE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotalBasicHRA.Properties)).BeginInit();
@@ -192,7 +227,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcPAYE_NonCashBenefit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PAYENoncashBenefitBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvPAYE_NonCashBenefit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGrossSalary.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTaxableGrossIncome.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcTaxableEarnings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PAYETaxableEarningBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvTaxableEarnings)).BeginInit();
@@ -209,8 +244,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTxtPercNCB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpVehicle_NonCashBenefit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMissedPunchDays.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDateTitle.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDeductions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeePayslipDeductionsBindingSource)).BeginInit();
@@ -229,9 +262,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDoubleOvertimeHours.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNormalOvertimeHours.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookupEmployee.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgEarnings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
@@ -258,9 +291,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgPAYE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem31)).BeginInit();
@@ -270,20 +301,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgPayslip)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuFormShortCuts)).BeginInit();
             this.SuspendLayout();
@@ -293,10 +332,16 @@
             this.panelContent.Controls.Add(this.myLayoutControl1);
             this.panelContent.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panelContent.MaximumSize = new System.Drawing.Size(1250, 0);
-            this.panelContent.Size = new System.Drawing.Size(1250, 716);
+            this.panelContent.Size = new System.Drawing.Size(1250, 465);
             // 
             // myLayoutControl1
             // 
+            this.myLayoutControl1.Controls.Add(this.gridControl2);
+            this.myLayoutControl1.Controls.Add(this.txtNetSalary);
+            this.myLayoutControl1.Controls.Add(this.txtTotalDeduction);
+            this.myLayoutControl1.Controls.Add(this.txtGrossSalary);
+            this.myLayoutControl1.Controls.Add(this.gridControlPayslipDeduction);
+            this.myLayoutControl1.Controls.Add(this.gridControlPayslipTabEarning);
             this.myLayoutControl1.Controls.Add(this.txtPersonalRelief);
             this.myLayoutControl1.Controls.Add(this.txtGrossPAYE);
             this.myLayoutControl1.Controls.Add(this.txtTotalBasicHRA);
@@ -311,7 +356,7 @@
             this.myLayoutControl1.Controls.Add(this.gcPAYE_PAYERelief);
             this.myLayoutControl1.Controls.Add(this.txtTaxableIncome);
             this.myLayoutControl1.Controls.Add(this.gcPAYE_NonCashBenefit);
-            this.myLayoutControl1.Controls.Add(this.txtGrossSalary);
+            this.myLayoutControl1.Controls.Add(this.txtTaxableGrossIncome);
             this.myLayoutControl1.Controls.Add(this.gcTaxableEarnings);
             this.myLayoutControl1.Controls.Add(this.txtHRAAmount);
             this.myLayoutControl1.Controls.Add(this.txtBasicSalary);
@@ -319,7 +364,6 @@
             this.myLayoutControl1.Controls.Add(this.gcNonCashBenefit);
             this.myLayoutControl1.Controls.Add(this.lookUpVehicle_NonCashBenefit);
             this.myLayoutControl1.Controls.Add(this.txtMissedPunchDays);
-            this.myLayoutControl1.Controls.Add(this.dateEdit1);
             this.myLayoutControl1.Controls.Add(this.txtDateTitle);
             this.myLayoutControl1.Controls.Add(this.gcDeductions);
             this.myLayoutControl1.Controls.Add(this.txtLoanInstAmt);
@@ -333,14 +377,246 @@
             this.myLayoutControl1.Controls.Add(this.txtNormalOvertimeHours);
             this.myLayoutControl1.Controls.Add(this.lookupEmployee);
             this.myLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.myLayoutControl1.Location = new System.Drawing.Point(3, 3);
+            this.myLayoutControl1.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem37});
+            this.myLayoutControl1.Location = new System.Drawing.Point(2, 2);
             this.myLayoutControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.myLayoutControl1.Name = "myLayoutControl1";
             this.myLayoutControl1.OptionsView.HighlightFocusedItem = true;
             this.myLayoutControl1.Root = this.Root;
-            this.myLayoutControl1.Size = new System.Drawing.Size(1244, 710);
+            this.myLayoutControl1.Size = new System.Drawing.Size(1246, 461);
             this.myLayoutControl1.TabIndex = 0;
             this.myLayoutControl1.Text = "myLayoutControl1";
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.Location = new System.Drawing.Point(623, 67);
+            this.gridControl2.MainView = this.gridView3;
+            this.gridControl2.MenuManager = this.barManager1;
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(604, 615);
+            this.gridControl2.TabIndex = 53;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView3});
+            // 
+            // gridView3
+            // 
+            this.gridView3.GridControl = this.gridControl2;
+            this.gridView3.Name = "gridView3";
+            // 
+            // txtNetSalary
+            // 
+            this.txtNetSalary.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtNetSalary.EnterMoveNextControl = true;
+            this.txtNetSalary.Location = new System.Drawing.Point(770, 398);
+            this.txtNetSalary.MenuManager = this.barManager1;
+            this.txtNetSalary.Name = "txtNetSalary";
+            this.txtNetSalary.Properties.Appearance.FontSizeDelta = 1;
+            this.txtNetSalary.Properties.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.txtNetSalary.Properties.Appearance.Options.UseFont = true;
+            this.txtNetSalary.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtNetSalary.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.txtNetSalary.Properties.DisplayFormat.FormatString = "n2";
+            this.txtNetSalary.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.txtNetSalary.Properties.ReadOnly = true;
+            this.txtNetSalary.Size = new System.Drawing.Size(447, 24);
+            this.txtNetSalary.StyleController = this.myLayoutControl1;
+            this.txtNetSalary.TabIndex = 57;
+            this.txtNetSalary.TabStop = false;
+            // 
+            // txtTotalDeduction
+            // 
+            this.txtTotalDeduction.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtTotalDeduction.EnterMoveNextControl = true;
+            this.txtTotalDeduction.Location = new System.Drawing.Point(770, 370);
+            this.txtTotalDeduction.MenuManager = this.barManager1;
+            this.txtTotalDeduction.Name = "txtTotalDeduction";
+            this.txtTotalDeduction.Properties.Appearance.FontSizeDelta = 1;
+            this.txtTotalDeduction.Properties.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.txtTotalDeduction.Properties.Appearance.Options.UseFont = true;
+            this.txtTotalDeduction.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtTotalDeduction.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.txtTotalDeduction.Properties.DisplayFormat.FormatString = "n2";
+            this.txtTotalDeduction.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.txtTotalDeduction.Properties.ReadOnly = true;
+            this.txtTotalDeduction.Size = new System.Drawing.Size(447, 24);
+            this.txtTotalDeduction.StyleController = this.myLayoutControl1;
+            this.txtTotalDeduction.TabIndex = 56;
+            this.txtTotalDeduction.TabStop = false;
+            // 
+            // txtGrossSalary
+            // 
+            this.txtGrossSalary.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.txtGrossSalary.EnterMoveNextControl = true;
+            this.txtGrossSalary.Location = new System.Drawing.Point(114, 370);
+            this.txtGrossSalary.MenuManager = this.barManager1;
+            this.txtGrossSalary.Name = "txtGrossSalary";
+            this.txtGrossSalary.Properties.Appearance.FontSizeDelta = 1;
+            this.txtGrossSalary.Properties.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.txtGrossSalary.Properties.Appearance.Options.UseFont = true;
+            this.txtGrossSalary.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtGrossSalary.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.txtGrossSalary.Properties.DisplayFormat.FormatString = "n2";
+            this.txtGrossSalary.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.txtGrossSalary.Properties.ReadOnly = true;
+            this.txtGrossSalary.Size = new System.Drawing.Size(523, 24);
+            this.txtGrossSalary.StyleController = this.myLayoutControl1;
+            this.txtGrossSalary.TabIndex = 55;
+            this.txtGrossSalary.TabStop = false;
+            // 
+            // gridControlPayslipDeduction
+            // 
+            this.gridControlPayslipDeduction.DataSource = this.PayslipTabDeductionBindingSource;
+            this.gridControlPayslipDeduction.Location = new System.Drawing.Point(665, 101);
+            this.gridControlPayslipDeduction.MainView = this.gridViewPayeSlipDeduction;
+            this.gridControlPayslipDeduction.MenuManager = this.barManager1;
+            this.gridControlPayslipDeduction.Name = "gridControlPayslipDeduction";
+            this.gridControlPayslipDeduction.Size = new System.Drawing.Size(552, 265);
+            this.gridControlPayslipDeduction.TabIndex = 54;
+            this.gridControlPayslipDeduction.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewPayeSlipDeduction});
+            // 
+            // PayslipTabDeductionBindingSource
+            // 
+            this.PayslipTabDeductionBindingSource.DataSource = typeof(Vision.Model.Payroll.EmployeePayslip_PayslipTabViewModel);
+            // 
+            // gridViewPayeSlipDeduction
+            // 
+            this.gridViewPayeSlipDeduction.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colItemName2,
+            this.colQty1,
+            this.colUnitName1,
+            this.colAmount1});
+            this.gridViewPayeSlipDeduction.GridControl = this.gridControlPayslipDeduction;
+            this.gridViewPayeSlipDeduction.Name = "gridViewPayeSlipDeduction";
+            this.gridViewPayeSlipDeduction.OptionsBehavior.Editable = false;
+            this.gridViewPayeSlipDeduction.OptionsBehavior.ReadOnly = true;
+            this.gridViewPayeSlipDeduction.OptionsView.ShowGroupPanel = false;
+            // 
+            // colItemName2
+            // 
+            this.colItemName2.FieldName = "Descr";
+            this.colItemName2.Name = "colItemName2";
+            this.colItemName2.Visible = true;
+            this.colItemName2.VisibleIndex = 0;
+            this.colItemName2.Width = 220;
+            // 
+            // colQty1
+            // 
+            this.colQty1.DisplayFormat.FormatString = "n2";
+            this.colQty1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colQty1.FieldName = "Qty";
+            this.colQty1.MaxWidth = 125;
+            this.colQty1.MinWidth = 75;
+            this.colQty1.Name = "colQty1";
+            this.colQty1.Visible = true;
+            this.colQty1.VisibleIndex = 1;
+            this.colQty1.Width = 100;
+            // 
+            // colUnitName1
+            // 
+            this.colUnitName1.FieldName = "UnitName";
+            this.colUnitName1.MaxWidth = 125;
+            this.colUnitName1.MinWidth = 75;
+            this.colUnitName1.Name = "colUnitName1";
+            this.colUnitName1.Visible = true;
+            this.colUnitName1.VisibleIndex = 2;
+            this.colUnitName1.Width = 100;
+            // 
+            // colAmount1
+            // 
+            this.colAmount1.DisplayFormat.FormatString = "n2";
+            this.colAmount1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colAmount1.FieldName = "Amount";
+            this.colAmount1.MaxWidth = 125;
+            this.colAmount1.MinWidth = 75;
+            this.colAmount1.Name = "colAmount1";
+            this.colAmount1.Visible = true;
+            this.colAmount1.VisibleIndex = 3;
+            this.colAmount1.Width = 100;
+            // 
+            // gridControlPayslipTabEarning
+            // 
+            this.gridControlPayslipTabEarning.DataSource = this.PayslipTabEarningBindingSource;
+            this.gridControlPayslipTabEarning.Location = new System.Drawing.Point(29, 101);
+            this.gridControlPayslipTabEarning.MainView = this.gridViewPayeSlipTabEarning;
+            this.gridControlPayslipTabEarning.MenuManager = this.barManager1;
+            this.gridControlPayslipTabEarning.Name = "gridControlPayslipTabEarning";
+            this.gridControlPayslipTabEarning.Size = new System.Drawing.Size(608, 265);
+            this.gridControlPayslipTabEarning.TabIndex = 52;
+            this.gridControlPayslipTabEarning.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewPayeSlipTabEarning});
+            // 
+            // PayslipTabEarningBindingSource
+            // 
+            this.PayslipTabEarningBindingSource.DataSource = typeof(Vision.Model.Payroll.EmployeePayslip_PayslipTabViewModel);
+            // 
+            // gridViewPayeSlipTabEarning
+            // 
+            this.gridViewPayeSlipTabEarning.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colItemName1,
+            this.colQty,
+            this.colUnitName,
+            this.colAmount});
+            this.gridViewPayeSlipTabEarning.GridControl = this.gridControlPayslipTabEarning;
+            this.gridViewPayeSlipTabEarning.Name = "gridViewPayeSlipTabEarning";
+            this.gridViewPayeSlipTabEarning.OptionsBehavior.Editable = false;
+            this.gridViewPayeSlipTabEarning.OptionsBehavior.ReadOnly = true;
+            this.gridViewPayeSlipTabEarning.OptionsView.ShowGroupPanel = false;
+            // 
+            // colItemName1
+            // 
+            this.colItemName1.FieldName = "Descr";
+            this.colItemName1.Name = "colItemName1";
+            this.colItemName1.Visible = true;
+            this.colItemName1.VisibleIndex = 0;
+            this.colItemName1.Width = 275;
+            // 
+            // colQty
+            // 
+            this.colQty.DisplayFormat.FormatString = "n2";
+            this.colQty.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colQty.FieldName = "Qty";
+            this.colQty.MaxWidth = 125;
+            this.colQty.MinWidth = 75;
+            this.colQty.Name = "colQty";
+            this.colQty.Visible = true;
+            this.colQty.VisibleIndex = 1;
+            this.colQty.Width = 100;
+            // 
+            // colUnitName
+            // 
+            this.colUnitName.FieldName = "UnitName";
+            this.colUnitName.MaxWidth = 125;
+            this.colUnitName.MinWidth = 75;
+            this.colUnitName.Name = "colUnitName";
+            this.colUnitName.Visible = true;
+            this.colUnitName.VisibleIndex = 2;
+            this.colUnitName.Width = 100;
+            // 
+            // colAmount
+            // 
+            this.colAmount.DisplayFormat.FormatString = "n2";
+            this.colAmount.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colAmount.FieldName = "Amount";
+            this.colAmount.MaxWidth = 125;
+            this.colAmount.MinWidth = 75;
+            this.colAmount.Name = "colAmount";
+            this.colAmount.Visible = true;
+            this.colAmount.VisibleIndex = 3;
+            this.colAmount.Width = 100;
             // 
             // txtPersonalRelief
             // 
@@ -350,7 +626,7 @@
             0,
             0});
             this.txtPersonalRelief.EnterMoveNextControl = true;
-            this.txtPersonalRelief.Location = new System.Drawing.Point(823, 582);
+            this.txtPersonalRelief.Location = new System.Drawing.Point(835, 386);
             this.txtPersonalRelief.MaximumSize = new System.Drawing.Size(125, 0);
             this.txtPersonalRelief.MenuManager = this.barManager1;
             this.txtPersonalRelief.MinimumSize = new System.Drawing.Size(75, 0);
@@ -359,7 +635,7 @@
             this.txtPersonalRelief.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtPersonalRelief.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtPersonalRelief.Properties.ReadOnly = true;
-            this.txtPersonalRelief.Size = new System.Drawing.Size(125, 22);
+            this.txtPersonalRelief.Size = new System.Drawing.Size(119, 22);
             this.txtPersonalRelief.StyleController = this.myLayoutControl1;
             this.txtPersonalRelief.TabIndex = 51;
             this.txtPersonalRelief.TabStop = false;
@@ -372,7 +648,7 @@
             0,
             0});
             this.txtGrossPAYE.EnterMoveNextControl = true;
-            this.txtGrossPAYE.Location = new System.Drawing.Point(601, 582);
+            this.txtGrossPAYE.Location = new System.Drawing.Point(601, 386);
             this.txtGrossPAYE.MaximumSize = new System.Drawing.Size(125, 0);
             this.txtGrossPAYE.MenuManager = this.barManager1;
             this.txtGrossPAYE.MinimumSize = new System.Drawing.Size(75, 0);
@@ -394,7 +670,7 @@
             0,
             0});
             this.txtTotalBasicHRA.EnterMoveNextControl = true;
-            this.txtTotalBasicHRA.Location = new System.Drawing.Point(367, 121);
+            this.txtTotalBasicHRA.Location = new System.Drawing.Point(367, 96);
             this.txtTotalBasicHRA.MenuManager = this.barManager1;
             this.txtTotalBasicHRA.Name = "txtTotalBasicHRA";
             this.txtTotalBasicHRA.Properties.Appearance.FontSizeDelta = 1;
@@ -414,7 +690,7 @@
             // cmbNSSF
             // 
             this.cmbNSSF.EnterMoveNextControl = true;
-            this.cmbNSSF.Location = new System.Drawing.Point(538, 67);
+            this.cmbNSSF.Location = new System.Drawing.Point(538, 68);
             this.cmbNSSF.MaximumSize = new System.Drawing.Size(150, 0);
             this.cmbNSSF.MinimumSize = new System.Drawing.Size(75, 0);
             this.cmbNSSF.Name = "cmbNSSF";
@@ -424,14 +700,14 @@
             "Not Applicable",
             "Applicable"});
             this.cmbNSSF.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbNSSF.Size = new System.Drawing.Size(140, 22);
+            this.cmbNSSF.Size = new System.Drawing.Size(138, 22);
             this.cmbNSSF.StyleController = this.myLayoutControl1;
             this.cmbNSSF.TabIndex = 48;
             // 
             // cmbNHIFApplicable
             // 
             this.cmbNHIFApplicable.EnterMoveNextControl = true;
-            this.cmbNHIFApplicable.Location = new System.Drawing.Point(344, 67);
+            this.cmbNHIFApplicable.Location = new System.Drawing.Point(344, 68);
             this.cmbNHIFApplicable.MaximumSize = new System.Drawing.Size(150, 0);
             this.cmbNHIFApplicable.MinimumSize = new System.Drawing.Size(75, 0);
             this.cmbNHIFApplicable.Name = "cmbNHIFApplicable";
@@ -448,7 +724,7 @@
             // txtIncomeType
             // 
             this.txtIncomeType.EnterMoveNextControl = true;
-            this.txtIncomeType.Location = new System.Drawing.Point(96, 67);
+            this.txtIncomeType.Location = new System.Drawing.Point(96, 68);
             this.txtIncomeType.Name = "txtIncomeType";
             this.txtIncomeType.Properties.ReadOnly = true;
             this.txtIncomeType.Size = new System.Drawing.Size(162, 22);
@@ -463,7 +739,7 @@
             0,
             0});
             this.txtPFValue.EnterMoveNextControl = true;
-            this.txtPFValue.Location = new System.Drawing.Point(1007, 660);
+            this.txtPFValue.Location = new System.Drawing.Point(1013, 412);
             this.txtPFValue.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtPFValue.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtPFValue.Name = "txtPFValue";
@@ -485,17 +761,15 @@
             0,
             0});
             this.txtNSSFValue.EnterMoveNextControl = true;
-            this.txtNSSFValue.Location = new System.Drawing.Point(1007, 608);
+            this.txtNSSFValue.Location = new System.Drawing.Point(601, 412);
             this.txtNSSFValue.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtNSSFValue.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtNSSFValue.Name = "txtNSSFValue";
-            this.txtNSSFValue.Properties.Appearance.Options.UseTextOptions = true;
-            this.txtNSSFValue.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtNSSFValue.Properties.Mask.EditMask = "n2";
             this.txtNSSFValue.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNSSFValue.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtNSSFValue.Properties.ReadOnly = true;
-            this.txtNSSFValue.Size = new System.Drawing.Size(150, 22);
+            this.txtNSSFValue.Size = new System.Drawing.Size(125, 22);
             this.txtNSSFValue.StyleController = this.myLayoutControl1;
             this.txtNSSFValue.TabIndex = 44;
             // 
@@ -507,17 +781,15 @@
             0,
             0});
             this.txtNHIFValue.EnterMoveNextControl = true;
-            this.txtNHIFValue.Location = new System.Drawing.Point(1007, 634);
+            this.txtNHIFValue.Location = new System.Drawing.Point(835, 412);
             this.txtNHIFValue.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtNHIFValue.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtNHIFValue.Name = "txtNHIFValue";
-            this.txtNHIFValue.Properties.Appearance.Options.UseTextOptions = true;
-            this.txtNHIFValue.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.txtNHIFValue.Properties.Mask.EditMask = "n2";
             this.txtNHIFValue.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtNHIFValue.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtNHIFValue.Properties.ReadOnly = true;
-            this.txtNHIFValue.Size = new System.Drawing.Size(150, 22);
+            this.txtNHIFValue.Size = new System.Drawing.Size(119, 22);
             this.txtNHIFValue.StyleController = this.myLayoutControl1;
             this.txtNHIFValue.TabIndex = 43;
             // 
@@ -529,7 +801,7 @@
             0,
             0});
             this.txtPAYEValue.EnterMoveNextControl = true;
-            this.txtPAYEValue.Location = new System.Drawing.Point(1007, 582);
+            this.txtPAYEValue.Location = new System.Drawing.Point(1013, 386);
             this.txtPAYEValue.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtPAYEValue.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtPAYEValue.Name = "txtPAYEValue";
@@ -551,7 +823,7 @@
             0,
             0});
             this.txtNetTaxableIncome.EnterMoveNextControl = true;
-            this.txtNetTaxableIncome.Location = new System.Drawing.Point(1007, 554);
+            this.txtNetTaxableIncome.Location = new System.Drawing.Point(1013, 358);
             this.txtNetTaxableIncome.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtNetTaxableIncome.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtNetTaxableIncome.Name = "txtNetTaxableIncome";
@@ -572,11 +844,11 @@
             // gcPAYE_PAYERelief
             // 
             this.gcPAYE_PAYERelief.DataSource = this.PAYEReliefeBindingSource;
-            this.gcPAYE_PAYERelief.Location = new System.Drawing.Point(521, 309);
+            this.gcPAYE_PAYERelief.Location = new System.Drawing.Point(521, 225);
             this.gcPAYE_PAYERelief.MainView = this.gvPAYE_PAYERelief;
-            this.gcPAYE_PAYERelief.MinimumSize = new System.Drawing.Size(300, 100);
+            this.gcPAYE_PAYERelief.MinimumSize = new System.Drawing.Size(300, 125);
             this.gcPAYE_PAYERelief.Name = "gcPAYE_PAYERelief";
-            this.gcPAYE_PAYERelief.Size = new System.Drawing.Size(636, 241);
+            this.gcPAYE_PAYERelief.Size = new System.Drawing.Size(642, 129);
             this.gcPAYE_PAYERelief.TabIndex = 40;
             this.gcPAYE_PAYERelief.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvPAYE_PAYERelief});
@@ -596,7 +868,6 @@
             this.gvPAYE_PAYERelief.Name = "gvPAYE_PAYERelief";
             this.gvPAYE_PAYERelief.OptionsBehavior.Editable = false;
             this.gvPAYE_PAYERelief.OptionsBehavior.ReadOnly = true;
-            this.gvPAYE_PAYERelief.OptionsView.ShowFooter = true;
             this.gvPAYE_PAYERelief.OptionsView.ShowGroupPanel = false;
             this.gvPAYE_PAYERelief.OptionsView.ShowViewCaption = true;
             this.gvPAYE_PAYERelief.ViewCaption = "PAYE Relief";
@@ -639,7 +910,7 @@
             0,
             0});
             this.txtTaxableIncome.EnterMoveNextControl = true;
-            this.txtTaxableIncome.Location = new System.Drawing.Point(1007, 283);
+            this.txtTaxableIncome.Location = new System.Drawing.Point(1013, 199);
             this.txtTaxableIncome.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtTaxableIncome.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtTaxableIncome.Name = "txtTaxableIncome";
@@ -659,11 +930,11 @@
             // gcPAYE_NonCashBenefit
             // 
             this.gcPAYE_NonCashBenefit.DataSource = this.PAYENoncashBenefitBindingSource;
-            this.gcPAYE_NonCashBenefit.Location = new System.Drawing.Point(521, 67);
+            this.gcPAYE_NonCashBenefit.Location = new System.Drawing.Point(521, 68);
             this.gcPAYE_NonCashBenefit.MainView = this.gvPAYE_NonCashBenefit;
-            this.gcPAYE_NonCashBenefit.MinimumSize = new System.Drawing.Size(300, 100);
+            this.gcPAYE_NonCashBenefit.MinimumSize = new System.Drawing.Size(300, 125);
             this.gcPAYE_NonCashBenefit.Name = "gcPAYE_NonCashBenefit";
-            this.gcPAYE_NonCashBenefit.Size = new System.Drawing.Size(636, 212);
+            this.gcPAYE_NonCashBenefit.Size = new System.Drawing.Size(642, 127);
             this.gcPAYE_NonCashBenefit.TabIndex = 38;
             this.gcPAYE_NonCashBenefit.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvPAYE_NonCashBenefit});
@@ -685,7 +956,6 @@
             this.gvPAYE_NonCashBenefit.Name = "gvPAYE_NonCashBenefit";
             this.gvPAYE_NonCashBenefit.OptionsBehavior.Editable = false;
             this.gvPAYE_NonCashBenefit.OptionsBehavior.ReadOnly = true;
-            this.gvPAYE_NonCashBenefit.OptionsView.ShowFooter = true;
             this.gvPAYE_NonCashBenefit.OptionsView.ShowGroupPanel = false;
             this.gvPAYE_NonCashBenefit.OptionsView.ShowViewCaption = true;
             this.gvPAYE_NonCashBenefit.ViewCaption = "Non Cash Benefits";
@@ -746,40 +1016,41 @@
             this.colKRAValue.VisibleIndex = 3;
             this.colKRAValue.Width = 100;
             // 
-            // txtGrossSalary
+            // txtTaxableGrossIncome
             // 
-            this.txtGrossSalary.EditValue = new decimal(new int[] {
+            this.txtTaxableGrossIncome.EditValue = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.txtGrossSalary.EnterMoveNextControl = true;
-            this.txtGrossSalary.Location = new System.Drawing.Point(367, 660);
-            this.txtGrossSalary.MaximumSize = new System.Drawing.Size(150, 0);
-            this.txtGrossSalary.MinimumSize = new System.Drawing.Size(75, 0);
-            this.txtGrossSalary.Name = "txtGrossSalary";
-            this.txtGrossSalary.Properties.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            this.txtGrossSalary.Properties.Appearance.Options.UseFont = true;
-            this.txtGrossSalary.Properties.Appearance.Options.UseTextOptions = true;
-            this.txtGrossSalary.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.txtGrossSalary.Properties.Mask.EditMask = "n2";
-            this.txtGrossSalary.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtGrossSalary.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtGrossSalary.Properties.ReadOnly = true;
-            this.txtGrossSalary.Size = new System.Drawing.Size(150, 22);
-            this.txtGrossSalary.StyleController = this.myLayoutControl1;
-            this.txtGrossSalary.TabIndex = 37;
-            this.txtGrossSalary.TabStop = false;
+            this.txtTaxableGrossIncome.EnterMoveNextControl = true;
+            this.txtTaxableGrossIncome.Location = new System.Drawing.Point(367, 410);
+            this.txtTaxableGrossIncome.MaximumSize = new System.Drawing.Size(150, 0);
+            this.txtTaxableGrossIncome.MinimumSize = new System.Drawing.Size(75, 0);
+            this.txtTaxableGrossIncome.Name = "txtTaxableGrossIncome";
+            this.txtTaxableGrossIncome.Properties.Appearance.FontSizeDelta = 1;
+            this.txtTaxableGrossIncome.Properties.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.txtTaxableGrossIncome.Properties.Appearance.Options.UseFont = true;
+            this.txtTaxableGrossIncome.Properties.Appearance.Options.UseTextOptions = true;
+            this.txtTaxableGrossIncome.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.txtTaxableGrossIncome.Properties.Mask.EditMask = "n2";
+            this.txtTaxableGrossIncome.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtTaxableGrossIncome.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtTaxableGrossIncome.Properties.ReadOnly = true;
+            this.txtTaxableGrossIncome.Size = new System.Drawing.Size(150, 24);
+            this.txtTaxableGrossIncome.StyleController = this.myLayoutControl1;
+            this.txtTaxableGrossIncome.TabIndex = 37;
+            this.txtTaxableGrossIncome.TabStop = false;
             // 
             // gcTaxableEarnings
             // 
             this.gcTaxableEarnings.DataSource = this.PAYETaxableEarningBindingSource;
-            this.gcTaxableEarnings.Location = new System.Drawing.Point(17, 149);
+            this.gcTaxableEarnings.Location = new System.Drawing.Point(17, 124);
             this.gcTaxableEarnings.MainView = this.gvTaxableEarnings;
             this.gcTaxableEarnings.MaximumSize = new System.Drawing.Size(500, 0);
             this.gcTaxableEarnings.MinimumSize = new System.Drawing.Size(300, 100);
             this.gcTaxableEarnings.Name = "gcTaxableEarnings";
-            this.gcTaxableEarnings.Size = new System.Drawing.Size(500, 507);
+            this.gcTaxableEarnings.Size = new System.Drawing.Size(500, 282);
             this.gcTaxableEarnings.TabIndex = 36;
             this.gcTaxableEarnings.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvTaxableEarnings});
@@ -830,7 +1101,7 @@
             0,
             0});
             this.txtHRAAmount.EnterMoveNextControl = true;
-            this.txtHRAAmount.Location = new System.Drawing.Point(367, 95);
+            this.txtHRAAmount.Location = new System.Drawing.Point(122, 96);
             this.txtHRAAmount.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtHRAAmount.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtHRAAmount.Name = "txtHRAAmount";
@@ -840,7 +1111,7 @@
             this.txtHRAAmount.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtHRAAmount.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtHRAAmount.Properties.ReadOnly = true;
-            this.txtHRAAmount.Size = new System.Drawing.Size(150, 22);
+            this.txtHRAAmount.Size = new System.Drawing.Size(136, 22);
             this.txtHRAAmount.StyleController = this.myLayoutControl1;
             this.txtHRAAmount.TabIndex = 35;
             // 
@@ -852,7 +1123,7 @@
             0,
             0});
             this.txtBasicSalary.EnterMoveNextControl = true;
-            this.txtBasicSalary.Location = new System.Drawing.Point(367, 67);
+            this.txtBasicSalary.Location = new System.Drawing.Point(367, 68);
             this.txtBasicSalary.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtBasicSalary.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtBasicSalary.Name = "txtBasicSalary";
@@ -872,14 +1143,14 @@
             // gcPAYERelief
             // 
             this.gcPAYERelief.DataSource = this.employeePayslipPAYEReliefeViewModelBindingSource;
-            this.gcPAYERelief.Location = new System.Drawing.Point(721, 93);
+            this.gcPAYERelief.Location = new System.Drawing.Point(721, 94);
             this.gcPAYERelief.MainView = this.gvPAYERelief;
             this.gcPAYERelief.MaximumSize = new System.Drawing.Size(500, 0);
             this.gcPAYERelief.MinimumSize = new System.Drawing.Size(300, 0);
             this.gcPAYERelief.Name = "gcPAYERelief";
             this.gcPAYERelief.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTxtReleifAmount});
-            this.gcPAYERelief.Size = new System.Drawing.Size(500, 589);
+            this.gcPAYERelief.Size = new System.Drawing.Size(500, 340);
             this.gcPAYERelief.TabIndex = 33;
             this.gcPAYERelief.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvPAYERelief});
@@ -980,7 +1251,7 @@
             // gcNonCashBenefit
             // 
             this.gcNonCashBenefit.DataSource = this.employeePayslipNoncashBenefitViewModelBindingSource;
-            this.gcNonCashBenefit.Location = new System.Drawing.Point(17, 93);
+            this.gcNonCashBenefit.Location = new System.Drawing.Point(17, 94);
             this.gcNonCashBenefit.MainView = this.gvNonCashBenefit;
             this.gcNonCashBenefit.MaximumSize = new System.Drawing.Size(700, 0);
             this.gcNonCashBenefit.MinimumSize = new System.Drawing.Size(500, 0);
@@ -988,7 +1259,7 @@
             this.gcNonCashBenefit.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTxtAmtNCB,
             this.repositoryItemTxtPercNCB});
-            this.gcNonCashBenefit.Size = new System.Drawing.Size(700, 589);
+            this.gcNonCashBenefit.Size = new System.Drawing.Size(700, 340);
             this.gcNonCashBenefit.TabIndex = 32;
             this.gcNonCashBenefit.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvNonCashBenefit});
@@ -1006,7 +1277,7 @@
             this.colCostValue1,
             this.colKRAValuePercentage1,
             this.colKRAValue1});
-            this.gvNonCashBenefit.CustomizationFormBounds = new System.Drawing.Rectangle(677, 468, 258, 261);
+            this.gvNonCashBenefit.CustomizationFormBounds = new System.Drawing.Rectangle(677, 207, 258, 261);
             this.gvNonCashBenefit.GridControl = this.gcNonCashBenefit;
             this.gvNonCashBenefit.Name = "gvNonCashBenefit";
             this.gvNonCashBenefit.OptionsBehavior.FocusLeaveOnTab = true;
@@ -1119,12 +1390,13 @@
             // lookUpVehicle_NonCashBenefit
             // 
             this.lookUpVehicle_NonCashBenefit.EnterMoveNextControl = true;
-            this.lookUpVehicle_NonCashBenefit.Location = new System.Drawing.Point(65, 67);
+            this.lookUpVehicle_NonCashBenefit.Location = new System.Drawing.Point(65, 68);
             this.lookUpVehicle_NonCashBenefit.MaximumSize = new System.Drawing.Size(500, 0);
             this.lookUpVehicle_NonCashBenefit.Name = "lookUpVehicle_NonCashBenefit";
             this.lookUpVehicle_NonCashBenefit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpVehicle_NonCashBenefit.Properties.NullText = "Select";
+            this.lookUpVehicle_NonCashBenefit.Properties.PopupWidth = 500;
             this.lookUpVehicle_NonCashBenefit.Size = new System.Drawing.Size(241, 22);
             this.lookUpVehicle_NonCashBenefit.StyleController = this.myLayoutControl1;
             this.lookUpVehicle_NonCashBenefit.TabIndex = 30;
@@ -1132,13 +1404,8 @@
             // 
             // txtMissedPunchDays
             // 
-            this.txtMissedPunchDays.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
             this.txtMissedPunchDays.EnterMoveNextControl = true;
-            this.txtMissedPunchDays.Location = new System.Drawing.Point(481, 93);
+            this.txtMissedPunchDays.Location = new System.Drawing.Point(481, 94);
             this.txtMissedPunchDays.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtMissedPunchDays.Name = "txtMissedPunchDays";
             this.txtMissedPunchDays.Properties.Appearance.Options.UseTextOptions = true;
@@ -1146,34 +1413,23 @@
             this.txtMissedPunchDays.Properties.Mask.EditMask = "n2";
             this.txtMissedPunchDays.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.txtMissedPunchDays.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtMissedPunchDays.Properties.NullText = "[Add in Absent]";
+            this.txtMissedPunchDays.Properties.ReadOnly = true;
             this.txtMissedPunchDays.Size = new System.Drawing.Size(150, 22);
             this.txtMissedPunchDays.StyleController = this.myLayoutControl1;
             this.txtMissedPunchDays.TabIndex = 29;
-            // 
-            // dateEdit1
-            // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.EnterMoveNextControl = true;
-            this.dateEdit1.Location = new System.Drawing.Point(870, 5);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret;
-            this.dateEdit1.Size = new System.Drawing.Size(369, 22);
-            this.dateEdit1.StyleController = this.myLayoutControl1;
-            this.dateEdit1.TabIndex = 28;
-            this.dateEdit1.EditValueChanged += new System.EventHandler(this.dateEdit1_EditValueChanged);
+            this.txtMissedPunchDays.TabStop = false;
             // 
             // txtDateTitle
             // 
             this.txtDateTitle.EnterMoveNextControl = true;
-            this.txtDateTitle.Location = new System.Drawing.Point(72, 5);
+            this.txtDateTitle.Location = new System.Drawing.Point(69, 5);
             this.txtDateTitle.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtDateTitle.MaximumSize = new System.Drawing.Size(150, 0);
+            this.txtDateTitle.MinimumSize = new System.Drawing.Size(75, 0);
             this.txtDateTitle.Name = "txtDateTitle";
             this.txtDateTitle.Properties.ReadOnly = true;
-            this.txtDateTitle.Size = new System.Drawing.Size(267, 22);
+            this.txtDateTitle.Size = new System.Drawing.Size(150, 22);
             this.txtDateTitle.StyleController = this.myLayoutControl1;
             this.txtDateTitle.TabIndex = 27;
             this.txtDateTitle.TabStop = false;
@@ -1182,14 +1438,14 @@
             // 
             this.gcDeductions.DataSource = this.employeePayslipDeductionsBindingSource;
             this.gcDeductions.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.gcDeductions.Location = new System.Drawing.Point(17, 119);
+            this.gcDeductions.Location = new System.Drawing.Point(17, 120);
             this.gcDeductions.MainView = this.gvDeductions;
             this.gcDeductions.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.gcDeductions.MaximumSize = new System.Drawing.Size(500, 0);
             this.gcDeductions.Name = "gcDeductions";
             this.gcDeductions.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTxtAmt_Deduction});
-            this.gcDeductions.Size = new System.Drawing.Size(388, 563);
+            this.gcDeductions.Size = new System.Drawing.Size(388, 314);
             this.gcDeductions.TabIndex = 22;
             this.gcDeductions.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvDeductions});
@@ -1262,7 +1518,7 @@
             0,
             0});
             this.txtLoanInstAmt.EnterMoveNextControl = true;
-            this.txtLoanInstAmt.Location = new System.Drawing.Point(172, 93);
+            this.txtLoanInstAmt.Location = new System.Drawing.Point(172, 94);
             this.txtLoanInstAmt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtLoanInstAmt.MaximumSize = new System.Drawing.Size(233, 0);
             this.txtLoanInstAmt.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1284,7 +1540,7 @@
             0,
             0});
             this.txtLateDays.EnterMoveNextControl = true;
-            this.txtLateDays.Location = new System.Drawing.Point(172, 67);
+            this.txtLateDays.Location = new System.Drawing.Point(172, 68);
             this.txtLateDays.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtLateDays.MaximumSize = new System.Drawing.Size(233, 0);
             this.txtLateDays.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1302,14 +1558,14 @@
             // 
             this.gcEarnings.DataSource = this.employeePayslipEarningsBindingSource;
             this.gcEarnings.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.gcEarnings.Location = new System.Drawing.Point(17, 171);
+            this.gcEarnings.Location = new System.Drawing.Point(17, 172);
             this.gcEarnings.MainView = this.gvEarnings;
             this.gcEarnings.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.gcEarnings.MaximumSize = new System.Drawing.Size(500, 0);
             this.gcEarnings.Name = "gcEarnings";
             this.gcEarnings.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTxtAmt});
-            this.gcEarnings.Size = new System.Drawing.Size(500, 511);
+            this.gcEarnings.Size = new System.Drawing.Size(500, 262);
             this.gcEarnings.TabIndex = 18;
             this.gcEarnings.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvEarnings});
@@ -1384,7 +1640,7 @@
             0,
             0});
             this.txtWeekendWorkedDays.EnterMoveNextControl = true;
-            this.txtWeekendWorkedDays.Location = new System.Drawing.Point(172, 145);
+            this.txtWeekendWorkedDays.Location = new System.Drawing.Point(172, 146);
             this.txtWeekendWorkedDays.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtWeekendWorkedDays.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtWeekendWorkedDays.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1406,7 +1662,7 @@
             0,
             0});
             this.txtLeaveEncashmentDays.EnterMoveNextControl = true;
-            this.txtLeaveEncashmentDays.Location = new System.Drawing.Point(481, 119);
+            this.txtLeaveEncashmentDays.Location = new System.Drawing.Point(481, 120);
             this.txtLeaveEncashmentDays.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtLeaveEncashmentDays.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtLeaveEncashmentDays.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1428,7 +1684,7 @@
             0,
             0});
             this.txtNoticePayDays.EnterMoveNextControl = true;
-            this.txtNoticePayDays.Location = new System.Drawing.Point(172, 119);
+            this.txtNoticePayDays.Location = new System.Drawing.Point(172, 120);
             this.txtNoticePayDays.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNoticePayDays.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtNoticePayDays.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1450,7 +1706,7 @@
             0,
             0});
             this.txtAbsemtDays.EnterMoveNextControl = true;
-            this.txtAbsemtDays.Location = new System.Drawing.Point(172, 93);
+            this.txtAbsemtDays.Location = new System.Drawing.Point(172, 94);
             this.txtAbsemtDays.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtAbsemtDays.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtAbsemtDays.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1472,7 +1728,7 @@
             0,
             0});
             this.txtDoubleOvertimeHours.EnterMoveNextControl = true;
-            this.txtDoubleOvertimeHours.Location = new System.Drawing.Point(481, 67);
+            this.txtDoubleOvertimeHours.Location = new System.Drawing.Point(481, 68);
             this.txtDoubleOvertimeHours.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtDoubleOvertimeHours.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtDoubleOvertimeHours.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1494,7 +1750,7 @@
             0,
             0});
             this.txtNormalOvertimeHours.EnterMoveNextControl = true;
-            this.txtNormalOvertimeHours.Location = new System.Drawing.Point(172, 67);
+            this.txtNormalOvertimeHours.Location = new System.Drawing.Point(172, 68);
             this.txtNormalOvertimeHours.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNormalOvertimeHours.MaximumSize = new System.Drawing.Size(150, 0);
             this.txtNormalOvertimeHours.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1511,7 +1767,7 @@
             // lookupEmployee
             // 
             this.lookupEmployee.EnterMoveNextControl = true;
-            this.lookupEmployee.Location = new System.Drawing.Point(410, 5);
+            this.lookupEmployee.Location = new System.Drawing.Point(290, 5);
             this.lookupEmployee.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.lookupEmployee.MaximumSize = new System.Drawing.Size(389, 0);
             this.lookupEmployee.MinimumSize = new System.Drawing.Size(78, 0);
@@ -1526,6 +1782,15 @@
             this.lookupEmployee.EditValueChanged += new System.EventHandler(this.lookupEmployee_EditValueChanged);
             this.lookupEmployee.Validating += new System.ComponentModel.CancelEventHandler(this.lookupEmployee_Validating);
             // 
+            // layoutControlItem37
+            // 
+            this.layoutControlItem37.Control = this.gridControl2;
+            this.layoutControlItem37.Location = new System.Drawing.Point(606, 0);
+            this.layoutControlItem37.Name = "layoutControlItem37";
+            this.layoutControlItem37.Size = new System.Drawing.Size(608, 619);
+            this.layoutControlItem37.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem37.TextVisible = false;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -1534,34 +1799,26 @@
             this.tabbedControlGroup1,
             this.emptySpaceItem3,
             this.layoutControlItem21,
-            this.layoutControlItem22,
             this.layoutControlItem1});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(3, 3, 3, 3);
-            this.Root.Size = new System.Drawing.Size(1244, 710);
+            this.Root.Size = new System.Drawing.Size(1246, 461);
             this.Root.TextVisible = false;
             // 
             // tabbedControlGroup1
             // 
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 26);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
-            this.tabbedControlGroup1.SelectedTabPage = this.lcgPAYE;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(1238, 667);
+            this.tabbedControlGroup1.SelectedTabPage = this.lcgEarnings;
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(1240, 419);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.lcgEarnings,
             this.lcgDeductions,
             this.lcgNonCashBenefit,
             this.lcgPAYE,
-            this.layoutControlGroup2});
+            this.lcgPayslip});
             this.tabbedControlGroup1.Text = "Payslip";
             this.tabbedControlGroup1.SelectedPageChanged += new DevExpress.XtraLayout.LayoutTabPageChangedEventHandler(this.tabbedControlGroup1_SelectedPageChanged);
-            // 
-            // layoutControlGroup2
-            // 
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1214, 619);
-            this.layoutControlGroup2.Text = "Payslip";
             // 
             // lcgEarnings
             // 
@@ -1579,7 +1836,7 @@
             this.layoutControlItem7});
             this.lcgEarnings.Location = new System.Drawing.Point(0, 0);
             this.lcgEarnings.Name = "lcgEarnings";
-            this.lcgEarnings.Size = new System.Drawing.Size(1214, 619);
+            this.lcgEarnings.Size = new System.Drawing.Size(1216, 370);
             this.lcgEarnings.Text = "Earnings";
             // 
             // layoutControlItem10
@@ -1596,7 +1853,7 @@
             this.layoutControlItem11.Control = this.gcEarnings;
             this.layoutControlItem11.Location = new System.Drawing.Point(0, 104);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(504, 515);
+            this.layoutControlItem11.Size = new System.Drawing.Size(504, 266);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
             // 
@@ -1623,7 +1880,7 @@
             this.emptySpaceItem4.AllowHotTrack = false;
             this.emptySpaceItem4.Location = new System.Drawing.Point(504, 104);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(710, 515);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(712, 266);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem8
@@ -1657,7 +1914,7 @@
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(618, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(596, 104);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(598, 104);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem6
@@ -1687,7 +1944,7 @@
             this.emptySpaceItem8});
             this.lcgDeductions.Location = new System.Drawing.Point(0, 0);
             this.lcgDeductions.Name = "lcgDeductions";
-            this.lcgDeductions.Size = new System.Drawing.Size(1214, 619);
+            this.lcgDeductions.Size = new System.Drawing.Size(1216, 370);
             this.lcgDeductions.Text = "Deductions";
             // 
             // layoutControlItem13
@@ -1713,7 +1970,7 @@
             this.layoutControlItem16.Control = this.gcDeductions;
             this.layoutControlItem16.Location = new System.Drawing.Point(0, 52);
             this.layoutControlItem16.Name = "layoutControlItem16";
-            this.layoutControlItem16.Size = new System.Drawing.Size(392, 567);
+            this.layoutControlItem16.Size = new System.Drawing.Size(392, 318);
             this.layoutControlItem16.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem16.TextVisible = false;
             // 
@@ -1722,7 +1979,7 @@
             this.emptySpaceItem8.AllowHotTrack = false;
             this.emptySpaceItem8.Location = new System.Drawing.Point(392, 0);
             this.emptySpaceItem8.Name = "emptySpaceItem8";
-            this.emptySpaceItem8.Size = new System.Drawing.Size(822, 619);
+            this.emptySpaceItem8.Size = new System.Drawing.Size(824, 370);
             this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
             // 
             // lcgNonCashBenefit
@@ -1736,7 +1993,7 @@
             this.layoutControlItem33});
             this.lcgNonCashBenefit.Location = new System.Drawing.Point(0, 0);
             this.lcgNonCashBenefit.Name = "lcgNonCashBenefit";
-            this.lcgNonCashBenefit.Size = new System.Drawing.Size(1214, 619);
+            this.lcgNonCashBenefit.Size = new System.Drawing.Size(1216, 370);
             this.lcgNonCashBenefit.Text = "Non Cash Benefits";
             // 
             // layoutControlItem12
@@ -1744,7 +2001,7 @@
             this.layoutControlItem12.Control = this.gcNonCashBenefit;
             this.layoutControlItem12.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(704, 593);
+            this.layoutControlItem12.Size = new System.Drawing.Size(704, 344);
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem12.TextVisible = false;
             // 
@@ -1753,16 +2010,16 @@
             this.layoutControlItem5.Control = this.gcPAYERelief;
             this.layoutControlItem5.Location = new System.Drawing.Point(704, 26);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(510, 593);
+            this.layoutControlItem5.Size = new System.Drawing.Size(512, 344);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
             // emptySpaceItem5
             // 
             this.emptySpaceItem5.AllowHotTrack = false;
-            this.emptySpaceItem5.Location = new System.Drawing.Point(665, 0);
+            this.emptySpaceItem5.Location = new System.Drawing.Point(663, 0);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(549, 26);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(553, 26);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem4
@@ -1792,7 +2049,7 @@
             this.layoutControlItem33.Control = this.cmbNSSF;
             this.layoutControlItem33.Location = new System.Drawing.Point(481, 0);
             this.layoutControlItem33.Name = "layoutControlItem33";
-            this.layoutControlItem33.Size = new System.Drawing.Size(184, 26);
+            this.layoutControlItem33.Size = new System.Drawing.Size(182, 26);
             this.layoutControlItem33.Text = "NSSF";
             this.layoutControlItem33.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem33.TextSize = new System.Drawing.Size(35, 16);
@@ -1802,18 +2059,17 @@
             // 
             this.lcgPAYE.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem17,
-            this.layoutControlItem18,
             this.layoutControlItem19,
-            this.emptySpaceItem11,
             this.layoutControlItem20,
             this.emptySpaceItem14,
             this.layoutControlItem31,
             this.emptySpaceItem10,
             this.layoutControlGroup1,
-            this.layoutControlItem2});
+            this.layoutControlItem2,
+            this.layoutControlItem18});
             this.lcgPAYE.Location = new System.Drawing.Point(0, 0);
             this.lcgPAYE.Name = "lcgPAYE";
-            this.lcgPAYE.Size = new System.Drawing.Size(1214, 619);
+            this.lcgPAYE.Size = new System.Drawing.Size(1216, 370);
             this.lcgPAYE.Text = "PAYE";
             // 
             // layoutControlItem17
@@ -1829,53 +2085,34 @@
             this.layoutControlItem17.TextSize = new System.Drawing.Size(100, 16);
             this.layoutControlItem17.TextToControlDistance = 5;
             // 
-            // layoutControlItem18
-            // 
-            this.layoutControlItem18.Control = this.txtHRAAmount;
-            this.layoutControlItem18.Location = new System.Drawing.Point(245, 28);
-            this.layoutControlItem18.Name = "layoutControlItem18";
-            this.layoutControlItem18.Size = new System.Drawing.Size(259, 26);
-            this.layoutControlItem18.Text = "HRA";
-            this.layoutControlItem18.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem18.TextSize = new System.Drawing.Size(100, 16);
-            this.layoutControlItem18.TextToControlDistance = 5;
-            // 
             // layoutControlItem19
             // 
             this.layoutControlItem19.Control = this.gcTaxableEarnings;
-            this.layoutControlItem19.Location = new System.Drawing.Point(0, 82);
+            this.layoutControlItem19.Location = new System.Drawing.Point(0, 56);
             this.layoutControlItem19.Name = "layoutControlItem19";
-            this.layoutControlItem19.Size = new System.Drawing.Size(504, 511);
+            this.layoutControlItem19.Size = new System.Drawing.Size(504, 286);
             this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem19.TextVisible = false;
-            // 
-            // emptySpaceItem11
-            // 
-            this.emptySpaceItem11.AllowHotTrack = false;
-            this.emptySpaceItem11.Location = new System.Drawing.Point(0, 28);
-            this.emptySpaceItem11.Name = "emptySpaceItem11";
-            this.emptySpaceItem11.Size = new System.Drawing.Size(245, 54);
-            this.emptySpaceItem11.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem20
             // 
             this.layoutControlItem20.AppearanceItemCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.layoutControlItem20.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem20.Control = this.txtGrossSalary;
-            this.layoutControlItem20.Location = new System.Drawing.Point(265, 593);
+            this.layoutControlItem20.Control = this.txtTaxableGrossIncome;
+            this.layoutControlItem20.Location = new System.Drawing.Point(203, 342);
             this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(239, 26);
-            this.layoutControlItem20.Text = "Gross Salary";
+            this.layoutControlItem20.Size = new System.Drawing.Size(301, 28);
+            this.layoutControlItem20.Text = "Gross Taxable Income";
             this.layoutControlItem20.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem20.TextSize = new System.Drawing.Size(80, 16);
+            this.layoutControlItem20.TextSize = new System.Drawing.Size(142, 16);
             this.layoutControlItem20.TextToControlDistance = 5;
             // 
             // emptySpaceItem14
             // 
             this.emptySpaceItem14.AllowHotTrack = false;
-            this.emptySpaceItem14.Location = new System.Drawing.Point(1144, 0);
+            this.emptySpaceItem14.Location = new System.Drawing.Point(1150, 0);
             this.emptySpaceItem14.Name = "emptySpaceItem14";
-            this.emptySpaceItem14.Size = new System.Drawing.Size(70, 619);
+            this.emptySpaceItem14.Size = new System.Drawing.Size(66, 370);
             this.emptySpaceItem14.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem31
@@ -1892,9 +2129,9 @@
             // emptySpaceItem10
             // 
             this.emptySpaceItem10.AllowHotTrack = false;
-            this.emptySpaceItem10.Location = new System.Drawing.Point(0, 593);
+            this.emptySpaceItem10.Location = new System.Drawing.Point(0, 342);
             this.emptySpaceItem10.Name = "emptySpaceItem10";
-            this.emptySpaceItem10.Size = new System.Drawing.Size(265, 26);
+            this.emptySpaceItem10.Size = new System.Drawing.Size(203, 28);
             this.emptySpaceItem10.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup1
@@ -1907,20 +2144,21 @@
             this.layoutControlItem23,
             this.emptySpaceItem12,
             this.layoutControlItem24,
-            this.emptySpaceItem6,
             this.layoutControlItem34,
             this.layoutControlItem35,
-            this.emptySpaceItem13});
+            this.emptySpaceItem13,
+            this.layoutControlItem29,
+            this.layoutControlItem28});
             this.layoutControlGroup1.Location = new System.Drawing.Point(504, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(640, 619);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(646, 370);
             // 
             // layoutControlItem25
             // 
             this.layoutControlItem25.Control = this.gcPAYE_PAYERelief;
-            this.layoutControlItem25.Location = new System.Drawing.Point(0, 242);
+            this.layoutControlItem25.Location = new System.Drawing.Point(0, 157);
             this.layoutControlItem25.Name = "layoutControlItem25";
-            this.layoutControlItem25.Size = new System.Drawing.Size(640, 245);
+            this.layoutControlItem25.Size = new System.Drawing.Size(646, 133);
             this.layoutControlItem25.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem25.TextVisible = false;
             // 
@@ -1930,7 +2168,7 @@
             this.layoutControlItem26.AppearanceItemCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.layoutControlItem26.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem26.Control = this.txtNetTaxableIncome;
-            this.layoutControlItem26.Location = new System.Drawing.Point(341, 487);
+            this.layoutControlItem26.Location = new System.Drawing.Point(347, 290);
             this.layoutControlItem26.Name = "layoutControlItem26";
             this.layoutControlItem26.Size = new System.Drawing.Size(299, 28);
             this.layoutControlItem26.Text = "Net Taxable Income";
@@ -1943,13 +2181,11 @@
             this.layoutControlGroup5.GroupBordersVisible = false;
             this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem27,
-            this.layoutControlItem28,
-            this.layoutControlItem30,
-            this.layoutControlItem29});
-            this.layoutControlGroup5.Location = new System.Drawing.Point(431, 515);
+            this.layoutControlItem30});
+            this.layoutControlGroup5.Location = new System.Drawing.Point(437, 318);
             this.layoutControlGroup5.Name = "layoutControlGroup5";
             this.layoutControlGroup5.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup5.Size = new System.Drawing.Size(209, 104);
+            this.layoutControlGroup5.Size = new System.Drawing.Size(209, 52);
             this.layoutControlGroup5.Text = "Tax Values";
             // 
             // layoutControlItem27
@@ -1965,25 +2201,12 @@
             this.layoutControlItem27.TextSize = new System.Drawing.Size(50, 16);
             this.layoutControlItem27.TextToControlDistance = 5;
             // 
-            // layoutControlItem28
-            // 
-            this.layoutControlItem28.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem28.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.layoutControlItem28.Control = this.txtNHIFValue;
-            this.layoutControlItem28.Location = new System.Drawing.Point(0, 52);
-            this.layoutControlItem28.Name = "layoutControlItem28";
-            this.layoutControlItem28.Size = new System.Drawing.Size(209, 26);
-            this.layoutControlItem28.Text = "NHIF";
-            this.layoutControlItem28.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem28.TextSize = new System.Drawing.Size(50, 16);
-            this.layoutControlItem28.TextToControlDistance = 5;
-            // 
             // layoutControlItem30
             // 
             this.layoutControlItem30.AppearanceItemCaption.Options.UseTextOptions = true;
             this.layoutControlItem30.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.layoutControlItem30.Control = this.txtPFValue;
-            this.layoutControlItem30.Location = new System.Drawing.Point(0, 78);
+            this.layoutControlItem30.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem30.Name = "layoutControlItem30";
             this.layoutControlItem30.Size = new System.Drawing.Size(209, 26);
             this.layoutControlItem30.Text = "P.F.";
@@ -1991,34 +2214,21 @@
             this.layoutControlItem30.TextSize = new System.Drawing.Size(50, 16);
             this.layoutControlItem30.TextToControlDistance = 5;
             // 
-            // layoutControlItem29
-            // 
-            this.layoutControlItem29.AppearanceItemCaption.Options.UseTextOptions = true;
-            this.layoutControlItem29.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.layoutControlItem29.Control = this.txtNSSFValue;
-            this.layoutControlItem29.Location = new System.Drawing.Point(0, 26);
-            this.layoutControlItem29.Name = "layoutControlItem29";
-            this.layoutControlItem29.Size = new System.Drawing.Size(209, 26);
-            this.layoutControlItem29.Text = "NSSF";
-            this.layoutControlItem29.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem29.TextSize = new System.Drawing.Size(50, 16);
-            this.layoutControlItem29.TextToControlDistance = 5;
-            // 
             // layoutControlItem23
             // 
             this.layoutControlItem23.Control = this.gcPAYE_NonCashBenefit;
             this.layoutControlItem23.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem23.Name = "layoutControlItem23";
-            this.layoutControlItem23.Size = new System.Drawing.Size(640, 216);
+            this.layoutControlItem23.Size = new System.Drawing.Size(646, 131);
             this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem23.TextVisible = false;
             // 
             // emptySpaceItem12
             // 
             this.emptySpaceItem12.AllowHotTrack = false;
-            this.emptySpaceItem12.Location = new System.Drawing.Point(0, 216);
+            this.emptySpaceItem12.Location = new System.Drawing.Point(0, 131);
             this.emptySpaceItem12.Name = "emptySpaceItem12";
-            this.emptySpaceItem12.Size = new System.Drawing.Size(331, 26);
+            this.emptySpaceItem12.Size = new System.Drawing.Size(337, 26);
             this.emptySpaceItem12.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem24
@@ -2026,7 +2236,7 @@
             this.layoutControlItem24.AppearanceItemCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.layoutControlItem24.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem24.Control = this.txtTaxableIncome;
-            this.layoutControlItem24.Location = new System.Drawing.Point(331, 216);
+            this.layoutControlItem24.Location = new System.Drawing.Point(337, 131);
             this.layoutControlItem24.Name = "layoutControlItem24";
             this.layoutControlItem24.Size = new System.Drawing.Size(309, 26);
             this.layoutControlItem24.Text = "Gross Taxable Earnings";
@@ -2034,18 +2244,10 @@
             this.layoutControlItem24.TextSize = new System.Drawing.Size(150, 16);
             this.layoutControlItem24.TextToControlDistance = 5;
             // 
-            // emptySpaceItem6
-            // 
-            this.emptySpaceItem6.AllowHotTrack = false;
-            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 541);
-            this.emptySpaceItem6.Name = "emptySpaceItem6";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(431, 78);
-            this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
-            // 
             // layoutControlItem34
             // 
             this.layoutControlItem34.Control = this.txtGrossPAYE;
-            this.layoutControlItem34.Location = new System.Drawing.Point(0, 515);
+            this.layoutControlItem34.Location = new System.Drawing.Point(0, 318);
             this.layoutControlItem34.Name = "layoutControlItem34";
             this.layoutControlItem34.Size = new System.Drawing.Size(209, 26);
             this.layoutControlItem34.Text = "Gross PAYE";
@@ -2056,28 +2258,54 @@
             // layoutControlItem35
             // 
             this.layoutControlItem35.Control = this.txtPersonalRelief;
-            this.layoutControlItem35.Location = new System.Drawing.Point(209, 515);
+            this.layoutControlItem35.Location = new System.Drawing.Point(209, 318);
             this.layoutControlItem35.Name = "layoutControlItem35";
-            this.layoutControlItem35.Size = new System.Drawing.Size(222, 26);
+            this.layoutControlItem35.Size = new System.Drawing.Size(228, 26);
             this.layoutControlItem35.Text = "Personal Relief";
-            this.layoutControlItem35.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem35.TextSize = new System.Drawing.Size(88, 16);
+            this.layoutControlItem35.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem35.TextSize = new System.Drawing.Size(100, 16);
             this.layoutControlItem35.TextToControlDistance = 5;
             // 
             // emptySpaceItem13
             // 
             this.emptySpaceItem13.AllowHotTrack = false;
-            this.emptySpaceItem13.Location = new System.Drawing.Point(0, 487);
+            this.emptySpaceItem13.Location = new System.Drawing.Point(0, 290);
             this.emptySpaceItem13.Name = "emptySpaceItem13";
-            this.emptySpaceItem13.Size = new System.Drawing.Size(341, 28);
+            this.emptySpaceItem13.Size = new System.Drawing.Size(347, 28);
             this.emptySpaceItem13.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlItem29
+            // 
+            this.layoutControlItem29.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem29.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.layoutControlItem29.Control = this.txtNSSFValue;
+            this.layoutControlItem29.Location = new System.Drawing.Point(0, 344);
+            this.layoutControlItem29.Name = "layoutControlItem29";
+            this.layoutControlItem29.Size = new System.Drawing.Size(209, 26);
+            this.layoutControlItem29.Text = "NSSF";
+            this.layoutControlItem29.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem29.TextSize = new System.Drawing.Size(75, 16);
+            this.layoutControlItem29.TextToControlDistance = 5;
+            // 
+            // layoutControlItem28
+            // 
+            this.layoutControlItem28.AppearanceItemCaption.Options.UseTextOptions = true;
+            this.layoutControlItem28.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.layoutControlItem28.Control = this.txtNHIFValue;
+            this.layoutControlItem28.Location = new System.Drawing.Point(209, 344);
+            this.layoutControlItem28.Name = "layoutControlItem28";
+            this.layoutControlItem28.Size = new System.Drawing.Size(228, 26);
+            this.layoutControlItem28.Text = "NHIF";
+            this.layoutControlItem28.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem28.TextSize = new System.Drawing.Size(100, 16);
+            this.layoutControlItem28.TextToControlDistance = 5;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.AppearanceItemCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem2.Control = this.txtTotalBasicHRA;
-            this.layoutControlItem2.Location = new System.Drawing.Point(245, 54);
+            this.layoutControlItem2.Location = new System.Drawing.Point(245, 28);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(259, 28);
             this.layoutControlItem2.Text = "Total";
@@ -2085,12 +2313,122 @@
             this.layoutControlItem2.TextSize = new System.Drawing.Size(100, 20);
             this.layoutControlItem2.TextToControlDistance = 5;
             // 
+            // layoutControlItem18
+            // 
+            this.layoutControlItem18.Control = this.txtHRAAmount;
+            this.layoutControlItem18.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem18.Name = "layoutControlItem18";
+            this.layoutControlItem18.Size = new System.Drawing.Size(245, 28);
+            this.layoutControlItem18.Text = "HRA";
+            this.layoutControlItem18.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem18.TextSize = new System.Drawing.Size(100, 16);
+            this.layoutControlItem18.TextToControlDistance = 5;
+            // 
+            // lcgPayslip
+            // 
+            this.lcgPayslip.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlGroup3,
+            this.layoutControlGroup4});
+            this.lcgPayslip.Location = new System.Drawing.Point(0, 0);
+            this.lcgPayslip.Name = "lcgPayslip";
+            this.lcgPayslip.Size = new System.Drawing.Size(1216, 370);
+            this.lcgPayslip.Text = "Payslip";
+            // 
+            // layoutControlGroup3
+            // 
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem36,
+            this.layoutControlItem39,
+            this.emptySpaceItem2});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "layoutControlGroup3";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(636, 370);
+            this.layoutControlGroup3.Text = "Earnings";
+            // 
+            // layoutControlItem36
+            // 
+            this.layoutControlItem36.Control = this.gridControlPayslipTabEarning;
+            this.layoutControlItem36.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem36.Name = "layoutControlItem36";
+            this.layoutControlItem36.Size = new System.Drawing.Size(612, 269);
+            this.layoutControlItem36.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem36.TextVisible = false;
+            // 
+            // layoutControlItem39
+            // 
+            this.layoutControlItem39.AppearanceItemCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.layoutControlItem39.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem39.Control = this.txtGrossSalary;
+            this.layoutControlItem39.Location = new System.Drawing.Point(0, 269);
+            this.layoutControlItem39.Name = "layoutControlItem39";
+            this.layoutControlItem39.Size = new System.Drawing.Size(612, 28);
+            this.layoutControlItem39.Text = "Gross Salary";
+            this.layoutControlItem39.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem39.TextSize = new System.Drawing.Size(80, 16);
+            this.layoutControlItem39.TextToControlDistance = 5;
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 297);
+            this.emptySpaceItem2.MinSize = new System.Drawing.Size(10, 26);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(612, 28);
+            this.emptySpaceItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // layoutControlGroup4
+            // 
+            this.layoutControlGroup4.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem38,
+            this.layoutControlItem40,
+            this.layoutControlItem41});
+            this.layoutControlGroup4.Location = new System.Drawing.Point(636, 0);
+            this.layoutControlGroup4.Name = "layoutControlGroup4";
+            this.layoutControlGroup4.Size = new System.Drawing.Size(580, 370);
+            this.layoutControlGroup4.Text = "Deductions";
+            // 
+            // layoutControlItem38
+            // 
+            this.layoutControlItem38.Control = this.gridControlPayslipDeduction;
+            this.layoutControlItem38.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem38.Name = "layoutControlItem38";
+            this.layoutControlItem38.Size = new System.Drawing.Size(556, 269);
+            this.layoutControlItem38.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem38.TextVisible = false;
+            // 
+            // layoutControlItem40
+            // 
+            this.layoutControlItem40.AppearanceItemCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.layoutControlItem40.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem40.Control = this.txtTotalDeduction;
+            this.layoutControlItem40.Location = new System.Drawing.Point(0, 269);
+            this.layoutControlItem40.Name = "layoutControlItem40";
+            this.layoutControlItem40.Size = new System.Drawing.Size(556, 28);
+            this.layoutControlItem40.Text = "Total Deduction";
+            this.layoutControlItem40.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem40.TextSize = new System.Drawing.Size(100, 16);
+            this.layoutControlItem40.TextToControlDistance = 5;
+            // 
+            // layoutControlItem41
+            // 
+            this.layoutControlItem41.AppearanceItemCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.layoutControlItem41.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem41.Control = this.txtNetSalary;
+            this.layoutControlItem41.Location = new System.Drawing.Point(0, 297);
+            this.layoutControlItem41.Name = "layoutControlItem41";
+            this.layoutControlItem41.Size = new System.Drawing.Size(556, 28);
+            this.layoutControlItem41.Text = "Net Salary";
+            this.layoutControlItem41.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem41.TextSize = new System.Drawing.Size(100, 20);
+            this.layoutControlItem41.TextToControlDistance = 5;
+            // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 693);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 445);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(1238, 11);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(1240, 10);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem21
@@ -2098,29 +2436,18 @@
             this.layoutControlItem21.Control = this.txtDateTitle;
             this.layoutControlItem21.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem21.Name = "layoutControlItem21";
-            this.layoutControlItem21.Size = new System.Drawing.Size(338, 26);
+            this.layoutControlItem21.Size = new System.Drawing.Size(218, 26);
             this.layoutControlItem21.Text = "For Month";
-            this.layoutControlItem21.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem21.TextSize = new System.Drawing.Size(62, 11);
+            this.layoutControlItem21.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem21.TextSize = new System.Drawing.Size(59, 16);
             this.layoutControlItem21.TextToControlDistance = 5;
-            // 
-            // layoutControlItem22
-            // 
-            this.layoutControlItem22.Control = this.dateEdit1;
-            this.layoutControlItem22.Location = new System.Drawing.Point(798, 0);
-            this.layoutControlItem22.Name = "layoutControlItem22";
-            this.layoutControlItem22.Size = new System.Drawing.Size(440, 26);
-            this.layoutControlItem22.Text = "Month ";
-            this.layoutControlItem22.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem22.TextSize = new System.Drawing.Size(62, 16);
-            this.layoutControlItem22.TextToControlDistance = 5;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.lookupEmployee;
-            this.layoutControlItem1.Location = new System.Drawing.Point(338, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(218, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(460, 26);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1022, 26);
             this.layoutControlItem1.Text = "Employee";
             this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(62, 11);
@@ -2139,7 +2466,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1307, 803);
+            this.ClientSize = new System.Drawing.Size(1307, 551);
             this.FirstControl = this.myLayoutControl1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmEmployeePayslip";
@@ -2150,6 +2477,17 @@
             this.panelContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.myLayoutControl1)).EndInit();
             this.myLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNetSalary.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTotalDeduction.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGrossSalary.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlPayslipDeduction)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PayslipTabDeductionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewPayeSlipDeduction)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlPayslipTabEarning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PayslipTabEarningBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewPayeSlipTabEarning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPersonalRelief.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGrossPAYE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTotalBasicHRA.Properties)).EndInit();
@@ -2168,7 +2506,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gcPAYE_NonCashBenefit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PAYENoncashBenefitBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvPAYE_NonCashBenefit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtGrossSalary.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTaxableGrossIncome.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcTaxableEarnings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PAYETaxableEarningBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvTaxableEarnings)).EndInit();
@@ -2185,8 +2523,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTxtPercNCB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpVehicle_NonCashBenefit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMissedPunchDays.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDateTitle.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDeductions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeePayslipDeductionsBindingSource)).EndInit();
@@ -2205,9 +2541,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDoubleOvertimeHours.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNormalOvertimeHours.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookupEmployee.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgEarnings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
@@ -2234,9 +2570,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lcgPAYE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem31)).EndInit();
@@ -2246,20 +2580,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lcgPayslip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuFormShortCuts)).EndInit();
             this.ResumeLayout(false);
@@ -2309,8 +2651,6 @@
         private System.Windows.Forms.BindingSource employeePayslipEarningsBindingSource;
         private Alit.WinformControls.TextEdit txtDateTitle;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
-        private Alit.WinformControls.DateEdit dateEdit1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem22;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private Alit.WinformControls.TextEdit txtMissedPunchDays;
@@ -2351,7 +2691,7 @@
         private Alit.WinformControls.TextEdit txtTaxableIncome;
         private DevExpress.XtraGrid.GridControl gcPAYE_NonCashBenefit;
         private DevExpress.XtraGrid.Views.Grid.GridView gvPAYE_NonCashBenefit;
-        private Alit.WinformControls.TextEdit txtGrossSalary;
+        private Alit.WinformControls.TextEdit txtTaxableGrossIncome;
         private DevExpress.XtraGrid.GridControl gcTaxableEarnings;
         private DevExpress.XtraGrid.Views.Grid.GridView gvTaxableEarnings;
         private Alit.WinformControls.TextEdit txtHRAAmount;
@@ -2368,7 +2708,6 @@
         private Alit.WinformControls.TextEdit txtNHIFValue;
         private Alit.WinformControls.TextEdit txtPAYEValue;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem14;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem11;
         private System.Windows.Forms.BindingSource PAYETaxableEarningBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colEarningAndDeductionName;
         private DevExpress.XtraGrid.Columns.GridColumn colValue;
@@ -2404,9 +2743,36 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private Alit.WinformControls.TextEdit txtPersonalRelief;
         private Alit.WinformControls.TextEdit txtGrossPAYE;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem34;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem35;
-        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
+        private DevExpress.XtraLayout.LayoutControlGroup lcgPayslip;
+        private DevExpress.XtraGrid.GridControl gridControlPayslipDeduction;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewPayeSlipDeduction;
+        private DevExpress.XtraGrid.GridControl gridControl2;
+        private DevExpress.XtraGrid.GridControl gridControlPayslipTabEarning;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewPayeSlipTabEarning;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem37;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem36;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem38;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private System.Windows.Forms.BindingSource PayslipTabEarningBindingSource;
+        private DevExpress.XtraGrid.Columns.GridColumn colItemName1;
+        private DevExpress.XtraGrid.Columns.GridColumn colQty;
+        private DevExpress.XtraGrid.Columns.GridColumn colUnitName;
+        private DevExpress.XtraGrid.Columns.GridColumn colAmount;
+        private System.Windows.Forms.BindingSource PayslipTabDeductionBindingSource;
+        private DevExpress.XtraGrid.Columns.GridColumn colItemName2;
+        private DevExpress.XtraGrid.Columns.GridColumn colQty1;
+        private DevExpress.XtraGrid.Columns.GridColumn colUnitName1;
+        private DevExpress.XtraGrid.Columns.GridColumn colAmount1;
+        private Alit.WinformControls.TextEdit txtNetSalary;
+        private Alit.WinformControls.TextEdit txtTotalDeduction;
+        private Alit.WinformControls.TextEdit txtGrossSalary;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem39;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem40;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem41;
     }
 }

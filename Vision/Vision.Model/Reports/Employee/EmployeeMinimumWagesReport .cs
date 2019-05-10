@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Vision.Model.Employee;
+using Vision.Model.Settings;
 
 namespace Vision.Model.Reports.Employee
 {
@@ -23,12 +24,31 @@ namespace Vision.Model.Reports.Employee
 
         public string Designation { get; set; }
         public string Location { get; set; }
-        public string LocationType { get; set; }
+      
         public string Category { get; set; }
 
         public decimal BasicSalary { get; set; }
         public decimal MinWagesSal { get; set; }
         public decimal Variance { get  { return (BasicSalary-MinWagesSal); } }
+
+        [Browsable(false)]
+        public eLocationType LocationTypeID { get; set; }
+
+        public string LocationType
+        {
+            get
+            {
+                if (LocationTypeID == eLocationType.Rural)
+                {
+                    return "Rural";
+                }
+                else
+                {
+                    return "Urban";
+                }
+            }
+        }
+
         [Browsable(false)]
         public eEmploymentType EmployementTypeID { get; set; }
 

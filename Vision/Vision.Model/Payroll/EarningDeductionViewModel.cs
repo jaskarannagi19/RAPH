@@ -43,4 +43,22 @@ namespace Vision.Model.Payroll
         [DisplayName("Earning & Deduction")]
         public string EmployeeEarningDeductionName { get; set; }
     }
+    public class EarningDeductionImportLookupListModel
+    {
+        [Browsable(false)]
+        public int EmployeeEarningDeductionID { get; set; }
+
+        [DisplayName("No.")]
+        public int EmployeeEarningDeductionNo { get; set; }
+
+        [DisplayName("Earning & Deduction")]
+        public string EmployeeEarningDeductionName { get; set; }
+
+        [Browsable(false)]
+        public eEarningDeductionType EmployeeEarningDeductionTypeId { get; set; }
+
+        public string EmployeeEarningDeductionType{ get { return (eEarningDeductionType.Deduction==EmployeeEarningDeductionTypeId? "Deduction" : "Earning"); } }
+    }
+
+   
 }

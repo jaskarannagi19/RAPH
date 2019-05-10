@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Vision.DAL.Payroll;
 using Vision.Model.Reports.TimeAttendance;
 
 namespace Vision.DAL.Reports.TimeAttendance
@@ -13,7 +14,7 @@ namespace Vision.DAL.Reports.TimeAttendance
         {
             using (dbVisionEntities db = new dbVisionEntities())
             {
-                Payroll.EmployeeAttendanceDAL EmployeeAttendanceDALObj = new Payroll.EmployeeAttendanceDAL();
+                EmployeeAttendanceDAL EmployeeAttendanceDALObj = new EmployeeAttendanceDAL();
                 var resAtt = EmployeeAttendanceDALObj.GetEmployeeAttendanceData(new DateTime(DateFrom.Year, DateFrom.Month, 1), (new DateTime(DateTo.Year, DateTo.Month + 1, 1)).AddDays(-1), EmployeeID);
 
                 return (from r in resAtt

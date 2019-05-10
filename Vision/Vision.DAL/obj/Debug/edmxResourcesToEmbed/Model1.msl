@@ -1339,6 +1339,7 @@
     <EntitySetMapping Name="tblPayrollMonths">
       <EntityTypeMapping TypeName="dbVisionModel.tblPayrollMonth">
         <MappingFragment StoreEntitySet="tblPayrollMonth">
+          <ScalarProperty Name="PayrollMonth" ColumnName="PayrollMonth" />
           <ScalarProperty Name="reuid" ColumnName="reuid" />
           <ScalarProperty Name="redt" ColumnName="redt" />
           <ScalarProperty Name="rcuid" ColumnName="rcuid" />

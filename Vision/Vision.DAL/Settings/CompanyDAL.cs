@@ -11,33 +11,33 @@ using System.Threading.Tasks;
 
 namespace Vision.DAL.Settings
 {
-	public class CompanyDAL
-	{
-		public SavingResult SaveNewRecord(tblCompany SaveModel, long? CopySettingsFromCompanyID, tblPayrollMonth PayRollMonth)
-		{
-			SavingResult res = new SavingResult();
+    public class CompanyDAL
+    {
+        public SavingResult SaveNewRecord(tblCompany SaveModel, long? CopySettingsFromCompanyID, tblPayrollMonth PayRollMonth)
+        {
+            SavingResult res = new SavingResult();
 
-			//-- Perform Validation
-			//res.ExecutionResult = eExecutionResult.ValidationError;
-			//res.ValidationError = "Validation error message";
-			//return res;
+            //-- Perform Validation
+            //res.ExecutionResult = eExecutionResult.ValidationError;
+            //res.ValidationError = "Validation error message";
+            //return res;
 
-			//--
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
-				//tblCompany SaveModel;
-				if (SaveModel.CompanyName == "")
-				{
-					res.ValidationError = "Can not accept blank value. Please enter Country Name.";
-					res.ExecutionResult = eExecutionResult.ValidationError;
-					return res;
-				}
-				else if (IsDuplicateRecord(SaveModel.CompanyName, SaveModel.CompanyID, db))
-				{
-					res.ValidationError = "Can not accept duplicate value. The Company Name is already exists.";
-					res.ExecutionResult = eExecutionResult.ValidationError;
-					return res;
-				}
+            //--
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
+                //tblCompany SaveModel;
+                if (SaveModel.CompanyName == "")
+                {
+                    res.ValidationError = "Can not accept blank value. Please enter Country Name.";
+                    res.ExecutionResult = eExecutionResult.ValidationError;
+                    return res;
+                }
+                else if (IsDuplicateRecord(SaveModel.CompanyName, SaveModel.CompanyID, db))
+                {
+                    res.ValidationError = "Can not accept duplicate value. The Company Name is already exists.";
+                    res.ExecutionResult = eExecutionResult.ValidationError;
+                    return res;
+                }
 
                 bool IsNewCompany = (SaveModel.CompanyID == 0);
                 //tblAdditionalItemMaster RoundOffItem = null;
@@ -45,101 +45,57 @@ namespace Vision.DAL.Settings
                 //tblAccount CashAccount = null;
 
                 if (SaveModel.CompanyID == 0) // New Entry
-				{
+                {
                     SaveModel.rcuid = (Model.CommonProperties.LoginInfo.LoggedinUser != null ?
                         (int?)Model.CommonProperties.LoginInfo.LoggedinUser.UserID : null);
-					SaveModel.rcdt = DateTime.Now;
-					db.tblCompanies.Add(SaveModel);
+                    SaveModel.rcdt = DateTime.Now;
+                    db.tblCompanies.Add(SaveModel);
 
-					db.tblFinPeriods.Add(new tblFinPeriod()
-						{
-							FinPeriodName = SaveModel.BusinessStartedFrom.Date.Year.ToString() + "-*",
-							FinPeriodFrom = SaveModel.BusinessStartedFrom.Date,
-							tblCompany = SaveModel,
-							rcdt = DateTime.Now
-						});
-                    db.tblPayrollMonths.Add(new tblPayrollMonth()
+                    db.tblFinPeriods.Add(new tblFinPeriod()
                     {
-                        PayrollMonthName = PayRollMonth.PayrollMonthName,
-                        PayrollMonthStartDate = PayRollMonth.PayrollMonthStartDate,
-                        PayrollMonthEndDate = PayRollMonth.PayrollMonthEndDate,
+                        FinPeriodName = SaveModel.BusinessStartedFrom.Date.Year.ToString() + "-*",
+                        FinPeriodFrom = SaveModel.BusinessStartedFrom.Date,
                         tblCompany = SaveModel,
                         rcdt = DateTime.Now
                     });
+                }
+                else
+                {
+                    SaveModel.reuid = Model.CommonProperties.LoginInfo.LoggedinUser.UserID;
+                    SaveModel.redt = DateTime.Now;
+                    db.tblCompanies.Attach(SaveModel);
+                    db.Entry(SaveModel).State = System.Data.Entity.EntityState.Modified;
+                }
 
-                    ////-- Inserting new round off record for newly created company
-                    //RoundOffItem = new tblAdditionalItemMaster()
-                    //{
-                    //    ItemName = "Round Off",
-                    //    Nature = 1,
-                    //    SystemRecord = 1,
-                    //    ItemType = 0,
-                    //    Perc = 0,
-                    //    CalculatePerc = false,
-                    //    CalculateOnID = 1,
-                    //    IsInclusive = false,
-                    //    DefaultRecord = false,
-                    //    rcdt = DateTime.Now,
-                    //    rcuid = CommonProperties.LoginInfo.LoggedinUser.UserID,
-                    //    tblCompany = SaveModel
-                    //};
-                    //db.tblAdditionalItemMasters.Add(RoundOffItem);
+                if (PayRollMonth.PayrollMonthID == 0)
+                {
+                    PayRollMonth.tblCompany = SaveModel;
+                    PayRollMonth.rcdt = DateTime.Now;
+                    PayRollMonth.rcuid = CommonProperties.LoginInfo.LoggedinUser.UserID;
 
-                    //DefaultPriceList = new tblPriceList()
-                    //{
-                    //    PriceListName = "Default",
-                    //    PriceListShortName = "D",
-                    //    tblCompany = SaveModel
-                    //};
-                    //db.tblPriceLists.Add(DefaultPriceList);
-
-                    //CashAccount = new tblAccount()
-                    //{
-                    //    AccountName = "Cash",
-                    //    NameTitle = "",
-                    //    CityID = SaveModel.CityID,
-                    //};
-                    //db.tblAccounts.Add(CashAccount);
-
-     //               // Copieng settings from existing company;
-     //               if (CopySettingsFromCompanyID != null)
-					//{
-					//	var NewSettings = db.tblSettingsL1.Where(r => r.CompanyID == CopySettingsFromCompanyID);
-
-					//	if(NewSettings != null)
-					//	{
-     //                       foreach (var rSetting in NewSettings)
-     //                       {
-     //                           var NewSetting = (tblSettingsL1)Model.CommonFunctions.CloneObject(rSetting);
-     //                           NewSetting.tblCompany = SaveModel;
-     //                           db.tblSettingsL1.Add(NewSetting);
-     //                       }
-					//	}
-					//}
-				}
-				else
-				{
-					SaveModel.reuid = Model.CommonProperties.LoginInfo.LoggedinUser.UserID;
-					SaveModel.redt = DateTime.Now;
+                    db.tblPayrollMonths.Add(PayRollMonth);
+                }
+                else
+                {
                     PayRollMonth.redt = DateTime.Now;
-                    db.tblPayrollMonths.Attach(PayRollMonth);
-					db.tblCompanies.Attach(SaveModel);
-					db.Entry(SaveModel).State = System.Data.Entity.EntityState.Modified;
-                    db.Entry(PayRollMonth).State = System.Data.Entity.EntityState.Modified;
-				}
+                    PayRollMonth.reuid = CommonProperties.LoginInfo.LoggedinUser.UserID;
 
-				//--
-				try
-				{
-					db.SaveChanges();
+                    db.tblPayrollMonths.Attach(PayRollMonth);
+                    db.Entry(PayRollMonth).State = System.Data.Entity.EntityState.Modified;
+                }
+
+                //--
+                try
+                {
+                    db.SaveChanges();
                     res.PrimeKeyValue = SaveModel.CompanyID;
-					res.ExecutionResult = eExecutionResult.CommitedSucessfuly;
-				}
-				catch (Exception ex)
-				{
+                    res.ExecutionResult = eExecutionResult.CommitedSucessfuly;
+                }
+                catch (Exception ex)
+                {
                     CommonFunctions.GetFinalError(res, ex);
                     return res;
-				}
+                }
 
                 //DAL.Settings.SettingsDAL SettingDALObj = new SettingsDAL();
                 //if (RoundOffItem != null)
@@ -154,8 +110,8 @@ namespace Vision.DAL.Settings
                 //    SettingDALObj.SaveSettingL1("SaleInvoiceDefaultAccountID", CashAccount.AccountID, SaveModel.CompanyID);
                 //}
             }
-			return res;
-		}
+            return res;
+        }
 
         public SavingResult SaveLogoFileName(int CompanyID, string FileName)
         {
@@ -163,7 +119,7 @@ namespace Vision.DAL.Settings
             using (dbVisionEntities db = new dbVisionEntities())
             {
                 var SaveModel = db.tblCompanies.Find(CompanyID);
-                if(SaveModel == null)
+                if (SaveModel == null)
                 {
                     res.ExecutionResult = eExecutionResult.ValidationError;
                     res.ValidationError = "Selected company not found. It may be deleted over network. Please check again or contact your administrator.";
@@ -190,70 +146,70 @@ namespace Vision.DAL.Settings
         }
 
         public tblCompany FindSaveModelByPrimeKey(long ID)
-		{
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
-				return db.tblCompanies.Find(ID);
-			}
-		}
+        {
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
+                return db.tblCompanies.Find(ID);
+            }
+        }
 
-		public BeforeDeleteValidationResult ValidateBeforeDelete(long DeleteID)
-		{
-			BeforeDeleteValidationResult Result = new BeforeDeleteValidationResult();
-			if(DeleteID == CommonProperties.LoginInfo.LoggedInCompany.CompanyID)
-			{
-				Result.ValidationMessage = "Can not delete current logged in company. Please log in different company and try to delete.";
-			}
-			//using (dbVisionEntities db = new dbVisionEntities())
-			//{
+        public BeforeDeleteValidationResult ValidateBeforeDelete(long DeleteID)
+        {
+            BeforeDeleteValidationResult Result = new BeforeDeleteValidationResult();
+            if (DeleteID == CommonProperties.LoginInfo.LoggedInCompany.CompanyID)
+            {
+                Result.ValidationMessage = "Can not delete current logged in company. Please log in different company and try to delete.";
+            }
+            //using (dbVisionEntities db = new dbVisionEntities())
+            //{
 
-				//bool InState = db.tblCompanies.FirstOrDefault(r => r.CompanyID == DeleteID) != null;
+            //bool InState = db.tblCompanies.FirstOrDefault(r => r.CompanyID == DeleteID) != null;
 
-				//if (InState)
-				//{
-				//    Result.ValidationMessage = "Country is selected in company";
-				//}
-			//}
-			Result.IsValidForDelete = String.IsNullOrWhiteSpace(Result.ValidationMessage);
-			return Result;
-		}
+            //if (InState)
+            //{
+            //    Result.ValidationMessage = "Country is selected in company";
+            //}
+            //}
+            Result.IsValidForDelete = String.IsNullOrWhiteSpace(Result.ValidationMessage);
+            return Result;
+        }
 
-		public SavingResult DeleteRecord(long DeleteID)
-		{
-			SavingResult res = new SavingResult();
+        public SavingResult DeleteRecord(long DeleteID)
+        {
+            SavingResult res = new SavingResult();
 
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
-				if (DeleteID != 0)
-				{
-					SavingResult DataDelRes = new SavingResult();
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
+                if (DeleteID != 0)
+                {
+                    SavingResult DataDelRes = new SavingResult();
 
                     tblCompany RecordToDelete = db.tblCompanies.FirstOrDefault(r => r.CompanyID == DeleteID);
 
                     if (RecordToDelete == null)
-					{
-						res.ValidationError = "Selected record not found. May be it has been deleted by another user over network.";
-						res.ExecutionResult = eExecutionResult.ValidationError;
-						return res;
-					}
+                    {
+                        res.ValidationError = "Selected record not found. May be it has been deleted by another user over network.";
+                        res.ExecutionResult = eExecutionResult.ValidationError;
+                        return res;
+                    }
 
                     RecordToDelete.rstate = (byte)eRecordState.Deleted;
                     db.tblCompanies.Attach(RecordToDelete);
                     db.Entry(RecordToDelete).State = System.Data.Entity.EntityState.Modified;
 
-					/// financial Period and all financial data
-					DAL.Settings.FinPeriodDAL FinPeriodDALObj = new FinPeriodDAL();
+                    /// financial Period and all financial data
+                    DAL.Settings.FinPeriodDAL FinPeriodDALObj = new FinPeriodDAL();
 
-					List<tblFinPeriod> FinPeriodRecrods = db.tblFinPeriods.Where(r => r.CompanyID == DeleteID).ToList();
-					foreach (tblFinPeriod FinPer in FinPeriodRecrods)
-					{
+                    List<tblFinPeriod> FinPeriodRecrods = db.tblFinPeriods.Where(r => r.CompanyID == DeleteID).ToList();
+                    foreach (tblFinPeriod FinPer in FinPeriodRecrods)
+                    {
                         DataDelRes = FinPeriodDALObj.DeleteRecord(FinPer, db);
 
                         if (res.ExecutionResult == eExecutionResult.ErrorWhileExecuting || res.ExecutionResult == eExecutionResult.ValidationError)
-						{
-							return res;
-						}
-					}
+                        {
+                            return res;
+                        }
+                    }
 
                     ///// Additional Item Master
                     //DAL.Sales.AdditionalItemMasterDAL AdditionalItemDALObj = new Sales.AdditionalItemMasterDAL();
@@ -385,18 +341,18 @@ namespace Vision.DAL.Settings
                     //db.tblSettingsL1.RemoveRange(db.tblSettingsL1.Where(r => r.CompanyID == DeleteID));
 
                     try
-					{
-						db.SaveChanges();
-						res.ExecutionResult = eExecutionResult.CommitedSucessfuly;
-					}
-					catch (Exception ex)
-					{
+                    {
+                        db.SaveChanges();
+                        res.ExecutionResult = eExecutionResult.CommitedSucessfuly;
+                    }
+                    catch (Exception ex)
+                    {
                         CommonFunctions.GetFinalError(res, ex);
-					}
-				}
-			}
-			return res;
-		}
+                    }
+                }
+            }
+            return res;
+        }
 
         public SavingResult Authorize(long ID)
         {
@@ -447,9 +403,9 @@ namespace Vision.DAL.Settings
         }
 
         public List<CompanyEditListModel> GetEditList()
-		{
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
+        {
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
                 byte RecordState_Deleted = (byte)eRecordState.Deleted;
 
 
@@ -464,10 +420,10 @@ namespace Vision.DAL.Settings
                         where r.rstate != RecordState_Deleted
 
                         orderby r.CompanyName
-						select new CompanyEditListModel()
-						{
-							CompanyID = r.CompanyID,
-							CompanyName = r.CompanyName,
+                        select new CompanyEditListModel()
+                        {
+                            CompanyID = r.CompanyID,
+                            CompanyName = r.CompanyName,
 
                             RecordState = (eRecordState)r.rstate,
                             CreatedDateTime = r.rcdt,
@@ -478,8 +434,8 @@ namespace Vision.DAL.Settings
                             EditedUserName = (reu != null ? reu.UserName : ""),
 
                         }).ToList(); ;
-			}
-		}
+            }
+        }
 
         public List<CompanyMultiSelectLookupModel> GetMuliSelectLookupList()
         {
@@ -548,126 +504,126 @@ namespace Vision.DAL.Settings
         }
 
         public CompanyDetailViewModel GetCompanyDetail(long CompanyID)
-		{
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
-				tblCompany r = db.tblCompanies.FirstOrDefault(r1 => r1.CompanyID == CompanyID);
-				if (r == null)
-				{
-					return null;
-				}
-				else
-				{
-					return ConvertToDetailViewModel(r);
-				}
-			}
-		}
+        {
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
+                tblCompany r = db.tblCompanies.FirstOrDefault(r1 => r1.CompanyID == CompanyID);
+                if (r == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    return ConvertToDetailViewModel(r);
+                }
+            }
+        }
 
-		public static CompanyDetailViewModel GetFirstCompany(int UserGroupID)
-		{
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
+        public static CompanyDetailViewModel GetFirstCompany(int UserGroupID)
+        {
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
                 byte RecordState_Deleted = (byte)eRecordState.Deleted;
 
                 tblCompany company = (from r in db.tblCompanies
-                                join p in db.tblUserGroupPermissionOnCompanies on new { r.CompanyID, UserGroupID } equals new { p.CompanyID, p.UserGroupID }
-                                where r.rstate != RecordState_Deleted
-                                select r).FirstOrDefault();
+                                      join p in db.tblUserGroupPermissionOnCompanies on new { r.CompanyID, UserGroupID } equals new { p.CompanyID, p.UserGroupID }
+                                      where r.rstate != RecordState_Deleted
+                                      select r).FirstOrDefault();
 
-				if (company == null)
-				{
-					return null;
-				}
-				else
-				{
-					return ConvertToDetailViewModel(company);
-				}
-			}
-		}
+                if (company == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    return ConvertToDetailViewModel(company);
+                }
+            }
+        }
 
-		public static CompanyDetailViewModel ConvertToDetailViewModel(tblCompany r)
-		{
-			return new CompanyDetailViewModel()
-			{
-				CompanyID = r.CompanyID,
-				CompanyName = r.CompanyName,
-				//Address = r.Address,
-				CityID = r.CityID,
-				PIN = r.PIN,
-				Phone1 = r.Phone1,
-				MobileNo1 = r.MobileNo1,
-				EMailID = r.EMailID,
-				Website = r.Website,
-				//PAN = r.PAN,
-				//GSTIN = r.GSTIN,
-				//LicenseName = r.LicenseName,
-				//LicenseNo = r.LicenseNo,
-				//Jurisdiction = r.Jurisdiction,
-				BusinessStartedFrom = r.BusinessStartedFrom,
-				//City = CityDAL.ConvertToDetailViewModel(r.tblCity)
-			};
-		}
+        public static CompanyDetailViewModel ConvertToDetailViewModel(tblCompany r)
+        {
+            return new CompanyDetailViewModel()
+            {
+                CompanyID = r.CompanyID,
+                CompanyName = r.CompanyName,
+                //Address = r.Address,
+                CityID = r.CityID,
+                PIN = r.PIN,
+                Phone1 = r.Phone1,
+                MobileNo1 = r.MobileNo1,
+                EMailID = r.EMailID,
+                Website = r.Website,
+                //PAN = r.PAN,
+                //GSTIN = r.GSTIN,
+                //LicenseName = r.LicenseName,
+                //LicenseNo = r.LicenseNo,
+                //Jurisdiction = r.Jurisdiction,
+                BusinessStartedFrom = r.BusinessStartedFrom,
+                //City = CityDAL.ConvertToDetailViewModel(r.tblCity)
+            };
+        }
 
-		public static Model.Reports.CompanyDetailReportModel GetCompanyDetailReportModel(long CompanyID)
-		{
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
-				tblCompany r = db.tblCompanies.FirstOrDefault(r1 => r1.CompanyID == CompanyID);
-				if (r == null)
-				{
-					return null;
-				}
-				else
-				{
-					return new CompanyDetailReportModel()
-					{
-						CompanyID = r.CompanyID,
-						CompanyName = r.CompanyName,
-						Address = r.Address1,
-						CityID = r.CityID,
-						PIN = r.PIN,
-						Phone1 = r.Phone1,
-						MobileNo1 = r.MobileNo1,
-						EMailID = r.EMailID,
-						Website = r.Website,
-						BusinessStartedFrom = r.BusinessStartedFrom,
-						CityName = r.tblCity.CityName,
-						StateName = r.tblCity.tblState.StateName,
-						StateNameShort = r.tblCity.tblState.StateShortName ?? r.tblCity.tblState.StateName,
-						CountryName = r.tblCity.tblState.tblCountry.CountryName,
-					};
-				}
-			}
-		}
+        public static Model.Reports.CompanyDetailReportModel GetCompanyDetailReportModel(long CompanyID)
+        {
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
+                tblCompany r = db.tblCompanies.FirstOrDefault(r1 => r1.CompanyID == CompanyID);
+                if (r == null)
+                {
+                    return null;
+                }
+                else
+                {
+                    return new CompanyDetailReportModel()
+                    {
+                        CompanyID = r.CompanyID,
+                        CompanyName = r.CompanyName,
+                        Address = r.Address1,
+                        CityID = r.CityID,
+                        PIN = r.PIN,
+                        Phone1 = r.Phone1,
+                        MobileNo1 = r.MobileNo1,
+                        EMailID = r.EMailID,
+                        Website = r.Website,
+                        BusinessStartedFrom = r.BusinessStartedFrom,
+                        CityName = r.tblCity.CityName,
+                        StateName = r.tblCity.tblState.StateName,
+                        StateNameShort = r.tblCity.tblState.StateShortName ?? r.tblCity.tblState.StateName,
+                        CountryName = r.tblCity.tblState.tblCountry.CountryName,
+                    };
+                }
+            }
+        }
 
-		public bool IsDuplicateRecord(string CompanyName, long ID)
-		{
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
-				return IsDuplicateRecord(CompanyName, ID, db);
-			}
-		}
-		public bool IsDuplicateRecord(string CompanyName, long ID, dbVisionEntities db)
-		{
-			if (db.tblCompanies.FirstOrDefault(i => i.CompanyName == CompanyName && i.CompanyID != ID) != null)
-			{
-				return true;
-			}
-			return false;
-		}
+        public bool IsDuplicateRecord(string CompanyName, long ID)
+        {
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
+                return IsDuplicateRecord(CompanyName, ID, db);
+            }
+        }
+        public bool IsDuplicateRecord(string CompanyName, long ID, dbVisionEntities db)
+        {
+            if (db.tblCompanies.FirstOrDefault(i => i.CompanyName == CompanyName && i.CompanyID != ID) != null)
+            {
+                return true;
+            }
+            return false;
+        }
 
-		public static int CompanyCount(int UserGroupID)
-		{
-			using (dbVisionEntities db = new dbVisionEntities())
-			{
+        public static int CompanyCount(int UserGroupID)
+        {
+            using (dbVisionEntities db = new dbVisionEntities())
+            {
                 byte RecordState_Deleted = (byte)eRecordState.Deleted;
 
                 return (from r in db.tblCompanies
-                         join p in db.tblUserGroupPermissionOnCompanies on new { r.CompanyID, UserGroupID } equals new { p.CompanyID, p.UserGroupID }
-                         where r.rstate != RecordState_Deleted
+                        join p in db.tblUserGroupPermissionOnCompanies on new { r.CompanyID, UserGroupID } equals new { p.CompanyID, p.UserGroupID }
+                        where r.rstate != RecordState_Deleted
                         select r.CompanyID).Count();
-			}
-		}
+            }
+        }
 
         public int GenerateNewCode(dbVisionEntities db)
         {
@@ -687,8 +643,8 @@ namespace Vision.DAL.Settings
             using (dbVisionEntities db = new dbVisionEntities())
             {
                 byte RecordState_Deleted = (byte)eRecordState.Deleted;
-                return db.tblCompanies.Count(r=> r.rstate != (int)RecordState_Deleted);
+                return db.tblCompanies.Count(r => r.rstate != (int)RecordState_Deleted);
             }
         }
-	}
+    }
 }

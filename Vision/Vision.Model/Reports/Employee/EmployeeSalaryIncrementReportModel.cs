@@ -23,6 +23,9 @@ namespace Vision.Model.Reports.Employee
         [DisplayName("Salary Increment No.")]
         public int EmployeeSalaryIncrementNo { get; set; }
 
+        [DisplayName("Employee No")]
+        public int EmployeeNo { get; set; }
+
         [DisplayName("Employee Name")]
         public string EmployeeName { get; set; }
 
@@ -30,11 +33,15 @@ namespace Vision.Model.Reports.Employee
         [DisplayName("Last Inc Date")]
         public DateTime? LastIncDate { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:dd/MMM/yyyy}")]
+        [DisplayName("Current Inc Date")]
+        public DateTime? CurrentIncDate { get; set; }
+
         [DisplayName("Current Salary")]
         public decimal CurrentBasicSalary { get; set; }
 
         [DisplayName("Privious Salary")]
-        public decimal PriviousBasicSalary { get; set; }
+        public decimal? PriviousBasicSalary { get; set; }
 
         [DisplayName("New Basic")]
         public decimal NewBasicSalary { get; set; }
@@ -49,6 +56,7 @@ namespace Vision.Model.Reports.Employee
         [DisplayName("Remarks")]
         public string Remarks { get; set; }
 
+        [Browsable(false)]
         [DisplayName("E. Prefix")]
         public string EmployeeNoPrefix { get; set; }
 

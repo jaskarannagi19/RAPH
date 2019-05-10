@@ -15,3 +15,12 @@ F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.csproj.GenerateResou
 F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.csproj.CoreCompileInputs.cache
 F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.dll
 F:\Vision\Vision\Vision\Vision.Model\obj\Debug\Vision.Model.pdb
+F:\Vision\VisionTSF\Vision\Vision.Model\bin\Debug\Vision.Model.dll.config
+F:\Vision\VisionTSF\Vision\Vision.Model\bin\Debug\Vision.Model.dll
+F:\Vision\VisionTSF\Vision\Vision.Model\bin\Debug\Vision.Model.pdb
+F:\Vision\VisionTSF\Vision\Vision.Model\obj\Debug\Vision.Model.csprojAssemblyReference.cache
+F:\Vision\VisionTSF\Vision\Vision.Model\obj\Debug\Vision.Model.Properties.Resources.resources
+F:\Vision\VisionTSF\Vision\Vision.Model\obj\Debug\Vision.Model.csproj.GenerateResource.cache
+F:\Vision\VisionTSF\Vision\Vision.Model\obj\Debug\Vision.Model.csproj.CoreCompileInputs.cache
+F:\Vision\VisionTSF\Vision\Vision.Model\obj\Debug\Vision.Model.dll
+F:\Vision\VisionTSF\Vision\Vision.Model\obj\Debug\Vision.Model.pdb

@@ -33,6 +33,7 @@ namespace Vision.WinForm.Reports.Employee
             var To = From.AddMonths(1).AddDays(-1);
             FromDate.DateTime = (DateTime.Now.Date < Model.CommonProperties.LoginInfo.LoggedInFinPeriod.FinPeriodFrom ?
                 Model.CommonProperties.LoginInfo.LoggedInFinPeriod.FinPeriodFrom : DateTime.Now.Date);
+
         }
         public override void LoadLookupDataSource()
         {

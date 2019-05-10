@@ -79,6 +79,7 @@
     <Compile Include="Loan\LoanApplicationDAL.cs" />
     <Compile Include="Loan\LoanAdjustmentNoPrefixDAL.cs" />
     <Compile Include="Loan\LoanApplicationNoPrefixDAL.cs" />
+    <Compile Include="Payroll\EmployeeEarningDeductionImportDataDAL.cs" />
     <Compile Include="Payroll\EmployeePaySlipDAL.cs" />
     <Compile Include="Payroll\EmployeeRestDayDAL.cs" />
     <Compile Include="Payroll\EmployeeSalaryIncrementDAL.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Reports\Employee\EmployeeMinimumWagesReportDAL.cs" />
     <Compile Include="Reports\Employee\EmployeeSalaryIncrementReportDAL.cs" />
     <Compile Include="Reports\Employee\EmployementStatusReportDAL.cs" />
+    <Compile Include="Reports\Payroll\SalaryReportDAL.cs" />
     <Compile Include="Reports\TimeAttendance\DailyAttendanceReportDAL.cs" />
     <Compile Include="Reports\TimeAttendance\EarlyGoingReportDAL.cs" />
     <Compile Include="Reports\TimeAttendance\EmployeeMonthlyAttendanceSummaryDAL.cs" />

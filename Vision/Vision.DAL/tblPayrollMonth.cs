@@ -24,6 +24,7 @@ namespace Vision.DAL
         public Nullable<int> rcuid { get; set; }
         public Nullable<System.DateTime> redt { get; set; }
         public Nullable<int> reuid { get; set; }
+        public System.DateTime PayrollMonth { get; set; }
     
         public virtual tblCompany tblCompany { get; set; }
     }

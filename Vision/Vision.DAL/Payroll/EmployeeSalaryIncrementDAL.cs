@@ -121,6 +121,7 @@ namespace Vision.DAL.Payroll
                                 EffectiveMonth = r.EffectiveMonth,
                                 EffectiveYear = r.EffectiveYear,
                                 EmployeeID = r.EmployeeID,
+                                EmployeeNo=e.EmployeeNo,
                                 EmployeeName = (e != null ? e.EmployeeFirstName + " " + e.EmployeeLastName : ""),
                                 CurrentBasicSalary = r.CurrentBasicSalary,
                                 IncrementType = (eEmployeeSalaryIncrementType)r.IncrementType,

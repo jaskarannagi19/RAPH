@@ -22,7 +22,7 @@ namespace Vision.Model.Reports.TimeAttendance
         [Display(Name = "Employee Name", Order = 2)]
         public string EmployeeName { get; set; }
 
-        public List<Payroll.EmployeeAttendanceViewModel> AttendanceDetail { get; set; }
+        public List<Vision.Model.Payroll.EmployeeAttendanceViewModel> AttendanceDetail { get; set; }
 
         public decimal Present { get; set; }
         public decimal Absent { get; set; }

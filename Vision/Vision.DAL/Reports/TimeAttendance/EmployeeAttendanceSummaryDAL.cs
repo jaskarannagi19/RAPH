@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Vision.DAL.Payroll;
 using Vision.Model;
 using Vision.Model.Payroll;
 using Vision.Model.Reports.TimeAttendance;
@@ -22,7 +23,7 @@ namespace Vision.DAL.Reports.TimeAttendance
                 byte RecordStatus_Deleted = (byte)eRecordState.Deleted;
                 DateTime TodaysDate = DateTime.Now.Date;
 
-                DAL.Payroll.EmployeeAttendanceDAL EmployeeAttendanceDALObj = new Payroll.EmployeeAttendanceDAL();
+                DAL.Payroll.EmployeeAttendanceDAL EmployeeAttendanceDALObj = new EmployeeAttendanceDAL();
                 var EmployeeAttendanceDayDetails = EmployeeAttendanceDALObj.GetEmployeeAttendanceData(DateFrom, DateTo, DepartmentID, DesignationID, LocationID, EmployementTypeID);
 
                 var res = (from e in db.tblEmployees

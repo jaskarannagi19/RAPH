@@ -39,16 +39,17 @@
             this.gcEmployeeSalaryIncrement = new DevExpress.XtraGrid.GridControl();
             this.employeeSalaryIncrementReportModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gvData = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colEmployeeNoPrefix = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEmployeeSalaryIncrementNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeeNo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEmployeeName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCurrentBasicSalary = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colIncrementAmount = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colIncrementPercentage = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colLastIncDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colRemarks = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCurrentIncDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCurrentBasicSalary = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPriviousBasicSalary = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNewBasicSalary = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colIncrementAmount = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colIncrementPercentage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colRemarks = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtNofRecords = new Alit.WinformControls.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -189,16 +190,17 @@
             // gvData
             // 
             this.gvData.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colEmployeeNoPrefix,
             this.colEmployeeSalaryIncrementNo,
+            this.colEmployeeNo,
             this.colEmployeeName,
             this.colCurrentBasicSalary,
+            this.colPriviousBasicSalary,
+            this.colCurrentIncDate,
             this.colIncrementAmount,
             this.colIncrementPercentage,
             this.colLastIncDate,
-            this.colRemarks,
-            this.colPriviousBasicSalary,
-            this.colNewBasicSalary});
+            this.colNewBasicSalary,
+            this.colRemarks});
             this.gvData.DetailHeight = 530;
             gridFormatRule1.Enabled = false;
             gridFormatRule1.Name = "MinWagesSal";
@@ -212,77 +214,47 @@
             this.gvData.OptionsBehavior.ReadOnly = true;
             this.gvData.OptionsView.ShowGroupPanel = false;
             // 
-            // colEmployeeNoPrefix
-            // 
-            this.colEmployeeNoPrefix.Caption = "E. Prefix";
-            this.colEmployeeNoPrefix.FieldName = "EmployeeNoPrefix";
-            this.colEmployeeNoPrefix.MaxWidth = 125;
-            this.colEmployeeNoPrefix.Name = "colEmployeeNoPrefix";
-            this.colEmployeeNoPrefix.Visible = true;
-            this.colEmployeeNoPrefix.VisibleIndex = 0;
-            // 
             // colEmployeeSalaryIncrementNo
             // 
-            this.colEmployeeSalaryIncrementNo.Caption = "Salary Increment No.";
             this.colEmployeeSalaryIncrementNo.FieldName = "EmployeeSalaryIncrementNo";
-            this.colEmployeeSalaryIncrementNo.MaxWidth = 125;
-            this.colEmployeeSalaryIncrementNo.MinWidth = 75;
             this.colEmployeeSalaryIncrementNo.Name = "colEmployeeSalaryIncrementNo";
             this.colEmployeeSalaryIncrementNo.Visible = true;
-            this.colEmployeeSalaryIncrementNo.VisibleIndex = 1;
+            this.colEmployeeSalaryIncrementNo.VisibleIndex = 0;
+            // 
+            // colEmployeeNo
+            // 
+            this.colEmployeeNo.FieldName = "EmployeeNo";
+            this.colEmployeeNo.Name = "colEmployeeNo";
+            this.colEmployeeNo.Visible = true;
+            this.colEmployeeNo.VisibleIndex = 1;
             // 
             // colEmployeeName
             // 
-            this.colEmployeeName.Caption = "Employee Name";
             this.colEmployeeName.FieldName = "EmployeeName";
-            this.colEmployeeName.MinWidth = 75;
             this.colEmployeeName.Name = "colEmployeeName";
             this.colEmployeeName.Visible = true;
             this.colEmployeeName.VisibleIndex = 2;
             // 
-            // colCurrentBasicSalary
-            // 
-            this.colCurrentBasicSalary.Caption = "Current Basic Salary";
-            this.colCurrentBasicSalary.FieldName = "CurrentBasicSalary";
-            this.colCurrentBasicSalary.MinWidth = 75;
-            this.colCurrentBasicSalary.Name = "colCurrentBasicSalary";
-            this.colCurrentBasicSalary.Visible = true;
-            this.colCurrentBasicSalary.VisibleIndex = 5;
-            // 
-            // colIncrementAmount
-            // 
-            this.colIncrementAmount.Caption = "Increment Amount";
-            this.colIncrementAmount.FieldName = "IncrementAmount";
-            this.colIncrementAmount.MinWidth = 75;
-            this.colIncrementAmount.Name = "colIncrementAmount";
-            this.colIncrementAmount.Visible = true;
-            this.colIncrementAmount.VisibleIndex = 6;
-            // 
-            // colIncrementPercentage
-            // 
-            this.colIncrementPercentage.Caption = "Increment Percentage";
-            this.colIncrementPercentage.FieldName = "IncrementPercentage";
-            this.colIncrementPercentage.MinWidth = 75;
-            this.colIncrementPercentage.Name = "colIncrementPercentage";
-            this.colIncrementPercentage.Visible = true;
-            this.colIncrementPercentage.VisibleIndex = 7;
-            // 
             // colLastIncDate
             // 
-            this.colLastIncDate.Caption = "Last Inc Date";
             this.colLastIncDate.FieldName = "LastIncDate";
-            this.colLastIncDate.MinWidth = 75;
             this.colLastIncDate.Name = "colLastIncDate";
             this.colLastIncDate.Visible = true;
-            this.colLastIncDate.VisibleIndex = 3;
+            this.colLastIncDate.VisibleIndex = 8;
             // 
-            // colRemarks
+            // colCurrentIncDate
             // 
-            this.colRemarks.FieldName = "Remarks";
-            this.colRemarks.MinWidth = 75;
-            this.colRemarks.Name = "colRemarks";
-            this.colRemarks.Visible = true;
-            this.colRemarks.VisibleIndex = 9;
+            this.colCurrentIncDate.FieldName = "CurrentIncDate";
+            this.colCurrentIncDate.Name = "colCurrentIncDate";
+            this.colCurrentIncDate.Visible = true;
+            this.colCurrentIncDate.VisibleIndex = 5;
+            // 
+            // colCurrentBasicSalary
+            // 
+            this.colCurrentBasicSalary.FieldName = "CurrentBasicSalary";
+            this.colCurrentBasicSalary.Name = "colCurrentBasicSalary";
+            this.colCurrentBasicSalary.Visible = true;
+            this.colCurrentBasicSalary.VisibleIndex = 3;
             // 
             // colPriviousBasicSalary
             // 
@@ -296,7 +268,28 @@
             this.colNewBasicSalary.FieldName = "NewBasicSalary";
             this.colNewBasicSalary.Name = "colNewBasicSalary";
             this.colNewBasicSalary.Visible = true;
-            this.colNewBasicSalary.VisibleIndex = 8;
+            this.colNewBasicSalary.VisibleIndex = 9;
+            // 
+            // colIncrementAmount
+            // 
+            this.colIncrementAmount.FieldName = "IncrementAmount";
+            this.colIncrementAmount.Name = "colIncrementAmount";
+            this.colIncrementAmount.Visible = true;
+            this.colIncrementAmount.VisibleIndex = 6;
+            // 
+            // colIncrementPercentage
+            // 
+            this.colIncrementPercentage.FieldName = "IncrementPercentage";
+            this.colIncrementPercentage.Name = "colIncrementPercentage";
+            this.colIncrementPercentage.Visible = true;
+            this.colIncrementPercentage.VisibleIndex = 7;
+            // 
+            // colRemarks
+            // 
+            this.colRemarks.FieldName = "Remarks";
+            this.colRemarks.Name = "colRemarks";
+            this.colRemarks.Visible = true;
+            this.colRemarks.VisibleIndex = 10;
             // 
             // txtNofRecords
             // 
@@ -476,16 +469,17 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private Alit.WinformControls.TextEdit txtNofRecords;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private System.Windows.Forms.BindingSource employeeSalaryIncrementReportModelBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colEmployeeSalaryIncrementNo;
-        private DevExpress.XtraGrid.Columns.GridColumn colLastIncDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeNo;
         private DevExpress.XtraGrid.Columns.GridColumn colEmployeeName;
+        private DevExpress.XtraGrid.Columns.GridColumn colLastIncDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colCurrentIncDate;
         private DevExpress.XtraGrid.Columns.GridColumn colCurrentBasicSalary;
+        private DevExpress.XtraGrid.Columns.GridColumn colPriviousBasicSalary;
+        private DevExpress.XtraGrid.Columns.GridColumn colNewBasicSalary;
         private DevExpress.XtraGrid.Columns.GridColumn colIncrementAmount;
         private DevExpress.XtraGrid.Columns.GridColumn colIncrementPercentage;
         private DevExpress.XtraGrid.Columns.GridColumn colRemarks;
-        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeNoPrefix;
-        private DevExpress.XtraGrid.Columns.GridColumn colPriviousBasicSalary;
-        private System.Windows.Forms.BindingSource employeeSalaryIncrementReportModelBindingSource;
-        private DevExpress.XtraGrid.Columns.GridColumn colNewBasicSalary;
     }
 }

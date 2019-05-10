@@ -45,11 +45,14 @@ namespace Vision.DAL.Reports.Employee
                                   {
                                       EmployeeSalaryIncrementID = (sl != null ? sl.EmployeeSalaryIncrementID : 0),
                                       EmployeeSalaryIncrementNo = (sl != null ? sl.EmployeeSalaryIncrementNo : 0),
+
                                       EmployeeNoPrefix = (pn != null ? pn.EmployeeNoPrefixName : null),
-                                      PriviousBasicSalary = sl.CurrentBasicSalary - (sl.LastIncAmount.HasValue ? sl.LastIncAmount.Value : 0),
+                                      PriviousBasicSalary = sl.LastIncAmount,
+                                      EmployeeNo = r.EmployeeNo,
                                       EmployeeName = (r != null ? r.EmployeeFirstName + " " + r.EmployeeLastName : ""),
                                       LastIncDate = sl.LastIncDate,
                                       CurrentBasicSalary = (sl != null ? sl.CurrentBasicSalary : 0),
+                                      CurrentIncDate = sl.EmployeeSalaryIncrementDate,
                                       NewBasicSalary = sl.NewBasicSalary,
                                       IncrementAmount = (sl != null ? sl.IncrementAmount : 0),
                                       IncrementPercentage = (sl != null ? sl.IncrementPercentage : 0),

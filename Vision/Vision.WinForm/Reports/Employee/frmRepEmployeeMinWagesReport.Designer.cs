@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule4 = new DevExpress.XtraGrid.GridFormatRule();
             this.employeeAttendanceHeaderReportModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.myLayoutControl1 = new Alit.WinformControls.myLayoutControl();
             this.btnClearData = new DevExpress.XtraEditors.SimpleButton();
@@ -38,7 +38,20 @@
             this.ucEmployeeFilter1 = new Vision.WinForm.Reports.ucEmployeeFilter();
             this.FromDate = new Alit.WinformControls.DateEdit();
             this.gcEmployee = new DevExpress.XtraGrid.GridControl();
+            this.employeeMinimumWagesReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gvData = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colEmployeeNoPrefix = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeeNo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployeeName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDesignation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLocation = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCategory = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colBasicSalary = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMinWagesSal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colVariance = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLocationType = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colEmployementType = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colLocationType1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtNofRecords = new Alit.WinformControls.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -60,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.FromDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FromDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeMinimumWagesReportBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNofRecords.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
@@ -164,6 +178,7 @@
             // gcEmployee
             // 
             this.gcEmployee.Cursor = System.Windows.Forms.Cursors.SizeNESW;
+            this.gcEmployee.DataSource = this.employeeMinimumWagesReportBindingSource;
             this.gcEmployee.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.gcEmployee.Location = new System.Drawing.Point(12, 153);
             this.gcEmployee.MainView = this.gvData;
@@ -174,20 +189,148 @@
             this.gcEmployee.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvData});
             // 
+            // employeeMinimumWagesReportBindingSource
+            // 
+            this.employeeMinimumWagesReportBindingSource.DataSource = typeof(Vision.Model.Reports.Employee.EmployeeMinimumWagesReport);
+            // 
             // gvData
             // 
+            this.gvData.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colEmployeeNoPrefix,
+            this.colEmployeeNo,
+            this.colEmployeeName,
+            this.colDesignation,
+            this.colLocation,
+            this.colCategory,
+            this.colBasicSalary,
+            this.colMinWagesSal,
+            this.colVariance,
+            this.colLocationType,
+            this.colEmployementType,
+            this.colLocationType1});
             this.gvData.DetailHeight = 530;
-            gridFormatRule1.Enabled = false;
-            gridFormatRule1.Name = "MinWagesSal";
-            gridFormatRule1.Rule = null;
-            gridFormatRule2.Name = "Format1";
-            gridFormatRule2.Rule = null;
-            this.gvData.FormatRules.Add(gridFormatRule1);
-            this.gvData.FormatRules.Add(gridFormatRule2);
+            gridFormatRule3.Enabled = false;
+            gridFormatRule3.Name = "MinWagesSal";
+            gridFormatRule3.Rule = null;
+            gridFormatRule4.Name = "Format1";
+            gridFormatRule4.Rule = null;
+            this.gvData.FormatRules.Add(gridFormatRule3);
+            this.gvData.FormatRules.Add(gridFormatRule4);
             this.gvData.GridControl = this.gcEmployee;
             this.gvData.Name = "gvData";
             this.gvData.OptionsBehavior.ReadOnly = true;
             this.gvData.OptionsView.ShowGroupPanel = false;
+            // 
+            // colEmployeeNoPrefix
+            // 
+            this.colEmployeeNoPrefix.FieldName = "EmployeeNoPrefix";
+            this.colEmployeeNoPrefix.MaxWidth = 125;
+            this.colEmployeeNoPrefix.MinWidth = 75;
+            this.colEmployeeNoPrefix.Name = "colEmployeeNoPrefix";
+            this.colEmployeeNoPrefix.Visible = true;
+            this.colEmployeeNoPrefix.VisibleIndex = 0;
+            // 
+            // colEmployeeNo
+            // 
+            this.colEmployeeNo.FieldName = "EmployeeNo";
+            this.colEmployeeNo.MaxWidth = 125;
+            this.colEmployeeNo.MinWidth = 75;
+            this.colEmployeeNo.Name = "colEmployeeNo";
+            this.colEmployeeNo.Visible = true;
+            this.colEmployeeNo.VisibleIndex = 1;
+            // 
+            // colEmployeeName
+            // 
+            this.colEmployeeName.FieldName = "EmployeeName";
+            this.colEmployeeName.MaxWidth = 125;
+            this.colEmployeeName.MinWidth = 75;
+            this.colEmployeeName.Name = "colEmployeeName";
+            this.colEmployeeName.Visible = true;
+            this.colEmployeeName.VisibleIndex = 2;
+            // 
+            // colDesignation
+            // 
+            this.colDesignation.FieldName = "Designation";
+            this.colDesignation.MaxWidth = 125;
+            this.colDesignation.MinWidth = 75;
+            this.colDesignation.Name = "colDesignation";
+            this.colDesignation.Visible = true;
+            this.colDesignation.VisibleIndex = 3;
+            // 
+            // colLocation
+            // 
+            this.colLocation.FieldName = "Location";
+            this.colLocation.MaxWidth = 125;
+            this.colLocation.MinWidth = 75;
+            this.colLocation.Name = "colLocation";
+            this.colLocation.Visible = true;
+            this.colLocation.VisibleIndex = 4;
+            // 
+            // colCategory
+            // 
+            this.colCategory.FieldName = "Category";
+            this.colCategory.MaxWidth = 125;
+            this.colCategory.MinWidth = 75;
+            this.colCategory.Name = "colCategory";
+            this.colCategory.Visible = true;
+            this.colCategory.VisibleIndex = 5;
+            // 
+            // colBasicSalary
+            // 
+            this.colBasicSalary.FieldName = "BasicSalary";
+            this.colBasicSalary.MaxWidth = 125;
+            this.colBasicSalary.MinWidth = 75;
+            this.colBasicSalary.Name = "colBasicSalary";
+            this.colBasicSalary.Visible = true;
+            this.colBasicSalary.VisibleIndex = 6;
+            // 
+            // colMinWagesSal
+            // 
+            this.colMinWagesSal.FieldName = "MinWagesSal";
+            this.colMinWagesSal.MaxWidth = 125;
+            this.colMinWagesSal.MinWidth = 75;
+            this.colMinWagesSal.Name = "colMinWagesSal";
+            this.colMinWagesSal.Visible = true;
+            this.colMinWagesSal.VisibleIndex = 7;
+            // 
+            // colVariance
+            // 
+            this.colVariance.FieldName = "Variance";
+            this.colVariance.MaxWidth = 125;
+            this.colVariance.MinWidth = 75;
+            this.colVariance.Name = "colVariance";
+            this.colVariance.OptionsColumn.ReadOnly = true;
+            this.colVariance.Visible = true;
+            this.colVariance.VisibleIndex = 8;
+            // 
+            // colLocationType
+            // 
+            this.colLocationType.FieldName = "LocationType";
+            this.colLocationType.MaxWidth = 125;
+            this.colLocationType.MinWidth = 75;
+            this.colLocationType.Name = "colLocationType";
+            this.colLocationType.OptionsColumn.ReadOnly = true;
+            this.colLocationType.Visible = true;
+            this.colLocationType.VisibleIndex = 9;
+            // 
+            // colEmployementType
+            // 
+            this.colEmployementType.FieldName = "EmployementType";
+            this.colEmployementType.MaxWidth = 125;
+            this.colEmployementType.MinWidth = 75;
+            this.colEmployementType.Name = "colEmployementType";
+            this.colEmployementType.OptionsColumn.ReadOnly = true;
+            this.colEmployementType.Visible = true;
+            this.colEmployementType.VisibleIndex = 10;
+            // 
+            // colLocationType1
+            // 
+            this.colLocationType1.FieldName = "LocationType";
+            this.colLocationType1.MaxWidth = 125;
+            this.colLocationType1.MinWidth = 75;
+            this.colLocationType1.Name = "colLocationType1";
+            this.colLocationType1.Visible = true;
+            this.colLocationType1.VisibleIndex = 11;
             // 
             // txtNofRecords
             // 
@@ -328,6 +471,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.FromDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FromDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeMinimumWagesReportBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNofRecords.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
@@ -368,5 +512,18 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private Alit.WinformControls.TextEdit txtNofRecords;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private System.Windows.Forms.BindingSource employeeMinimumWagesReportBindingSource;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeNoPrefix;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeNo;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployeeName;
+        private DevExpress.XtraGrid.Columns.GridColumn colDesignation;
+        private DevExpress.XtraGrid.Columns.GridColumn colLocation;
+        private DevExpress.XtraGrid.Columns.GridColumn colCategory;
+        private DevExpress.XtraGrid.Columns.GridColumn colBasicSalary;
+        private DevExpress.XtraGrid.Columns.GridColumn colMinWagesSal;
+        private DevExpress.XtraGrid.Columns.GridColumn colVariance;
+        private DevExpress.XtraGrid.Columns.GridColumn colLocationType;
+        private DevExpress.XtraGrid.Columns.GridColumn colEmployementType;
+        private DevExpress.XtraGrid.Columns.GridColumn colLocationType1;
     }
 }

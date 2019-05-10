@@ -9,3 +9,9 @@ F:\Vision\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.csprojAssemblyReference.ca
 F:\Vision\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.csproj.CoreCompileInputs.cache
 F:\Vision\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.dll
 F:\Vision\Vision\Vision\MSD150SDK\obj\Debug\MSD150SDK.pdb
+F:\Vision\VisionTSF\Vision\MSD150SDK\bin\Debug\MSD150SDK.dll
+F:\Vision\VisionTSF\Vision\MSD150SDK\bin\Debug\MSD150SDK.pdb
+F:\Vision\VisionTSF\Vision\MSD150SDK\obj\Debug\MSD150SDK.csprojAssemblyReference.cache
+F:\Vision\VisionTSF\Vision\MSD150SDK\obj\Debug\MSD150SDK.csproj.CoreCompileInputs.cache
+F:\Vision\VisionTSF\Vision\MSD150SDK\obj\Debug\MSD150SDK.dll
+F:\Vision\VisionTSF\Vision\MSD150SDK\obj\Debug\MSD150SDK.pdb

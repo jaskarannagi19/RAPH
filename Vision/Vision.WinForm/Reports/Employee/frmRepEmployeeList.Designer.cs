@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression2 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraEditors.FormatConditionRuleExpression formatConditionRuleExpression1 = new DevExpress.XtraEditors.FormatConditionRuleExpression();
             this.colWorking = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnResetFormat = new DevExpress.XtraEditors.SimpleButton();
@@ -75,8 +75,8 @@
             this.colDepartmentName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colLocationName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colEmployeeDesignationName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.colMinimumWageCategoryName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colEmployeeWIBAClassName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.colMinimumWageCategoryName = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.colEmployeeAccountingLedger = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             this.gridBand3 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
             this.colIDNo = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
@@ -159,7 +159,7 @@
             this.colWorking.Name = "colWorking";
             this.colWorking.OptionsColumn.ReadOnly = true;
             this.colWorking.Visible = true;
-            this.colWorking.Width = 144;
+            this.colWorking.Width = 122;
             // 
             // layoutControl1
             // 
@@ -183,11 +183,11 @@
             // 
             // btnResetFormat
             // 
-            this.btnResetFormat.Location = new System.Drawing.Point(1052, 73);
+            this.btnResetFormat.Location = new System.Drawing.Point(1054, 73);
             this.btnResetFormat.Margin = new System.Windows.Forms.Padding(4);
             this.btnResetFormat.MinimumSize = new System.Drawing.Size(0, 36);
             this.btnResetFormat.Name = "btnResetFormat";
-            this.btnResetFormat.Size = new System.Drawing.Size(301, 36);
+            this.btnResetFormat.Size = new System.Drawing.Size(299, 36);
             this.btnResetFormat.StyleController = this.layoutControl1;
             this.btnResetFormat.TabIndex = 29;
             this.btnResetFormat.Text = "Reset Format to Default";
@@ -195,10 +195,10 @@
             // 
             // btnSaveFormat
             // 
-            this.btnSaveFormat.Location = new System.Drawing.Point(1052, 42);
+            this.btnSaveFormat.Location = new System.Drawing.Point(1054, 42);
             this.btnSaveFormat.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveFormat.Name = "btnSaveFormat";
-            this.btnSaveFormat.Size = new System.Drawing.Size(301, 27);
+            this.btnSaveFormat.Size = new System.Drawing.Size(299, 27);
             this.btnSaveFormat.StyleController = this.layoutControl1;
             this.btnSaveFormat.TabIndex = 28;
             this.btnSaveFormat.Text = "Save Format";
@@ -207,7 +207,7 @@
             // lookupFormat
             // 
             this.lookupFormat.EnterMoveNextControl = true;
-            this.lookupFormat.Location = new System.Drawing.Point(1109, 12);
+            this.lookupFormat.Location = new System.Drawing.Point(1111, 12);
             this.lookupFormat.Margin = new System.Windows.Forms.Padding(4);
             this.lookupFormat.MaximumSize = new System.Drawing.Size(386, 0);
             this.lookupFormat.Name = "lookupFormat";
@@ -217,7 +217,7 @@
             this.lookupFormat.Properties.MaxLength = 50;
             this.lookupFormat.Properties.NullText = "Select";
             this.lookupFormat.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.lookupFormat.Size = new System.Drawing.Size(244, 26);
+            this.lookupFormat.Size = new System.Drawing.Size(242, 26);
             this.lookupFormat.StyleController = this.layoutControl1;
             this.lookupFormat.TabIndex = 27;
             this.lookupFormat.ProcessNewValue += new DevExpress.XtraEditors.Controls.ProcessNewValueEventHandler(this.lookupFormat_ProcessNewValue);
@@ -343,16 +343,16 @@
             this.colTerminationReason});
             this.advBandedGridView1.CustomizationFormBounds = new System.Drawing.Rectangle(58, 94, 334, 1049);
             this.advBandedGridView1.DetailHeight = 629;
-            gridFormatRule2.Column = this.colWorking;
-            gridFormatRule2.ColumnApplyTo = this.colWorking;
-            gridFormatRule2.Name = "FormatEmployementStatus_NoWorking";
-            formatConditionRuleExpression2.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
-            formatConditionRuleExpression2.Appearance.ForeColor = System.Drawing.Color.Red;
-            formatConditionRuleExpression2.Appearance.Options.UseFont = true;
-            formatConditionRuleExpression2.Appearance.Options.UseForeColor = true;
-            formatConditionRuleExpression2.Expression = "Lower(ToStr([EmployementStatus])) <> \'working\'";
-            gridFormatRule2.Rule = formatConditionRuleExpression2;
-            this.advBandedGridView1.FormatRules.Add(gridFormatRule2);
+            gridFormatRule1.Column = this.colWorking;
+            gridFormatRule1.ColumnApplyTo = this.colWorking;
+            gridFormatRule1.Name = "FormatEmployementStatus_NoWorking";
+            formatConditionRuleExpression1.Appearance.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            formatConditionRuleExpression1.Appearance.ForeColor = System.Drawing.Color.Red;
+            formatConditionRuleExpression1.Appearance.Options.UseFont = true;
+            formatConditionRuleExpression1.Appearance.Options.UseForeColor = true;
+            formatConditionRuleExpression1.Expression = "Lower(ToStr([EmployementStatus])) <> \'working\'";
+            gridFormatRule1.Rule = formatConditionRuleExpression1;
+            this.advBandedGridView1.FormatRules.Add(gridFormatRule1);
             this.advBandedGridView1.GridControl = this.gcEmployee;
             this.advBandedGridView1.Name = "advBandedGridView1";
             this.advBandedGridView1.OptionsBehavior.Editable = false;
@@ -371,7 +371,7 @@
             this.gridBandImage.Name = "gridBandImage";
             this.gridBandImage.OptionsBand.ShowCaption = false;
             this.gridBandImage.VisibleIndex = 0;
-            this.gridBandImage.Width = 193;
+            this.gridBandImage.Width = 162;
             // 
             // colEmployeeImage
             // 
@@ -380,7 +380,7 @@
             this.colEmployeeImage.MinWidth = 96;
             this.colEmployeeImage.Name = "colEmployeeImage";
             this.colEmployeeImage.Visible = true;
-            this.colEmployeeImage.Width = 193;
+            this.colEmployeeImage.Width = 162;
             // 
             // gridBand1
             // 
@@ -404,7 +404,7 @@
             this.gridBand1.MinWidth = 13;
             this.gridBand1.Name = "gridBand1";
             this.gridBand1.VisibleIndex = 1;
-            this.gridBand1.Width = 494;
+            this.gridBand1.Width = 417;
             // 
             // colEmployeeNo
             // 
@@ -417,7 +417,7 @@
             this.colEmployeeNo.MinWidth = 96;
             this.colEmployeeNo.Name = "colEmployeeNo";
             this.colEmployeeNo.Visible = true;
-            this.colEmployeeNo.Width = 192;
+            this.colEmployeeNo.Width = 162;
             // 
             // colTACode
             // 
@@ -430,7 +430,7 @@
             this.colTACode.MinWidth = 96;
             this.colTACode.Name = "colTACode";
             this.colTACode.Visible = true;
-            this.colTACode.Width = 158;
+            this.colTACode.Width = 133;
             // 
             // colEmployeeName
             // 
@@ -442,7 +442,7 @@
             this.colEmployeeName.Name = "colEmployeeName";
             this.colEmployeeName.RowIndex = 1;
             this.colEmployeeName.Visible = true;
-            this.colEmployeeName.Width = 494;
+            this.colEmployeeName.Width = 417;
             // 
             // colCity
             // 
@@ -451,7 +451,7 @@
             this.colCity.Name = "colCity";
             this.colCity.RowIndex = 2;
             this.colCity.Visible = true;
-            this.colCity.Width = 253;
+            this.colCity.Width = 213;
             // 
             // colNationality
             // 
@@ -460,7 +460,7 @@
             this.colNationality.Name = "colNationality";
             this.colNationality.RowIndex = 2;
             this.colNationality.Visible = true;
-            this.colNationality.Width = 240;
+            this.colNationality.Width = 204;
             // 
             // colAddress1
             // 
@@ -469,7 +469,7 @@
             this.colAddress1.Name = "colAddress1";
             this.colAddress1.RowIndex = 3;
             this.colAddress1.Visible = true;
-            this.colAddress1.Width = 494;
+            this.colAddress1.Width = 417;
             // 
             // colAddress2
             // 
@@ -478,7 +478,7 @@
             this.colAddress2.Name = "colAddress2";
             this.colAddress2.RowIndex = 4;
             this.colAddress2.Visible = true;
-            this.colAddress2.Width = 494;
+            this.colAddress2.Width = 417;
             // 
             // colAddress3
             // 
@@ -487,7 +487,7 @@
             this.colAddress3.Name = "colAddress3";
             this.colAddress3.RowIndex = 5;
             this.colAddress3.Visible = true;
-            this.colAddress3.Width = 350;
+            this.colAddress3.Width = 295;
             // 
             // colWorkVisaExpiryDate
             // 
@@ -498,7 +498,7 @@
             this.colWorkVisaExpiryDate.Name = "colWorkVisaExpiryDate";
             this.colWorkVisaExpiryDate.RowIndex = 5;
             this.colWorkVisaExpiryDate.Visible = true;
-            this.colWorkVisaExpiryDate.Width = 144;
+            this.colWorkVisaExpiryDate.Width = 122;
             // 
             // colGender
             // 
@@ -566,7 +566,7 @@
             this.gridBand7.MinWidth = 13;
             this.gridBand7.Name = "gridBand7";
             this.gridBand7.VisibleIndex = 2;
-            this.gridBand7.Width = 258;
+            this.gridBand7.Width = 351;
             // 
             // colEmploymentType
             // 
@@ -576,7 +576,7 @@
             this.colEmploymentType.MinWidth = 96;
             this.colEmploymentType.Name = "colEmploymentType";
             this.colEmploymentType.Visible = true;
-            this.colEmploymentType.Width = 257;
+            this.colEmploymentType.Width = 351;
             // 
             // colEmploymentEffectiveDate
             // 
@@ -585,7 +585,7 @@
             this.colEmploymentEffectiveDate.Name = "colEmploymentEffectiveDate";
             this.colEmploymentEffectiveDate.RowIndex = 1;
             this.colEmploymentEffectiveDate.Visible = true;
-            this.colEmploymentEffectiveDate.Width = 257;
+            this.colEmploymentEffectiveDate.Width = 351;
             // 
             // colEmployeeShiftName
             // 
@@ -594,7 +594,7 @@
             this.colEmployeeShiftName.Name = "colEmployeeShiftName";
             this.colEmployeeShiftName.RowIndex = 2;
             this.colEmployeeShiftName.Visible = true;
-            this.colEmployeeShiftName.Width = 257;
+            this.colEmployeeShiftName.Width = 351;
             // 
             // colShiftStartTime
             // 
@@ -605,7 +605,7 @@
             this.colShiftStartTime.Name = "colShiftStartTime";
             this.colShiftStartTime.RowIndex = 3;
             this.colShiftStartTime.Visible = true;
-            this.colShiftStartTime.Width = 129;
+            this.colShiftStartTime.Width = 174;
             // 
             // colShiftEndTime
             // 
@@ -616,7 +616,7 @@
             this.colShiftEndTime.Name = "colShiftEndTime";
             this.colShiftEndTime.RowIndex = 3;
             this.colShiftEndTime.Visible = true;
-            this.colShiftEndTime.Width = 129;
+            this.colShiftEndTime.Width = 177;
             // 
             // colContractExpiryDate
             // 
@@ -627,7 +627,7 @@
             this.colContractExpiryDate.Name = "colContractExpiryDate";
             this.colContractExpiryDate.RowIndex = 4;
             this.colContractExpiryDate.Visible = true;
-            this.colContractExpiryDate.Width = 257;
+            this.colContractExpiryDate.Width = 351;
             // 
             // colReinstatementReason
             // 
@@ -644,7 +644,7 @@
             this.colTerminationTypeID.Name = "colTerminationTypeID";
             this.colTerminationTypeID.RowIndex = 5;
             this.colTerminationTypeID.Visible = true;
-            this.colTerminationTypeID.Width = 129;
+            this.colTerminationTypeID.Width = 174;
             // 
             // colTerminationDate
             // 
@@ -653,7 +653,7 @@
             this.colTerminationDate.Name = "colTerminationDate";
             this.colTerminationDate.RowIndex = 5;
             this.colTerminationDate.Visible = true;
-            this.colTerminationDate.Width = 129;
+            this.colTerminationDate.Width = 177;
             // 
             // colTerminationReason
             // 
@@ -677,13 +677,13 @@
             this.gridBand2.Columns.Add(this.colDepartmentName);
             this.gridBand2.Columns.Add(this.colLocationName);
             this.gridBand2.Columns.Add(this.colEmployeeDesignationName);
-            this.gridBand2.Columns.Add(this.colMinimumWageCategoryName);
             this.gridBand2.Columns.Add(this.colEmployeeWIBAClassName);
+            this.gridBand2.Columns.Add(this.colMinimumWageCategoryName);
             this.gridBand2.Columns.Add(this.colEmployeeAccountingLedger);
             this.gridBand2.MinWidth = 13;
             this.gridBand2.Name = "gridBand2";
             this.gridBand2.VisibleIndex = 3;
-            this.gridBand2.Width = 257;
+            this.gridBand2.Width = 380;
             // 
             // colDepartmentName
             // 
@@ -693,7 +693,7 @@
             this.colDepartmentName.MinWidth = 96;
             this.colDepartmentName.Name = "colDepartmentName";
             this.colDepartmentName.Visible = true;
-            this.colDepartmentName.Width = 257;
+            this.colDepartmentName.Width = 380;
             // 
             // colLocationName
             // 
@@ -702,7 +702,7 @@
             this.colLocationName.Name = "colLocationName";
             this.colLocationName.RowIndex = 1;
             this.colLocationName.Visible = true;
-            this.colLocationName.Width = 257;
+            this.colLocationName.Width = 380;
             // 
             // colEmployeeDesignationName
             // 
@@ -711,7 +711,16 @@
             this.colEmployeeDesignationName.Name = "colEmployeeDesignationName";
             this.colEmployeeDesignationName.RowIndex = 2;
             this.colEmployeeDesignationName.Visible = true;
-            this.colEmployeeDesignationName.Width = 257;
+            this.colEmployeeDesignationName.Width = 380;
+            // 
+            // colEmployeeWIBAClassName
+            // 
+            this.colEmployeeWIBAClassName.FieldName = "EmployeeWIBAClassName";
+            this.colEmployeeWIBAClassName.MinWidth = 96;
+            this.colEmployeeWIBAClassName.Name = "colEmployeeWIBAClassName";
+            this.colEmployeeWIBAClassName.RowIndex = 3;
+            this.colEmployeeWIBAClassName.Visible = true;
+            this.colEmployeeWIBAClassName.Width = 190;
             // 
             // colMinimumWageCategoryName
             // 
@@ -720,25 +729,16 @@
             this.colMinimumWageCategoryName.Name = "colMinimumWageCategoryName";
             this.colMinimumWageCategoryName.RowIndex = 3;
             this.colMinimumWageCategoryName.Visible = true;
-            this.colMinimumWageCategoryName.Width = 257;
-            // 
-            // colEmployeeWIBAClassName
-            // 
-            this.colEmployeeWIBAClassName.FieldName = "EmployeeWIBAClassName";
-            this.colEmployeeWIBAClassName.MinWidth = 96;
-            this.colEmployeeWIBAClassName.Name = "colEmployeeWIBAClassName";
-            this.colEmployeeWIBAClassName.RowIndex = 4;
-            this.colEmployeeWIBAClassName.Visible = true;
-            this.colEmployeeWIBAClassName.Width = 257;
+            this.colMinimumWageCategoryName.Width = 190;
             // 
             // colEmployeeAccountingLedger
             // 
             this.colEmployeeAccountingLedger.FieldName = "EmployeeAccountingLedger";
             this.colEmployeeAccountingLedger.MinWidth = 26;
             this.colEmployeeAccountingLedger.Name = "colEmployeeAccountingLedger";
-            this.colEmployeeAccountingLedger.RowIndex = 5;
+            this.colEmployeeAccountingLedger.RowIndex = 4;
             this.colEmployeeAccountingLedger.Visible = true;
-            this.colEmployeeAccountingLedger.Width = 257;
+            this.colEmployeeAccountingLedger.Width = 380;
             // 
             // gridBand3
             // 
@@ -752,7 +752,7 @@
             this.gridBand3.MinWidth = 13;
             this.gridBand3.Name = "gridBand3";
             this.gridBand3.VisibleIndex = 4;
-            this.gridBand3.Width = 193;
+            this.gridBand3.Width = 142;
             // 
             // colIDNo
             // 
@@ -762,7 +762,7 @@
             this.colIDNo.MinWidth = 96;
             this.colIDNo.Name = "colIDNo";
             this.colIDNo.Visible = true;
-            this.colIDNo.Width = 193;
+            this.colIDNo.Width = 142;
             // 
             // colNHIFNo
             // 
@@ -771,7 +771,7 @@
             this.colNHIFNo.Name = "colNHIFNo";
             this.colNHIFNo.RowIndex = 1;
             this.colNHIFNo.Visible = true;
-            this.colNHIFNo.Width = 193;
+            this.colNHIFNo.Width = 142;
             // 
             // colPFNo
             // 
@@ -780,7 +780,7 @@
             this.colPFNo.Name = "colPFNo";
             this.colPFNo.RowIndex = 2;
             this.colPFNo.Visible = true;
-            this.colPFNo.Width = 193;
+            this.colPFNo.Width = 142;
             // 
             // colNSSFNo
             // 
@@ -789,7 +789,7 @@
             this.colNSSFNo.Name = "colNSSFNo";
             this.colNSSFNo.RowIndex = 3;
             this.colNSSFNo.Visible = true;
-            this.colNSSFNo.Width = 193;
+            this.colNSSFNo.Width = 142;
             // 
             // colPINNo
             // 
@@ -798,7 +798,7 @@
             this.colPINNo.Name = "colPINNo";
             this.colPINNo.RowIndex = 4;
             this.colPINNo.Visible = true;
-            this.colPINNo.Width = 193;
+            this.colPINNo.Width = 142;
             // 
             // colMpesaNo
             // 
@@ -807,7 +807,7 @@
             this.colMpesaNo.Name = "colMpesaNo";
             this.colMpesaNo.RowIndex = 5;
             this.colMpesaNo.Visible = true;
-            this.colMpesaNo.Width = 193;
+            this.colMpesaNo.Width = 142;
             // 
             // gridBand4
             // 
@@ -821,7 +821,7 @@
             this.gridBand4.MinWidth = 13;
             this.gridBand4.Name = "gridBand4";
             this.gridBand4.VisibleIndex = 5;
-            this.gridBand4.Width = 193;
+            this.gridBand4.Width = 142;
             // 
             // colIncomeType
             // 
@@ -831,7 +831,7 @@
             this.colIncomeType.MinWidth = 96;
             this.colIncomeType.Name = "colIncomeType";
             this.colIncomeType.Visible = true;
-            this.colIncomeType.Width = 193;
+            this.colIncomeType.Width = 142;
             // 
             // colBasicSalary
             // 
@@ -847,7 +847,7 @@
             this.colBasicSalary.Name = "colBasicSalary";
             this.colBasicSalary.RowIndex = 1;
             this.colBasicSalary.Visible = true;
-            this.colBasicSalary.Width = 193;
+            this.colBasicSalary.Width = 142;
             // 
             // colHousingAllowance
             // 
@@ -858,7 +858,7 @@
             this.colHousingAllowance.Name = "colHousingAllowance";
             this.colHousingAllowance.RowIndex = 2;
             this.colHousingAllowance.Visible = true;
-            this.colHousingAllowance.Width = 193;
+            this.colHousingAllowance.Width = 142;
             // 
             // colWeekendAllowance
             // 
@@ -869,7 +869,7 @@
             this.colWeekendAllowance.Name = "colWeekendAllowance";
             this.colWeekendAllowance.RowIndex = 3;
             this.colWeekendAllowance.Visible = true;
-            this.colWeekendAllowance.Width = 193;
+            this.colWeekendAllowance.Width = 142;
             // 
             // colDailyRate
             // 
@@ -880,7 +880,7 @@
             this.colDailyRate.Name = "colDailyRate";
             this.colDailyRate.RowIndex = 4;
             this.colDailyRate.Visible = true;
-            this.colDailyRate.Width = 193;
+            this.colDailyRate.Width = 142;
             // 
             // colTALatenessCharges
             // 
@@ -891,7 +891,7 @@
             this.colTALatenessCharges.Name = "colTALatenessCharges";
             this.colTALatenessCharges.RowIndex = 5;
             this.colTALatenessCharges.Visible = true;
-            this.colTALatenessCharges.Width = 193;
+            this.colTALatenessCharges.Width = 142;
             // 
             // gridBand5
             // 
@@ -906,7 +906,7 @@
             this.gridBand5.MinWidth = 13;
             this.gridBand5.Name = "gridBand5";
             this.gridBand5.VisibleIndex = 6;
-            this.gridBand5.Width = 193;
+            this.gridBand5.Width = 142;
             // 
             // colTAAttendanceType
             // 
@@ -916,7 +916,7 @@
             this.colTAAttendanceType.MinWidth = 96;
             this.colTAAttendanceType.Name = "colTAAttendanceType";
             this.colTAAttendanceType.Visible = true;
-            this.colTAAttendanceType.Width = 193;
+            this.colTAAttendanceType.Width = 142;
             // 
             // colTAMissPunch
             // 
@@ -925,7 +925,7 @@
             this.colTAMissPunch.Name = "colTAMissPunch";
             this.colTAMissPunch.RowIndex = 1;
             this.colTAMissPunch.Visible = true;
-            this.colTAMissPunch.Width = 193;
+            this.colTAMissPunch.Width = 142;
             // 
             // colTAOvertime
             // 
@@ -934,7 +934,7 @@
             this.colTAOvertime.Name = "colTAOvertime";
             this.colTAOvertime.RowIndex = 2;
             this.colTAOvertime.Visible = true;
-            this.colTAOvertime.Width = 193;
+            this.colTAOvertime.Width = 142;
             // 
             // colTAWeekendType
             // 
@@ -943,7 +943,7 @@
             this.colTAWeekendType.Name = "colTAWeekendType";
             this.colTAWeekendType.RowIndex = 3;
             this.colTAWeekendType.Visible = true;
-            this.colTAWeekendType.Width = 193;
+            this.colTAWeekendType.Width = 142;
             // 
             // colTAWeekEndAttendance
             // 
@@ -952,7 +952,7 @@
             this.colTAWeekEndAttendance.Name = "colTAWeekEndAttendance";
             this.colTAWeekEndAttendance.RowIndex = 4;
             this.colTAWeekEndAttendance.Visible = true;
-            this.colTAWeekEndAttendance.Width = 193;
+            this.colTAWeekEndAttendance.Width = 142;
             // 
             // colTANegativeLeave
             // 
@@ -961,7 +961,7 @@
             this.colTANegativeLeave.Name = "colTANegativeLeave";
             this.colTANegativeLeave.RowIndex = 5;
             this.colTANegativeLeave.Visible = true;
-            this.colTANegativeLeave.Width = 193;
+            this.colTANegativeLeave.Width = 142;
             // 
             // colTAEarlyGoing
             // 
@@ -983,7 +983,7 @@
             this.gridBand6.MinWidth = 13;
             this.gridBand6.Name = "gridBand6";
             this.gridBand6.VisibleIndex = 7;
-            this.gridBand6.Width = 193;
+            this.gridBand6.Width = 148;
             // 
             // colBankName
             // 
@@ -993,7 +993,7 @@
             this.colBankName.MinWidth = 96;
             this.colBankName.Name = "colBankName";
             this.colBankName.Visible = true;
-            this.colBankName.Width = 193;
+            this.colBankName.Width = 148;
             // 
             // colBankAcNo
             // 
@@ -1002,7 +1002,7 @@
             this.colBankAcNo.Name = "colBankAcNo";
             this.colBankAcNo.RowIndex = 1;
             this.colBankAcNo.Visible = true;
-            this.colBankAcNo.Width = 193;
+            this.colBankAcNo.Width = 148;
             // 
             // colBankBranch
             // 
@@ -1011,7 +1011,7 @@
             this.colBankBranch.Name = "colBankBranch";
             this.colBankBranch.RowIndex = 2;
             this.colBankBranch.Visible = true;
-            this.colBankBranch.Width = 193;
+            this.colBankBranch.Width = 148;
             // 
             // colBankCurrency
             // 
@@ -1021,7 +1021,7 @@
             this.colBankCurrency.Name = "colBankCurrency";
             this.colBankCurrency.RowIndex = 3;
             this.colBankCurrency.Visible = true;
-            this.colBankCurrency.Width = 193;
+            this.colBankCurrency.Width = 148;
             // 
             // colPayCycle
             // 
@@ -1030,7 +1030,7 @@
             this.colPayCycle.Name = "colPayCycle";
             this.colPayCycle.RowIndex = 4;
             this.colPayCycle.Visible = true;
-            this.colPayCycle.Width = 129;
+            this.colPayCycle.Width = 148;
             // 
             // colPaymentMode
             // 
@@ -1039,7 +1039,7 @@
             this.colPaymentMode.Name = "colPaymentMode";
             this.colPaymentMode.RowIndex = 5;
             this.colPaymentMode.Visible = true;
-            this.colPaymentMode.Width = 129;
+            this.colPaymentMode.Width = 148;
             // 
             // btnRefreshData
             // 
@@ -1067,7 +1067,7 @@
             this.ucEmployeeFilter1.MinimumSize = new System.Drawing.Size(1029, 131);
             this.ucEmployeeFilter1.Name = "ucEmployeeFilter1";
             this.ucEmployeeFilter1.ShowDateRangeFilter = false;
-            this.ucEmployeeFilter1.Size = new System.Drawing.Size(1032, 132);
+            this.ucEmployeeFilter1.Size = new System.Drawing.Size(1034, 132);
             this.ucEmployeeFilter1.TabIndex = 18;
             // 
             // Root
@@ -1096,7 +1096,7 @@
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem1.Size = new System.Drawing.Size(1040, 140);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1042, 140);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -1141,15 +1141,15 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(591, 140);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(449, 40);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(451, 40);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem5
             // 
             this.emptySpaceItem5.AllowHotTrack = false;
-            this.emptySpaceItem5.Location = new System.Drawing.Point(1040, 101);
+            this.emptySpaceItem5.Location = new System.Drawing.Point(1042, 101);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(305, 79);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(303, 79);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem4
@@ -1163,9 +1163,9 @@
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.lookupFormat;
-            this.layoutControlItem6.Location = new System.Drawing.Point(1040, 0);
+            this.layoutControlItem6.Location = new System.Drawing.Point(1042, 0);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(305, 30);
+            this.layoutControlItem6.Size = new System.Drawing.Size(303, 30);
             this.layoutControlItem6.Text = "Format";
             this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(52, 19);
@@ -1174,18 +1174,18 @@
             // layoutControlItem9
             // 
             this.layoutControlItem9.Control = this.btnSaveFormat;
-            this.layoutControlItem9.Location = new System.Drawing.Point(1040, 30);
+            this.layoutControlItem9.Location = new System.Drawing.Point(1042, 30);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(305, 31);
+            this.layoutControlItem9.Size = new System.Drawing.Size(303, 31);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.btnResetFormat;
-            this.layoutControlItem4.Location = new System.Drawing.Point(1040, 61);
+            this.layoutControlItem4.Location = new System.Drawing.Point(1042, 61);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(305, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(303, 40);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -1298,14 +1298,6 @@
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colMulticurrencyText;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colEmployeeName;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn colEmployeeAccountingLedger;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBandImage;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand7;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
-        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand6;
         private Alit.WinformControls.LookUpEdit lookupFormat;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
@@ -1315,5 +1307,13 @@
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem5;
         private DevExpress.XtraEditors.SimpleButton btnResetFormat;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBandImage;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand7;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand3;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand4;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand5;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand6;
     }
 }

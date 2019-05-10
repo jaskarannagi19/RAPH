@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Vision.Model.Settings
 {
-    class PayrollMonthViewModel
+    public class PayrollMonthViewModel
     {
+        public int PayrollMonthID { get; set; }
+
+        public DateTime PayrollMonthStartDate { get; set; }
+
+        public DateTime PayrollMonthEndDate { get; set; }
+
+        public string PayrollMonthName { get; set; }
     }
 }

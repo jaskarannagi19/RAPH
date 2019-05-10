@@ -144,6 +144,7 @@
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.lblPayrollMonthName = new DevExpress.XtraBars.BarHeaderItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManagerMain)).BeginInit();
@@ -240,10 +241,12 @@
             this.barButtonItem10,
             this.btnEmployeeSalaryIncrementReport,
             this.btnSalary,
-            this.btnSettingsInstitue_Payroll});
+            this.btnSettingsInstitue_Payroll,
+            this.lblPayrollMonthName});
             resources.ApplyResources(this.ribbonMain, "ribbonMain");
-            this.ribbonMain.MaxItemId = 64;
+            this.ribbonMain.MaxItemId = 65;
             this.ribbonMain.Name = "ribbonMain";
+            this.ribbonMain.PageHeaderItemLinks.Add(this.lblPayrollMonthName);
             this.ribbonMain.PageHeaderItemLinks.Add(this.lblUserName);
             this.ribbonMain.PageHeaderItemLinks.Add(this.lblLoginTime);
             this.ribbonMain.PageHeaderItemLinks.Add(this.btnLogout);
@@ -1332,6 +1335,13 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.barButtonItem8.Tag = "3006";
             // 
+            // lblPayrollMonthName
+            // 
+            resources.ApplyResources(this.lblPayrollMonthName, "lblPayrollMonthName");
+            this.lblPayrollMonthName.Id = 64;
+            this.lblPayrollMonthName.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barHeaderItem1.ImageOptions.SvgImage")));
+            this.lblPayrollMonthName.Name = "lblPayrollMonthName";
+            // 
             // frmDashBoard
             // 
             this.AllowMdiBar = true;
@@ -1465,5 +1475,6 @@
         private DevExpress.XtraBars.BarButtonItem btnEmployeeSalaryIncrementReport;
         private DevExpress.XtraBars.BarButtonItem btnSalary;
         private DevExpress.XtraBars.BarButtonItem btnSettingsInstitue_Payroll;
+        private DevExpress.XtraBars.BarHeaderItem lblPayrollMonthName;
     }
 }

@@ -30,6 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmApplicationSettings));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -70,11 +75,6 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
             this.layoutControl1 = new Alit.WinformControls.myLayoutControl();
             this.txtWorkingHoursPerDay = new Alit.WinformControls.TextEdit();
             this.txtPFContributionEmployee = new Alit.WinformControls.TextEdit();
@@ -462,7 +462,7 @@
             resources.ApplyResources(this.txtDocumentLocation_LeaveAdjustmentDocument, "txtDocumentLocation_LeaveAdjustmentDocument");
             this.txtDocumentLocation_LeaveAdjustmentDocument.Name = "txtDocumentLocation_LeaveAdjustmentDocument";
             this.txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons5"))), editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, resources.GetString("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons5"))), editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, resources.GetString("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LeaveAdjustmentDocument.Properties.Buttons9"))))});
             this.txtDocumentLocation_LeaveAdjustmentDocument.StyleController = this.layoutControl1;
             this.txtDocumentLocation_LeaveAdjustmentDocument.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtDocumentLocation_ButtonClick);
             // 
@@ -472,7 +472,7 @@
             resources.ApplyResources(this.txtDocumentLocation_LeaveEncashmentDocument, "txtDocumentLocation_LeaveEncashmentDocument");
             this.txtDocumentLocation_LeaveEncashmentDocument.Name = "txtDocumentLocation_LeaveEncashmentDocument";
             this.txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons5"))), editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, resources.GetString("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons5"))), editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, resources.GetString("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LeaveEncashmentDocument.Properties.Buttons9"))))});
             this.txtDocumentLocation_LeaveEncashmentDocument.StyleController = this.layoutControl1;
             this.txtDocumentLocation_LeaveEncashmentDocument.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtDocumentLocation_ButtonClick);
             // 
@@ -482,7 +482,7 @@
             resources.ApplyResources(this.txtDocumentLocation_SafariApplicationDocument, "txtDocumentLocation_SafariApplicationDocument");
             this.txtDocumentLocation_SafariApplicationDocument.Name = "txtDocumentLocation_SafariApplicationDocument";
             this.txtDocumentLocation_SafariApplicationDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons5"))), editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, resources.GetString("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons5"))), editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, resources.GetString("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_SafariApplicationDocument.Properties.Buttons9"))))});
             this.txtDocumentLocation_SafariApplicationDocument.StyleController = this.layoutControl1;
             // 
             // gcLicenseNofEmployee
@@ -582,7 +582,6 @@
             // 
             this.txtNoReply_EmailID.EnterMoveNextControl = true;
             resources.ApplyResources(this.txtNoReply_EmailID, "txtNoReply_EmailID");
-            this.txtNoReply_EmailID.MenuManager = this.barManager1;
             this.txtNoReply_EmailID.Name = "txtNoReply_EmailID";
             this.txtNoReply_EmailID.Properties.MaxLength = 50;
             this.txtNoReply_EmailID.StyleController = this.layoutControl1;
@@ -594,7 +593,7 @@
             this.txtDocumentLocation_EmployeeImages.MenuManager = this.barManager1;
             this.txtDocumentLocation_EmployeeImages.Name = "txtDocumentLocation_EmployeeImages";
             this.txtDocumentLocation_EmployeeImages.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons"))), resources.GetString("txtDocumentLocation_EmployeeImages.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons5"))), editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, resources.GetString("txtDocumentLocation_EmployeeImages.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons"))), resources.GetString("txtDocumentLocation_EmployeeImages.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons5"))), editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, resources.GetString("txtDocumentLocation_EmployeeImages.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_EmployeeImages.Properties.Buttons9"))))});
             this.txtDocumentLocation_EmployeeImages.Properties.MaxLength = 1000;
             this.txtDocumentLocation_EmployeeImages.StyleController = this.layoutControl1;
             this.txtDocumentLocation_EmployeeImages.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtDocumentLocation_ButtonClick);
@@ -606,7 +605,7 @@
             this.txtDocumentLocation_EmployeeDocument.MenuManager = this.barManager1;
             this.txtDocumentLocation_EmployeeDocument.Name = "txtDocumentLocation_EmployeeDocument";
             this.txtDocumentLocation_EmployeeDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_EmployeeDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons5"))), editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, resources.GetString("txtDocumentLocation_EmployeeDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_EmployeeDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons5"))), editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, resources.GetString("txtDocumentLocation_EmployeeDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_EmployeeDocument.Properties.Buttons9"))))});
             this.txtDocumentLocation_EmployeeDocument.StyleController = this.layoutControl1;
             this.txtDocumentLocation_EmployeeDocument.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtDocumentLocation_ButtonClick);
             // 
@@ -617,7 +616,7 @@
             this.txtDocumentLocation_LeaveApplicationDocument.MenuManager = this.barManager1;
             this.txtDocumentLocation_LeaveApplicationDocument.Name = "txtDocumentLocation_LeaveApplicationDocument";
             this.txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons5"))), editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, resources.GetString("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons5"))), editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, resources.GetString("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LeaveApplicationDocument.Properties.Buttons9"))))});
             this.txtDocumentLocation_LeaveApplicationDocument.StyleController = this.layoutControl1;
             this.txtDocumentLocation_LeaveApplicationDocument.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtDocumentLocation_ButtonClick);
             // 
@@ -627,7 +626,7 @@
             resources.ApplyResources(this.txtDocumentLocation_LoanApplicationDocument, "txtDocumentLocation_LoanApplicationDocument");
             this.txtDocumentLocation_LoanApplicationDocument.Name = "txtDocumentLocation_LoanApplicationDocument";
             this.txtDocumentLocation_LoanApplicationDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons5"))), editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, resources.GetString("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons5"))), editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, resources.GetString("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LoanApplicationDocument.Properties.Buttons9"))))});
             this.txtDocumentLocation_LoanApplicationDocument.StyleController = this.layoutControl1;
             this.txtDocumentLocation_LoanApplicationDocument.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtDocumentLocation_ButtonClick);
             // 
@@ -637,7 +636,7 @@
             resources.ApplyResources(this.txtDocumentLocation_LoanAdjustmentDocument, "txtDocumentLocation_LoanAdjustmentDocument");
             this.txtDocumentLocation_LoanAdjustmentDocument.Name = "txtDocumentLocation_LoanAdjustmentDocument";
             this.txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons5"))), editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, resources.GetString("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons5"))), editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, resources.GetString("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_LoanAdjustmentDocument.Properties.Buttons9"))))});
             this.txtDocumentLocation_LoanAdjustmentDocument.StyleController = this.layoutControl1;
             this.txtDocumentLocation_LoanAdjustmentDocument.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtDocumentLocation_ButtonClick);
             // 
@@ -647,7 +646,7 @@
             resources.ApplyResources(this.txtDocumentLocation_TAApprovalDocument, "txtDocumentLocation_TAApprovalDocument");
             this.txtDocumentLocation_TAApprovalDocument.Name = "txtDocumentLocation_TAApprovalDocument";
             this.txtDocumentLocation_TAApprovalDocument.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_TAApprovalDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons5"))), editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, resources.GetString("txtDocumentLocation_TAApprovalDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons9"))))});
+            new DevExpress.XtraEditors.Controls.EditorButton(((DevExpress.XtraEditors.Controls.ButtonPredefines)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons"))), resources.GetString("txtDocumentLocation_TAApprovalDocument.Properties.Buttons1"), ((int)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons2"))), ((bool)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons3"))), ((bool)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons4"))), ((bool)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons5"))), editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, resources.GetString("txtDocumentLocation_TAApprovalDocument.Properties.Buttons6"), ((object)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons7"))), ((DevExpress.Utils.SuperToolTip)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons8"))), ((DevExpress.Utils.ToolTipAnchor)(resources.GetObject("txtDocumentLocation_TAApprovalDocument.Properties.Buttons9"))))});
             this.txtDocumentLocation_TAApprovalDocument.StyleController = this.layoutControl1;
             this.txtDocumentLocation_TAApprovalDocument.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.txtDocumentLocation_ButtonClick);
             // 
@@ -658,7 +657,7 @@
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.tabbedControlGroup1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(852, 383);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(852, 381);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // tabbedControlGroup1
@@ -666,7 +665,7 @@
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
             this.tabbedControlGroup1.SelectedTabPage = this.layoutControlGroup2;
-            this.tabbedControlGroup1.Size = new System.Drawing.Size(832, 363);
+            this.tabbedControlGroup1.Size = new System.Drawing.Size(832, 361);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2,
             this.lcgDocumentLocation,
@@ -692,15 +691,15 @@
             this.layoutControlItem26});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(808, 315);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(808, 312);
             resources.ApplyResources(this.layoutControlGroup2, "layoutControlGroup2");
             // 
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 203);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 201);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(808, 112);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(808, 111);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem15
@@ -744,7 +743,7 @@
             this.emptySpaceItem2.AllowHotTrack = false;
             this.emptySpaceItem2.Location = new System.Drawing.Point(596, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(212, 203);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(212, 201);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem22
@@ -790,15 +789,15 @@
             this.layoutControlItem24});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 130);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(596, 73);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(596, 71);
             resources.ApplyResources(this.layoutControlGroup3, "layoutControlGroup3");
             // 
             // layoutControlItem25
             // 
             this.layoutControlItem25.Control = this.txtPFContributionEmployee;
-            this.layoutControlItem25.Location = new System.Drawing.Point(309, 0);
+            this.layoutControlItem25.Location = new System.Drawing.Point(310, 0);
             this.layoutControlItem25.Name = "layoutControlItem25";
-            this.layoutControlItem25.Size = new System.Drawing.Size(261, 26);
+            this.layoutControlItem25.Size = new System.Drawing.Size(262, 26);
             resources.ApplyResources(this.layoutControlItem25, "layoutControlItem25");
             this.layoutControlItem25.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem25.TextSize = new System.Drawing.Size(140, 16);
@@ -809,7 +808,7 @@
             this.layoutControlItem24.Control = this.txtPFContributionEmployer;
             this.layoutControlItem24.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem24.Name = "layoutControlItem24";
-            this.layoutControlItem24.Size = new System.Drawing.Size(309, 26);
+            this.layoutControlItem24.Size = new System.Drawing.Size(310, 26);
             resources.ApplyResources(this.layoutControlItem24, "layoutControlItem24");
             this.layoutControlItem24.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem24.TextSize = new System.Drawing.Size(178, 20);
@@ -852,7 +851,7 @@
             this.layoutControlItem17});
             this.lcgDocumentLocation.Location = new System.Drawing.Point(0, 0);
             this.lcgDocumentLocation.Name = "lcgDocumentLocation";
-            this.lcgDocumentLocation.Size = new System.Drawing.Size(808, 315);
+            this.lcgDocumentLocation.Size = new System.Drawing.Size(808, 312);
             resources.ApplyResources(this.lcgDocumentLocation, "lcgDocumentLocation");
             // 
             // layoutControlItem1
@@ -869,7 +868,7 @@
             this.emptySpaceItem3.AllowHotTrack = false;
             this.emptySpaceItem3.Location = new System.Drawing.Point(0, 234);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(808, 81);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(808, 78);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem8
@@ -955,7 +954,7 @@
             this.emptySpaceItem5});
             this.lcgEmailSetup.Location = new System.Drawing.Point(0, 0);
             this.lcgEmailSetup.Name = "lcgEmailSetup";
-            this.lcgEmailSetup.Size = new System.Drawing.Size(808, 315);
+            this.lcgEmailSetup.Size = new System.Drawing.Size(808, 312);
             resources.ApplyResources(this.lcgEmailSetup, "lcgEmailSetup");
             // 
             // layoutControlItem2
@@ -1008,7 +1007,7 @@
             this.emptySpaceItem5.AllowHotTrack = false;
             this.emptySpaceItem5.Location = new System.Drawing.Point(0, 82);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(808, 233);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(808, 230);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // lcgLicense
@@ -1020,7 +1019,7 @@
             this.emptySpaceItem4});
             this.lcgLicense.Location = new System.Drawing.Point(0, 0);
             this.lcgLicense.Name = "lcgLicense";
-            this.lcgLicense.Size = new System.Drawing.Size(808, 315);
+            this.lcgLicense.Size = new System.Drawing.Size(808, 312);
             resources.ApplyResources(this.lcgLicense, "lcgLicense");
             // 
             // layoutControlItem7
@@ -1037,7 +1036,7 @@
             this.layoutControlItem9.Control = this.gcLicenseNofEmployee;
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(581, 289);
+            this.layoutControlItem9.Size = new System.Drawing.Size(581, 286);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
@@ -1046,7 +1045,7 @@
             this.emptySpaceItem6.AllowHotTrack = false;
             this.emptySpaceItem6.Location = new System.Drawing.Point(581, 0);
             this.emptySpaceItem6.Name = "emptySpaceItem6";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(227, 315);
+            this.emptySpaceItem6.Size = new System.Drawing.Size(227, 312);
             this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem4

@@ -86,7 +86,7 @@ namespace Vision.DAL.Payroll
         {
             using (dbVisionEntities db = new dbVisionEntities())
             {
-                return db.tblLeaveEncashments.Where(r => r.EmployeeID == EmployeeID && r.LeaveEncashmentDate >= DateFrom && r.LeaveEncashmentDate <= DateTo).Sum(r => (decimal?)r.NofLeaves) ?? 0;
+                return Math.Round(db.tblLeaveEncashments.Where(r => r.EmployeeID == EmployeeID && r.LeaveEncashmentDate >= DateFrom && r.LeaveEncashmentDate <= DateTo).Sum(r => (decimal?)r.NofLeaves) ?? 0, 2);
             }
         }
 

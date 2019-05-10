@@ -49,15 +49,16 @@ namespace Vision.WinForm.Navigation
 
         private void btnLogout_ItemClick(object sender, ItemClickEventArgs e)
         {
-            foreach(var form in this.MdiChildren)
-            {
-                form.Close();
-            }
+          
             Logout();
         }
 
-        void Logout()
+        public void Logout()
         {
+            foreach (var form in this.MdiChildren)
+            {
+                form.Close();
+            }
             Model.CommonProperties.LoginInfo.UserPermission = null;
             Model.CommonProperties.LoginInfo.LoggedinUser = null;
             //Model.CommonProperties.LoginInfo.SoftwareSettings = null;
@@ -160,6 +161,13 @@ namespace Vision.WinForm.Navigation
                 SettingsDAL.GetSetting(Model.CommonProperties.LoginInfo.LoggedInCompany.CompanyID, Model.CommonProperties.LoginInfo.SoftwareSettings);
 
                 Model.CommonProperties.LoginInfo.LoggedInCompanyReportModel = DAL.Settings.CompanyDAL.GetCompanyDetailReportModel(Model.CommonProperties.LoginInfo.LoggedInCompany.CompanyID);
+
+                Model.CommonProperties.LoginInfo.CurrentPayrollMonth = (new DAL.Settings.PayrollMonthDAL()).GetLatestPayrollMonthViewModelByCompanyID(Model.CommonProperties.LoginInfo.LoggedInCompany.CompanyID);
+                if(Model.CommonProperties.LoginInfo.CurrentPayrollMonth != null)
+                {
+                    lblPayrollMonthName.Caption = Model.CommonProperties.LoginInfo.CurrentPayrollMonth.PayrollMonthName;
+                }
+
 
                 ApplySettingsOnMenus();
 
@@ -603,7 +611,7 @@ namespace Vision.WinForm.Navigation
 
         private void btnSalary_ItemClick(object sender, ItemClickEventArgs e)
         {
-            ShowForm<Reports.Employee.frmRepSalaryReport>(Model.CommonFunctions.ParseInt(e.Item.Tag.ToString()));//ADD NEW FORM
+            ShowForm<Reports.Payroll.frmRepSalaryReport>(Model.CommonFunctions.ParseInt(e.Item.Tag.ToString()));//ADD NEW FORM
 
         }
 

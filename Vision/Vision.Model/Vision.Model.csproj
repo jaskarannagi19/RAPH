@@ -77,6 +77,7 @@
     <Compile Include="Loan\LoanAjustmentViewModel.cs" />
     <Compile Include="Loan\LoanApplicationViewModel.cs" />
     <Compile Include="Loan\LoanApplicationNoPrefixViewModel.cs" />
+    <Compile Include="Payroll\EarningDeductionImportViewModel.cs" />
     <Compile Include="Payroll\EarningDeductionViewModel.cs" />
     <Compile Include="Payroll\EmployeeAttendanceViewModel.cs" />
     <Compile Include="Payroll\EmployeePayslipViewModel.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Reports\Employee\EmployeeMinimumWagesReport .cs" />
     <Compile Include="Reports\Employee\EmployeeSalaryIncrementReportModel.cs" />
     <Compile Include="Reports\Employee\EmployementStatusReportModel.cs" />
+    <Compile Include="Reports\Payroll\SalaryListViewModel.cs" />
     <Compile Include="Reports\TimeAttendance\EarlyGoingReportModel.cs" />
     <Compile Include="Reports\TimeAttendance\EmployeeAttendancePerformanceReportModel.cs" />
     <Compile Include="Reports\TimeAttendance\EmployeeMonthlyAttendanceSummaryReportModel.cs" />

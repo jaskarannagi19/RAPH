@@ -83,7 +83,7 @@ namespace Vision.WinForm.Reports.Employee
             txtNofRecords.EditValue = Res.Count();
             gcEmployeeSalaryIncrement.DataSource = Res;
 
-            gvData.Columns["EmployeeNoPrefix"].Visible = true;            
+            //gvData.Columns["EmployeeNoPrefix"].Visible = true;            
         }
 
         private void btnGetReport_Click(object sender, EventArgs e)

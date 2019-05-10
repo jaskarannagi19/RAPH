@@ -1007,9 +1007,10 @@
             <PropertyRef Name="PayrollMonthID" />
           </Key>
           <Property Name="PayrollMonthID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="PayrollMonthStartDate" Type="datetime" Nullable="false" />
-          <Property Name="PayrollMonthEndDate" Type="datetime" Nullable="false" />
-          <Property Name="PayrollMonthName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="PayrollMonthStartDate" Type="date" Nullable="false" />
+          <Property Name="PayrollMonthEndDate" Type="date" Nullable="false" />
+          <Property Name="PayrollMonth" Type="date" Nullable="false" />
+          <Property Name="PayrollMonthName" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="CompanyID" Type="int" />
           <Property Name="rstate" Type="tinyint" Nullable="false" />
           <Property Name="rcdt" Type="datetime" />
@@ -1279,7 +1280,7 @@
           <Property Name="LocationID" Type="int" Nullable="false" />
           <Property Name="UserGroupID" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="FK__tblPayrol__Compa__4C214075">
+        <Association Name="FK__tblPayrol__Compa__7246E95D">
           <End Role="tblCompany" Type="Self.tblCompany" Multiplicity="0..1" />
           <End Role="tblPayrollMonth" Type="Self.tblPayrollMonth" Multiplicity="*" />
           <ReferentialConstraint>
@@ -2907,7 +2908,7 @@
           <EntitySet Name="tblUserGroupPerimission" EntityType="Self.tblUserGroupPerimission" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblUserGroupPermissionOnCompany" EntityType="Self.tblUserGroupPermissionOnCompany" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblUserGroupPermissionOnLocation" EntityType="Self.tblUserGroupPermissionOnLocation" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__tblPayrol__Compa__4C214075" Association="Self.FK__tblPayrol__Compa__4C214075">
+          <AssociationSet Name="FK__tblPayrol__Compa__7246E95D" Association="Self.FK__tblPayrol__Compa__7246E95D">
             <End Role="tblCompany" EntitySet="tblCompany" />
             <End Role="tblPayrollMonth" EntitySet="tblPayrollMonth" />
           </AssociationSet>
@@ -7118,9 +7119,9 @@
             <PropertyRef Name="PayrollMonthID" />
           </Key>
           <Property Name="PayrollMonthID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="PayrollMonthStartDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="PayrollMonthEndDate" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="PayrollMonthName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PayrollMonthStartDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PayrollMonthEndDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="PayrollMonthName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="CompanyID" Type="Int32" />
           <Property Name="rstate" Type="Byte" Nullable="false" />
           <Property Name="rcdt" Type="DateTime" Precision="3" />
@@ -7128,6 +7129,7 @@
           <Property Name="redt" Type="DateTime" Precision="3" />
           <Property Name="reuid" Type="Int32" />
           <NavigationProperty Name="tblCompany" Relationship="dbVisionModel.FK__tblPayrol__Compa__4C214075" FromRole="tblPayrollMonth" ToRole="tblCompany" />
+          <Property Name="PayrollMonth" Type="DateTime" Precision="0" Nullable="false" />
         </EntityType>
         <Association Name="FK__tblPayrol__Compa__4C214075">
           <End Type="dbVisionModel.tblCompany" Role="tblCompany" Multiplicity="0..1" />
@@ -8485,6 +8487,7 @@
           <EntitySetMapping Name="tblPayrollMonths">
             <EntityTypeMapping TypeName="dbVisionModel.tblPayrollMonth">
               <MappingFragment StoreEntitySet="tblPayrollMonth">
+                <ScalarProperty Name="PayrollMonth" ColumnName="PayrollMonth" />
                 <ScalarProperty Name="reuid" ColumnName="reuid" />
                 <ScalarProperty Name="redt" ColumnName="redt" />
                 <ScalarProperty Name="rcuid" ColumnName="rcuid" />

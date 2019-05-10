@@ -48,6 +48,9 @@ namespace Vision.Model.Payroll
         [DisplayName("Last Inc Amount")]
         public decimal? LastIncAmount { get; set; }
 
+        [DisplayName("Employee No")]
+        public int EmployeeNo { get; set; }
+
         [DisplayName("Employee Name")]
         public string EmployeeName { get; set; }
 

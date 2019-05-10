@@ -105,4 +105,18 @@ namespace Vision.Model.Payroll
         public ePAYEReliefType PAYEReliefType { get; set; }
     }
 
+    public class EmployeePayslip_PayslipTabViewModel
+    {
+        [DisplayName("Description")]
+        public string Descr { get; set; }
+
+        [DisplayName("Qty")]
+        public decimal? Qty { get; set; }
+
+        [DisplayName("Unit")]
+        public string UnitName { get; set; }
+
+        [DisplayName("Amount")]
+        public decimal Amount { get; set; }
+    }
 }

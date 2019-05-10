@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using Vision.Model.Settings;
 
 namespace Vision.Model
 {
@@ -337,7 +338,6 @@ namespace Vision.Model
 
             public const string CompanyEmailSMTPHost = "mail.alittech.com";
             public const int CompanyEmailSMTPPort = 25;
-
         }
 
         /// <summary>
@@ -420,6 +420,8 @@ namespace Vision.Model
             }
 
             public static List<Model.Users.MenuOptionPermissionViewModel> UserPermission { get; set; }
+
+            public static PayrollMonthViewModel CurrentPayrollMonth { get; set; }
 
             //Others.ReportSettingsView ReportSettings_;
             //public Others.ReportSettingsView ReportSettings

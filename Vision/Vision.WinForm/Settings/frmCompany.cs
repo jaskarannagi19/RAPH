@@ -58,7 +58,8 @@ namespace Vision.WinForm.Settings
             //{
             //    lcgSettings.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
             //}
-
+            
+            lcgPayrollMonth.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
             txtCode.Text = DALObject.GenerateNewCode().ToString();
 
             base.InitializeDefaultValues();
@@ -131,8 +132,6 @@ namespace Vision.WinForm.Settings
             if (Paras.SavingInterface == SavingParemeter.eSavingInterface.AddNew || EditRecordDataSource == null)
             {
                 SaveModel = new tblCompany();
-                
-                PayRollMonth = new tblPayrollMonth();
             }
             else
             {
@@ -148,6 +147,16 @@ namespace Vision.WinForm.Settings
                     return;
                 }
             }
+
+            // on Creating new company or while editing there is no month exists.
+            if (PayRollMonth == null)
+            {
+                PayRollMonth = new tblPayrollMonth()
+                {
+                    tblCompany = SaveModel
+                };
+            }
+
 
             SaveModel.CompanyCode = Model.CommonFunctions.ParseInt(txtCode.Text) + 1;
             SaveModel.CompanyName = txtCompanyName.Text;
@@ -197,9 +206,8 @@ namespace Vision.WinForm.Settings
             
             PayRollMonth.PayrollMonthStartDate = payRollStartDate.DateTime;
             PayRollMonth.PayrollMonthEndDate = payRollEndDate.DateTime;
-
-            PayRollMonth.PayrollMonthName = payrollMonthDateEdit.DateTime.ToString("MMMM-yyyy"); //this is not user selectable
-
+            PayRollMonth.PayrollMonthName = payRollEndDate.DateTime.ToString("MMMM-yyyy"); //this is not user selectable
+            PayRollMonth.PayrollMonth = payRollEndDate.DateTime.Date;
 
             long? CopySettingsFromCompanyID = null;
             //if(lcgSettings.Visibility != DevExpress.XtraLayout.Utils.LayoutVisibility.Never)

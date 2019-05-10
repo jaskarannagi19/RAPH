@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Vision.DAL;
 using Vision.DAL.Employee;
 using Vision.DAL.Payroll;
+using Vision.DAL.Settings;
 using Vision.Model;
 using Vision.Model.Employee;
 using Vision.Model.Payroll;
@@ -22,7 +23,9 @@ namespace Vision.WinForm.Payroll
 
         EmployeePaySlipDAL DALObj;
         EmployeeDAL EmployeeDALObj;
-        DAL.Settings.TaxSlabDAL TaxSlabDALObj;
+        TaxSlabDAL TaxSlabDALObj;
+        DAL.Payroll.EmployeeAttendanceDAL EmployeeAttendanceDALObj;
+
 
         EarningDeductionDAL EarningDeductionDALObj;
         List<EmployeePayslip_EarningAndDeductionsViewModel> dsEarningAndDeduction;
@@ -48,7 +51,18 @@ namespace Vision.WinForm.Payroll
 
         #region Properties
 
+        public decimal BasicPayRatePerHour { get; set; }
+
+        public decimal BasicPayRatePerDay { get; set; }
+
+        public decimal GrossPayRatePerHour { get; set; }
+
+        public decimal GrossPayRatePerDay { get; set; }
+
         #region Earnings
+
+        public decimal NormalOvertimeRatio { get; set; }
+
         public decimal NormalOvertimeHours
         {
             get
@@ -60,6 +74,10 @@ namespace Vision.WinForm.Payroll
                 txtNormalOvertimeHours.EditValue = value;
             }
         }
+
+        public decimal NormalOvertimeValue { get { return Math.Round(NormalOvertimeHours * NormalOvertimeRatio * BasicPayRatePerHour, 2); } }
+
+        public decimal DoubleOvertimeRatio { get; set; }
 
         public decimal DoubleOvertimeHours
         {
@@ -73,6 +91,8 @@ namespace Vision.WinForm.Payroll
             }
         }
 
+        public decimal DoubleOvertimeValue { get { return Math.Round(DoubleOvertimeHours * DoubleOvertimeRatio * BasicPayRatePerHour, 2); } }
+
         public decimal AbsentDays
         {
             get
@@ -85,17 +105,7 @@ namespace Vision.WinForm.Payroll
             }
         }
 
-        public decimal MissedPunchDays
-        {
-            get
-            {
-                return (decimal?)txtMissedPunchDays.EditValue ?? 0;
-            }
-            set
-            {
-                txtMissedPunchDays.EditValue = value;
-            }
-        }
+        public decimal AbsentValue { get { return Math.Round(AbsentDays * GrossPayRatePerDay, 2); } }
 
         public decimal NoticePayDay
         {
@@ -109,6 +119,8 @@ namespace Vision.WinForm.Payroll
             }
         }
 
+        public decimal NoticePayValue { get { return Math.Round(NoticePayDay * GrossPayRatePerDay, 2); } }
+
         public decimal LeaveEncashmentDays
         {
             get
@@ -121,6 +133,8 @@ namespace Vision.WinForm.Payroll
             }
         }
 
+        public decimal LeaveEncashmentValue { get { return Math.Round(LeaveEncashmentDays * GrossPayRatePerDay, 2); } }
+
         public decimal WeekendWorkedDays
         {
             get
@@ -132,6 +146,8 @@ namespace Vision.WinForm.Payroll
                 txtWeekendWorkedDays.EditValue = value;
             }
         }
+
+        public decimal WeekendWorkedValue { get { return Math.Round(WeekendWorkedDays * (ServiceSaveModel != null ? ServiceSaveModel.WeekendAllowance : 0M), 2); } }
         #endregion
 
         #region Deductions
@@ -146,6 +162,10 @@ namespace Vision.WinForm.Payroll
                 txtLateDays.EditValue = value;
             }
         }
+
+        public decimal LatenessValue { get { return Math.Round(LatenessDays * LatenessRatePerDay, 2); } }
+
+        public decimal LatenessRatePerDay { get; set; }
 
         public decimal LoanInstallmentAmt
         {
@@ -199,15 +219,24 @@ namespace Vision.WinForm.Payroll
             }
         }
 
-        public decimal GrossIncome
+        /// <summary>
+        /// Basic Income + HRA + All Earnings - Absent
+        /// </summary>
+        public decimal GrossIncome { get { return (decimal?)txtGrossSalary.EditValue ?? 0; } set { txtGrossSalary.EditValue = value; } }
+
+        public decimal TotalDeductions { get { return (decimal?)txtTotalDeduction.EditValue ?? 0; } set { txtTotalDeduction.EditValue = value; } }
+
+        public decimal NetSalary { get { return (decimal?)txtNetSalary.EditValue ?? 0; } set { txtNetSalary.EditValue = value; } }
+
+        public decimal GrossTaxableIncome
         {
             get
             {
-                return (decimal?)txtGrossSalary.EditValue ?? 0;
+                return (decimal?)txtTaxableGrossIncome.EditValue ?? 0;
             }
             set
             {
-                txtGrossSalary.EditValue = value;
+                txtTaxableGrossIncome.EditValue = value;
             }
         }
 
@@ -322,6 +351,7 @@ namespace Vision.WinForm.Payroll
             NonCashBenefitDALObj = new NonCashBenefitDAL();
             PAYEReliefDALObj = new DAL.Settings.PAYEReliefDAL();
             TaxSlabDALObj = new DAL.Settings.TaxSlabDAL();
+            EmployeeAttendanceDALObj = new EmployeeAttendanceDAL();
 
             DateTo = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).AddDays(-1).Add(new TimeSpan(23, 59, 59));
             DateFrom = new DateTime(DateTo.Year, DateTo.Month, 1);
@@ -388,6 +418,23 @@ namespace Vision.WinForm.Payroll
             base.AssignLookupDataSource();
         }
 
+        public override void InitializeDefaultValues()
+        {
+            if (CommonProperties.LoginInfo.CurrentPayrollMonth != null)
+            {
+                DateTo = CommonProperties.LoginInfo.CurrentPayrollMonth.PayrollMonthEndDate.Date.Add(new TimeSpan(23, 59, 59));
+                DateFrom = CommonProperties.LoginInfo.CurrentPayrollMonth.PayrollMonthStartDate;
+                txtDateTitle.Text = CommonProperties.LoginInfo.CurrentPayrollMonth.PayrollMonthName;
+            }
+            else
+            {
+                txtDateTitle.Text = "No payroll month found.";
+            }
+
+
+            base.InitializeDefaultValues();
+        }
+
         private void lookupEmployee_EditValueChanged(object sender, EventArgs e)
         {
             if (lookupEmployee.EditValue != null)
@@ -402,143 +449,6 @@ namespace Vision.WinForm.Payroll
 
         tblEmployee EmployeeSaveModel;
         tblEmployeeServiceDetail ServiceSaveModel;
-        void GetPaySlipData(int EmployeeID)
-        {
-            ClearPayrollValues();
-            //--
-            EmployeeSaveModel = EmployeeDALObj.FindSaveModelByPrimeKey(EmployeeID);
-            if (EmployeeSaveModel == null)
-            {
-                return;
-            }
-
-            ServiceSaveModel = EmployeeSaveModel.tblEmployeeServiceDetail;
-            if (ServiceSaveModel == null)
-            {
-                return;
-            }
-
-            if (((eTAAttendanceType)EmployeeSaveModel.TAAttendanceType) == eTAAttendanceType.Integrated)
-            {
-                ProcessAttendanceData(EmployeeSaveModel, ServiceSaveModel);
-            }
-
-            CalculatePAYE();
-        }
-
-        void ProcessAttendanceData(tblEmployee EmployeeSaveModel, tblEmployeeServiceDetail ServiceSaveModel)
-        {
-            //ClearPayrollValues();
-            Model.Employee.eTAAttendanceType AttendanceType = ((Model.Employee.eTAAttendanceType)EmployeeSaveModel.TAAttendanceType);
-
-            EditingEmployeeDetail = DALObj.FindPayrollEmployeeDetail(DateFrom.Month, DateFrom.Year, EmployeeSaveModel.EmployeeID);
-            if (EditingEmployeeDetail != null)
-            {
-                NormalOvertimeHours = EditingEmployeeDetail.NormalOvertimeHours;
-                DoubleOvertimeHours = EditingEmployeeDetail.DoubleOvertimeHours;
-                AbsentDays = EditingEmployeeDetail.AbsentDays;
-                MissedPunchDays = EditingEmployeeDetail.MissedPunchDays;
-                WeekendWorkedDays = EditingEmployeeDetail.WeekendWorkedDays;
-                LeaveEncashmentDays = EditingEmployeeDetail.LeaveEncashmentDays;
-                NoticePayDay = EditingEmployeeDetail.NoticePayDays;
-
-                LatenessDays = EditingEmployeeDetail.LateDays;
-                LoanInstallmentAmt = EditingEmployeeDetail.LoanInstallmentAmount;
-                lookUpVehicle_NonCashBenefit.EditValue = EditingEmployeeDetail.Vehicle_NoncashBenefitID;
-
-                foreach (var r in EditingEmployeeDetail.tblPayrollEmployeeEarningsDeductions)
-                {
-                    var ViewModel = dsEarningAndDeduction.FirstOrDefault(rr => rr.EarningAndDeductionID == r.EarningsDeductionID && r.Value != 0);
-                    if (ViewModel != null)
-                    {
-                        ViewModel.Value = r.Value;
-                    }
-                }
-                gvEarnings.RefreshData();
-                gvDeductions.RefreshData();
-
-                foreach (var r in EditingEmployeeDetail.tblPayrollEmployeeNonCashBenefits)
-                {
-                    var ViewModel = dsNonCashBenefit.FirstOrDefault(rr => rr.NonCashBenefitID == r.NonCashBenefitID);
-                    if (ViewModel != null)
-                    {
-                        ViewModel.Selected = true;
-                        ViewModel.CostValue = r.CostValue;
-                        ViewModel.KRAValuePercentage = r.KRAPerc;
-                        ViewModel.KRAValue = r.KRAValue;
-                        ViewModel.Recurrning = r.Recurring;
-                    }
-                }
-                gvNonCashBenefit.RefreshData();
-
-                foreach (var r in EditingEmployeeDetail.tblPayrollEmployePAYEReliefs)
-                {
-                    var ViewModel = dsPAYERelief.FirstOrDefault(rr => rr.PAYEReliefID == r.PAYEReliefID && r.PAYEReliefAmt != 0);
-                    if (ViewModel != null)
-                    {
-                        ViewModel.Selected = true;
-                        ViewModel.PAYEReliefAmt = r.PAYEReliefAmt;
-                    }
-                }
-            }
-
-            if (AttendanceType == eTAAttendanceType.Integrated)
-            {
-                EmployeeAttendanceDAL AttendanceDALObj = new EmployeeAttendanceDAL();
-                var dsAttendance = AttendanceDALObj.GetEmployeeAttendanceData(DateFrom, DateTo, EmployeeSaveModel.EmployeeID);
-
-                NormalOvertimeHours = dsAttendance.Sum(r => r.NormalOvertimeHour);
-
-                if (((Model.Employee.eTAWeekEndAttendance)EmployeeSaveModel.TAWeekEndAttendance) == Model.Employee.eTAWeekEndAttendance.Overtime)
-                {
-                    DoubleOvertimeHours = dsAttendance.Sum(r => r.DoubleOvertimeHour);
-                }
-
-                AbsentDays = dsAttendance.Sum(r => r.AbsentCount);
-
-                if (((eTAMissPunch)EmployeeSaveModel.TAMissPunch) == eTAMissPunch.Abscent)
-                {
-                    AbsentDays = AbsentDays + dsAttendance.Count(r => r.MissedPunch);
-                }
-
-                LeaveEncashmentDays = DALObj.CountLeaveEncashmentDays(EmployeeSaveModel.EmployeeID, DateFrom, DateTo);
-
-                if (((Model.Employee.eTAWeekEndAttendance)EmployeeSaveModel.TAWeekEndAttendance) == Model.Employee.eTAWeekEndAttendance.Allowance)
-                {
-                    WeekendWorkedDays = dsAttendance.Count(r =>
-                        ((r.Weekend == eEmployeeWeekendDayType.WeekendWorked && r.WeekendWorkedApproved) ||
-                        (r.RestDay == eEmployeeRestDayDayType.RestDayWorked || r.RestDayWorkedApproved)) && (((eTAMissPunch)EmployeeSaveModel.TAMissPunch) == eTAMissPunch.Present || !r.MissedPunch));
-                }
-
-                if (((Model.Employee.eTALatenessCharges)EmployeeSaveModel.TALatenessCharges) == Model.Employee.eTALatenessCharges.Applicable)
-                {
-                    LatenessDays = dsAttendance.Count(r => r.LateIn && !r.LatenessApproved);
-                    //LatenessAmt = Math.Round(Model.CommonProperties.LoginInfo.SoftwareSettings.LatenessPenaltyAmount * LateInCount, 2);
-                }
-
-
-                LoanInstallmentAmt = DALObj.GetLoanInstallmentAmt(EmployeeSaveModel.EmployeeID, DateFrom, DateTo);
-
-                //--
-                //txtNormalOvertimeHours.Enabled = false;
-                //txtDoubleOvertimeHours.Enabled = false;
-
-                //txtAbsemtDays.Enabled = false;
-                //txtWeekendWorkedDays.Enabled = false;
-            }
-            //else if(AttendanceType == eTAAttendanceType.Import)
-            //{
-            //}
-            //else if(AttendanceType == eTAAttendanceType.NotApplicable)
-            //{
-            //    //--
-            //    txtNormalOvertimeHours.Enabled = true;
-            //    txtDoubleOvertimeHours.Enabled = true;
-
-            //    txtAbsemtDays.Enabled = true;
-            //    txtWeekendWorkedDays.Enabled = true;
-            //}
-        }
 
         void ClearPayrollValues()
         {
@@ -597,7 +507,7 @@ namespace Vision.WinForm.Payroll
 
             BasicIncome = 0;
             HRA = 0;
-            GrossIncome = 0;
+            GrossTaxableIncome = 0;
             TaxableIncome = 0;
             NetTaxableIncome = 0;
 
@@ -611,23 +521,175 @@ namespace Vision.WinForm.Payroll
             gvPAYE_PAYERelief.RefreshData();
         }
 
-        void CalculatePAYE()
+        void GetPaySlipData(int EmployeeID)
         {
-            if (EmployeeSaveModel == null || ServiceSaveModel == null)
+            ClearPayrollValues();
+            //--
+            EmployeeSaveModel = EmployeeDALObj.FindSaveModelByPrimeKey(EmployeeID);
+            if (EmployeeSaveModel == null)
             {
                 return;
             }
+
+            ServiceSaveModel = EmployeeSaveModel.tblEmployeeServiceDetail;
+            if (ServiceSaveModel == null)
+            {
+                return;
+            }
+
             BasicIncome = ServiceSaveModel.BasicSalary;
             txtIncomeType.Text = (EmployeeSaveModel.IncomeType ? "Primary" : "Secondry") + " Income";
             HRA = ServiceSaveModel.HousingAllowance;
-            IEnumerable<EmployeePayslip_EarningAndDeductionsViewModel> dsTaxableIncome = dsEarningAndDeduction.Where(r => r.RecordType == eEarningDeductionType.Earning && r.Taxable);
+
+            NormalOvertimeRatio = CommonProperties.LoginInfo.SoftwareSettings.OvertimeRate;
+            DoubleOvertimeRatio = CommonProperties.LoginInfo.SoftwareSettings.DoubleOvertimeRate;
+
+            decimal GrossPay = BasicIncome + HRA;
+            decimal WorkingHoursPerMonth = ((CommonProperties.LoginInfo.SoftwareSettings.WorkingHoursPerWeek * 52) / 12);
+
+            BasicPayRatePerHour = Math.Round(BasicIncome / WorkingHoursPerMonth, 2);
+            BasicPayRatePerDay = Math.Round((BasicIncome / WorkingHoursPerMonth) * CommonProperties.LoginInfo.SoftwareSettings.WorkingHoursPerDay, 2);
+
+            GrossPayRatePerHour = Math.Round(GrossPay / WorkingHoursPerMonth, 2);
+            GrossPayRatePerDay = Math.Round((GrossPay / WorkingHoursPerMonth) * CommonProperties.LoginInfo.SoftwareSettings.WorkingHoursPerDay, 2);
+
+            LatenessRatePerDay = Model.CommonProperties.LoginInfo.SoftwareSettings.LatenessPenaltyAmount;
+
+            EditingEmployeeDetail = DALObj.FindPayrollEmployeeDetail(DateFrom.Month, DateFrom.Year, EmployeeSaveModel.EmployeeID);
+            if (EditingEmployeeDetail != null)
+            {
+                #region Fill saved data in form
+                NormalOvertimeHours = EditingEmployeeDetail.NormalOvertimeHours;
+                DoubleOvertimeHours = EditingEmployeeDetail.DoubleOvertimeHours;
+                AbsentDays = EditingEmployeeDetail.AbsentDays;
+
+                AbsentDays += EditingEmployeeDetail.MissedPunchDays;
+
+                WeekendWorkedDays = EditingEmployeeDetail.WeekendWorkedDays;
+                LeaveEncashmentDays = EditingEmployeeDetail.LeaveEncashmentDays;
+                NoticePayDay = EditingEmployeeDetail.NoticePayDays;
+
+                LatenessDays = EditingEmployeeDetail.LateDays;
+                LoanInstallmentAmt = EditingEmployeeDetail.LoanInstallmentAmount;
+                lookUpVehicle_NonCashBenefit.EditValue = EditingEmployeeDetail.Vehicle_NoncashBenefitID;
+
+                foreach (var r in EditingEmployeeDetail.tblPayrollEmployeeEarningsDeductions)
+                {
+                    var ViewModel = dsEarningAndDeduction.FirstOrDefault(rr => rr.EarningAndDeductionID == r.EarningsDeductionID && r.Value != 0);
+                    if (ViewModel != null)
+                    {
+                        ViewModel.Value = r.Value;
+                    }
+                }
+                gvEarnings.RefreshData();
+                gvDeductions.RefreshData();
+
+                foreach (var r in EditingEmployeeDetail.tblPayrollEmployeeNonCashBenefits)
+                {
+                    var ViewModel = dsNonCashBenefit.FirstOrDefault(rr => rr.NonCashBenefitID == r.NonCashBenefitID);
+                    if (ViewModel != null)
+                    {
+                        ViewModel.Selected = true;
+                        ViewModel.CostValue = r.CostValue;
+                        ViewModel.KRAValuePercentage = r.KRAPerc;
+                        ViewModel.KRAValue = r.KRAValue;
+                        ViewModel.Recurrning = r.Recurring;
+                    }
+                }
+                gvNonCashBenefit.RefreshData();
+
+                foreach (var r in EditingEmployeeDetail.tblPayrollEmployePAYEReliefs)
+                {
+                    var ViewModel = dsPAYERelief.FirstOrDefault(rr => rr.PAYEReliefID == r.PAYEReliefID && r.PAYEReliefAmt != 0);
+                    if (ViewModel != null)
+                    {
+                        ViewModel.Selected = true;
+                        ViewModel.PAYEReliefAmt = r.PAYEReliefAmt;
+                    }
+                }
+                #endregion
+            }
+            else if (((eTAAttendanceType)EmployeeSaveModel.TAAttendanceType) == eTAAttendanceType.Integrated)
+            {
+                #region Processing Attendance Data
+                Model.Employee.eTAAttendanceType AttendanceType = ((Model.Employee.eTAAttendanceType)EmployeeSaveModel.TAAttendanceType);
+
+                if (AttendanceType == eTAAttendanceType.Integrated)
+                {
+                    EmployeeAttendanceDAL AttendanceDALObj = new EmployeeAttendanceDAL();
+                    var dsAttendance = AttendanceDALObj.GetEmployeeAttendanceData(DateFrom, DateTo, EmployeeSaveModel.EmployeeID);
+
+                    #region Earnings
+                    NormalOvertimeHours = Math.Round(dsAttendance.Sum(r => r.NormalOvertimeHour), 2);
+
+                    if (((Model.Employee.eTAWeekEndAttendance)EmployeeSaveModel.TAWeekEndAttendance) == Model.Employee.eTAWeekEndAttendance.Overtime)
+                    {
+                        DoubleOvertimeHours = Math.Round(dsAttendance.Sum(r => r.DoubleOvertimeHour), 2);
+                    }
+
+                    if (((Model.Employee.eTAWeekEndAttendance)EmployeeSaveModel.TAWeekEndAttendance) == Model.Employee.eTAWeekEndAttendance.Allowance)
+                    {
+                        // Round off not required, if weekend worked then whole day will be counted as worked.
+                        WeekendWorkedDays = dsAttendance.Count(r =>
+                            ((r.Weekend == eEmployeeWeekendDayType.WeekendWorked && r.WeekendWorkedApproved) ||
+                            (r.RestDay == eEmployeeRestDayDayType.RestDayWorked || r.RestDayWorkedApproved)) && (((eTAMissPunch)EmployeeSaveModel.TAMissPunch) == eTAMissPunch.Present || !r.MissedPunch));
+                    }
+
+                    LeaveEncashmentDays = DALObj.CountLeaveEncashmentDays(EmployeeSaveModel.EmployeeID, DateFrom, DateTo);
+                    #endregion
+
+                    #region Deductions
+                    AbsentDays = dsAttendance.Sum(r => r.AbsentCount);
+
+                    if (((eTAMissPunch)EmployeeSaveModel.TAMissPunch) == eTAMissPunch.Abscent)
+                    {
+                        AbsentDays += dsAttendance.Count(r => r.MissedPunch);
+                    }
+
+                    if (((Model.Employee.eTALatenessCharges)EmployeeSaveModel.TALatenessCharges) == Model.Employee.eTALatenessCharges.Applicable)
+                    {
+                        LatenessDays = dsAttendance.Count(r => r.LateIn && !r.LatenessApproved);
+                    }
+
+                    LoanInstallmentAmt = DALObj.GetLoanInstallmentAmt(EmployeeSaveModel.EmployeeID, DateFrom, DateTo);
+                    #endregion
+                }
+                #endregion
+            }
+            CalculatePAYE();
+            CalculatePayslipTab();
+        }
+
+        void CalculatePAYE()
+        {
+            if(EmployeeSaveModel == null)
+            {
+                return;
+            }
+            if(ServiceSaveModel == null)
+            {
+                return;
+            }
+            //--
+
+            #region NHIF, NSSF, PAYE & P.F.
+            List<EmployeePayslip_EarningAndDeductionsViewModel> dsTaxableIncome = new List<EmployeePayslip_EarningAndDeductionsViewModel>()
+            {
+                new EmployeePayslip_EarningAndDeductionsViewModel() { EarningAndDeductionName = "Normal Overtime", ValueType = eEarningDeductionValueType.Fixed, Value = NormalOvertimeValue },
+                new EmployeePayslip_EarningAndDeductionsViewModel() { EarningAndDeductionName = "Double Overtime", ValueType = eEarningDeductionValueType.Fixed, Value = DoubleOvertimeValue },
+                new EmployeePayslip_EarningAndDeductionsViewModel() { EarningAndDeductionName = "Weekend Allowance", ValueType = eEarningDeductionValueType.Fixed, Value = WeekendWorkedValue },
+                new EmployeePayslip_EarningAndDeductionsViewModel() { EarningAndDeductionName = "Absent", ValueType = eEarningDeductionValueType.Fixed, Value = -AbsentValue },
+                new EmployeePayslip_EarningAndDeductionsViewModel() { EarningAndDeductionName = "Notice Pay", ValueType = eEarningDeductionValueType.Fixed, Value = NoticePayValue },
+                new EmployeePayslip_EarningAndDeductionsViewModel() { EarningAndDeductionName = "Leave Encashment", ValueType = eEarningDeductionValueType.Fixed, Value = LeaveEncashmentValue },
+            };
+            dsTaxableIncome.AddRange(dsEarningAndDeduction.Where(r => r.RecordType == eEarningDeductionType.Earning && r.Taxable));
             PAYETaxableEarningBindingSource.DataSource = dsTaxableIncome;
-            GrossIncome = BasicIncome + HRA + (dsTaxableIncome.Sum(r => (decimal?)r.Value) ?? 0);
+            GrossTaxableIncome = BasicIncome + HRA + (dsTaxableIncome.Sum(r => (decimal?)r.Value) ?? 0);
 
             decimal taxableValue = 0;
             decimal TaxValue = 0;
 
-            // NHIF            
+            #region  NHIF
             if (cmbNHIFApplicable.SelectedIndex == 1)
             {
                 var dsNHIFTaxSlab = TaxSlabDALObj.GetLatestTaxSlab(Model.Settings.eTaxSlab_TaxType.NHIF, eIncomeType.Primary).OrderBy(r => r.TaxableSalaryFromValue);
@@ -656,8 +718,9 @@ namespace Vision.WinForm.Payroll
             {
                 NHIFValue = 0;
             }
+            #endregion
 
-            // NSSF
+            #region NSSF
             if (cmbNSSF.SelectedIndex == 1)
             {
                 taxableValue = BasicIncome + HRA;
@@ -676,9 +739,10 @@ namespace Vision.WinForm.Payroll
             {
                 NSSFValue = 0;
             }
+            #endregion
 
-            // P.F.
-            if ((Model.Employee.eProvidentFund)EmployeeSaveModel.ProvidentFund == eProvidentFund.Applicable)
+            #region P.F.
+            if (EmployeeSaveModel != null && (Model.Employee.eProvidentFund)EmployeeSaveModel.ProvidentFund == eProvidentFund.Applicable)
             {
                 PFValue = Math.Round(BasicIncome * Model.CommonProperties.LoginInfo.SoftwareSettings.PFContributionEmployee, 2);
             }
@@ -686,8 +750,9 @@ namespace Vision.WinForm.Payroll
             {
                 PFValue = 0;
             }
+            #endregion
 
-
+            #region PAYE
             List<EmployeePayslip_NoncashBenefitViewModel> dsPAYENonCashBenefit = dsNonCashBenefit.Where(r => r.Selected).ToList();
             PAYENoncashBenefitBindingSource.DataSource = dsPAYENonCashBenefit;
             decimal VehicleValue = 0;
@@ -723,10 +788,9 @@ namespace Vision.WinForm.Payroll
             PAYERelief_PersonalRelief = ((dsPAYEpayeRelief.Where(r => r.PAYEReliefType == Model.Settings.ePAYEReliefType.PersonalRelief).Sum(r => (decimal?)r.PAYEReliefAmt) ?? 0));
             dsPAYEpayeRelief.RemoveAll(r => r.PAYEReliefType == Model.Settings.ePAYEReliefType.PersonalRelief);
 
-
             PAYEReliefeBindingSource.DataSource = dsPAYEpayeRelief;
 
-            TaxableIncome = GrossIncome + (dsPAYENonCashBenefit.Sum(r => (decimal?)r.KRAValue) ?? 0);
+            TaxableIncome = GrossTaxableIncome + (dsPAYENonCashBenefit.Sum(r => (decimal?)r.KRAValue) ?? 0);
             NetTaxableIncome = TaxableIncome - dsPAYEpayeRelief.Sum(r => r.PAYEReliefAmt);
 
             // PAYE Calculation 
@@ -764,13 +828,82 @@ namespace Vision.WinForm.Payroll
                 GrossPAYEValue = 0;
                 PAYEValue = 0;
             }
+            #endregion PAYE
+
+            #endregion Taxes
+        }
+
+        void CalculatePayslipTab()
+        {
+            #region Payslip Tab
+            PayslipTabEarningBindingSource.Clear();
+
+            PayslipTabEarningBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Basic Pay", UnitName = null, Qty = null, Amount = BasicIncome });
+            PayslipTabEarningBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "HRA", UnitName = null, Qty = null, Amount = HRA });
+            PayslipTabEarningBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Normal Overtime", UnitName = "Hours", Qty = NormalOvertimeHours, Amount = NormalOvertimeValue });
+            PayslipTabEarningBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Double Overtime", UnitName = "Hours", Qty = DoubleOvertimeHours, Amount = DoubleOvertimeValue });
+            PayslipTabEarningBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Weekend Allowance", UnitName = "Days", Qty = WeekendWorkedDays, Amount = WeekendWorkedValue });
+            PayslipTabEarningBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Absent", UnitName = "Days", Qty = AbsentDays, Amount = -AbsentValue });
+            PayslipTabEarningBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Notice Pay", UnitName = "Days", Qty = NoticePayDay, Amount = NoticePayValue });
+            PayslipTabEarningBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Leave Encashment", UnitName = "Days", Qty = LeaveEncashmentDays, Amount = LeaveEncashmentValue });
+
+            foreach (var r in dsEarning.Where(r => r.Value != 0))
+            {
+                EmployeePayslip_PayslipTabViewModel er = new EmployeePayslip_PayslipTabViewModel() { Descr = r.EarningAndDeductionName, UnitName = null, Qty = null, Amount = 0 };
+
+                if (r.ValueType == eEarningDeductionValueType.Percentage)
+                {
+                    er.UnitName = "Percentage";
+                    er.Qty = r.Value;
+                    er.Amount = Math.Round(BasicIncome * r.Value, 2);
+                }
+                else
+                {
+                    er.Amount = r.Value;
+                }
+                PayslipTabEarningBindingSource.Add(er);
+            }
+            GrossIncome = PayslipTabEarningBindingSource.Cast<EmployeePayslip_PayslipTabViewModel>().Sum(r => (decimal?)r.Amount) ?? 0;
+            gridViewPayeSlipTabEarning.RefreshData();
+
+            // Deductions
+            PayslipTabDeductionBindingSource.Clear();
+            PayslipTabDeductionBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "PAYE", UnitName = null, Qty = null, Amount = PAYEValue });
+            PayslipTabDeductionBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "NSSF", UnitName = null, Qty = null, Amount = NSSFValue });
+            PayslipTabDeductionBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "NHIF", UnitName = null, Qty = null, Amount = NHIFValue });
+            PayslipTabDeductionBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Provident Fund", UnitName = null, Qty = null, Amount = PFValue });
+            PayslipTabDeductionBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Lateness", UnitName = "Days", Qty = LatenessDays, Amount = LatenessValue });
+            PayslipTabDeductionBindingSource.Add(new EmployeePayslip_PayslipTabViewModel() { Descr = "Loan Installment", UnitName = null, Qty = null, Amount = LoanInstallmentAmt });
+
+            foreach (var r in dsDeduction.Where(r => r.Value != 0))
+            {
+                EmployeePayslip_PayslipTabViewModel dr = new EmployeePayslip_PayslipTabViewModel() { Descr = r.EarningAndDeductionName, UnitName = null, Qty = null, Amount = 0 };
+
+                if (r.ValueType == eEarningDeductionValueType.Percentage)
+                {
+                    dr.UnitName = "Percentage";
+                    dr.Qty = r.Value;
+                    dr.Amount = Math.Round(BasicIncome * r.Value, 2);
+                }
+                else
+                {
+                    dr.Amount = r.Value;
+                }
+                PayslipTabDeductionBindingSource.Add(dr);
+            }
+            gridViewPayeSlipDeduction.RefreshData();
+
+
+            TotalDeductions = PayslipTabDeductionBindingSource.Cast<EmployeePayslip_PayslipTabViewModel>().Sum(r => (decimal?)r.Amount) ?? 0;
+            NetSalary = GrossIncome - TotalDeductions;
+            #endregion
         }
 
         private void dateEdit1_EditValueChanged(object sender, EventArgs e)
         {
-            DateTo = new DateTime(dateEdit1.DateTime.Year, dateEdit1.DateTime.Month, 1).AddMonths(1).AddDays(-1).Add(new TimeSpan(23, 59, 59));
-            DateFrom = new DateTime(DateTo.Year, DateTo.Month, 1);
-            txtDateTitle.Text = DateFrom.ToString("MMMM-yyyy");
+            //DateTo = new DateTime(dateEdit1.DateTime.Year, dateEdit1.DateTime.Month, 1).AddMonths(1).AddDays(-1).Add(new TimeSpan(23, 59, 59));
+            //DateFrom = new DateTime(DateTo.Year, DateTo.Month, 1);
+            //txtDateTitle.Text = DateFrom.ToString("MMMM-yyyy");
 
             if (lookupEmployee.EditValue != null)
             {
@@ -808,7 +941,6 @@ namespace Vision.WinForm.Payroll
             EmployeeDetailSaveModel.NormalOvertimeHours = NormalOvertimeHours;
             EmployeeDetailSaveModel.DoubleOvertimeHours = DoubleOvertimeHours;
             EmployeeDetailSaveModel.AbsentDays = AbsentDays;
-            EmployeeDetailSaveModel.MissedPunchDays = MissedPunchDays;
             EmployeeDetailSaveModel.WeekendWorkedDays = WeekendWorkedDays;
             EmployeeDetailSaveModel.LeaveEncashmentDays = LeaveEncashmentDays;
             EmployeeDetailSaveModel.NoticePayDays = NoticePayDay;
@@ -917,6 +1049,10 @@ namespace Vision.WinForm.Payroll
             if (e.Page == lcgPAYE)
             {
                 CalculatePAYE();
+            }
+            if (e.Page == lcgPayslip)
+            {
+                CalculatePayslipTab();
             }
         }
 
